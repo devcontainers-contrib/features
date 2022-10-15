@@ -1,0 +1,22 @@
+{
+    "name": "pulumi",
+    "id": "pulumi",
+    "version": "1.0.0",
+    "description": "pulumi",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "3.43.0"
+            ],
+            "default": "latest",
+            "description": "Select the Pulumi version you would like to install"
+        },
+        "bash_completion": {
+            "type": "boolean",
+            "default": true,
+            "description": "Add pulumi command-line completion to bash"
+        }
+    }
+}
