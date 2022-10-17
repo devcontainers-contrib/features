@@ -5,6 +5,9 @@ BASH_COMPLETION="${BASHCOMPLETION:-"true"}"
 
 set -e
 
+# Clean up 
+rm -rf /var/lib/apt/lists/*
+
 # Checks if packages are installed and installs them if not
 check_packages() {
     if ! dpkg -s "$@" > /dev/null 2>&1; then
@@ -46,3 +49,6 @@ fi
 if [[ "${BASH_COMPLETION}" = "true" ]] ; then
     pulumi gen-completion bash > /etc/bash_completion.d/pulumi
 fi
+# Clean up 
+rm -rf /var/lib/apt/lists/*
+
