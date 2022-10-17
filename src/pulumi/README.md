@@ -1,7 +1,7 @@
 
-# pulumi (pulumi)
+# Pulumi (pulumi)
 
-pulumi
+Pulumi is a modern infrastructure as code platform
 
 ## Example Usage
 
@@ -18,7 +18,7 @@ pulumi
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select the Pulumi version you would like to install | string | latest |
-| bash_completion | Add pulumi command-line completion to bash | boolean | true |
+| bashCompletion | Add pulumi command-line completion to bash | boolean | true |
 
 
 
