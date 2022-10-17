@@ -1,8 +1,8 @@
 {
-    "name": "pulumi",
+    "name": "Pulumi",
     "id": "pulumi",
-    "version": "1.0.0",
-    "description": "pulumi",
+    "version": "1.0.1",
+    "description": "Pulumi is a modern infrastructure as code platform",
     "options": {
         "version": {
             "type": "string",
@@ -13,7 +13,7 @@
             "default": "latest",
             "description": "Select the Pulumi version you would like to install"
         },
-        "bash_completion": {
+        "BashCompletion": {
             "type": "boolean",
             "default": true,
             "description": "Add pulumi command-line completion to bash"
