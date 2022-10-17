@@ -1,7 +1,7 @@
 {
     "name": "Pulumi",
     "id": "pulumi",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Pulumi is a modern infrastructure as code platform",
     "options": {
         "version": {
