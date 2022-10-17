@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 PULUMI_VERSION="${VERSION:-"latest"}"
-BASH_COMPLETION="${BASH_COMPLETION:-"true"}"
+BASH_COMPLETION="${BASHCOMPLETION:-"true"}"
 
 set -e
 
