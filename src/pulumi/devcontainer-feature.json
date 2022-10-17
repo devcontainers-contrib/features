@@ -13,7 +13,7 @@
             "default": "latest",
             "description": "Select the Pulumi version you would like to install"
         },
-        "BashCompletion": {
+        "bashCompletion": {
             "type": "boolean",
             "default": true,
             "description": "Add pulumi command-line completion to bash"
