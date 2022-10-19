@@ -1,0 +1,17 @@
+{
+    "name": "Kubie",
+    "id": "kubie",
+    "version": "1.0.0",
+    "description": "Kubie offers kubernetes context switching, namespace switching and prompt modification in a way that makes each shell independent from others",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "0.19.0"
+            ],
+            "default": "latest",
+            "description": "Select the Kubie version you would like to install"
+        }
+    }
+}
