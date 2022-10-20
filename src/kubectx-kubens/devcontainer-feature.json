@@ -1,0 +1,21 @@
+{
+    "name": "Kubectx and Kubens",
+    "id": "kubectx-kubens",
+    "version": "1.0.0",
+    "description": "kubectx is a tool to switch between contexts (clusters) on kubectl faster. kubens is a tool to switch between Kubernetes namespaces (and configure them for kubectl) easily.",
+    "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/kubectx-kubens",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/kubectl-helm-minikube:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "0.9.4"
+            ],
+            "default": "latest",
+            "description": "Select the version you would like to install (will apply for for both kubectx and kubens.)"
+        }
+    }
+}
