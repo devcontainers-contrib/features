@@ -4,6 +4,9 @@ KUBIE_VERSION="${VERSION:-"latest"}"
 
 set -e
 
+# Clean up 
+rm -rf /var/lib/apt/lists/*
+
 architecture="$(uname -m)"
 case ${architecture} in
     x86_64) architecture="amd64";;
@@ -71,3 +74,7 @@ KUBIE_FILENAME=kubie-linux-${architecture}
 curl -sSL https://github.com/sbstp/kubie/releases/download/v${KUBIE_VERSION}/${KUBIE_FILENAME} -o /usr/local/bin/kubie
 chmod +x /usr/local/bin/kubie
 
+# Clean up 
+rm -rf /var/lib/apt/lists/*
+
+echo "Done!"
