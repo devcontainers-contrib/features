@@ -1,0 +1,18 @@
+{
+    "name": "Argo CD CLI",
+    "id": "argo-cd",
+    "version": "1.0.0",
+    "description": "Declarative GitOps CD for Kubernetes",
+    "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/argo-cd",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "2.5.0"
+            ],
+            "default": "latest",
+            "description": "Select the Argo CD CLI version you would like to install"
+        }
+    }
+}
