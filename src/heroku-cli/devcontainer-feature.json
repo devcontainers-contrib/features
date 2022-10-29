@@ -1,7 +1,7 @@
 {
     "name": "Heroku CLI",
     "id": "heroku-cli",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Heroku CLI allows you to interact with the Heroku API via the command line",
     "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/heroku-cli",
     "options": {
@@ -12,7 +12,7 @@
                 "7.60.1"
             ],
             "default": "latest",
-            "description": "Select the Argo Workflows CLI version you would like to install"
+            "description": "Select the Heroku CLI version you would like to install"
         }
     }
 }

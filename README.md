@@ -27,7 +27,7 @@ Install the [DigitalOcean](https://www.digitalocean.com/) CLI.
 
 ### [`Heroku`](src/heroku-cli/README.md)
 
-Install the [Heroku](https://www.digitalocean.com/) CLI.
+Install the [Heroku](https://www.heroku.com/) CLI.
 
 ### [`Kubie`](src/kubie/README.md)
 

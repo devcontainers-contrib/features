@@ -1,7 +1,7 @@
 {
     "name": "DigitalOcean CLI",
     "id": "digitalocean-cli",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "DigitalOcean CLI allows you to interact with the DigitalOcean API via the command line",
     "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/digitalocean-cli",
     "options": {
@@ -12,7 +12,7 @@
                 "1.84.1"
             ],
             "default": "latest",
-            "description": "Select the Argo Workflows CLI version you would like to install"
+            "description": "Select the DigitalOcean CLI version you would like to install"
         }
     }
 }
