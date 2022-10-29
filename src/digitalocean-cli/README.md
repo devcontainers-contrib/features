@@ -17,7 +17,7 @@ DigitalOcean CLI allows you to interact with the DigitalOcean API via the comman
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the Argo Workflows CLI version you would like to install | string | latest |
+| version | Select the DigitalOcean CLI version you would like to install | string | latest |
 
 
 
