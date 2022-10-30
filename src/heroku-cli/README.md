@@ -17,7 +17,7 @@ Heroku CLI allows you to interact with the Heroku API via the command line
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the Argo Workflows CLI version you would like to install | string | latest |
+| version | Select the Heroku CLI version you would like to install | string | latest |
 
 
 
