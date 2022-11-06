@@ -34,13 +34,12 @@ check_packages curl
 curl -fsS https://dlang.org/install.sh > install_d.sh
 
 # source in order to get access to the $COMPILER to be used lated to activate 
-source install_d.sh install -p /usr/local/lib $COMPILER_TYPE 
+source install_d.sh install -p /usr/local/lib/dlang $COMPILER_TYPE 
 rm install_d.sh
 
-chmod +rx -R /usr/local/lib/$COMPILER
-chmod +rx -R /usr/local/lib/dub
+chmod +rx -R /usr/local/lib/dlang
 
-echo "source /usr/local/lib/$COMPILER/activate" >> /etc/bash.bashrc
+echo "source /usr/local/lib/dlang/$COMPILER/activate" >> /etc/bash.bashrc
 
 # Clean up 
 rm -rf /var/lib/apt/lists/*

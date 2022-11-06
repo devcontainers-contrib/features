@@ -4,6 +4,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "dub exists" ls /usr/local/lib/dub
+check "dlang dir exists" ls /usr/local/lib/dlang
 
 reportResults
