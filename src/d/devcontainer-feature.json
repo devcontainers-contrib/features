@@ -1,0 +1,26 @@
+{
+    "name": "D",
+    "id": "d",
+    "version": "1.0.0",
+    "description": "D is a general-purpose programming language with static typing, systems-level access, and C-like syntax.",
+    "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/d",
+    "options": {
+        "compiler": {"type": "string",
+        "proposals": [
+            "dmd",
+            "ldc",
+            "gdc"
+        ],
+        "default": "dmd",
+        "description": "Options are: 'dmd', 'ldc' and 'gdc'"},
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+            ],
+            "default": "latest",
+            "description": "Select the compiler version you would like to install"
+        }
+
+    }
+}
