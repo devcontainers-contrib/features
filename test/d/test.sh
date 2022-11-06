@@ -4,6 +4,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "environment DMD exists" bash [[ -n "$DMD" ]]
+check "dub exists" ls /usr/local/lib/dub
 
 reportResults

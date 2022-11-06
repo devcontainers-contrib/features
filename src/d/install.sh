@@ -37,7 +37,8 @@ curl -fsS https://dlang.org/install.sh > install_d.sh
 source install_d.sh install -p /usr/local/lib $COMPILER_TYPE 
 rm install_d.sh
 
-chmod +x -R /usr/local/lib/$COMPILER
+chmod +rx -R /usr/local/lib/$COMPILER
+chmod +rx -R /usr/local/lib/dub
 
 echo "source /usr/local/lib/$COMPILER/activate" >> /etc/bash.bashrc
 

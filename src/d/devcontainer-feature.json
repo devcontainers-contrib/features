@@ -16,7 +16,7 @@
         "version": {
             "type": "string",
             "proposals": [
-                "latest",
+                "latest"
             ],
             "default": "latest",
             "description": "Select the compiler version you would like to install"
