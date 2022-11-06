@@ -14,7 +14,7 @@ jobs:
     continue-on-error: true
     strategy:
       matrix:
-        features: ["pulumi", "haskell", "kubie", "kubectx-kubens", "argo-cd", "argo-workflows", "digitalocean-cli", "heroku-cli", "deno", "zig"]
+        features: ["pulumi", "haskell", "kubie", "kubectx-kubens", "argo-cd", "argo-workflows", "digitalocean-cli", "heroku-cli", "deno", "zig", "d"]
         baseImage: ["mcr.microsoft.com/devcontainers/base:ubuntu"]
     steps:
       - uses: actions/checkout@v2
