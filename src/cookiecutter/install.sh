@@ -38,9 +38,7 @@ if ! type pip3 > /dev/null 2>&1; then
     # additional tools we would have used that, but since it doesnt 
     # we have to disable it with INSTALL_PYTHON_TOOLS=false and install
     # pipx manually later on
-    export VERSION="system"
-    export INSTALL_PYTHON_TOOLS="false"
-    bash -c "$(curl -fsSL "https://raw.githubusercontent.com/devcontainers/features/main/src/python/install.sh")" 
+    bash -c "$(VERSION="system" INSTALL_PYTHON_TOOLS="false" curl -fsSL "https://raw.githubusercontent.com/devcontainers/features/main/src/python/install.sh")" 
 fi
 
 # configuring install location 
