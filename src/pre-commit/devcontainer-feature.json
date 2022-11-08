@@ -1,0 +1,20 @@
+{
+    "name": "Pre-Commit",
+    "id": "pre-commit",
+    "version": "1.0.0",
+    "description": "Pre-Commit is a framework for managing and maintaining multi-language pre-commit hooks.",
+    "documentationURL": "http://github.com/devcontainers-contrib/feature/tree/main/src/pre-commit",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the Pre-Commit version you would like to install"
+        }
+    }
+}
