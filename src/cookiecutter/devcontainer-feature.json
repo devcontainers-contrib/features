@@ -1,7 +1,7 @@
 {
     "name": "Cookiecutter",
     "id": "cookiecutter",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Cookiecutter creates projects from project templates",
     "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/cookiecutter",
     "installAfter": [
