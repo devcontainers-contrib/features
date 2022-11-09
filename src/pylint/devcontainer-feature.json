@@ -1,9 +1,9 @@
 {
     "name": "Pylint",
     "id": "pylint",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Pylint is a static code analyser for Python 2 or 3.",
-    "documentationURL": "http://github.com/devcontainers-contrib/feature/tree/main/src/pylint",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pylint",
     "installAfter": [
         "ghcr.io/devcontainers/features/python:latest"
     ],

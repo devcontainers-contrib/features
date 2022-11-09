@@ -1,9 +1,9 @@
 {
     "name": "Mypy",
     "id": "mypy",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Mypy is a static type checker for Python.",
-    "documentationURL": "http://github.com/devcontainers-contrib/feature/tree/main/src/mypy",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mypy",
     "installAfter": [
         "ghcr.io/devcontainers/features/python:latest"
     ],

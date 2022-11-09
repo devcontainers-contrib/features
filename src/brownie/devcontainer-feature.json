@@ -1,9 +1,9 @@
 {
     "name": "Brownie",
     "id": "brownie",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Brownie is a Python-based development and testing framework for smart contracts targeting the Ethereum Virtual Machine.",
-    "documentationURL": "http://github.com/devcontainers-contrib/feature/tree/main/src/brownie",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/brownie",
     "installAfter": [
         "ghcr.io/devcontainers/features/python:latest"
     ],

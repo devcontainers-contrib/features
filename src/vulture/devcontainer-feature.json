@@ -1,9 +1,9 @@
 {
     "name": "Vulture",
     "id": "vulture",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Vulture finds unused code in Python programs.",
-    "documentationURL": "http://github.com/devcontainers-contrib/feature/tree/main/src/vulture",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/vulture",
     "installAfter": [
         "ghcr.io/devcontainers/features/python:latest"
     ],

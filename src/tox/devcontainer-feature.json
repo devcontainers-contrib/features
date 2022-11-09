@@ -1,9 +1,9 @@
 {
     "name": "tox",
     "id": "tox",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "tox is a generic virtual environment management and test command line tool.",
-    "documentationURL": "http://github.com/devcontainers-contrib/feature/tree/main/src/tox",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tox",
     "installAfter": [
         "ghcr.io/devcontainers/features/python:latest"
     ],

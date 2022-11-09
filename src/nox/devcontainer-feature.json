@@ -1,9 +1,9 @@
 {
     "name": "nox",
     "id": "nox",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "nox is a command-line tool that automates testing in multiple Python environments.",
-    "documentationURL": "http://github.com/devcontainers-contrib/feature/tree/main/src/nox",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/nox",
     "installAfter": [
         "ghcr.io/devcontainers/features/python:latest"
     ],
