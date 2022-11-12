@@ -1,0 +1,20 @@
+{
+    "name": "PyScaffold",
+    "id": "pyscaffold",
+    "version": "1.0.0",
+    "description": "PyScaffold is a python project template generator with batteries included.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pyscaffold",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the PyScaffold version you would like to install"
+        }
+    }
+}

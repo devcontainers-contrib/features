@@ -1,0 +1,20 @@
+{
+    "name": "lektor",
+    "id": "lektor",
+    "version": "1.0.0",
+    "description": "Lektor is a static website generator.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/lektor",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the lektor version you would like to install"
+        }
+    }
+}
