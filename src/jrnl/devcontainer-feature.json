@@ -1,0 +1,20 @@
+{
+    "name": "jrnl",
+    "id": "jrnl",
+    "version": "1.0.0",
+    "description": "jrnl is a simple journal application for the command line.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jrnl",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the jrnl version you would like to install"
+        }
+    }
+}

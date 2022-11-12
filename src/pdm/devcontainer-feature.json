@@ -1,0 +1,20 @@
+{
+    "name": "PDM",
+    "id": "pdm",
+    "version": "1.0.0",
+    "description": "PDM is a modern Python package and dependency manager supporting the latest PEP standards.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pdm",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the pdm version you would like to install"
+        }
+    }
+}
