@@ -1,5 +1,5 @@
 {
-    "name": "pdm",
+    "name": "PDM",
     "id": "pdm",
     "version": "1.0.0",
     "description": "PDM is a modern Python package and dependency manager supporting the latest PEP standards.",

@@ -1,7 +1,7 @@
 {
-    "name": "lektor",
+    "name": "Lektor",
     "id": "lektor",
-    "version": "1.0.0",
+    "version": "1.0.0",Datasette
     "description": "Lektor is a static website generator.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/lektor",
     "installAfter": [
