@@ -17,9 +17,10 @@ jobs:
       folders: ${{ steps.features.outputs.folders }}
     steps:
       - uses: actions/checkout@v1
-
+        with:
+          ref: 'dynamic-features-actions'         
       - id: features
-        uses: philips-labs/list-folder-action@v1
+        uses: ./.github/actions/list-folder-action
         with:
           path: ./src
 
