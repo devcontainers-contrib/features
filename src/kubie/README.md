@@ -7,9 +7,7 @@ Kubie offers kubernetes context switching, namespace switching and prompt modifi
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/kubie:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/kubie:1": {}
 }
 ```
 

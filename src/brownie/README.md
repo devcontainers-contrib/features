@@ -7,9 +7,7 @@ Brownie is a Python-based development and testing framework for smart contracts 
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/brownie:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/brownie:1": {}
 }
 ```
 

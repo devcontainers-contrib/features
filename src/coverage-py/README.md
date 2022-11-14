@@ -7,9 +7,7 @@ Coverage.py is a tool for measuring code coverage of Python programs.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/coverage-py:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/coverage-py:1": {}
 }
 ```
 

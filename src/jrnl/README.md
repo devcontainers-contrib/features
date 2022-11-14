@@ -7,9 +7,7 @@ jrnl is a simple journal application for the command line.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/jrnl:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/jrnl:1": {}
 }
 ```
 

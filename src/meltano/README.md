@@ -7,9 +7,7 @@ Meltano lets you extract and load data with a software development-inspired appr
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/meltano:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/meltano:1": {}
 }
 ```
 

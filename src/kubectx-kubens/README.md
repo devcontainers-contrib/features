@@ -7,9 +7,7 @@ kubectx is a tool to switch between contexts (clusters) on kubectl faster. kuben
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/kubectx-kubens:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/kubectx-kubens:1": {}
 }
 ```
 

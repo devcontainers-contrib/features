@@ -7,9 +7,7 @@ Declarative GitOps CD for Kubernetes
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/argo-cd:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/argo-cd:1": {}
 }
 ```
 

@@ -7,9 +7,7 @@ PDM is a modern Python package and dependency manager supporting the latest PEP 
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/pdm:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/pdm:1": {}
 }
 ```
 

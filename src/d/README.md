@@ -7,9 +7,7 @@ D is a general-purpose programming language with static typing, systems-level ac
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/d:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/d:1": {}
 }
 ```
 
