@@ -16,7 +16,7 @@ runs:
     - id: set-folders
       shell: bash
       run: |
-        sudo cd ${{ inputs.path }}
+        cd ${{ inputs.path }}
         folders=$(sudo tree -J -d -L 1 | sudo jq -c '.[0].contents | map(.name)')
         echo $folders
         echo "::set-output name=folders::$folders"
