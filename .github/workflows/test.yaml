@@ -30,7 +30,7 @@ jobs:
     continue-on-error: true
     strategy:
       matrix:
-        features: ${{ fromJson(needs.find-jobs.outputs.folders )}}
+        features: ${{ fromJson(needs.find-features.outputs.folders )}}
         baseImage: ["mcr.microsoft.com/devcontainers/base:ubuntu"]
     steps:
       - uses: actions/checkout@v2
