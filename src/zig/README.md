@@ -7,9 +7,7 @@ Zig is a general-purpose programming language and toolchain for maintaining robu
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/zig:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/zig:1": {}
 }
 ```
 

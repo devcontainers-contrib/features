@@ -7,9 +7,7 @@ Localstack is a fully functional local AWS cloud stack.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/localstack:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/localstack:1": {}
 }
 ```
 

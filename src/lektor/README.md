@@ -7,9 +7,7 @@ Lektor is a static website generator.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/lektor:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/lektor:1": {}
 }
 ```
 

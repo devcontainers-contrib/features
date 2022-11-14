@@ -7,9 +7,7 @@ Datasette is a tool for exploring and publishing data and is aimed at data journ
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/datasette:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/datasette:1": {}
 }
 ```
 

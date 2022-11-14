@@ -7,9 +7,7 @@ Pulumi is a modern infrastructure as code platform
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/pulumi:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/pulumi:1": {}
 }
 ```
 

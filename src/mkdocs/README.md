@@ -7,9 +7,7 @@ MkDocs is a fast, simple and downright gorgeous static site generator that's gea
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/mkdocs:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/mkdocs:1": {}
 }
 ```
 

@@ -7,9 +7,7 @@ Ansible is a suite of software tools that enables infrastructure as code.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/ansible:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/ansible:1": {}
 }
 ```
 
@@ -18,6 +16,8 @@ Ansible is a suite of software tools that enables infrastructure as code.
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select the Ansible version you would like to install | string | latest |
+| includeAnsibleCommunity | Include AnsibleCommunity | boolean | true |
+| ansibleCommunityVersion | Select the AnsibleCommunity version you would like to install | string | latest |
 
 
 

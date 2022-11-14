@@ -7,9 +7,7 @@ DigitalOcean CLI allows you to interact with the DigitalOcean API via the comman
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/digitalocean-cli:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/digitalocean-cli:1": {}
 }
 ```
 
