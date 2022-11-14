@@ -9,6 +9,20 @@ on:
   workflow_dispatch:
 
 jobs:
+
+  find-features:
+    name: Find features
+    container: ubuntu-latest
+    outputs:
+      folders: ${{ steps.features.outputs.folders }}
+    steps:
+      - uses: actions/checkout@v1
+
+      - id: features
+        uses: philips-labs/list-folders-action@v1
+        with:
+          path: ./src
+
   test:
     runs-on: ubuntu-latest
     continue-on-error: true
