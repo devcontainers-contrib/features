@@ -16,9 +16,7 @@ jobs:
     outputs:
       folders: ${{ steps.features.outputs.folders }}
     steps:
-      - uses: actions/checkout@v1
-        with:
-          ref: 'dynamic-features-actions'         
+      - uses: actions/checkout@v1    
       - id: features
         uses: ./.github/actions/list-folder-action
         with:
