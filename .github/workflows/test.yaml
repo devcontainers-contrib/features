@@ -11,8 +11,8 @@ on:
 jobs:
 
   find-features:
+    runs-on: ubuntu-latest
     name: Find features
-    container: ubuntu-latest
     outputs:
       folders: ${{ steps.features.outputs.folders }}
     steps:
