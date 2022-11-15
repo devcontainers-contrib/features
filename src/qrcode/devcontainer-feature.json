@@ -1,0 +1,20 @@
+{
+    "name": "qrcode",
+    "id": "qrcode",
+    "version": "1.0.0",
+    "description": "qrcode is a commandline QR Code generator.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/qrcode",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the qrcode version you would like to install"
+        }
+    }
+}

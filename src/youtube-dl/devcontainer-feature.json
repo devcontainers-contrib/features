@@ -1,0 +1,20 @@
+{
+    "name": "youtube-dl",
+    "id": "youtube-dl",
+    "version": "1.0.0",
+    "description": "youtube-dl is a command-line program to download videos from YouTube.com and other video sites.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/youtube-dl",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the youtube-dl version you would like to install"
+        }
+    }
+}
