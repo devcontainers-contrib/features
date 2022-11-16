@@ -7,8 +7,28 @@
 set -e
    
 
-# pipx version for cookiecutter
-COOKIECUTTER=${VERSION:-"latest"}
+# pipx version for flake8
+FLAKE8=${VERSION:-"latest"}
+# injection versions for flake8 pipx env   
+FLAKE8_BLACK=${FLAKE8BLACK:-"none"}
+   
+FLAKE8_ISORT=${FLAKE8ISORT:-"none"}
+   
+FLAKE8_PRINT=${FLAKE8PRINT:-"none"}
+   
+FLAKE8_BANDIT=${FLAKE8BANDIT:-"none"}
+   
+FLAKE8_PYLINT=${FLAKE8PYLINT:-"none"}
+   
+FLAKE8_BUILTINS=${FLAKE8BUILTINS:-"none"}
+   
+FLAKE8_SPELLCHECK=${FLAKE8SPELLCHECK:-"none"}
+   
+FLAKE8_PYTEST_STYLE=${FLAKE8PYTESTSTYLE:-"none"}
+   
+FLAKE8_DJANGO=${FLAKE8DJANGO:-"none"}
+   
+FLAKE8_FASTAPI=${FLAKE8FASTAPI:-"none"}
 
 
 # Clean up
@@ -100,13 +120,104 @@ else
     PIPX_COMMAND=pipx
 fi
 
-if [ "$COOKIECUTTER" != "none" ]; then
-    if [ "$COOKIECUTTER" =  "latest" ]; then
-        util_command="cookiecutter"
+if [ "$FLAKE8" != "none" ]; then
+    if [ "$FLAKE8" =  "latest" ]; then
+        util_command="flake8"
     else
-        util_command="cookiecutter==$COOKIECUTTER"
+        util_command="flake8==$FLAKE8"
     fi
     "${PIPX_COMMAND}" install --system-site-packages --force --pip-args '--no-cache-dir --force-reinstall' ${util_command}
+    if [ "$FLAKE8_BLACK" != "none" ]; then
+        if [ "$FLAKE8_BLACK" =  "latest" ]; then
+            util_command="flake8-black"
+        else
+            util_command="flake8-black==$FLAKE8_BLACK"
+        fi
+    "${PIPX_COMMAND}" inject flake8 ${util_command}
+    fi
+
+    if [ "$FLAKE8_ISORT" != "none" ]; then
+        if [ "$FLAKE8_ISORT" =  "latest" ]; then
+            util_command="flake8-isort"
+        else
+            util_command="flake8-isort==$FLAKE8_ISORT"
+        fi
+    "${PIPX_COMMAND}" inject flake8 ${util_command}
+    fi
+
+    if [ "$FLAKE8_PRINT" != "none" ]; then
+        if [ "$FLAKE8_PRINT" =  "latest" ]; then
+            util_command="flake8-print"
+        else
+            util_command="flake8-print==$FLAKE8_PRINT"
+        fi
+    "${PIPX_COMMAND}" inject flake8 ${util_command}
+    fi
+
+    if [ "$FLAKE8_BANDIT" != "none" ]; then
+        if [ "$FLAKE8_BANDIT" =  "latest" ]; then
+            util_command="flake8-bandit"
+        else
+            util_command="flake8-bandit==$FLAKE8_BANDIT"
+        fi
+    "${PIPX_COMMAND}" inject flake8 ${util_command}
+    fi
+
+    if [ "$FLAKE8_PYLINT" != "none" ]; then
+        if [ "$FLAKE8_PYLINT" =  "latest" ]; then
+            util_command="flake8-pylint"
+        else
+            util_command="flake8-pylint==$FLAKE8_PYLINT"
+        fi
+    "${PIPX_COMMAND}" inject flake8 ${util_command}
+    fi
+
+    if [ "$FLAKE8_BUILTINS" != "none" ]; then
+        if [ "$FLAKE8_BUILTINS" =  "latest" ]; then
+            util_command="flake8-builtins"
+        else
+            util_command="flake8-builtins==$FLAKE8_BUILTINS"
+        fi
+    "${PIPX_COMMAND}" inject flake8 ${util_command}
+    fi
+
+    if [ "$FLAKE8_SPELLCHECK" != "none" ]; then
+        if [ "$FLAKE8_SPELLCHECK" =  "latest" ]; then
+            util_command="flake8-spellcheck"
+        else
+            util_command="flake8-spellcheck==$FLAKE8_SPELLCHECK"
+        fi
+    "${PIPX_COMMAND}" inject flake8 ${util_command}
+    fi
+
+    if [ "$FLAKE8_PYTEST_STYLE" != "none" ]; then
+        if [ "$FLAKE8_PYTEST_STYLE" =  "latest" ]; then
+            util_command="flake8-pytest-style"
+        else
+            util_command="flake8-pytest-style==$FLAKE8_PYTEST_STYLE"
+        fi
+    "${PIPX_COMMAND}" inject flake8 ${util_command}
+    fi
+
+    if [ "$FLAKE8_DJANGO" != "none" ]; then
+        if [ "$FLAKE8_DJANGO" =  "latest" ]; then
+            util_command="flake8-django"
+        else
+            util_command="flake8-django==$FLAKE8_DJANGO"
+        fi
+    "${PIPX_COMMAND}" inject flake8 ${util_command}
+    fi
+
+    if [ "$FLAKE8_FASTAPI" != "none" ]; then
+        if [ "$FLAKE8_FASTAPI" =  "latest" ]; then
+            util_command="flake8-fastapi"
+        else
+            util_command="flake8-fastapi==$FLAKE8_FASTAPI"
+        fi
+    "${PIPX_COMMAND}" inject flake8 ${util_command}
+    fi
+
+
 fi
 
 

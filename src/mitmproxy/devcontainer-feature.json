@@ -1,7 +1,7 @@
 {
     "name": "mitmproxy",
     "id": "mitmproxy",
-    "version": "1.0.0",
+    "version": "1.1.1",
     "description": "mitmproxy is an interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mitmproxy",
     "installAfter": [
@@ -9,12 +9,12 @@
     ],
     "options": {
         "version": {
-            "type": "string",
+            "type": "boolean",
             "proposals": [
                 "latest"
             ],
             "default": "latest",
-            "description": "Select the mitmproxy version you would like to install"
+            "description": "Select the version of mitmproxy to install."
         }
     }
 }

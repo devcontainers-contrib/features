@@ -1,0 +1,110 @@
+{
+    "name": "Flake8",
+    "id": "flake8",
+    "version": "1.1.1",
+    "description": "Flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/flake8",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "boolean",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of Flake8 to install."
+        },
+        "flake8Black": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "none",
+            "description": "Select the version of flake8-black to install. 'none' will skip installation."
+        },
+        "flake8Isort": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "none",
+            "description": "Select the version of flake8-isort to install. 'none' will skip installation."
+        },
+        "flake8Print": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "none",
+            "description": "Select the version of flake8-print to install. 'none' will skip installation."
+        },
+        "flake8Bandit": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "none",
+            "description": "Select the version of flake8-bandit to install. 'none' will skip installation."
+        },
+        "flake8Pylint": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "none",
+            "description": "Select the version of flake8-pylint to install. 'none' will skip installation."
+        },
+        "flake8Builtins": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "none",
+            "description": "Select the version of flake8-builtins to install. 'none' will skip installation."
+        },
+        "flake8Spellcheck": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "none",
+            "description": "Select the version of flake8-spellcheck to install. 'none' will skip installation."
+        },
+        "flake8PytestStyle": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "none",
+            "description": "Select the version of flake8-pytest-style to install. 'none' will skip installation."
+        },
+        "flake8Django": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "none",
+            "description": "Select the version of flake8-django to install. 'none' will skip installation."
+        },
+        "flake8Fastapi": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "none",
+            "description": "Select the version of flake8-fastapi to install. 'none' will skip installation."
+        }
+    }
+}

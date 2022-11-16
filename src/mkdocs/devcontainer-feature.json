@@ -1,7 +1,7 @@
 {
     "name": "MkDocs",
     "id": "mkdocs",
-    "version": "1.0.0",
+    "version": "1.1.1",
     "description": "MkDocs is a fast, simple and downright gorgeous static site generator that's geared towards building project documentation.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mkdocs",
     "installAfter": [
@@ -9,90 +9,66 @@
     ],
     "options": {
         "version": {
-            "type": "string",
-            "proposals": [
-                "latest"
-            ],
-            "default": "latest",
-            "description": "Select the MKDocs version you would like to install"
-        },
-        "includePluginMkdocsmaterial": {
             "type": "boolean",
-            "default": true,
-            "description": "Include plugin mkdocs-material"
-        },
-        "pluginMkdocsmaterialVersion": {
-            "type": "string",
             "proposals": [
                 "latest"
             ],
             "default": "latest",
-            "description": "Select the plugin mkdocs-material version you would like to install"
+            "description": "Select the version of MKDocs to install."
         },
-        "includePluginPymdownextensions": {
+        "mkdocsMaterialPlugin": {
             "type": "boolean",
-            "default": true,
-            "description": "Include plugin pymdown-extensions"
-        },
-        "pluginPymdownextensionsVersion": {
-            "type": "string",
             "proposals": [
-                "latest"
+                "latest",
+                "none"
             ],
             "default": "latest",
-            "description": "Select the plugin pymdown-extensions version you would like to install"
+            "description": "Select the version of mkdocs-material-plugin to install. 'none' will skip installation."
         },
-        "includePluginMkdocstrings": {
+        "pymdownExtensionsPlugin": {
             "type": "boolean",
-            "default": true,
-            "description": "Include plugin mkdocstrings"
-        },
-        "pluginMkdocstringsVersion": {
-            "type": "string",
             "proposals": [
-                "latest"
+                "latest",
+                "none"
             ],
-            "default": "latest",
-            "description": "Select the plugin mkdocstrings version you would like to install"
+            "default": "none",
+            "description": "Select the version of pymdown-extensions-plugin to install. 'none' will skip installation."
         },
-        "includePluginMkdocsmonorepoplugin": {
+        "mkdocstringsPlugin": {
             "type": "boolean",
-            "default": true,
-            "description": "Include plugin mkdocs-monorepo-plugin"
-        },
-        "pluginMkdocsmonorepopluginVersion": {
-            "type": "string",
             "proposals": [
-                "latest"
+                "latest",
+                "none"
             ],
-            "default": "latest",
-            "description": "Select the plugin mkdocs-monorepo-plugin version you would like to install"
+            "default": "none",
+            "description": "Select the version of mkdocstrings-plugin to install. 'none' will skip installation."
         },
-        "includePluginMkdocspdfexportplugin": {
+        "mkdocsMonorepoPlugin": {
             "type": "boolean",
-            "default": true,
-            "description": "Include plugin mkdocs-pdf-export-plugin"
-        },
-        "pluginMkdocspdfexportpluginVersion": {
-            "type": "string",
             "proposals": [
-                "latest"
+                "latest",
+                "none"
             ],
-            "default": "latest",
-            "description": "Select the plugin mkdocs-pdf-export-plugin version you would like to install"
+            "default": "none",
+            "description": "Select the version of mkdocs-monorepo-plugin to install. 'none' will skip installation."
         },
-        "includePluginMkdocsawesomepagesplugin": {
+        "mkdocsPdfExportPlugin": {
             "type": "boolean",
-            "default": true,
-            "description": "Include plugin mkdocs-awesome-pages-plugin"
-        },
-        "pluginMkdocsawesomepagespluginVersion": {
-            "type": "string",
             "proposals": [
-                "latest"
+                "latest",
+                "none"
             ],
-            "default": "latest",
-            "description": "Select the plugin mkdocs-awesome-pages-plugin version you would like to install"
+            "default": "none",
+            "description": "Select the version of mkdocs-pdf-export-plugin to install. 'none' will skip installation."
+        },
+        "mkdocsAwesomePagesPlugin": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "none",
+            "description": "Select the version of mkdocs-awesome-pages-plugin to install. 'none' will skip installation."
         }
     }
 }

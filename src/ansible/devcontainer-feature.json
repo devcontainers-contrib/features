@@ -1,7 +1,7 @@
 {
     "name": "Ansible",
     "id": "ansible",
-    "version": "1.0.2",
+    "version": "1.1.1",
     "description": "Ansible is a suite of software tools that enables infrastructure as code.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ansible",
     "installAfter": [
@@ -9,25 +9,21 @@
     ],
     "options": {
         "version": {
-            "type": "string",
-            "proposals": [
-                "latest"
-            ],
-            "default": "latest",
-            "description": "Select the Ansible version you would like to install"
-        },
-        "includeAnsibleCommunity": {
             "type": "boolean",
-            "default": true,
-            "description": "Include AnsibleCommunity"
-        },
-        "ansibleCommunityVersion": {
-            "type": "string",
             "proposals": [
                 "latest"
             ],
             "default": "latest",
-            "description": "Select the AnsibleCommunity version you would like to install"
+            "description": "Select the version of Ansible to install."
+        },
+        "ansibleCommunity": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "latest",
+            "description": "Select the version of Ansible Community to install. 'none' will skip installation."
         }
     }
 }
