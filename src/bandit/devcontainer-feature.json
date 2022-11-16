@@ -1,0 +1,20 @@
+{
+    "name": "Bandit",
+    "id": "bandit",
+    "version": "1.0.0",
+    "description": "Bandit is a tool designed to find common security issues in Python code.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/bandit",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "boolean",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of Bandit to install."
+        }
+    }
+}
