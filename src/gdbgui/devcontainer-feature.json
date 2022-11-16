@@ -1,0 +1,20 @@
+{
+    "name": "gdbgui",
+    "id": "gdbgui",
+    "version": "1.0.0",
+    "description": "gdbgui is a browser-based frontend to gdb (gnu debugger).",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/gdbgui",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "boolean",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of gdbgui to install."
+        }
+    }
+}
