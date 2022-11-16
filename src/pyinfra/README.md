@@ -15,7 +15,7 @@ pyinfra is a Python alternative to Ansible where you don't write your deployment
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the pyinfra version you would like to install | string | latest |
+| version | Select the version of pyinfra to install. | boolean | latest |
 
 
 

@@ -15,19 +15,13 @@ MkDocs is a fast, simple and downright gorgeous static site generator that's gea
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the MKDocs version you would like to install | string | latest |
-| includePluginMkdocsmaterial | Include plugin mkdocs-material | boolean | true |
-| pluginMkdocsmaterialVersion | Select the plugin mkdocs-material version you would like to install | string | latest |
-| includePluginPymdownextensions | Include plugin pymdown-extensions | boolean | true |
-| pluginPymdownextensionsVersion | Select the plugin pymdown-extensions version you would like to install | string | latest |
-| includePluginMkdocstrings | Include plugin mkdocstrings | boolean | true |
-| pluginMkdocstringsVersion | Select the plugin mkdocstrings version you would like to install | string | latest |
-| includePluginMkdocsmonorepoplugin | Include plugin mkdocs-monorepo-plugin | boolean | true |
-| pluginMkdocsmonorepopluginVersion | Select the plugin mkdocs-monorepo-plugin version you would like to install | string | latest |
-| includePluginMkdocspdfexportplugin | Include plugin mkdocs-pdf-export-plugin | boolean | true |
-| pluginMkdocspdfexportpluginVersion | Select the plugin mkdocs-pdf-export-plugin version you would like to install | string | latest |
-| includePluginMkdocsawesomepagesplugin | Include plugin mkdocs-awesome-pages-plugin | boolean | true |
-| pluginMkdocsawesomepagespluginVersion | Select the plugin mkdocs-awesome-pages-plugin version you would like to install | string | latest |
+| version | Select the version of MKDocs to install. | boolean | latest |
+| mkdocsMaterialPlugin | Select the version of mkdocs-material-plugin to install. 'none' will skip installation. | boolean | latest |
+| pymdownExtensionsPlugin | Select the version of pymdown-extensions-plugin to install. 'none' will skip installation. | boolean | none |
+| mkdocstringsPlugin | Select the version of mkdocstrings-plugin to install. 'none' will skip installation. | boolean | none |
+| mkdocsMonorepoPlugin | Select the version of mkdocs-monorepo-plugin to install. 'none' will skip installation. | boolean | none |
+| mkdocsPdfExportPlugin | Select the version of mkdocs-pdf-export-plugin to install. 'none' will skip installation. | boolean | none |
+| mkdocsAwesomePagesPlugin | Select the version of mkdocs-awesome-pages-plugin to install. 'none' will skip installation. | boolean | none |
 
 
 

@@ -15,7 +15,7 @@ nox is a command-line tool that automates testing in multiple Python environment
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the nox version you would like to install | string | latest |
+| version | Select the version of nox to install. | boolean | latest |
 
 
 

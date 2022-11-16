@@ -1,7 +1,7 @@
 
 # qrcode (qrcode)
 
-qrcode is a commandline QR Code generator.
+qrcode is a command line QR-Code generator.
 
 ## Example Usage
 
@@ -15,7 +15,7 @@ qrcode is a commandline QR Code generator.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the qrcode version you would like to install | string | latest |
+| version | Select the version of qrcode to install. | boolean | latest |
 
 
 

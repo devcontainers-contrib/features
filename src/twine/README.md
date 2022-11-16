@@ -15,7 +15,7 @@ Twine is a utility for publishing Python packages on PyPI.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the twine version you would like to install | string | latest |
+| version | Select the version of twine to install. | boolean | latest |
 
 
 

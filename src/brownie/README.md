@@ -15,7 +15,7 @@ Brownie is a Python-based development and testing framework for smart contracts 
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the Brownie version you would like to install | string | latest |
+| version | Select the version of Brownie to install. | boolean | latest |
 
 
 

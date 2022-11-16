@@ -15,7 +15,7 @@ Pre-Commit is a framework for managing and maintaining multi-language pre-commit
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the Pre-Commit version you would like to install | string | latest |
+| version | Select the version of Pre-Commit to install. | boolean | latest |
 
 
 

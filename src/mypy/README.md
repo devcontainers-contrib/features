@@ -15,7 +15,7 @@ Mypy is a static type checker for Python.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the Mypy version you would like to install | string | latest |
+| version | Select the version of Mypy to install. | boolean | latest |
 
 
 

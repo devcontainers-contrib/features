@@ -1,7 +1,7 @@
 
 # Cookiecutter (cookiecutter)
 
-Cookiecutter creates projects from project templates
+Cookiecutter creates projects from project templates.
 
 ## Example Usage
 
@@ -15,7 +15,7 @@ Cookiecutter creates projects from project templates
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the Cookiecutter version you would like to install | string | latest |
+| version | Select the version of Cookiecutter to install. | boolean | latest |
 
 
 

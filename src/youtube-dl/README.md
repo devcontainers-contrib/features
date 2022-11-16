@@ -15,7 +15,7 @@ youtube-dl is a command-line program to download videos from YouTube.com and oth
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the youtube-dl version you would like to install | string | latest |
+| version | Select the version of youtube-dl to install. | boolean | latest |
 
 
 
