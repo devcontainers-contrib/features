@@ -15,7 +15,7 @@ yt-dlp is a youtube-dl fork with additional features and fixes.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the yt-dlp version you would like to install | string | latest |
+| version | Select the version of yt-dlp to install. | boolean | latest |
 
 
 

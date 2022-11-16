@@ -15,7 +15,7 @@ Glances is a cross-platform monitoring tool which aims to present a large amount
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the Glances version you would like to install | string | latest |
+| version | Select the version of Glances to install. | boolean | latest |
 
 
 

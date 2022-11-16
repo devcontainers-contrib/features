@@ -15,7 +15,7 @@ jrnl is a simple journal application for the command line.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the jrnl version you would like to install | string | latest |
+| version | Select the version of jrnl to install. | boolean | latest |
 
 
 

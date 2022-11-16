@@ -15,7 +15,7 @@ Coverage.py is a tool for measuring code coverage of Python programs.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the Coverage.py version you would like to install | string | latest |
+| version | Select the version of Coverage to install. | boolean | latest |
 
 
 

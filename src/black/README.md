@@ -15,7 +15,7 @@ Black is an uncompromising Python code formatter.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the Black version you would like to install | string | latest |
+| version | Select the version of Black to install. | boolean | latest |
 
 
 

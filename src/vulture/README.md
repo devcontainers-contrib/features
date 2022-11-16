@@ -15,7 +15,7 @@ Vulture finds unused code in Python programs.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the Vulture version you would like to install | string | latest |
+| version | Select the version of Vulture to install. | boolean | latest |
 
 
 
