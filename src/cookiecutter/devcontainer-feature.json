@@ -1,20 +1,20 @@
 {
     "name": "Cookiecutter",
     "id": "cookiecutter",
-    "version": "1.0.1",
-    "description": "Cookiecutter creates projects from project templates",
-    "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/cookiecutter",
+    "version": "1.1.1",
+    "description": "Cookiecutter creates projects from project templates.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/cookiecutter",
     "installAfter": [
         "ghcr.io/devcontainers/features/python:latest"
     ],
     "options": {
         "version": {
-            "type": "string",
+            "type": "boolean",
             "proposals": [
                 "latest"
             ],
             "default": "latest",
-            "description": "Select the Cookiecutter version you would like to install"
+            "description": "Select the version of Cookiecutter to install."
         }
     }
 }

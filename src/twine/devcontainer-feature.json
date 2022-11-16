@@ -1,7 +1,7 @@
 {
     "name": "Twine",
     "id": "twine",
-    "version": "1.0.0",
+    "version": "1.1.1",
     "description": "Twine is a utility for publishing Python packages on PyPI.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/twine",
     "installAfter": [
@@ -9,12 +9,12 @@
     ],
     "options": {
         "version": {
-            "type": "string",
+            "type": "boolean",
             "proposals": [
                 "latest"
             ],
             "default": "latest",
-            "description": "Select the twine version you would like to install"
+            "description": "Select the version of twine to install."
         }
     }
 }

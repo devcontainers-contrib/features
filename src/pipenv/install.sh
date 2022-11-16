@@ -7,8 +7,8 @@
 set -e
    
 
-# pipx version for cookiecutter
-COOKIECUTTER=${VERSION:-"latest"}
+# pipx version for pipenv
+PIPENV=${VERSION:-"latest"}
 
 
 # Clean up
@@ -100,11 +100,11 @@ else
     PIPX_COMMAND=pipx
 fi
 
-if [ "$COOKIECUTTER" != "none" ]; then
-    if [ "$COOKIECUTTER" =  "latest" ]; then
-        util_command="cookiecutter"
+if [ "$PIPENV" != "none" ]; then
+    if [ "$PIPENV" =  "latest" ]; then
+        util_command="pipenv"
     else
-        util_command="cookiecutter==$COOKIECUTTER"
+        util_command="pipenv==$PIPENV"
     fi
     "${PIPX_COMMAND}" install --system-site-packages --force --pip-args '--no-cache-dir --force-reinstall' ${util_command}
 fi
