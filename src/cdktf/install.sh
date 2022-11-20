@@ -39,6 +39,7 @@ check_packages() {
 if ! type npm > /dev/null 2>&1; then
     echo "Installing npde and npm..."
     check_packages curl
+    export NODE_VERSION="lts"
     curl -fsSL https://raw.githubusercontent.com/devcontainers/features/main/src/node/install.sh | $SHELL
     export NVM_DIR=/usr/local/share/nvm
     [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
