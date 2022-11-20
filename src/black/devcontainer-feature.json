@@ -1,7 +1,7 @@
 {
     "name": "Black",
     "id": "black",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "Black is an uncompromising Python code formatter.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/black",
     "installAfter": [

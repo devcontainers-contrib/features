@@ -31,6 +31,8 @@ FLAKE8_DJANGO=${FLAKE8DJANGO:-"none"}
 FLAKE8_FASTAPI=${FLAKE8FASTAPI:-"none"}
 
 
+
+
 # Clean up
 rm -rf /var/lib/apt/lists/*
 
@@ -69,10 +71,8 @@ export PIP_CACHE_DIR=/tmp/pip-tmp/cache
 # install python if does not exists
 if ! type pip3 > /dev/null 2>&1; then
     echo "Installing python3..."
-    # If the python feature script had option to install pipx without the 
-    # additional tools we would have used that, but since it doesnt 
-    # we have to disable it with INSTALLTOOLS=false and install
-    # pipx manually later on
+    # we set INSTALLTOOLS=false in order to save disk space, but as
+    # a result we will need to install pipx manually later on
     check_packages curl
     export VERSION="system" 
     export INSTALLTOOLS="false"
@@ -219,7 +219,6 @@ if [ "$FLAKE8" != "none" ]; then
 
 
 fi
-
 
 # cleaning after pip
 rm -rf /tmp/pip-tmp

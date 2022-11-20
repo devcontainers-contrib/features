@@ -1,0 +1,20 @@
+{
+    "name": "Terraform CDK (CDKTF)",
+    "id": "cdktf",
+    "version": "1.1.2",
+    "description": "Terraform CDK allows you to use familiar programming languages to define cloud infrastructure and provision it through HashiCorp Terraform.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/cdktf",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "boolean",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of Terraform-CDK to install."
+        }
+    }
+}

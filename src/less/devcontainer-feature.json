@@ -1,0 +1,20 @@
+{
+    "name": "Less (Leaner Style Sheets)",
+    "id": "less",
+    "version": "1.1.2",
+    "description": "Less is a backwards-compatible language extension for CSS",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/less",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "boolean",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of Less to install."
+        }
+    }
+}
