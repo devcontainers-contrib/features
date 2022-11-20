@@ -32,7 +32,7 @@ check_packages() {
     fi
 }
 
-aptget_packages=(libsasl2-dev )
+aptget_packages=(libsasl2-dev g++ )
 check_packages ${aptget_packages[@]}
 
 

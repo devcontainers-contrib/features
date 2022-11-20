@@ -64,7 +64,7 @@ find_version_from_git_tags ZIG_VERSION 'https://github.com/ziglang/zig' "tags/"
 
 
 # make sure we have curl
-check_packages curl 
+check_packages curl xz-utils
 
 # remove existing instalations
 rm -rf /usr/local/lib/zig

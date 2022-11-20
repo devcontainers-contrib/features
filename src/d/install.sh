@@ -29,7 +29,7 @@ check_packages() {
 }
 
 # making sure curl is there, you never know
-check_packages curl
+check_packages curl xz-utils
 
 curl -fsS https://dlang.org/install.sh > install_d.sh
 
