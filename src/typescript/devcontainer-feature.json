@@ -1,0 +1,20 @@
+{
+    "name": "TypeScript",
+    "id": "typescript",
+    "version": "1.1.2",
+    "description": "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/typescript",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "boolean",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of TypeScript to install."
+        }
+    }
+}

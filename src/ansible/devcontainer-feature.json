@@ -1,7 +1,7 @@
 {
     "name": "Ansible",
     "id": "ansible",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "Ansible is a suite of software tools that enables infrastructure as code.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ansible",
     "installAfter": [
