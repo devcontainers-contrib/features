@@ -1,7 +1,7 @@
 {
     "name": "Zig",
     "id": "zig",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Zig is a general-purpose programming language and toolchain for maintaining robust, optimal and reusable software.",
     "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/zig",
     "options": {
