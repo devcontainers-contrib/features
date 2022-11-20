@@ -26,7 +26,7 @@ check_packages() {
     fi
 }
 
-check_packages curl
+check_packages curl build-essential libffi-dev libffi8ubuntu1 libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5
 
 export BOOTSTRAP_HASKELL_NONINTERACTIVE=1
 export GHCUP_USE_XDG_DIRS=1
