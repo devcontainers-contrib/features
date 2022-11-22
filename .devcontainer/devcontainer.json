@@ -1,5 +1,5 @@
 {
-  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-18",
+  "image": "mcr.microsoft.com/devcontainers/universal:linux",
   "customizations": {
     "vscode": {
       "extensions": ["mads-hartmann.bash-ide-vscode", "samuelcolvin.jinjahtml"]
