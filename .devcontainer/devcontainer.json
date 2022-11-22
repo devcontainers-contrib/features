@@ -1,15 +1,14 @@
 {
-    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-18",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "mads-hartmann.bash-ide-vscode"
-            ]
-        }
-    },
-    "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:1": {},
-        "ghcr.io/devcontainers-contrib/features/cookiecutter:1": {}
-    },
-    "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh > postCreateCommand.log"
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-18",
+  "customizations": {
+    "vscode": {
+      "extensions": ["mads-hartmann.bash-ide-vscode", "samuelcolvin.jinjahtml"]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:1": {},
+    "ghcr.io/devcontainers-contrib/features/cookiecutter:1": {},
+    "ghcr.io/devcontainers/features/common-utils:1": {}
+  },
+  "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh > postCreateCommand.log"
 }
