@@ -1,0 +1,18 @@
+default_context:
+  base_dir: features
+  description: Glances is a cross-platform monitoring tool which aims to present a large amount of monitoring information through a curses or Web based interface.
+  feature_name: Glances
+  feature_id: glances
+  test_command: glances --version
+  gitrepo: http://github.com/devcontainers-contrib/features
+  version: 1.0.0
+  content:
+    pipx:
+    - package_name: glances[action,browser,cloud,cpuinfo,docker,export,folders,gpu,graph,ip,raid,snmp,web,wifi]
+      display_name: Glances
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
+    aptget: []
+

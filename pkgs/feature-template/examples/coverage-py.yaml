@@ -1,0 +1,17 @@
+default_context:
+  base_dir: features
+  description: Coverage.py is a tool for measuring code coverage of Python programs.
+  feature_name: Coverage.py
+  feature_id: coverage-py
+  test_command: coverage --version
+  gitrepo: http://github.com/devcontainers-contrib/features
+  version: 1.0.0
+  content:
+    pipx:
+    - package_name: coverage
+      display_name: Coverage
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
+    aptget: []

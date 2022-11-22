@@ -1,0 +1,17 @@
+default_context:
+  base_dir: features
+  description: Terraform CDK allows you to use familiar programming languages to define cloud infrastructure and provision it through HashiCorp Terraform.
+  feature_name: Terraform CDK (CDKTF)
+  feature_id: cdktf
+  test_command: cdktf --version
+  gitrepo: http://github.com/devcontainers-contrib/features
+  version: 1.0.0
+  content:
+    npm:
+    - package_name: cdktf-cli
+      display_name: Terraform-CDK
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
+    aptget: []

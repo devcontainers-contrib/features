@@ -1,0 +1,128 @@
+{%- set exposed_aptget_packages = (cookiecutter.content.aptget | selectattr('exposed', 'equalto', 'True') | list) -%}
+{
+    "name": "{{cookiecutter.feature_name}}",
+    "id": "{{cookiecutter.feature_id}}",
+    "version": "{{cookiecutter.version}}",
+    "description": "{{cookiecutter.description}}",
+    "documentationURL": "{{cookiecutter.gitrepo}}/tree/main/src/{{cookiecutter.feature_id}}",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+
+        {% for aptget_package in exposed_aptget_packages -%} 
+        {%- if aptget_package.optional == "True" %}   
+        "{% if aptget_package.version_alias is defined %}{{aptget_package.version_alias}}{% else %}{{ aptget_package.display_name | to_camel_case }}{% endif %}": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": {{ aptget_package.default }},
+            "description": "Select the version of {{aptget_package.display_name}} to install. 'none' will skip installation."
+        },
+        {% else %}
+        "{% if aptget_package.version_alias is defined %}{{aptget_package.version_alias}}{% else %}{{ aptget_package.display_name | to_camel_case }}{% endif %}": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+            ],
+            "default": {{ aptget_package.default }},
+            "description": "Select the version of {{aptget_package.display_name}} to install."
+        },
+        {%- endif %}
+
+        {% endfor -%}
+        {% if cookiecutter.content.pipx is defined and cookiecutter.content.pipx |length > 0 %}   
+
+        {% for pipx_package in cookiecutter.content.pipx %}
+
+        {%- if pipx_package.exposed == "True" %}   
+        {%- if pipx_package.optional == "True" %}   
+
+        "{% if pipx_package.version_alias is defined %}{{pipx_package.version_alias}}{% else %}{{ pipx_package.display_name | to_camel_case }}{% endif %}": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": {{ pipx_package.default }},
+            "description": "Select the version of {{pipx_package.display_name}} to install. 'none' will skip installation."
+        },
+        {% else %}
+        "{% if pipx_package.version_alias is defined %}{{pipx_package.version_alias}}{% else %}{{ pipx_package.display_name | to_camel_case }}{% endif %}": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+            ],
+            "default": {{ pipx_package.default }},
+            "description": "Select the version of {{pipx_package.display_name}} to install."
+        },
+        {%- endif %}
+        {%- endif %}
+
+        {% if pipx_package.injections is defined and pipx_package.injections |length > 0 %}   
+
+        {% for pipx_injection in pipx_package.injections %}
+      {%- if pipx_injection.exposed == "True" %}   
+        {%- if pipx_injection.optional == "True" %}   
+
+        "{% if pipx_injection.version_alias is defined %}{{pipx_injection.version_alias}}{% else %}{{ pipx_injection.display_name | to_camel_case }}{% endif %}": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": {{ pipx_injection.default }},
+            "description": "Select the version of {{pipx_injection.display_name}} to install. 'none' will skip installation."
+        },
+        {% else %}
+        "{% if pipx_injection.version_alias is defined %}{{pipx_injection.version_alias}}{% else %}{{ pipx_injection.display_name | to_camel_case }}{% endif %}": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+            ],
+            "default": {{ pipx_injection.default }},
+            "description": "Select the version of {{pipx_injection.display_name}} to install."
+        },
+        {%- endif %}
+
+        {%- endif %}
+        {% endfor %}
+        {%- endif %}
+
+{% endfor %}
+        {%- endif %}
+
+        {% if cookiecutter.content.npm is defined and cookiecutter.content.npm |length > 0 %}   
+
+        {% for npm_package in cookiecutter.content.npm %}
+
+        {%- if npm_package.exposed == "True" %}   
+        {%- if npm_package.optional == "True" %}   
+
+        "{% if npm_package.version_alias is defined %}{{npm_package.version_alias}}{% else %}{{ npm_package.display_name | to_camel_case }}{% endif %}": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": {{ npm_package.default }},
+            "description": "Select the version of {{npm_package.display_name}} to install. 'none' will skip installation."
+        },
+        {% else %}
+        "{% if npm_package.version_alias is defined %}{{npm_package.version_alias}}{% else %}{{ npm_package.display_name | to_camel_case }}{% endif %}": {
+            "type": "boolean",
+            "proposals": [
+                "latest",
+            ],
+            "default": {{ npm_package.default }},
+            "description": "Select the version of {{npm_package.display_name}} to install."
+        },
+        {%- endif %}
+        {%- endif %}
+
+{% endfor %}
+        {%- endif %}
+    }
+}
