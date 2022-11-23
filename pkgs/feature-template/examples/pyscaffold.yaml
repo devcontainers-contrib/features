@@ -1,0 +1,17 @@
+default_context:
+  base_dir: features
+  description: PyScaffold is a python project template generator with batteries included.
+  feature_name: PyScaffold
+  feature_id: pyscaffold
+  test_command: putup --version
+  gitrepo: http://github.com/devcontainers-contrib/features
+  version: 1.0.0
+  content:
+    pipx:
+    - package_name: pyscaffold[all]
+      display_name: PyScaffold
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
+    aptget: []

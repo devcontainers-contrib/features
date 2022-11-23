@@ -1,0 +1,16 @@
+{
+    "base_dir": "features",
+    "description": "description",
+    "feature_name": "feature_name",
+    "feature_id": "feature_id",
+    "test_command": "test_command",
+    "gitrepo": "http://github.com/devcontainers-contrib/features",
+    "version": "1.0.0",
+    "content": {
+        "pipx": [],
+        "aptget": []
+    },
+    "_extensions": [
+        "extensions.ToEnvCase"
+    ]
+}

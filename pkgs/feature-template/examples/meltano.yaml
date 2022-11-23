@@ -1,0 +1,18 @@
+default_context:
+  base_dir: features
+  description: Meltano lets you extract and load data with a software development-inspired approach that that delivers flexibility and limitless collaboration.
+  feature_name: Meltano ELT
+  feature_id: meltano
+  test_command: meltano --version
+  gitrepo: http://github.com/devcontainers-contrib/features
+  version: 1.0.0
+  content:
+    pipx:
+    - package_name: meltano
+      display_name: Meltano
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
+    aptget: []
+

@@ -1,0 +1,17 @@
+default_context:
+  base_dir: features
+  description: Less is a backwards-compatible language extension for CSS
+  feature_name: Less (Leaner Style Sheets)
+  feature_id: less
+  test_command: less --version
+  gitrepo: http://github.com/devcontainers-contrib/features
+  version: 1.0.0
+  content:
+    npm:
+    - package_name: less
+      display_name: Less
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
+    aptget: []

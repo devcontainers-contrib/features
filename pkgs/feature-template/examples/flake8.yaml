@@ -1,0 +1,69 @@
+default_context:
+  base_dir: features
+  description: Flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins.
+  feature_name: Flake8
+  feature_id: flake8
+  test_command: flake8 --version
+  gitrepo: http://github.com/devcontainers-contrib/features
+  version: 1.0.0
+  content:
+    pipx:
+    - package_name: flake8
+      display_name: Flake8
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
+      injections:
+      - package_name: flake8-black
+        display_name: flake8-black
+        default: none
+        exposed: true
+        optional: true
+      - package_name: flake8-isort
+        display_name: flake8-isort
+        default: none
+        exposed: true
+        optional: true  
+      - package_name: flake8-print
+        display_name: flake8-print
+        default: none
+        exposed: true
+        optional: true 
+      - package_name: flake8-bandit
+        display_name: flake8-bandit
+        default: none
+        exposed: true
+        optional: true   
+      - package_name: flake8-pylint
+        display_name: flake8-pylint
+        default: none
+        exposed: true
+        optional: true
+      - package_name: flake8-builtins
+        display_name: flake8-builtins
+        default: none
+        exposed: true
+        optional: true
+      - package_name: flake8-spellcheck
+        display_name: flake8-spellcheck
+        default: none
+        exposed: true
+        optional: true
+      - package_name: flake8-pytest-style
+        display_name: flake8-pytest-style
+        default: none
+        exposed: true
+        optional: true
+      - package_name: flake8-django
+        display_name: flake8-django
+        default: none
+        exposed: true
+        optional: true
+      - package_name: flake8-fastapi
+        display_name: flake8-fastapi
+        default: none
+        exposed: true
+        optional: true
+
+    aptget: []
