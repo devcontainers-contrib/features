@@ -44,7 +44,15 @@ if [[ "${INSTALL_STACK_GHCUP_HOOK}" = "false" ]]; then
     export BOOTSTRAP_HASKELL_INSTALL_NO_STACK_HOOK="true"
 fi
 
+# The installation script is designed to be run by the non-root user
+# The files need to be in the remote user's ~/ home directory
+ROOT_HOME="${HOME}"
+export HOME="${_REMOTE_USER_HOME}"
+
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | $SHELL
+
+export HOME="${ROOT_HOME}"
+chown -R "${_REMOTE_USER}:${_REMOTE_USER}" "${_REMOTE_USER_HOME}"
 
 # without restarting the shell, ghci location would not be resolved from the updated PATH
 exec $SHELL
