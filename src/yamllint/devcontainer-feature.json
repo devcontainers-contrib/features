@@ -1,7 +1,7 @@
 {
     "name": "yamllint",
     "id": "yamllint",
-    "version": "1.0.1",
+    "version": "1.1.3",
     "description": "yamllint is a Python utility / library to sort imports alphabetically, and automatically separated into sections and by type.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/yamllint",
     "installAfter": [
@@ -9,12 +9,12 @@
     ],
     "options": {
         "version": {
-            "type": "string",
+            "type": "boolean",
             "proposals": [
                 "latest"
             ],
             "default": "latest",
-            "description": "Select the yamllint version you would like to install"
+            "description": "Select the version of yamllint to install."
         }
     }
 }

@@ -99,6 +99,9 @@ if ! type pipx > /dev/null 2>&1; then
 else
     PIPX_COMMAND=pipx
 fi
+# make sure pipx uses the latest version of setuptools wheel and pip 
+$(pipx environment --value PIPX_SHARED_LIBS)/bin/pip install pip setuptools wheel -U
+
 
 if [ "$PYINFRA" != "none" ]; then
     if [ "$PYINFRA" =  "latest" ]; then
