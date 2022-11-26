@@ -119,6 +119,9 @@ if ! type pipx > /dev/null 2>&1; then
 else
     PIPX_COMMAND=pipx
 fi
+# make sure pipx uses the latest version of setuptools wheel and pip 
+$(pipx environment --value PIPX_SHARED_LIBS)/bin/pip install --disable-pip-version-check --no-cache-dir pip setuptools wheel -U
+
 
 if [ "$FLAKE8" != "none" ]; then
     if [ "$FLAKE8" =  "latest" ]; then
