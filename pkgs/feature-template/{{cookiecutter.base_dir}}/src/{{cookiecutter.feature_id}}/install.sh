@@ -149,7 +149,7 @@ else
     PIPX_COMMAND=pipx
 fi
 # make sure pipx uses the latest version of setuptools wheel and pip 
-$(pipx environment --value PIPX_SHARED_LIBS)/bin/pip install pip setuptools wheel -U
+$(pipx environment --value PIPX_SHARED_LIBS)/bin/pip install --disable-pip-version-check --no-cache-dir pip setuptools wheel -U
 
 {% for pipx_package in cookiecutter.content.pipx %}
 if [ "${{ pipx_package.display_name | to_screaming_snake_case }}" != "none" ]; then

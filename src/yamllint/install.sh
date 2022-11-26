@@ -100,7 +100,7 @@ else
     PIPX_COMMAND=pipx
 fi
 # make sure pipx uses the latest version of setuptools wheel and pip 
-$(pipx environment --value PIPX_SHARED_LIBS)/bin/pip install pip setuptools wheel -U
+$(pipx environment --value PIPX_SHARED_LIBS)/bin/pip install --disable-pip-version-check --no-cache-dir pip setuptools wheel -U
 
 
 if [ "$YAMLLINT" != "none" ]; then
