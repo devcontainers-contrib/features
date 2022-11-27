@@ -1,7 +1,7 @@
 {
     "name": "Pulumi",
     "id": "pulumi",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "Pulumi is a modern infrastructure as code platform",
     "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/pulumi",
     "options": {
