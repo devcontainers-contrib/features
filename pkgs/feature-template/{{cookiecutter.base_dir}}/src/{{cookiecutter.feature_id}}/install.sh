@@ -80,7 +80,7 @@ if [ "${{ aptget_package.display_name  | to_screaming_snake_case }}" != "none" ]
     aptget_packages+=("{{aptget_package.package_name}}")
 fi
 {% endfor %}
-check_packages ${aptget_packages[@]}
+check_packages "${aptget_packages[@]}"
 {% endif %}
 
 {% if cookiecutter.content.pipx is defined and cookiecutter.content.pipx |length > 0  %} 
