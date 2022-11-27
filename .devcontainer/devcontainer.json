@@ -8,7 +8,8 @@
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:1": {},
     "ghcr.io/devcontainers-contrib/features/cookiecutter:1": {},
-    "ghcr.io/devcontainers/features/common-utils:1": {}
+    "ghcr.io/devcontainers/features/common-utils:1": {},
+    "ghcr.io/lukewiwa/features/shellcheck:0": {}
   },
   "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh > postCreateCommand.log"
 }
