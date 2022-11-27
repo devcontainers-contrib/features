@@ -7,9 +7,15 @@ currently supports:
 * npm based features
 
 ## Dependencies
+### cookiecutter:
 
 `pipx install cookiecutter`
 
+### shfmt:
+
+`pipx install shfmt-py`
+
+(or any other [installation method](https://github.com/mvdan/sh))
 ## Example to create the premade mkdocs feature spec
 
 mkdocs uses pipx + multiple injections
