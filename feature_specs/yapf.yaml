@@ -1,0 +1,15 @@
+default_context:
+  description: yapf is a formatter for Python files.
+  feature_name: yapf
+  feature_id: yapf
+  test_command: yapf --version
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    pipx:
+    - package_name: yapf
+      display_name: yapf
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
+    aptget: []

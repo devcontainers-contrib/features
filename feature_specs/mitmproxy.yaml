@@ -1,0 +1,16 @@
+default_context:
+  description: mitmproxy is an interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers
+  feature_name: mitmproxy
+  feature_id: mitmproxy
+  test_command: mitmproxy --version
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    pipx:
+    - package_name: mitmproxy
+      display_name: mitmproxy
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
+    aptget: []
+

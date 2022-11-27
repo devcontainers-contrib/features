@@ -1,0 +1,16 @@
+default_context:
+  description: yamllint is a Python utility / library to sort imports alphabetically, and automatically separated into sections and by type.
+  feature_name: yamllint
+  feature_id: yamllint
+  test_command: yamllint --version
+  gitrepo: http://github.com/devcontainers-contrib/features
+  version: 1.1.4
+  content:
+    pipx:
+    - package_name: yamllint
+      display_name: yamllint
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
+    aptget: []
