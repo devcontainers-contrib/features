@@ -29,7 +29,7 @@ check_packages() {
 }
 
 aptget_packages=(libsasl2-dev g++)
-check_packages ${aptget_packages[@]}
+check_packages "${aptget_packages[@]}"
 
 # code bellow is mostly taken from the base python feature https://raw.githubusercontent.com/devcontainers/features/main/src/python/install.sh
 updaterc() {
