@@ -52,8 +52,8 @@ fi
 # Here's some more examples using it: https://github.com/search?q=org%3Adevcontainers+_REMOTE_USER&type=code
 # We also use /bin/sh as defined in the script hash-bang line instead of $SHELL.
 sudo -iu "$_REMOTE_USER" <<EOF
-  # https://www.haskell.org/ghcup/
-  curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | /bin/sh
+  # Install instructions from https://www.haskell.org/ghcup/#
+  curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 EOF
 
 # without restarting the shell, ghci location would not be resolved from the updated PATH
