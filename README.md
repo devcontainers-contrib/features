@@ -9,6 +9,10 @@
 
 ![](https://i.imgur.com/W7t3YsC.png)
 
+**[Docs](https://github.com/devcontainers-contrib/features#readme)**
+| [Contributing](https://github.com/devcontainers-contrib/features/blob/main/CONTRIBUTING.md)
+| [Dev docs](https://github.com/devcontainers-contrib/features/wiki)
+
 </div>
 
 💻 Works with [Devcontainers] \
