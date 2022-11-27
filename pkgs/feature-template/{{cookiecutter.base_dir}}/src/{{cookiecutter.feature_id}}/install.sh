@@ -180,7 +180,7 @@ rm -rf /tmp/pip-tmp
 {% if cookiecutter.content.npm is defined and cookiecutter.content.npm |length > 0  %} 
 # install node+npm if does not exists
 if ! type npm > /dev/null 2>&1; then
-    echo "Installing npde and npm..."
+    echo "Installing node and npm..."
     check_packages curl
     curl -fsSL https://raw.githubusercontent.com/devcontainers/features/main/src/node/install.sh | $SHELL
     export NVM_DIR=/usr/local/share/nvm
