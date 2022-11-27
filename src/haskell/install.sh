@@ -11,19 +11,19 @@ INSTALL_STACK_GHCUP_HOOK="${INSTALLSTACKGHCUPHOOK:-"true"}"
 rm -rf /var/lib/apt/lists/*
 
 if [ "$(id -u)" -ne 0 ]; then
-    echo -e 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
-    exit 1
+	echo -e 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
+	exit 1
 fi
 
 # Checks if packages are installed and installs them if not
 check_packages() {
-    if ! dpkg -s "$@" >/dev/null 2>&1; then
-        if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
-            echo "Running apt-get update..."
-            apt-get update -y
-        fi
-        apt-get -y install --no-install-recommends "$@"
-    fi
+	if ! dpkg -s "$@" >/dev/null 2>&1; then
+		if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
+			echo "Running apt-get update..."
+			apt-get update -y
+		fi
+		apt-get -y install --no-install-recommends "$@"
+	fi
 }
 
 check_packages curl build-essential libffi-dev libffi8ubuntu1 libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5
@@ -35,13 +35,13 @@ export BOOTSTRAP_HASKELL_CABAL_VERSION="${CABAL_VERSION}"
 export BOOTSTRAP_HASKELL_DOWNLOADER="curl"
 
 if [[ "${INCLUDE_STACK}" = "false" ]]; then
-    export BOOTSTRAP_HASKELL_INSTALL_NO_STACK="true"
+	export BOOTSTRAP_HASKELL_INSTALL_NO_STACK="true"
 fi
 if [[ "${ADJUST_BASH}" = "true" ]]; then
-    export BOOTSTRAP_HASKELL_ADJUST_BASHRC="true"
+	export BOOTSTRAP_HASKELL_ADJUST_BASHRC="true"
 fi
 if [[ "${INSTALL_STACK_GHCUP_HOOK}" = "false" ]]; then
-    export BOOTSTRAP_HASKELL_INSTALL_NO_STACK_HOOK="true"
+	export BOOTSTRAP_HASKELL_INSTALL_NO_STACK_HOOK="true"
 fi
 
 # The installation script is designed to be run by the non-root user
