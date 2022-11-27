@@ -5,11 +5,11 @@ DENO_VERSION="${VERSION:-"latest"}"
 set -e
 
 if [ "$(id -u)" -ne 0 ]; then
-    echo -e 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
-    exit 1
+	echo -e 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
+	exit 1
 fi
 
-# Clean up 
+# Clean up
 rm -rf /var/lib/apt/lists/*
 
 if [ "$OS" = "Windows_NT" ]; then
@@ -26,21 +26,19 @@ else
 	esac
 fi
 
-
 # Checks if packages are installed and installs them if not
 check_packages() {
-    if ! dpkg -s "$@" > /dev/null 2>&1; then
-        if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
-            echo "Running apt-get update..."
-            apt-get update -y
-        fi
-        apt-get -y install --no-install-recommends "$@"
-    fi
+	if ! dpkg -s "$@" >/dev/null 2>&1; then
+		if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
+			echo "Running apt-get update..."
+			apt-get update -y
+		fi
+		apt-get -y install --no-install-recommends "$@"
+	fi
 }
 
 # make sure we have curl
-check_packages curl 
-
+check_packages curl
 
 if [ "${DENO_VERSION}" == "latest" ]; then
 	deno_uri="https://github.com/denoland/deno/releases/latest/download/deno-${target}.zip"
@@ -51,7 +49,6 @@ fi
 deno_install="/usr/local/lib/deno"
 bin_dir="$deno_install/bin"
 exe="$bin_dir/deno"
-
 
 if [ ! -d "$bin_dir" ]; then
 	mkdir -p "$bin_dir"
@@ -64,7 +61,7 @@ rm "$exe.zip"
 
 ln -s $exe /usr/local/bin/deno
 
-# Clean up 
+# Clean up
 rm -rf /var/lib/apt/lists/*
 
 echo "Done!"

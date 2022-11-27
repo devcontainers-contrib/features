@@ -4,6 +4,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "heroku existance" heroku version 
+check "heroku existance" heroku version
 
 reportResults
