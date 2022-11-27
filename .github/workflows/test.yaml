@@ -16,7 +16,7 @@ jobs:
     outputs:
       folders: ${{ steps.features.outputs.folders }}
     steps:
-      - uses: actions/checkout@v1    
+      - uses: actions/checkout@v3    
       - id: features
         uses: ./.github/actions/list-folder-action
         with:
@@ -31,7 +31,7 @@ jobs:
         features: ${{ fromJson(needs.find-features.outputs.folders )}}
         baseImage: ["mcr.microsoft.com/devcontainers/base:ubuntu"]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
@@ -43,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
