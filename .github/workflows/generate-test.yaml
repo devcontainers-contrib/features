@@ -47,7 +47,13 @@ jobs:
 
       - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
         run: devcontainer features test -f ${{ matrix.features }} -i ${{ matrix.baseImage }} .
-
+      - name: Shell Linter
+        uses: azohra/shell-linter@v0.6.0
+        with:
+          path: "src/**/*.sh"
+          severity: "error" # [style, info, warning, error]
+        env:
+          SHELLCHECK_OPTS: -e SC2072 # Acceptable use of decimal comparison
   test-global:
     runs-on: ubuntu-latest
     continue-on-error: true
