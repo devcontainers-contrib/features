@@ -71,11 +71,11 @@ jobs:
           git config pull.rebase false
           branch=releases/automated-feature-generation-${{ matrix.features }}-$GITHUB_RUN_ID
           git checkout -b $branch
-          message='Automated feature generation - ${{ matrix.features }}'
+          message='Automated feature generation ${{ matrix.features }}  skip-checks:true'
 
           git add src/**/\*
           git add test/**/\*
-          git commit -m 'Automated feature generation - ${{ matrix.features }} [skip ci]' || export NO_UPDATES=true
+          git commit -m 'Automated feature generation ${{ matrix.features }}  skip-checks:true' || export NO_UPDATES=true
           # Push
           if [ "$NO_UPDATES" != "true" ] ; then
               git push origin "$branch"
