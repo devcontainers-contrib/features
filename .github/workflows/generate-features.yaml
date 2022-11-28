@@ -17,7 +17,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_PAT }}
         run: |
-          set -e
+          set -ex
           echo "Start."
           # Configure git and Push updates
           git config --global user.email github-actions@github.com
