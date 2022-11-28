@@ -3,8 +3,27 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+
+  find-feature-specs:
     runs-on: ubuntu-latest
+    name: Find features
+    outputs:
+      filenames: ${{ steps.feature-specs.outputs.filenames }}
+    steps:
+      - uses: actions/checkout@v3    
+      - id: feature-specs
+        uses: ./.github/actions/list-files-action
+        with:
+          path: ./feature_specs
+
+  test:
+    needs: [find-feature-specs]
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      matrix:
+        features: ${{ fromJson(needs.find-feature-specs.outputs.filenames )}}
+        baseImage: ["mcr.microsoft.com/devcontainers/base:ubuntu"]
     steps:
       - uses: actions/checkout@v3
 
@@ -12,10 +31,28 @@ jobs:
         run: |
           pipx install cookiecutter
           pipx install shfmt-py
+
+      - name: Generate
+        id: generate
+        run: |
+          set -ex
+          cd ..
+          for d in ./features/feature_specs/* ; do  cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file "$d"; done
+          cd features
+        
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
+
+      - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
+        run: devcontainer features test -f ${{ matrix.features }} -i ${{ matrix.baseImage }} .
+
+      - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
+        run: devcontainer features test -f ${{ matrix.features }} -i ${{ matrix.baseImage }} .
+      
       - name: Create PR for Features
         id: push_image_info
         env:
-          GITHUB_TOKEN: ${{ secrets.REPO_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -ex
           echo "Start."
@@ -27,10 +64,11 @@ jobs:
           git checkout -b $branch
           message='Automated feature generation'
           # Generate
-          cd ..
-          for d in ./features/feature_specs/* ; do  cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file "$d"; done
-          cd features
+          # cd ..
+          # for d in ./features/feature_specs/* ; do  cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file "$d"; done
+          # cd features
           # Add / update and commit
+
           git add src/**/\*
           git add test/**/\*
           git commit -m 'Automated feature generation' || export NO_UPDATES=true
@@ -39,3 +77,14 @@ jobs:
               git push origin "$branch"
               gh pr create --title "$message" --body "$message"
           fi
+  test-global:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
+
+      - name: "Testing global scenarios"
+        run: devcontainer features test --global-scenarios-only .
