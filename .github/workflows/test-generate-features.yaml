@@ -1,8 +1,7 @@
-name: "CI - Test Features"
+name: "Test generated Features PR"
 on:
   pull_request:
-    branches:
-      - 'releases/**'
+
 
 jobs:
 
