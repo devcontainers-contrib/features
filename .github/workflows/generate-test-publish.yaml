@@ -1,5 +1,9 @@
-name: "Generate features"
+name: "Generate test and publish features"
 on:
+  push:
+    branches:
+      - main
+      
   workflow_dispatch:
 
 jobs:
