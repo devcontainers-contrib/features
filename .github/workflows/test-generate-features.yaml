@@ -1,0 +1,53 @@
+name: "CI - Test Features"
+on:
+  pull_request:
+    branches:
+      - 'releases/**'
+
+jobs:
+
+  find-features:
+    runs-on: ubuntu-latest
+    name: Find features
+    outputs:
+      folders: ${{ steps.features.outputs.folders }}
+    steps:
+      - uses: actions/checkout@v3  
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - id: features
+        uses: ./.github/actions/list-folder-action
+        with:
+          path: ./src
+
+  test:
+    needs: [find-features]
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      matrix:
+        features: ${{ fromJson(needs.find-features.outputs.folders )}}
+        baseImage: ["mcr.microsoft.com/devcontainers/base:ubuntu"]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
+
+      - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
+        run: devcontainer features test -f ${{ matrix.features }} -i ${{ matrix.baseImage }} .
+
+  test-global:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
+
+      - name: "Testing global scenarios"
+        run: devcontainer features test --global-scenarios-only .
