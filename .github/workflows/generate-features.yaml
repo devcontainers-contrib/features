@@ -59,7 +59,7 @@ jobs:
           git config pull.rebase false
           branch=releases/automated-feature-generation-${{ matrix.features }}-$GITHUB_RUN_ID
           git checkout -b $branch
-          message='Automated feature generation'
+          message='Automated feature generation - ${{ matrix.features }}'
 
           git add src/**/\*
           git add test/**/\*
