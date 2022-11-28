@@ -1,7 +1,7 @@
 {
     "name": "Haskell",
     "id": "haskell",
-    "version": "1.1.0",
+    "version": "2.0.0",
     "description": "Installs Haskell. An advanced, purely functional programming language",
     "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/haskell",
     "options": {

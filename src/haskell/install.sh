@@ -46,13 +46,15 @@ fi
 
 # The installation script is designed to be run by the non-root user
 # The files need to be in the remote user's ~/ home directory
-ROOT_HOME="${HOME}"
-export HOME="${_REMOTE_USER_HOME}"
-
-curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | $SHELL
-
-export HOME="${ROOT_HOME}"
-chown -R "${_REMOTE_USER}:${_REMOTE_USER}" "${_REMOTE_USER_HOME}"
+# So, how do we switch users? We use 'sudo -iu <username>' to get a
+# login shell of another user! We use $_REMOTE_USER as defined in
+# a spec proposal (but still implemented in Codespaces): https://github.com/devcontainers/spec/blob/main/proposals/features-user-env-variables.md
+# Here's some more examples using it: https://github.com/search?q=org%3Adevcontainers+_REMOTE_USER&type=code
+# We also use /bin/sh as defined in the script hash-bang line instead of $SHELL.
+sudo -iu "$_REMOTE_USER" <<EOF
+  # Install instructions from https://www.haskell.org/ghcup/#
+  curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+EOF
 
 # without restarting the shell, ghci location would not be resolved from the updated PATH
 exec $SHELL
