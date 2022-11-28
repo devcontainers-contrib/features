@@ -14,13 +14,11 @@ jobs:
           pipx install shfmt-py
       - name: Create PR for Features
         id: push_image_info
-        env:
-          GITHUB_TOKEN: ${{ secrets.REPO_PAT }}
         run: |
           set -e
           echo "Start."
           # Configure git and Push updates
-          echo $GITHUB_TOKEN | gh auth login --with-token
+          echo ${{ secrets.REPO_PAT }} | gh auth login --with-token
           git config --global user.email github-actions@github.com
           git config --global user.name github-actions
           git config pull.rebase false
