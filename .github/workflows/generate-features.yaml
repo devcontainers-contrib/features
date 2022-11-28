@@ -37,7 +37,7 @@ jobs:
         run: |
           set -ex
           cd ..
-          for d in ./features/feature_specs/* ; do  cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file "$d"; done
+          cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file ./features/feature_specs/${{ matrix.features }}
           cd features
         
       - name: "Install latest devcontainer CLI"
@@ -46,10 +46,7 @@ jobs:
       - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
         run: devcontainer features test -f ${{ matrix.features }} -i ${{ matrix.baseImage }} .
 
-      - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
-        run: devcontainer features test -f ${{ matrix.features }} -i ${{ matrix.baseImage }} .
-      
-      - name: Create PR for Features
+      - name: Create PR for Feature
         id: push_image_info
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -60,14 +57,9 @@ jobs:
           git config --global user.email github-actions@github.com
           git config --global user.name github-actions
           git config pull.rebase false
-          branch=releases/automated-feature-generation-$GITHUB_RUN_ID
+          branch=releases/automated-feature-generation-${{ matrix.features }}-$GITHUB_RUN_ID
           git checkout -b $branch
           message='Automated feature generation'
-          # Generate
-          # cd ..
-          # for d in ./features/feature_specs/* ; do  cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file "$d"; done
-          # cd features
-          # Add / update and commit
 
           git add src/**/\*
           git add test/**/\*
