@@ -7,7 +7,7 @@ Installs Haskell. An advanced, purely functional programming language
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/haskell:1": {}
+    "ghcr.io/devcontainers-contrib/features/haskell:2": {}
 }
 ```
 
