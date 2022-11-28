@@ -54,6 +54,7 @@ jobs:
           set -ex
           echo "Start."
           # Configure git and Push updates
+          echo ${{ secrets.REPO_PAT }} | gh auth login --with-token
           git config --global user.email github-actions@github.com
           git config --global user.name github-actions
           git config pull.rebase false
