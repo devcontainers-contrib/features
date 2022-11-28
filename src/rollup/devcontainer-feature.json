@@ -1,0 +1,20 @@
+{
+    "name": "rollup.js",
+    "id": "rollup",
+    "version": "1.1.5",
+    "description": "Rollup is a module bundler for JavaScript which compiles small pieces of code into something larger and more complex, such as a library or application.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/rollup",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "boolean",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of rollup to install."
+        }
+    }
+}

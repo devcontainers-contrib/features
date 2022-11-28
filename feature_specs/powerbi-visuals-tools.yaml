@@ -1,0 +1,15 @@
+default_context:
+  description: PowerBI Visual Tools Contains tools for building/packaging Power BI visuals
+  feature_name: PowerBI Visual Tools (pbiviz)
+  feature_id: powerbi-visuals-tools
+  test_command: pbiviz --version
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    npm:
+    - package_name: powerbi-visuals-tools
+      display_name: PowerBI Visual Tools
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
+    aptget: []

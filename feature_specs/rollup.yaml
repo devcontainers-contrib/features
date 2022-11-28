@@ -1,0 +1,15 @@
+default_context:
+  description: Rollup is a module bundler for JavaScript which compiles small pieces of code into something larger and more complex, such as a library or application.
+  feature_name: rollup.js
+  feature_id: rollup
+  test_command: rollup --version
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    npm:
+    - package_name: rollup
+      display_name: rollup
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
+    aptget: []

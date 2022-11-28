@@ -1,0 +1,96 @@
+name: "Generate test and publish features"
+on:
+  push:
+    branches:
+      - main
+      
+  workflow_dispatch:
+
+jobs:
+
+  find-feature-specs:
+    if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
+    runs-on: ubuntu-latest
+    name: Find features
+    outputs:
+      filenames: ${{ steps.feature-specs.outputs.filenames }}
+    steps:
+      - uses: actions/checkout@v3    
+      - id: feature-specs
+        uses: ./.github/actions/list-files-action
+        with:
+          path: ./feature_specs
+
+  test:
+    needs: [find-feature-specs]
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      matrix:
+        features: ${{ fromJson(needs.find-feature-specs.outputs.filenames )}}
+        baseImage: ["mcr.microsoft.com/devcontainers/base:ubuntu"]
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: "install generator"
+        run: |
+          pipx install cookiecutter
+          pipx install shfmt-py
+
+      - name: Generate
+        id: generate
+        run: |
+          set -ex
+          cd ..
+          cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file ./features/feature_specs/${{ matrix.features }}
+          cd features
+        
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
+
+      - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
+        run: devcontainer features test -f ${{ matrix.features }} -i ${{ matrix.baseImage }} .
+      
+      - name: Shell Linter
+        uses: azohra/shell-linter@v0.6.0
+        with:
+          path: "src/**/*.sh"
+          severity: "error" # [style, info, warning, error]
+        env:
+          SHELLCHECK_OPTS: -e SC2072 # Acceptable use of decimal comparison
+
+      - name: Create PR for Feature
+        id: push_image_info
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -ex
+          echo "Start."
+          # Configure git and Push updates
+          git config --global user.email github-actions@github.com
+          git config --global user.name github-actions
+          git config pull.rebase false
+          branch=releases/automated-feature-generation-${{ matrix.features }}-$GITHUB_RUN_ID
+          git checkout -b $branch
+          message='Automated feature generation ${{ matrix.features }}  [skip ci]'
+
+          git add src/**/\*
+          git add test/**/\*
+          git commit -m 'Automated feature generation ${{ matrix.features }}  [skip ci]' || export NO_UPDATES=true
+          # Push
+          if [ "$NO_UPDATES" != "true" ] ; then
+              git push origin "$branch"
+              gh pr create --title "$message" --body "$message"
+          fi
+  test-global:
+    if: "! contains(toJSON(github.event.commits.*.message), '[skip-ci]')"
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
+
+      - name: "Testing global scenarios"
+        run: devcontainer features test --global-scenarios-only .

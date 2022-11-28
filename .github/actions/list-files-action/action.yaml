@@ -1,0 +1,21 @@
+name: 'List file names'
+description: 'Get a json list of the files listed in the specified folder'
+inputs:
+  path:
+    description: 'Folder to list'
+    required: true
+outputs:
+  filenames: # id of output
+    description: 'A JSON formatted list of filenames'
+    value: ${{ steps.set-filenames.outputs.filenames }}
+runs:
+  using: 'composite'
+  steps:
+    - run: sudo apt update && sudo apt install tree jq -y
+      shell: bash
+    - id: set-filenames
+      shell: bash
+      run: |
+        cd ${{ inputs.path }}
+        filenames=$(ls -p | grep -v \ | jq -R -s -c 'split("\n")[:-1]')
+        echo "filenames=$filenames" >> $GITHUB_OUTPUT
