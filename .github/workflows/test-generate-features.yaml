@@ -1,12 +1,8 @@
-name: "CI - Test Features"
+name: "Test generated Features PR"
 on:
-  push:
-    branches:
-      - main
-      
   pull_request:
 
-  workflow_dispatch:
+
 jobs:
 
   find-features:
@@ -15,7 +11,10 @@ jobs:
     outputs:
       folders: ${{ steps.features.outputs.folders }}
     steps:
-      - uses: actions/checkout@v3    
+      - uses: actions/checkout@v3  
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
       - id: features
         uses: ./.github/actions/list-folder-action
         with:
@@ -31,7 +30,8 @@ jobs:
         baseImage: ["mcr.microsoft.com/devcontainers/base:ubuntu"]
     steps:
       - uses: actions/checkout@v3
-
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
 
@@ -43,7 +43,8 @@ jobs:
     continue-on-error: true
     steps:
       - uses: actions/checkout@v3
-
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
 
