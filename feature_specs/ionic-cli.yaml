@@ -1,0 +1,15 @@
+default_context:
+  description: The Ionic command-line interface (CLI) is the go-to tool for developing Ionic apps.
+  feature_name: Ionic CLI
+  feature_id: ionic-cli
+  test_command: ionic --help
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    npm:
+    - package_name: "@ionic/cli"
+      display_name: Ionic CLI
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
+    aptget: []
