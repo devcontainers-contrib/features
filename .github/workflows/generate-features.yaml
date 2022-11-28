@@ -26,7 +26,7 @@ jobs:
           git config --global user.email github-actions@github.com
           git config --global user.name github-actions
           git config pull.rebase false
-          branch=automated-feature-generation-$GITHUB_RUN_ID
+          branch=releases/automated-feature-generation-$GITHUB_RUN_ID
           git checkout -b $branch
           message='Automated feature generation'
 
