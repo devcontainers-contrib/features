@@ -47,7 +47,7 @@ addition of an `options` object.
 **💡 Pro tip:** You can use a string instead of an object as a shortcut to
 `{ "version": "<your string>" }`!
 
-```sh
+```json
 {
   "features": {
     "ghcr.io/devcontainers-contrib/features/deno:latest": "1.24.0",
