@@ -1,26 +1,18 @@
-<!-- Template from https://generator.contributing.md/ -->
+<!-- Based on template from https://generator.contributing.md/ -->
 
-# Contributing to Devcontainer Community Features
+# Contributing to Community devcontainer features
 
 **First off, thanks for taking the time to contribute! ❤️**
 
-All types of contributions are encouraged and valued. Please make sure to read
-the relevant section before making your contribution. It will make it a lot
-easier for us maintainers and smooth out the experience for all involved. The
-community looks forward to your contributions. 🎉
+All types of contributions are encouraged and valued, no matter if it's a bug report 🐛, a feature request 💡, or a Pull Request 🚀.
 
 - ❓ [I have a question](#i-have-a-question)
 - 🐛 [I want to submit a bug report](#i-want-to-submit-a-bug-report)
-- 🚀 [I want to suggest a feature](#i-want-to-suggest-a-feature)
-- 🙌 [I want to contribute](#i-want-to-contribute)
+- 💡 [I want to suggest a feature](#i-want-to-suggest-a-feature)
+- 🚀 [I want to contribute](#i-want-to-contribute)
+- 🙌 [I want to post what I made](#i-want-to-post-what-i-made)
 
-If you like the project, but just don't have time to contribute, that's fine.
-There are other easy ways to support the project and show your appreciation,
-which we would also be very happy about:
-
-- ⭐ Star the project
-- 🐦 Tweet about it
-- 🔗 Link to this project in your project's `README.md`
+If you like the project, but just don't have time to contribute, that's OK too! You can also star the project ⭐, tweet about it 💬, or backlink to our repository 🔗.
 
 ## I have a question
 
@@ -129,8 +121,7 @@ Enhancement suggestions are tracked as
   macOS and Windows, and [this tool](https://github.com/colinkeenan/silentcast)
   or [this tool](https://github.com/GNOME/byzanz) on Linux.
   <!-- this should only be included if the project has a GUI -->
-- **Explain why this enhancement would be useful** to most Devcontainer
-  Community Features users. You may also want to point out the other projects
+- **Explain why this enhancement would be useful** to most users. You may also want to point out the other projects
   that solved it better and which could serve as inspiration.
 
 ## I want to contribute
