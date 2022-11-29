@@ -1,26 +1,20 @@
-# Devcontainer Community Features
 
-🐳 Extra add-in features for [Devcontainers] and [GitHub Codespaces]
-
-[devcontainers]: https://code.visualstudio.com/docs/devcontainers/containers
-[github codespaces]: https://github.com/features/codespaces
+🐳 Extra add-in features for [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) and [GitHub Codespaces](https://github.com/features/codespaces)
 
 <div align="center">
 
 ![](https://i.imgur.com/W7t3YsC.png)
 
-**[Docs](https://github.com/devcontainers-contrib/features#readme)**
+**[Overview](https://github.com/devcontainers-contrib/features#readme)**
+| [User docs](https://github.com/devcontainers-contrib/features#usage)
 | [Contributing](https://github.com/devcontainers-contrib/features/blob/main/CONTRIBUTING.md)
-| [Dev docs](https://github.com/devcontainers-contrib/features/wiki)
+| [Developer wiki](https://github.com/devcontainers-contrib/features/wiki)
 
 </div>
 
-💻 Works with [Devcontainers] \
-☁️ Works with [GitHub Codespaces] \
-👨‍🍳 Based on the official [devcontainers/template-starter] project
-
-[devcontainers/template-starter]:
-  https://github.com/devcontainers/template-starter#readme
+💻 Works with [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) \
+☁️ Works with [GitHub Codespaces](https://github.com/features/codespaces) \
+👨‍🍳 Based on the official [devcontainers/template-starter](https://github.com/devcontainers/template-starter#readme) project
 
 📢 [We are actively seeking contributions!](CONTRIBUTING.md)
 
@@ -49,6 +43,18 @@ addition of an `options` object.
 }
 ```
 
+**💡 Pro tip:** You can use a string instead of an object as a shortcut to
+`{ "version": "<your string>" }`!
+
+```sh
+{
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/deno:latest": "1.24.0",
+    "ghcr.io/devcontainers-contrib/features/pulumi:latest": "3.48.0"
+  }
+}
+```
+
 ## Development
 
 ![Codespaces](https://img.shields.io/static/v1?style=for-the-badge&message=Codespaces&color=181717&logo=GitHub&logoColor=FFFFFF&label=)
@@ -59,6 +65,4 @@ addition of an `options` object.
 📢 [We are actively seeking contributions!](CONTRIBUTING.md)
 
 This repository is heavily based on the [devcontainers/template-starter]
-project. You can find more developer-specific docs on [the Wiki]
-
-[the wiki]: https://github.com/devcontainers-contrib/features/wiki
+project. You can find more developer-specific docs on [the Wiki](https://github.com/devcontainers-contrib/features/wiki)
