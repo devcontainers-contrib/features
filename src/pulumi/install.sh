@@ -51,13 +51,15 @@ sudo -iu "$_REMOTE_USER" <<EOF
 
     # if pulumi script failed to insert to path, fallback to soft linking it in /usr/local/bin
     exec $SHELL
-    if ! [ -x "$(command -v pulumi)" ]; then
-        ln -s \$HOME/.pulumi/bin/pulumi /usr/local/bin/pulumi
+    if ! [ -x "\$(command -v pulumi)" ]; then
+        # We need sudo here since we are running under \$_REMOTE_USER
+        sudo ln -s \$HOME/.pulumi/bin/pulumi /usr/local/bin/pulumi
     fi
 
     # finally we are adding bash completion. zsh support will be added soon
     if [[ "${BASH_COMPLETION}" = "true" ]] ; then
-        pulumi gen-completion bash > /etc/bash_completion.d/pulumi
+        # We need sudo here since we are running under \$_REMOTE_USER
+        sudo pulumi gen-completion bash > /etc/bash_completion.d/pulumi
     fi
 EOF
 
