@@ -28,16 +28,6 @@ check_packages() {
 
 check_packages curl build-essential libffi-dev libffi8ubuntu1 libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5
 
-if [[ "${INCLUDE_STACK}" = "false" ]]; then
-	export BOOTSTRAP_HASKELL_INSTALL_NO_STACK="true"
-fi
-if [[ "${ADJUST_BASH}" = "true" ]]; then
-	export BOOTSTRAP_HASKELL_ADJUST_BASHRC="true"
-fi
-if [[ "${INSTALL_STACK_GHCUP_HOOK}" = "false" ]]; then
-	export BOOTSTRAP_HASKELL_INSTALL_NO_STACK_HOOK="true"
-fi
-
 # The installation script is designed to be run by the non-root user
 # The files need to be in the remote user's ~/ home directory
 # So, how do we switch users? We use 'sudo -iu <username>' to get a
@@ -53,9 +43,16 @@ sudo -iu "$_REMOTE_USER" <<EOF
 	export BOOTSTRAP_HASKELL_GHC_VERSION='${GHC_VERSION}'
 	export BOOTSTRAP_HASKELL_CABAL_VERSION='${CABAL_VERSION}'
 	export BOOTSTRAP_HASKELL_DOWNLOADER='curl'
-	export BOOTSTRAP_HASKELL_INSTALL_NO_STACK='$BOOTSTRAP_HASKELL_INSTALL_NO_STACK'
-	export BOOTSTRAP_HASKELL_ADJUST_BASHRC='$BOOTSTRAP_HASKELL_ADJUST_BASHRC'
-	export BOOTSTRAP_HASKELL_INSTALL_NO_STACK_HOOK='$BOOTSTRAP_HASKELL_INSTALL_NO_STACK_HOOK'
+
+	if [[ "${INCLUDE_STACK}" = "false" ]]; then
+		export BOOTSTRAP_HASKELL_INSTALL_NO_STACK="true"
+	fi
+	if [[ "${ADJUST_BASH}" = "true" ]]; then
+		export BOOTSTRAP_HASKELL_ADJUST_BASHRC="true"
+	fi
+	if [[ "${INSTALL_STACK_GHCUP_HOOK}" = "false" ]]; then
+		export BOOTSTRAP_HASKELL_INSTALL_NO_STACK_HOOK="true"
+	fi
 
 	# Install instructions from https://www.haskell.org/ghcup/#
 	curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
