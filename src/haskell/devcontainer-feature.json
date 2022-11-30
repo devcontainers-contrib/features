@@ -26,6 +26,11 @@
             "default": "recommended",
             "description": "Select the Cabal (a system for building and packaging Haskell libraries and programs) version to install."
         },
+        "installHLS": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install HLS, the Haskell Language Server."
+        },
         "installStack": {
             "type": "boolean",
             "default": true,
