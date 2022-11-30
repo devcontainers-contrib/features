@@ -42,7 +42,7 @@ jobs:
       - name: Generate
         id: generate
         env:
-          GENERATED: ${{ fromJson(needs.find-feature.outputs.generated_features) }}
+          GENERATED: ${{ needs.find-feature.outputs.generated_features }}
         run: |
           set -e
           if  jq -e 'any(. == "${{ matrix.features }}")' <<< \'$GENERATED\'; then
