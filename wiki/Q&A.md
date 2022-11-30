@@ -51,3 +51,24 @@ instance of the same shell.
 Well, it turns out that re-executing the shell also _re-executes the
 `~/.bashrc`_. We need to do this to get access to the thing that we actually
 installed!
+
+## Is it "devcontainer", "dev container", or "DevContainer"?
+
+Other possibles: "Dev Container", "Devcontainer"
+
+It's "devcontainer" or "devcontainers", but they can be capitalized if it's the
+start of a sentence. It isn't a proper noun, so we shouldn't say "Devcontainer".
+In fact, it's still in the process of being coelesced into a single word!
+Microsoft (the company behind the specification) use "dev containers". It's more
+popular to use "devcontainer" than it is to use "dev container", so that's what
+we use.
+
+|        | "dev container" | "devcontainer" |
+| ------ | --------------- | -------------- |
+| GitHub | [6.7K][1]       | [38K][2]       |
+| Google | [180K][3]       | [460K][4]      |
+
+[1]: https://github.com/search?l=Markdown&q=%22dev+container%22&type=Code
+[2]: https://github.com/search?l=Markdown&q=%22devcontainer%22&type=Code
+[3]: https://www.google.com/search?q=dev+container
+[4]: https://www.google.com/search?q=devcontainer
