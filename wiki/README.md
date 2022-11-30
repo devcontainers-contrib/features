@@ -8,7 +8,7 @@ button above to get started.
 
 <div align="center">
 
-![GIF of a user creating a GitHub Codespace](https://placekitten.com/600/400)
+![GIF of a user creating a GitHub Codespace](https://user-images.githubusercontent.com/61068799/204910136-ea4268ae-dfd8-4d1b-8a9f-fdaa954fa100.png)
 
 </div>
 
@@ -25,12 +25,6 @@ has an extension just for you! As long as you have
 [Docker](https://www.docker.com/) installed, you should be able to install
 [the Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 and clone the project into a local container volume.
-
-<div align="center">
-
-![GIF of a user opening a repo in VS Code using Dev Containers](https://placekitten.com/600/400)
-
-</div>
 
 📚 Further reading:
 [Quick start: Open a Git repository or GitHub PR in an isolated container volume](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume)
