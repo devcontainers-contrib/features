@@ -41,6 +41,8 @@ like `/bin/bash` or `/bin/sh`.
 that means replacing the current shell (likely `bash` or `sh`) with another
 instance of the same shell.
 
+📚 Further reading: [exec man page](https://linuxcommand.org/lc3_man_pages/exech.html)
+
 ### Why do we need to do this?
 
 Well, it turns out that re-executing the shell also _re-executes the
