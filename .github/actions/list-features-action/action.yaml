@@ -28,8 +28,8 @@ runs:
         sudo tree -J  ./feature_specs | sudo jq -c '.[0].contents | map(.name) | map(sub(".yaml"; ""))' > specs.json
         sudo tree -J -d  ./src | sudo jq -c '.[0].contents | map(.name)' > folders.json
 
-        manually_crafted_features=$(jq -s '.[0] - .[1]'  folders.json specs.json)
-        all_features=$(jq -s '.[0] + .[1]'  folders.json specs.json)
+        manually_crafted_features=$(jq -sc '.[0] - .[1]'  folders.json specs.json)
+        all_features=$(jq -sc '.[0] + .[1]'  folders.json specs.json)
         generated_features=$(cat specs.json)
 
         echo "manually_crafted_features=$manually_crafted_features" >> $GITHUB_OUTPUT
