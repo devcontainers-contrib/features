@@ -1,0 +1,36 @@
+name: 'List file names'
+description: 'Get a json list of the files listed in the specified folder'
+inputs:
+  path:
+    description: 'Folder to list'
+    required: true
+outputs:
+  manually_crafted_features: # id of output
+    description: 'A JSON formatted list of manually crafted features'
+    value: ${{ steps.set-filenames.outputs.manually_crafted_features }}
+  all_features: # id of output
+    description: 'A JSON formatted list of generated and manually crafted features'
+    value: ${{ steps.set-filenames.outputs.all_features }}
+  generated_features: # id of output
+    description: 'A JSON formatted list of generated features'
+    value: ${{ steps.set-filenames.outputs.generated_features }}
+
+runs:
+  using: 'composite'
+  steps:
+    - run: sudo apt update && sudo apt install tree jq -y
+      shell: bash
+    - id: set-filenames
+      shell: bash
+      run: |
+        cd ${{ inputs.path }}
+        
+        sudo tree -J  ./feature_specs | sudo jq -c '.[0].contents | map(.name) | map(sub(".yaml"; ""))' > specs.json
+        sudo tree -J -d  ./src | sudo jq -c '.[0].contents | map(.name)' > folders.json
+
+        manually_crafted_features=$(jq -s '.[0] - .[1]'  folders.json specs.json)
+        all_features=$(jq -s '.[0] + .[1]'  folders.json specs.json)
+        generated_features=$(cat specs.json)
+
+        echo "manually_crafted_features=$manually_crafted_features" >> $GITHUB_OUTPUT
+        echo "generated_features=$generated_features" >> $GITHUB_OUTPUT
