@@ -1,8 +1,12 @@
-<div align="center">
 
-![](https://media.tenor.com/TlfAvuz0tLMAAAAC/obi-wan-kenobi-these-are-not-the-droids.gif)
 
-**You're probably looking for the [Developer wiki](https://github.com/devcontainers-contrib/features/wiki)**
+TODO: Add details about how to get started locally
 
-</div>
+Answer these questions:
+1. How do I get started with GitHub Codespaces?
+2. How do I get started with VS Code Devcontainers?
+3. What do I do after I have a running local instance?
+4. How do I run tests locally?
+5. How do I build the project locally?
 
+Also need to run `prettier --write` on all this stuff
