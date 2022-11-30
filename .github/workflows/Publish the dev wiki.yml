@@ -11,7 +11,6 @@ jobs:
       - uses: impresscms-dev/strip-markdown-extensions-from-links-action@v0.3.0
         with:
           path: wiki
-      - uses: stefanzweifel/git-auto-commit-action@v4
       - run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
