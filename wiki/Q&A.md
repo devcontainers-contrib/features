@@ -23,6 +23,7 @@ TODO: Answer "Why is the project structured the way it is?"
 
 It's a shell script that magically appears ✨ in the same working directory
 when you run `devcontainer features test`. It contains three functions:
+
 - `check`
 - `checkMultiple`
 - `reportResults`

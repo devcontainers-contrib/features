@@ -1,8 +1,7 @@
-
-
 TODO: Add details about how to get started locally
 
 Answer these questions:
+
 1. How do I get started with GitHub Codespaces?
 2. How do I get started with VS Code Devcontainers?
 3. What do I do after I have a running local instance?
