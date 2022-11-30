@@ -1,0 +1,19 @@
+on:
+  push:
+    branches: [main]
+    paths: [wiki/**, .github/workflows/Publish the dev wiki.yml]
+jobs:
+  Publish_the_wiki_folder_to_the_GitHub_Wiki:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: mv wiki/README.md wiki/Home.md
+      - uses: impresscms-dev/strip-markdown-extensions-from-links-action@v0.3.0
+        with:
+          path: wiki
+      - run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add -A
+          git commit --amend --no-edit
+          git push -f https://github.com/$GITHUB_REPOSITORY.wiki.git $(git subtree split -P wiki):master
