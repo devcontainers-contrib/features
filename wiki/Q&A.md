@@ -29,6 +29,9 @@ when you run `devcontainer features test`. It contains three functions:
 
 It is useful as a rudimentary testing framework.
 
+👨‍💻 Source code: [cli/src/spec-node/featuresCLI/utils.ts · devcontainers/cli](https://github.com/devcontainers/cli/blob/main/src/spec-node/featuresCLI/utils.ts#L59) \
+🔰 Examples: [cli/docs/features/test.md · devcontainers/cli](https://github.com/devcontainers/cli/blob/main/docs/features/test.md)
+
 ## What does `exec $SHELL` do?
 
 `$SHELL` is an environment variable that contains a string pointing to the
