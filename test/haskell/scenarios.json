@@ -1,0 +1,20 @@
+{
+  "with_different_versions": {
+    "image": "ubuntu:focal",
+    "features": {
+      "haskell": {
+        "ghcVersion": "9.4.0",
+        "cabalVersion": "3.7.0.0",
+        "stackVersion": "2.8.0"
+      }
+    }
+  },
+  "without_stack": {
+    "image": "ubuntu:focal",
+    "features": {
+      "haskell": {
+        "installStack": false
+      }
+    }
+  }
+}
