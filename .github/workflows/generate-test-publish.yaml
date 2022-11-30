@@ -13,7 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Find features
     outputs:
-      manually_crafted_features: ${{ steps.feature-specs.outputs.manually_crafted_features }}
       generated_features: ${{ steps.feature-specs.outputs.generated_features }}
       all_features: ${{ steps.feature-specs.outputs.all_features }}
     steps:
