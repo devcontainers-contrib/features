@@ -42,7 +42,8 @@ jobs:
         id: generate
         run: |
           set -e
-          if  jq -e 'any(. == "${{ matrix.features }}")' <<< '{{ needs.find-feature.outputs.generated_features }}'; then
+          generated={{ needs.find-feature.outputs.generated_features }}
+          if  jq -e 'any(. == "${{ matrix.features }}")' <<< \'$generated\'; then
           cd ..
           cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file ./features/feature_specs/${{ matrix.features }}
           cd features
