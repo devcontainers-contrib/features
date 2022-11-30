@@ -1,5 +1,5 @@
 1. 🔀 Fork this repository
-2. 📕 Follow [the Getting started guide](README.md)
+2. 📕 Follow [the Getting started guide](Home.md)
 3. 🤔 Choose from a template of npm, pip, or apt feature generators from the
    `scripts/` folder.
 4. 💻 Run your chosen generator script
