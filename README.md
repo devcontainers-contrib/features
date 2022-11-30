@@ -1,21 +1,26 @@
 # Community devcontainer features
 
-🐳 Extra add-in features for [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) and [GitHub Codespaces](https://github.com/features/codespaces)
+🐳 Extra add-in features for
+[devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) and
+[GitHub Codespaces](https://github.com/features/codespaces)
 
 <div align="center">
 
 ![](https://i.imgur.com/W7t3YsC.png)
 
-**[Overview](https://github.com/devcontainers-contrib/features#readme)**
-| [User docs](https://github.com/devcontainers-contrib/features#usage)
-| [Contributing](https://github.com/devcontainers-contrib/features/blob/main/CONTRIBUTING.md)
+**[Overview](https://github.com/devcontainers-contrib/features#readme)** |
+[User docs](https://github.com/devcontainers-contrib/features#usage) |
+[Contributing](https://github.com/devcontainers-contrib/features/blob/main/CONTRIBUTING.md)
 | [Developer wiki](https://github.com/devcontainers-contrib/features/wiki)
 
 </div>
 
-💻 Works with [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) \
+💻 Works with
+[devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) \
 ☁️ Works with [GitHub Codespaces](https://github.com/features/codespaces) \
-👨‍🍳 Based on the official [devcontainers/template-starter](https://github.com/devcontainers/template-starter#readme) project
+👨‍🍳 Based on the official
+[devcontainers/template-starter](https://github.com/devcontainers/template-starter#readme)
+project
 
 📢 [We are actively seeking contributions!](CONTRIBUTING.md)
 
@@ -65,5 +70,7 @@ addition of an `options` object.
 
 📢 [We are actively seeking contributions!](CONTRIBUTING.md)
 
-This repository is heavily based on the [devcontainers/template-starter]
-project. You can find more developer-specific docs on [the Wiki](https://github.com/devcontainers-contrib/features/wiki)
+This repository is heavily based on the
+[devcontainers/template-starter](https://github.com/devcontainers/template-starter#readme)
+project. You can find more developer-specific docs on
+[the Wiki](https://github.com/devcontainers-contrib/features/wiki)
