@@ -21,8 +21,8 @@ TODO: Answer "Why is the project structured the way it is?"
 
 ## What is `dev-container-features-test-lib`?
 
-It's a shell script that magically appears ✨ in the same working directory
-when you run `devcontainer features test`. It contains three functions:
+It's a shell script that magically appears ✨ in the same working directory when
+you run `devcontainer features test`. It contains three functions:
 
 - `check`
 - `checkMultiple`
@@ -30,7 +30,9 @@ when you run `devcontainer features test`. It contains three functions:
 
 It is useful as a rudimentary testing framework.
 
-👨‍💻 Source code: [cli/src/spec-node/featuresCLI/utils.ts · devcontainers/cli](https://github.com/devcontainers/cli/blob/main/src/spec-node/featuresCLI/utils.ts#L59) \
+👨‍💻 Source code:
+[cli/src/spec-node/featuresCLI/utils.ts · devcontainers/cli](https://github.com/devcontainers/cli/blob/main/src/spec-node/featuresCLI/utils.ts#L59)
+\
 🔰 Examples: [cli/docs/features/test.md · devcontainers/cli](https://github.com/devcontainers/cli/blob/main/docs/features/test.md)
 
 ## What does `exec $SHELL` do?
@@ -39,13 +41,15 @@ It is useful as a rudimentary testing framework.
 absolute path to the currently invoked shell instance. This is usually something
 like `/bin/bash` or `/bin/sh`.
 
-📚 Further reading: [$SHELL variable - Linux Bash Shell Scripting Tutorial Wiki](https://bash.cyberciti.biz/guide/%24SHELL_variable)
+📚 Further reading:
+[$SHELL variable - Linux Bash Shell Scripting Tutorial Wiki](https://bash.cyberciti.biz/guide/%24SHELL_variable)
 
 `exec` replaces the current running process with a new process. In this case,
 that means replacing the current shell (likely `bash` or `sh`) with another
 instance of the same shell.
 
-📚 Further reading: [exec man page](https://linuxcommand.org/lc3_man_pages/exech.html)
+📚 Further reading:
+[exec man page](https://linuxcommand.org/lc3_man_pages/exech.html)
 
 ### Why do we need to do this?
 
