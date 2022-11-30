@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: mv wiki/README.md wiki/Home.md
-      - uses: impresscms-dev/strip-markdown-extensions-from-links-action@v0.3
+      - uses: impresscms-dev/strip-markdown-extensions-from-links-action@v0.3.0
         with:
           path: wiki
       - uses: stefanzweifel/git-auto-commit-action@v4
