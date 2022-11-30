@@ -41,7 +41,7 @@ jobs:
       - name: Generate
         id: generate
         run: |
-          # if feature is a generated one - generate it!
+          set -e
           if  jq -e 'any(. == "${{ matrix.features }}")' <<< '{{ needs.find-feature.outputs.generated_features }}'; then
           cd ..
           cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file ./features/feature_specs/${{ matrix.features }}
