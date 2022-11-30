@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [main]
+    branches: [main, dev-wiki]
     paths: [wiki/**, .github/workflows/Publish the dev wiki.yml]
 jobs:
   Publish_the_wiki_folder_to_the_GitHub_Wiki:
