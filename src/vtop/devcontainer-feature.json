@@ -1,0 +1,20 @@
+{
+    "name": "vtop",
+    "id": "vtop",
+    "version": "1.1.5",
+    "description": "vtop is a graphical activity monitor for the command line.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/vtop",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "boolean",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of vtop to install."
+        }
+    }
+}

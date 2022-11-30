@@ -1,0 +1,20 @@
+{
+    "name": "Browserify",
+    "id": "browserify",
+    "version": "1.1.5",
+    "description": "Browserify lets you require('modules') in the browser by bundling up all of your dependencies.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/browserify",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "boolean",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of Browserify to install."
+        }
+    }
+}
