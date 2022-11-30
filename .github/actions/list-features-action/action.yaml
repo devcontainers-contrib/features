@@ -34,3 +34,4 @@ runs:
 
         echo "manually_crafted_features=$manually_crafted_features" >> $GITHUB_OUTPUT
         echo "generated_features=$generated_features" >> $GITHUB_OUTPUT
+        echo "all_features=$all_features" >> $GITHUB_OUTPUT
