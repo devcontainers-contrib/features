@@ -37,9 +37,10 @@ check_packages curl build-essential libffi-dev libffi8ubuntu1 libgmp-dev libgmp1
 # We also use /bin/sh as defined in the script hash-bang line instead of $SHELL.
 sudo -iu "$_REMOTE_USER" <<EOF
 	# Add some env vars as discussed in https://github.com/devcontainers-contrib/features/pull/94#issuecomment-1330004657
-	export BOOTSTRAP_HASKELL_NONINTERACTIVE=1
 	export GHCUP_USE_XDG_DIRS=1
 	echo 'export GHCUP_USE_XDG_DIRS=1' >> ~/.bashrc
+
+	export BOOTSTRAP_HASKELL_NONINTERACTIVE=1
 	export BOOTSTRAP_HASKELL_GHC_VERSION='${GHC_VERSION}'
 	export BOOTSTRAP_HASKELL_CABAL_VERSION='${CABAL_VERSION}'
 	export BOOTSTRAP_HASKELL_DOWNLOADER='curl'
