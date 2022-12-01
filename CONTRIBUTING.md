@@ -20,7 +20,7 @@ If you like the project, but just don't have time to contribute, that's OK too! 
 
 ⚠️ You must never report security 🔒 related issues, vulnerabilities or bugs
 including sensitive information to the issue tracker, or elsewhere in public.
-Instead sensitive bugs must be sent by email to <user@example.org>.
+Instead sensitive bugs must be sent by email to <devcontainers.contrib+features.security@gmail.com>.
 
 👩‍⚖️ When contributing to this project, you must agree that you have authored 100%
 of the content, that you have the necessary rights to the content and that the
