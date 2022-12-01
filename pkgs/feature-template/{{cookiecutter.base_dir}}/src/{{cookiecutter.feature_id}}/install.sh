@@ -148,24 +148,39 @@ install_via_pipx "${pipx_installations[@]}"
 {%- endif %}
 
 {% if cookiecutter.content.npm is defined and cookiecutter.content.npm |length > 0  %} 
-# install node+npm if does not exists
-if ! type npm > /dev/null 2>&1; then
-    echo "Installing node and npm..."
-    check_packages curl
-    curl -fsSL https://raw.githubusercontent.com/devcontainers/features/main/src/node/install.sh | $SHELL
-    export NVM_DIR=/usr/local/share/nvm
-    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-    [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
-fi
+
+install_via_npm() {
+    # This is part of devcontainers-contrib script library
+    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.7/script-library
+    PACKAGE=$1
+    
+    # install node+npm if does not exists
+    if ! type npm >/dev/null 2>&1; then
+        echo "Installing node and npm..."
+        if ! dpkg -s "$@" > /dev/null 2>&1; then
+            if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
+            echo "Running apt-get update..."
+            apt-get update -y
+            fi
+            apt-get -y install --no-install-recommends "$@"
+        fi
+
+        curl -fsSL https://raw.githubusercontent.com/devcontainers/features/main/src/node/install.sh | $SHELL
+        export NVM_DIR=/usr/local/share/nvm
+        [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+        [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
+    fi
+    npm install -g --omit=dev $PACKAGE
+}
 
 {% for npm_package in cookiecutter.content.npm -%}
 if [ "${{ npm_package.display_name | to_screaming_snake_case }}" != "none" ]; then
     if [ "${{ npm_package.display_name | to_screaming_snake_case }}" =  "latest" ]; then
-        util_command="{{npm_package.package_name}}"
+        npm_package="{{npm_package.package_name}}"
     else
-        util_command="{{npm_package.package_name}}@${{ npm_package.display_name | to_screaming_snake_case }}"
+        npm_package="{{npm_package.package_name}}@${{ npm_package.display_name | to_screaming_snake_case }}"
     fi
-    npm install -g --omit=dev ${util_command}
+    install_via_npm ${npm_package}
 fi
 {% endfor %}
 {% endif %}
