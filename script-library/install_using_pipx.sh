@@ -6,10 +6,11 @@ install_using_pipx() {
 
     PACKAGES=("$@")
     arraylength=${#PACKAGES[@]}
+
     env_name=$(echo ${PACKAGES[0]} | cut -d "=" -f 1 | cut -d "<" -f 1 | cut -d ">" -f 1 )
 
     if ! dpkg -s python3-minimal python3-pip libffi-dev python3-venv > /dev/null 2>&1; then
-        apt_get_update
+        apt-get update -y
         apt-get -y install python3-minimal python3-pip libffi-dev python3-venv
     fi
     export PIPX_HOME=/usr/local/pipx
@@ -29,3 +30,5 @@ install_using_pipx() {
     ${pipx_bin} inject $env_name --pip-args '--no-cache-dir --force-reinstall' -f ${PACKAGES[$i]}
     done
 }
+a=(black)
+install_using_pipx ${a[@]}

@@ -12,5 +12,9 @@
     },
     "_extensions": [
         "extensions.ToEnvCase"
-    ]
+    ],
+    "_jinja2_env_vars": {
+        "comment_start_string": "{=",
+        "comment_end_string": "=}"
+    }
 }

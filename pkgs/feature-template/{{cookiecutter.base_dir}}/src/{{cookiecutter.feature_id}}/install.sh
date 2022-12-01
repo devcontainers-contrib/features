@@ -91,6 +91,7 @@ install_using_pipx() {
 
     PACKAGES=("$@")
     arraylength=${#PACKAGES[@]}
+
     env_name=$(echo ${PACKAGES[0]} | cut -d "=" -f 1 | cut -d "<" -f 1 | cut -d ">" -f 1 )
 
     if ! dpkg -s python3-minimal python3-pip libffi-dev python3-venv > /dev/null 2>&1; then
