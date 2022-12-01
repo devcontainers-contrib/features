@@ -52,6 +52,17 @@ fi
 # Here's some more examples using it: https://github.com/search?q=org%3Adevcontainers+_REMOTE_USER&type=code
 # We also use /bin/sh as defined in the script hash-bang line instead of $SHELL.
 sudo -iu "$_REMOTE_USER" <<EOF
+  # Add some env vars as discussed in https://github.com/devcontainers-contrib/features/pull/94#issuecomment-1330004657
+  export BOOTSTRAP_HASKELL_NONINTERACTIVE='$BOOTSTRAP_HASKELL_NONINTERACTIVE'
+  export GHCUP_USE_XDG_DIRS='$GHCUP_USE_XDG_DIRS'
+  echo 'export GHCUP_USE_XDG_DIRS=$GHCUP_USE_XDG_DIRS' >> ~/.bashrc
+  export BOOTSTRAP_HASKELL_GHC_VERSION='$BOOTSTRAP_HASKELL_GHC_VERSION'
+  export BOOTSTRAP_HASKELL_CABAL_VERSION='$BOOTSTRAP_HASKELL_CABAL_VERSION'
+  export BOOTSTRAP_HASKELL_DOWNLOADER='$BOOTSTRAP_HASKELL_DOWNLOADER'
+	export BOOTSTRAP_HASKELL_INSTALL_NO_STACK='$BOOTSTRAP_HASKELL_INSTALL_NO_STACK'
+	export BOOTSTRAP_HASKELL_ADJUST_BASHRC='$BOOTSTRAP_HASKELL_ADJUST_BASHRC'
+	export BOOTSTRAP_HASKELL_INSTALL_NO_STACK_HOOK='$BOOTSTRAP_HASKELL_INSTALL_NO_STACK_HOOK'
+
   # Install instructions from https://www.haskell.org/ghcup/#
   curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 EOF

@@ -59,7 +59,7 @@ sudo -iu "$_REMOTE_USER" <<EOF
     # finally we are adding bash completion. zsh support will be added soon
     if [[ "${BASH_COMPLETION}" = "true" ]] ; then
         # We need sudo here since we are running under \$_REMOTE_USER
-        sudo pulumi gen-completion bash > /etc/bash_completion.d/pulumi
+        pulumi gen-completion bash | sudo tee /etc/bash_completion.d/pulumi > /dev/null
     fi
 EOF
 
