@@ -50,7 +50,7 @@ sudo -iu "$_REMOTE_USER" <<EOF
 	if [[ "${INCLUDE_STACK}" = "false" ]]; then
 		export BOOTSTRAP_HASKELL_INSTALL_NO_STACK="true"
 	fi
-	if [[ "${ADJUST_BASH}" = "true" ]]; then
+	if [[ "${ADJUST_BASHRC}" = "true" ]]; then
 		export BOOTSTRAP_HASKELL_ADJUST_BASHRC="true"
 	fi
 	if [[ "${INSTALL_STACK_GHCUP_HOOK}" = "false" ]]; then
