@@ -2,7 +2,7 @@
 
 install_via_pipx() {
     # This is part of devcontainers-contrib script library
-    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.6/script-library
+    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.7/script-library
     PACKAGES=("$@")
     arraylength="${#PACKAGES[@]}"
 
