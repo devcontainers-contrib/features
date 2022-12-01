@@ -1,7 +1,7 @@
 {
     "name": "fkill",
     "id": "fkill",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "fkill fabulously kill processes. Cross-platform.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/fkill",
     "installAfter": [

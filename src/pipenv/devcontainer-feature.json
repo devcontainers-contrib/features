@@ -1,7 +1,7 @@
 {
     "name": "Pipenv",
     "id": "pipenv",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "Pipenv automatically creates and manages a virtualenv for your projects.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pipenv",
     "installAfter": [

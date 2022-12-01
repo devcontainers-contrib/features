@@ -1,7 +1,7 @@
 {
     "name": "Pre-Commit",
     "id": "pre-commit",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "Pre-Commit is a framework for managing and maintaining multi-language pre-commit hooks.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pre-commit",
     "installAfter": [

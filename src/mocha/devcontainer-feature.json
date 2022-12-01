@@ -1,7 +1,7 @@
 {
     "name": "Mocha",
     "id": "mocha",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mocha",
     "installAfter": [

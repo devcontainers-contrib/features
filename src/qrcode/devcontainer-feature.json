@@ -1,7 +1,7 @@
 {
     "name": "qrcode",
     "id": "qrcode",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "qrcode is a command line QR-Code generator.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/qrcode",
     "installAfter": [

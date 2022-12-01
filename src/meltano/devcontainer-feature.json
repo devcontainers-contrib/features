@@ -1,7 +1,7 @@
 {
     "name": "Meltano ELT",
     "id": "meltano",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "Meltano lets you extract and load data with a software development-inspired approach that that delivers flexibility and limitless collaboration.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/meltano",
     "installAfter": [
