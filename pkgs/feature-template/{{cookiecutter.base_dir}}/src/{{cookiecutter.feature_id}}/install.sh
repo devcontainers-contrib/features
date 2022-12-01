@@ -157,12 +157,13 @@ install_via_npm() {
     # install node+npm if does not exists
     if ! type npm >/dev/null 2>&1; then
         echo "Installing node and npm..."
-        if ! dpkg -s "$@" > /dev/null 2>&1; then
+        
+        if ! dpkg -s curl > /dev/null 2>&1; then
             if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
             echo "Running apt-get update..."
             apt-get update -y
             fi
-            apt-get -y install --no-install-recommends "$@"
+            apt-get -y install --no-install-recommends curl
         fi
 
         curl -fsSL https://raw.githubusercontent.com/devcontainers/features/main/src/node/install.sh | $SHELL
