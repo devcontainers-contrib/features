@@ -1,7 +1,7 @@
 {
     "name": "Ionic CLI",
     "id": "ionic-cli",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "The Ionic command-line interface (CLI) is the go-to tool for developing Ionic apps.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ionic-cli",
     "installAfter": [

@@ -1,7 +1,7 @@
 {
     "name": "Flake8",
     "id": "flake8",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "Flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/flake8",
     "installAfter": [

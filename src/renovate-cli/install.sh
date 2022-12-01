@@ -28,23 +28,38 @@ check_packages() {
 	fi
 }
 
-# install node+npm if does not exists
-if ! type npm >/dev/null 2>&1; then
-	echo "Installing node and npm..."
-	check_packages curl
-	curl -fsSL https://raw.githubusercontent.com/devcontainers/features/main/src/node/install.sh | $SHELL
-	export NVM_DIR=/usr/local/share/nvm
-	[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-	[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
-fi
+install_via_npm() {
+	# This is part of devcontainers-contrib script library
+	# source: https://github.com/devcontainers-contrib/features/tree/v1.1.7/script-library
+	PACKAGE=$1
+
+	# install node+npm if does not exists
+	if ! type npm >/dev/null 2>&1; then
+		echo "Installing node and npm..."
+
+		if ! dpkg -s curl >/dev/null 2>&1; then
+			if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
+				echo "Running apt-get update..."
+				apt-get update -y
+			fi
+			apt-get -y install --no-install-recommends curl
+		fi
+
+		curl -fsSL https://raw.githubusercontent.com/devcontainers/features/main/src/node/install.sh | $SHELL
+		export NVM_DIR=/usr/local/share/nvm
+		[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+		[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
+	fi
+	npm install -g --omit=dev $PACKAGE
+}
 
 if [ "$RENOVATE_CLI" != "none" ]; then
 	if [ "$RENOVATE_CLI" = "latest" ]; then
-		util_command="renovate"
+		npm_package="renovate"
 	else
-		util_command="renovate@$RENOVATE_CLI"
+		npm_package="renovate@$RENOVATE_CLI"
 	fi
-	npm install -g --omit=dev ${util_command}
+	install_via_npm ${npm_package}
 fi
 
 # Clean up

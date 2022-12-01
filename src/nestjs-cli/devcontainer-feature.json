@@ -1,7 +1,7 @@
 {
     "name": "NestJS CLI",
     "id": "nestjs-cli",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "Nestjs is a progressive Node.js framework for building efficient, reliable and scalable server-side applications.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/nestjs-cli",
     "installAfter": [

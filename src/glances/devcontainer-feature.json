@@ -1,7 +1,7 @@
 {
     "name": "Glances",
     "id": "glances",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "Glances is a cross-platform monitoring tool which aims to present a large amount of monitoring information through a curses or Web based interface.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/glances",
     "installAfter": [
