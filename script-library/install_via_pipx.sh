@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-install_using_pipx() {
+install_via_pipx() {
     # This is part of devcontainers-contrib script library
     # source: https://github.com/devcontainers-contrib/features/tree/v1.0.1/script-library
     PACKAGES=("$@")

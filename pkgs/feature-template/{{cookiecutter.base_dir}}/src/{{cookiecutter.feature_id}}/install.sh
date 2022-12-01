@@ -85,7 +85,7 @@ check_packages "${aptget_packages[@]}"
 
 {% if cookiecutter.content.pipx is defined and cookiecutter.content.pipx |length > 0  %} 
 
-install_using_pipx() {
+install_via_pipx() {
     # This is part of devcontainers-contrib script library
     # source: https://github.com/devcontainers-contrib/features/tree/v1.0.1/script-library
     PACKAGES=("$@")
@@ -142,7 +142,7 @@ if [ "${{ pipx_package.display_name | to_screaming_snake_case }}" != "none" ]; t
 {% endif %}
 fi
 
-install_using_pipx ${pipx_installations[@]}
+install_via_pipx "${pipx_installations[@]}"
 
 {% endfor %}
 {%- endif %}
