@@ -35,7 +35,8 @@ Just add a `.devcontainer/devcontainer.json` file with a `features` key. It's
 very similar to NPM's `package.json` and `dependencies` object, just with the
 addition of an `options` object.
 
-📚 Make sure to inspect each feature for feature-specific options
+📚 Make sure to inspect each feature for feature-specific options \
+⚠️ We only officially support [debian](https://hub.docker.com/_/debian)-based images
 
 ```json
 {
