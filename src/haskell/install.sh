@@ -3,6 +3,7 @@
 GHC_VERSION="${GHCVERSION:-"latest"}"
 CABAL_VERSION="${CABALVERSION:-"latest"}"
 INCLUDE_STACK="${INSTALLSTACK:-"true"}"
+INCLUDE_HLS="${INSTALLHLS:-"true"}"
 ADJUST_BASHRC="${ADJUSTBASH:-"true"}"
 
 INSTALL_STACK_GHCUP_HOOK="${INSTALLSTACKGHCUPHOOK:-"true"}"
@@ -28,22 +29,6 @@ check_packages() {
 
 check_packages curl build-essential libffi-dev libffi8ubuntu1 libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5
 
-export BOOTSTRAP_HASKELL_NONINTERACTIVE=1
-export GHCUP_USE_XDG_DIRS=1
-export BOOTSTRAP_HASKELL_GHC_VERSION="${GHC_VERSION}"
-export BOOTSTRAP_HASKELL_CABAL_VERSION="${CABAL_VERSION}"
-export BOOTSTRAP_HASKELL_DOWNLOADER="curl"
-
-if [[ "${INCLUDE_STACK}" = "false" ]]; then
-	export BOOTSTRAP_HASKELL_INSTALL_NO_STACK="true"
-fi
-if [[ "${ADJUST_BASH}" = "true" ]]; then
-	export BOOTSTRAP_HASKELL_ADJUST_BASHRC="true"
-fi
-if [[ "${INSTALL_STACK_GHCUP_HOOK}" = "false" ]]; then
-	export BOOTSTRAP_HASKELL_INSTALL_NO_STACK_HOOK="true"
-fi
-
 # The installation script is designed to be run by the non-root user
 # The files need to be in the remote user's ~/ home directory
 # So, how do we switch users? We use 'sudo -iu <username>' to get a
@@ -52,19 +37,28 @@ fi
 # Here's some more examples using it: https://github.com/search?q=org%3Adevcontainers+_REMOTE_USER&type=code
 # We also use /bin/sh as defined in the script hash-bang line instead of $SHELL.
 sudo -iu "$_REMOTE_USER" <<EOF
-  # Add some env vars as discussed in https://github.com/devcontainers-contrib/features/pull/94#issuecomment-1330004657
-  export BOOTSTRAP_HASKELL_NONINTERACTIVE='$BOOTSTRAP_HASKELL_NONINTERACTIVE'
-  export GHCUP_USE_XDG_DIRS='$GHCUP_USE_XDG_DIRS'
-  echo 'export GHCUP_USE_XDG_DIRS=$GHCUP_USE_XDG_DIRS' >> ~/.bashrc
-  export BOOTSTRAP_HASKELL_GHC_VERSION='$BOOTSTRAP_HASKELL_GHC_VERSION'
-  export BOOTSTRAP_HASKELL_CABAL_VERSION='$BOOTSTRAP_HASKELL_CABAL_VERSION'
-  export BOOTSTRAP_HASKELL_DOWNLOADER='$BOOTSTRAP_HASKELL_DOWNLOADER'
-	export BOOTSTRAP_HASKELL_INSTALL_NO_STACK='$BOOTSTRAP_HASKELL_INSTALL_NO_STACK'
-	export BOOTSTRAP_HASKELL_ADJUST_BASHRC='$BOOTSTRAP_HASKELL_ADJUST_BASHRC'
-	export BOOTSTRAP_HASKELL_INSTALL_NO_STACK_HOOK='$BOOTSTRAP_HASKELL_INSTALL_NO_STACK_HOOK'
+	# Add some env vars as discussed in https://github.com/devcontainers-contrib/features/pull/94#issuecomment-1330004657
+	export GHCUP_USE_XDG_DIRS=1
+	echo 'export GHCUP_USE_XDG_DIRS=1' >> ~/.bashrc
 
-  # Install instructions from https://www.haskell.org/ghcup/#
-  curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+	export BOOTSTRAP_HASKELL_NONINTERACTIVE=1
+	export BOOTSTRAP_HASKELL_GHC_VERSION='${GHC_VERSION}'
+	export BOOTSTRAP_HASKELL_CABAL_VERSION='${CABAL_VERSION}'
+	export BOOTSTRAP_HASKELL_DOWNLOADER='curl'
+	export BOOTSTRAP_HASKELL_INSTALL_HLS='${INCLUDE_HLS}'
+
+	if [[ "${INCLUDE_STACK}" = "false" ]]; then
+		export BOOTSTRAP_HASKELL_INSTALL_NO_STACK="true"
+	fi
+	if [[ "${ADJUST_BASHRC}" = "true" ]]; then
+		export BOOTSTRAP_HASKELL_ADJUST_BASHRC="true"
+	fi
+	if [[ "${INSTALL_STACK_GHCUP_HOOK}" = "false" ]]; then
+		export BOOTSTRAP_HASKELL_INSTALL_NO_STACK_HOOK="true"
+	fi
+
+	# Install instructions from https://www.haskell.org/ghcup/#
+	curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 EOF
 
 # without restarting the shell, ghci location would not be resolved from the updated PATH

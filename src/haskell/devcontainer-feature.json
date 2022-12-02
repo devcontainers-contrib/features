@@ -1,7 +1,7 @@
 {
     "name": "Haskell",
     "id": "haskell",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Installs Haskell. An advanced, purely functional programming language",
     "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/haskell",
     "options": {
@@ -26,19 +26,15 @@
             "default": "recommended",
             "description": "Select the Cabal (a system for building and packaging Haskell libraries and programs) version to install."
         },
+        "installHLS": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install HLS, the Haskell Language Server."
+        },
         "installStack": {
             "type": "boolean",
             "default": true,
             "description": "Install Stack, a build tool for Haskell."
-        },
-        "stackVersion": {
-            "type": "string",
-            "proposals": [
-                "latest",
-                "2.9.1"
-            ],
-            "default": "latest",
-            "description": "Select the Stack version to install."
         },
         "installStackGHCupHook": {
             "type": "boolean",
