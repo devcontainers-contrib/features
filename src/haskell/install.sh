@@ -7,6 +7,7 @@ INCLUDE_HLS="${INSTALLHLS:-"true"}"
 ADJUST_BASHRC="${ADJUSTBASH:-"true"}"
 
 INSTALL_STACK_GHCUP_HOOK="${INSTALLSTACKGHCUPHOOK:-"true"}"
+CABAL_INSTALLS=`echo "${GLOBALPACKAGES:-""}" | tr ',' ' '`
 
 # Clean up
 rm -rf /var/lib/apt/lists/*
@@ -59,6 +60,13 @@ sudo -iu "$_REMOTE_USER" <<EOF
 
 	# Install instructions from https://www.haskell.org/ghcup/#
 	curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+
+	# Update PATH so that Cabal is accessible, the same as will be done via ~/.bashrc in the future
+	. "${_REMOTE_USER_HOME}/.local/share/ghcup/env"
+
+	if [[ ! -z "${CABAL_INSTALLS}" ]]; then
+		cabal update && echo "${CABAL_INSTALLS}" | xargs cabal install
+	fi
 EOF
 
 # without restarting the shell, ghci location would not be resolved from the updated PATH
