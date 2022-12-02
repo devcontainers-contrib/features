@@ -1,3 +1,6 @@
+bash_modules
+!/bash_modules
+
 # bellow is merge of vscode and node git ignores
 
 .vscode/*
@@ -12,8 +15,6 @@
 
 # Built Visual Studio Code Extensions
 *.vsix
-
-
 
 # Logs
 logs
