@@ -28,84 +28,51 @@ check_packages() {
 	fi
 }
 
-# code bellow is mostly taken from the base python feature https://raw.githubusercontent.com/devcontainers/features/main/src/python/install.sh
-updaterc() {
-	echo "Updating /etc/bash.bashrc and /etc/zsh/zshrc..."
-	if [[ "$(cat /etc/bash.bashrc)" != *"$1"* ]]; then
-		echo -e "$1" >>/etc/bash.bashrc
-	fi
-	if [ -f "/etc/zsh/zshrc" ] && [[ "$(cat /etc/zsh/zshrc)" != *"$1"* ]]; then
-		echo -e "$1" >>/etc/zsh/zshrc
-	fi
-}
-# settings these will allow us to clean leftovers later on
-export PYTHONUSERBASE=/tmp/pip-tmp
-export PIP_CACHE_DIR=/tmp/pip-tmp/cache
-# install python if does not exists
-if ! type pip3 >/dev/null 2>&1; then
-	echo "Installing python3..."
-	# we set INSTALLTOOLS=false in order to save disk space, but as
-	# a result we will need to install pipx manually later on
-	check_packages curl
-	export VERSION="system"
-	export INSTALLTOOLS="false"
-	curl -fsSL https://raw.githubusercontent.com/devcontainers/features/main/src/python/install.sh | $SHELL
-fi
-# install pipx if not exists
-export PIPX_HOME=${PIPX_HOME:-"/usr/local/py-utils"}
-export PIPX_BIN_DIR="${PIPX_HOME}/bin"
+install_via_pipx() {
+	# This is part of devcontainers-contrib script library
+	# source: https://github.com/devcontainers-contrib/features/tree/v1.1.6/script-library
+	PACKAGES=("$@")
+	arraylength="${#PACKAGES[@]}"
 
-if ! type pipx >/dev/null 2>&1; then
-	USERNAME=""
-	POSSIBLE_USERS=("vscode" "node" "codespace" "$(awk -v val=1000 -F ":" '$3==val{print $1}' /etc/passwd)")
-	for CURRENT_USER in "${POSSIBLE_USERS[@]}"; do
-		if id -u ${CURRENT_USER} >/dev/null 2>&1; then
-			USERNAME=${CURRENT_USER}
-			break
-		fi
+	env_name=$(echo ${PACKAGES[0]} | cut -d "=" -f 1 | cut -d "<" -f 1 | cut -d ">" -f 1)
+
+	# if no python - install it
+	if ! dpkg -s python3-minimal python3-pip libffi-dev python3-venv >/dev/null 2>&1; then
+		apt-get update -y
+		apt-get -y install python3-minimal python3-pip libffi-dev python3-venv
+	fi
+	export PIPX_HOME=/usr/local/pipx
+	mkdir -p ${PIPX_HOME}
+	export PIPX_BIN_DIR=/usr/local/bin
+	export PYTHONUSERBASE=/tmp/pip-tmp
+	export PIP_CACHE_DIR=/tmp/pip-tmp/cache
+	pipx_bin=pipx
+	# if pipx not exists - install it
+	if ! type pipx >/dev/null 2>&1; then
+		pip3 install --disable-pip-version-check --no-cache-dir --user pipx
+		pipx_bin=/tmp/pip-tmp/bin/pipx
+	fi
+	# install main package
+	${pipx_bin} install --pip-args '--no-cache-dir --force-reinstall' -f "${PACKAGES[0]}"
+	# install injections (if provided)
+	for ((i = 1; i < ${arraylength}; i++)); do
+		${pipx_bin} inject $env_name --pip-args '--no-cache-dir --force-reinstall' -f "${PACKAGES[$i]}"
 	done
-	if [ "${USERNAME}" = "" ]; then
-		USERNAME=root
-	fi
 
-	PATH="${PATH}:${PIPX_BIN_DIR}"
+	# cleaning pipx to save disk space
+	rm -rf /tmp/pip-tmp
+}
 
-	# Create pipx group, dir, and set sticky bit
-	if ! cat /etc/group | grep -e "^pipx:" >/dev/null 2>&1; then
-		groupadd -r pipx
-	fi
-	usermod -a -G pipx ${USERNAME}
-	umask 0002
-	mkdir -p ${PIPX_BIN_DIR}
-	chown -R "${USERNAME}:pipx" ${PIPX_HOME}
-	chmod -R g+r+w "${PIPX_HOME}"
-	find "${PIPX_HOME}" -type d -print0 | xargs -0 -n 1 chmod g+s
-
-	pip3 install --disable-pip-version-check --no-cache-dir --user pipx 2>&1
-	/tmp/pip-tmp/bin/pipx install --pip-args=--no-cache-dir pipx
-	PIPX_COMMAND=/tmp/pip-tmp/bin/pipx
-
-	updaterc "export PIPX_HOME=\"${PIPX_HOME}\""
-	updaterc "export PIPX_BIN_DIR=\"${PIPX_BIN_DIR}\""
-	updaterc "if [[ \"\${PATH}\" != *\"\${PIPX_BIN_DIR}\"* ]]; then export PATH=\"\${PATH}:\${PIPX_BIN_DIR}\"; fi"
-
-else
-	PIPX_COMMAND=pipx
-fi
-# make sure pipx uses the latest version of setuptools wheel and pip
-$(pipx environment --value PIPX_SHARED_LIBS)/bin/pip install --disable-pip-version-check --no-cache-dir pip setuptools wheel -U
-
+pipx_installations=()
 if [ "$YT_DLP" != "none" ]; then
 	if [ "$YT_DLP" = "latest" ]; then
-		util_command="yt-dlp"
+		pipx_installations+=("yt-dlp")
 	else
-		util_command="yt-dlp==$YT_DLP"
+		pipx_installations+=("yt-dlp==$YT_DLP")
 	fi
-	"${PIPX_COMMAND}" install --system-site-packages --force --pip-args '--no-cache-dir --force-reinstall' ${util_command}
 fi
 
-# cleaning after pip
-rm -rf /tmp/pip-tmp
+install_via_pipx "${pipx_installations[@]}"
 
 # Clean up
 rm -rf /var/lib/apt/lists/*

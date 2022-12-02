@@ -48,174 +48,131 @@ check_packages() {
 	fi
 }
 
-# code bellow is mostly taken from the base python feature https://raw.githubusercontent.com/devcontainers/features/main/src/python/install.sh
-updaterc() {
-	echo "Updating /etc/bash.bashrc and /etc/zsh/zshrc..."
-	if [[ "$(cat /etc/bash.bashrc)" != *"$1"* ]]; then
-		echo -e "$1" >>/etc/bash.bashrc
-	fi
-	if [ -f "/etc/zsh/zshrc" ] && [[ "$(cat /etc/zsh/zshrc)" != *"$1"* ]]; then
-		echo -e "$1" >>/etc/zsh/zshrc
-	fi
-}
-# settings these will allow us to clean leftovers later on
-export PYTHONUSERBASE=/tmp/pip-tmp
-export PIP_CACHE_DIR=/tmp/pip-tmp/cache
-# install python if does not exists
-if ! type pip3 >/dev/null 2>&1; then
-	echo "Installing python3..."
-	# we set INSTALLTOOLS=false in order to save disk space, but as
-	# a result we will need to install pipx manually later on
-	check_packages curl
-	export VERSION="system"
-	export INSTALLTOOLS="false"
-	curl -fsSL https://raw.githubusercontent.com/devcontainers/features/main/src/python/install.sh | $SHELL
-fi
-# install pipx if not exists
-export PIPX_HOME=${PIPX_HOME:-"/usr/local/py-utils"}
-export PIPX_BIN_DIR="${PIPX_HOME}/bin"
+install_via_pipx() {
+	# This is part of devcontainers-contrib script library
+	# source: https://github.com/devcontainers-contrib/features/tree/v1.1.6/script-library
+	PACKAGES=("$@")
+	arraylength="${#PACKAGES[@]}"
 
-if ! type pipx >/dev/null 2>&1; then
-	USERNAME=""
-	POSSIBLE_USERS=("vscode" "node" "codespace" "$(awk -v val=1000 -F ":" '$3==val{print $1}' /etc/passwd)")
-	for CURRENT_USER in "${POSSIBLE_USERS[@]}"; do
-		if id -u ${CURRENT_USER} >/dev/null 2>&1; then
-			USERNAME=${CURRENT_USER}
-			break
-		fi
+	env_name=$(echo ${PACKAGES[0]} | cut -d "=" -f 1 | cut -d "<" -f 1 | cut -d ">" -f 1)
+
+	# if no python - install it
+	if ! dpkg -s python3-minimal python3-pip libffi-dev python3-venv >/dev/null 2>&1; then
+		apt-get update -y
+		apt-get -y install python3-minimal python3-pip libffi-dev python3-venv
+	fi
+	export PIPX_HOME=/usr/local/pipx
+	mkdir -p ${PIPX_HOME}
+	export PIPX_BIN_DIR=/usr/local/bin
+	export PYTHONUSERBASE=/tmp/pip-tmp
+	export PIP_CACHE_DIR=/tmp/pip-tmp/cache
+	pipx_bin=pipx
+	# if pipx not exists - install it
+	if ! type pipx >/dev/null 2>&1; then
+		pip3 install --disable-pip-version-check --no-cache-dir --user pipx
+		pipx_bin=/tmp/pip-tmp/bin/pipx
+	fi
+	# install main package
+	${pipx_bin} install --pip-args '--no-cache-dir --force-reinstall' -f "${PACKAGES[0]}"
+	# install injections (if provided)
+	for ((i = 1; i < ${arraylength}; i++)); do
+		${pipx_bin} inject $env_name --pip-args '--no-cache-dir --force-reinstall' -f "${PACKAGES[$i]}"
 	done
-	if [ "${USERNAME}" = "" ]; then
-		USERNAME=root
-	fi
 
-	PATH="${PATH}:${PIPX_BIN_DIR}"
+	# cleaning pipx to save disk space
+	rm -rf /tmp/pip-tmp
+}
 
-	# Create pipx group, dir, and set sticky bit
-	if ! cat /etc/group | grep -e "^pipx:" >/dev/null 2>&1; then
-		groupadd -r pipx
-	fi
-	usermod -a -G pipx ${USERNAME}
-	umask 0002
-	mkdir -p ${PIPX_BIN_DIR}
-	chown -R "${USERNAME}:pipx" ${PIPX_HOME}
-	chmod -R g+r+w "${PIPX_HOME}"
-	find "${PIPX_HOME}" -type d -print0 | xargs -0 -n 1 chmod g+s
-
-	pip3 install --disable-pip-version-check --no-cache-dir --user pipx 2>&1
-	/tmp/pip-tmp/bin/pipx install --pip-args=--no-cache-dir pipx
-	PIPX_COMMAND=/tmp/pip-tmp/bin/pipx
-
-	updaterc "export PIPX_HOME=\"${PIPX_HOME}\""
-	updaterc "export PIPX_BIN_DIR=\"${PIPX_BIN_DIR}\""
-	updaterc "if [[ \"\${PATH}\" != *\"\${PIPX_BIN_DIR}\"* ]]; then export PATH=\"\${PATH}:\${PIPX_BIN_DIR}\"; fi"
-
-else
-	PIPX_COMMAND=pipx
-fi
-# make sure pipx uses the latest version of setuptools wheel and pip
-$(pipx environment --value PIPX_SHARED_LIBS)/bin/pip install --disable-pip-version-check --no-cache-dir pip setuptools wheel -U
-
+pipx_installations=()
 if [ "$FLAKE8" != "none" ]; then
 	if [ "$FLAKE8" = "latest" ]; then
-		util_command="flake8"
+		pipx_installations+=("flake8")
 	else
-		util_command="flake8==$FLAKE8"
+		pipx_installations+=("flake8==$FLAKE8")
 	fi
-	"${PIPX_COMMAND}" install --system-site-packages --force --pip-args '--no-cache-dir --force-reinstall' ${util_command}
 	if [ "$FLAKE8_BLACK" != "none" ]; then
 		if [ "$FLAKE8_BLACK" = "latest" ]; then
-			util_command="flake8-black"
+			pipx_installations+=("flake8-black")
 		else
-			util_command="flake8-black==$FLAKE8_BLACK"
+			pipx_installations+=("flake8-black==$FLAKE8_BLACK")
 		fi
-		"${PIPX_COMMAND}" inject flake8 ${util_command}
 	fi
 
 	if [ "$FLAKE8_ISORT" != "none" ]; then
 		if [ "$FLAKE8_ISORT" = "latest" ]; then
-			util_command="flake8-isort"
+			pipx_installations+=("flake8-isort")
 		else
-			util_command="flake8-isort==$FLAKE8_ISORT"
+			pipx_installations+=("flake8-isort==$FLAKE8_ISORT")
 		fi
-		"${PIPX_COMMAND}" inject flake8 ${util_command}
 	fi
 
 	if [ "$FLAKE8_PRINT" != "none" ]; then
 		if [ "$FLAKE8_PRINT" = "latest" ]; then
-			util_command="flake8-print"
+			pipx_installations+=("flake8-print")
 		else
-			util_command="flake8-print==$FLAKE8_PRINT"
+			pipx_installations+=("flake8-print==$FLAKE8_PRINT")
 		fi
-		"${PIPX_COMMAND}" inject flake8 ${util_command}
 	fi
 
 	if [ "$FLAKE8_BANDIT" != "none" ]; then
 		if [ "$FLAKE8_BANDIT" = "latest" ]; then
-			util_command="flake8-bandit"
+			pipx_installations+=("flake8-bandit")
 		else
-			util_command="flake8-bandit==$FLAKE8_BANDIT"
+			pipx_installations+=("flake8-bandit==$FLAKE8_BANDIT")
 		fi
-		"${PIPX_COMMAND}" inject flake8 ${util_command}
 	fi
 
 	if [ "$FLAKE8_PYLINT" != "none" ]; then
 		if [ "$FLAKE8_PYLINT" = "latest" ]; then
-			util_command="flake8-pylint"
+			pipx_installations+=("flake8-pylint")
 		else
-			util_command="flake8-pylint==$FLAKE8_PYLINT"
+			pipx_installations+=("flake8-pylint==$FLAKE8_PYLINT")
 		fi
-		"${PIPX_COMMAND}" inject flake8 ${util_command}
 	fi
 
 	if [ "$FLAKE8_BUILTINS" != "none" ]; then
 		if [ "$FLAKE8_BUILTINS" = "latest" ]; then
-			util_command="flake8-builtins"
+			pipx_installations+=("flake8-builtins")
 		else
-			util_command="flake8-builtins==$FLAKE8_BUILTINS"
+			pipx_installations+=("flake8-builtins==$FLAKE8_BUILTINS")
 		fi
-		"${PIPX_COMMAND}" inject flake8 ${util_command}
 	fi
 
 	if [ "$FLAKE8_SPELLCHECK" != "none" ]; then
 		if [ "$FLAKE8_SPELLCHECK" = "latest" ]; then
-			util_command="flake8-spellcheck"
+			pipx_installations+=("flake8-spellcheck")
 		else
-			util_command="flake8-spellcheck==$FLAKE8_SPELLCHECK"
+			pipx_installations+=("flake8-spellcheck==$FLAKE8_SPELLCHECK")
 		fi
-		"${PIPX_COMMAND}" inject flake8 ${util_command}
 	fi
 
 	if [ "$FLAKE8_PYTEST_STYLE" != "none" ]; then
 		if [ "$FLAKE8_PYTEST_STYLE" = "latest" ]; then
-			util_command="flake8-pytest-style"
+			pipx_installations+=("flake8-pytest-style")
 		else
-			util_command="flake8-pytest-style==$FLAKE8_PYTEST_STYLE"
+			pipx_installations+=("flake8-pytest-style==$FLAKE8_PYTEST_STYLE")
 		fi
-		"${PIPX_COMMAND}" inject flake8 ${util_command}
 	fi
 
 	if [ "$FLAKE8_DJANGO" != "none" ]; then
 		if [ "$FLAKE8_DJANGO" = "latest" ]; then
-			util_command="flake8-django"
+			pipx_installations+=("flake8-django")
 		else
-			util_command="flake8-django==$FLAKE8_DJANGO"
+			pipx_installations+=("flake8-django==$FLAKE8_DJANGO")
 		fi
-		"${PIPX_COMMAND}" inject flake8 ${util_command}
 	fi
 
 	if [ "$FLAKE8_FASTAPI" != "none" ]; then
 		if [ "$FLAKE8_FASTAPI" = "latest" ]; then
-			util_command="flake8-fastapi"
+			pipx_installations+=("flake8-fastapi")
 		else
-			util_command="flake8-fastapi==$FLAKE8_FASTAPI"
+			pipx_installations+=("flake8-fastapi==$FLAKE8_FASTAPI")
 		fi
-		"${PIPX_COMMAND}" inject flake8 ${util_command}
 	fi
 
 fi
 
-# cleaning after pip
-rm -rf /tmp/pip-tmp
+install_via_pipx "${pipx_installations[@]}"
 
 # Clean up
 rm -rf /var/lib/apt/lists/*
