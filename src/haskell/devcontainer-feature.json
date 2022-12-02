@@ -41,6 +41,11 @@
             "default": true,
             "description": "Install HLS, the Haskell Language Server."
         },
+        "downgradeGhcToSupportHls": {
+            "type": "boolean",
+            "default": true,
+            "description": "This will downgrade GHC to the closest version supported by HLS. There is often a gap between a GHC release and tooling support."
+        },
         "installStack": {
             "type": "boolean",
             "default": true,
