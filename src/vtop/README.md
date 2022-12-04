@@ -1,5 +1,5 @@
 
-# vtop (vtop)
+# vtop (via npm) (vtop)
 
 vtop is a graphical activity monitor for the command line.
 

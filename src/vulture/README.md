@@ -1,5 +1,5 @@
 
-# Vulture (vulture)
+# Vulture (via pipx) (vulture)
 
 Vulture finds unused code in Python programs.
 

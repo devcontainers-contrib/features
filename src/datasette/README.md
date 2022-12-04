@@ -1,5 +1,5 @@
 
-# Datasette (datasette)
+# Datasette (via pipx) (datasette)
 
 Datasette is a tool for exploring and publishing data and is aimed at data journalists, museum curators, archivists, local governments, scientists and researchers.
 

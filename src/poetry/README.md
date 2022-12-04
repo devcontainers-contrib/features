@@ -1,5 +1,5 @@
 
-# Poetry (poetry)
+# Poetry (via pipx) (poetry)
 
 Poetry is a tool for dependency management and packaging in Python.
 

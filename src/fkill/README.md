@@ -1,5 +1,5 @@
 
-# fkill (fkill)
+# fkill (via npm) (fkill)
 
 fkill fabulously kill processes. Cross-platform.
 

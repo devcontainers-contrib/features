@@ -1,5 +1,5 @@
 
-# NestJS CLI (nestjs-cli)
+# NestJS CLI (via npm) (nestjs-cli)
 
 Nestjs is a progressive Node.js framework for building efficient, reliable and scalable server-side applications.
 

@@ -1,5 +1,5 @@
 
-# AWS Cloud Development Kit (AWS CDK) (aws-cdk)
+# AWS Cloud Development Kit (AWS CDK) (via npm) (aws-cdk)
 
 AWS CDK is an open-source software development framework to define cloud infrastructure in code and provision it through AWS CloudFormation.
 

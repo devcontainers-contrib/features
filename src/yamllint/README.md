@@ -1,5 +1,5 @@
 
-# yamllint (yamllint)
+# yamllint (via pipx) (yamllint)
 
 yamllint is a Python utility / library to sort imports alphabetically, and automatically separated into sections and by type.
 

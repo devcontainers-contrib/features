@@ -1,5 +1,5 @@
 
-# Flit (flit)
+# Flit (via pipx) (flit)
 
 Flit is a simple way to put Python packages and modules on PyPI.
 

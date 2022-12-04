@@ -1,5 +1,5 @@
 
-# Pre-Commit (pre-commit)
+# Pre-Commit (via pipx) (pre-commit)
 
 Pre-Commit is a framework for managing and maintaining multi-language pre-commit hooks.
 

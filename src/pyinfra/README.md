@@ -1,5 +1,5 @@
 
-# pyinfra (pyinfra)
+# pyinfra (via pipx) (pyinfra)
 
 pyinfra is a Python alternative to Ansible where you don't write your deployment in YAML file, but in Python.
 

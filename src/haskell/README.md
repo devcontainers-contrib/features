@@ -1,5 +1,5 @@
 
-# Haskell (haskell)
+# Haskell (via ghcup) (haskell)
 
 Installs Haskell. An advanced, purely functional programming language
 
@@ -17,8 +17,9 @@ Installs Haskell. An advanced, purely functional programming language
 |-----|-----|-----|-----|
 | ghcVersion | Select the GHC (Glasgow Haskell Compiler) version to install. | string | recommended |
 | cabalVersion | Select the Cabal (a system for building and packaging Haskell libraries and programs) version to install. | string | recommended |
+| globalPackages | Packages to install via `cabal install`, such as `hlint` for linting. Separate with spaces. This will add significant initial build time. | string | - |
+| installHLS | Install HLS, the Haskell Language Server. | boolean | true |
 | installStack | Install Stack, a build tool for Haskell. | boolean | true |
-| stackVersion | Select the Stack version to install. | string | latest |
 | installStackGHCupHook | Enabling this means that stack won't install its own GHC versions, but uses GHCup's | boolean | true |
 | adjustBash | whether to adjust PATH in bashrc (prepend) | boolean | true |
 
