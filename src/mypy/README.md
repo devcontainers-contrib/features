@@ -1,5 +1,5 @@
 
-# Mypy (mypy)
+# Mypy (via pipx) (mypy)
 
 Mypy is a static type checker for Python.
 

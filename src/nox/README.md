@@ -1,5 +1,5 @@
 
-# nox (nox)
+# nox (via pipx) (nox)
 
 nox is a command-line tool that automates testing in multiple Python environments.
 

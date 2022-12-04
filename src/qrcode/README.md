@@ -1,5 +1,5 @@
 
-# qrcode (qrcode)
+# qrcode (via pipx) (qrcode)
 
 qrcode is a command line QR-Code generator.
 

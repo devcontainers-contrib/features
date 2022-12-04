@@ -1,5 +1,5 @@
 
-# Express Application Generator (express-generator)
+# Express Application Generator (via npm) (express-generator)
 
 Express Application Generator is a handy tool for creating skeleton Express web apps.
 

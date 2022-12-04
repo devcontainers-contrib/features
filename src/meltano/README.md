@@ -1,5 +1,5 @@
 
-# Meltano ELT (meltano)
+# Meltano ELT (via pipx) (meltano)
 
 Meltano lets you extract and load data with a software development-inspired approach that that delivers flexibility and limitless collaboration.
 

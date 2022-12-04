@@ -1,5 +1,5 @@
 
-# Pylint (pylint)
+# Pylint (via pipx) (pylint)
 
 Pylint is a static code analyser for Python 2 or 3.
 

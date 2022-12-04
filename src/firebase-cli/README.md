@@ -1,5 +1,5 @@
 
-# Firebase (firebase-cli)
+# Firebase CLI (via npm) (firebase-cli)
 
 The Firebase CLI (GitHub) provides a variety of tools for managing, viewing, and deploying to Firebase projects.
 

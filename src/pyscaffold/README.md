@@ -1,5 +1,5 @@
 
-# PyScaffold (pyscaffold)
+# PyScaffold (via pipx) (pyscaffold)
 
 PyScaffold is a python project template generator with batteries included.
 
