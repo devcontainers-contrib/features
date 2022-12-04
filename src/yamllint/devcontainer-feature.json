@@ -5,7 +5,8 @@
     "description": "yamllint is a Python utility / library to sort imports alphabetically, and automatically separated into sections and by type.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/yamllint",
     "installAfter": [
-        "ghcr.io/devcontainers/features/python:latest"
+        "ghcr.io/devcontainers/features/python:latest",
+        "ghcr.io/devcontainers/features/node:latest"
     ],
     "options": {
         "version": {

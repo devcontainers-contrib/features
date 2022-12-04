@@ -1,0 +1,12 @@
+{
+    "name": "Racket (via asdf)",
+    "id": "racket-asdf",
+    "version": "1.1.8",
+    "description": "Installs Racket",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/racket-asdf",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest",
+        "ghcr.io/devcontainers/features/node:latest"
+    ],
+    "options": {}
+}
