@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs nomad"
+  feature_name: "nomad (via asdf)"
+  feature_id: "nomad-asdf"
+  test_command: "nomad --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "nomad"
+      display_name: "nomad"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs serf"
+  feature_name: "serf (via asdf)"
+  feature_id: "serf-asdf"
+  test_command: "serf --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "serf"
+      display_name: "serf"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

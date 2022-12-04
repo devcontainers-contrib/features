@@ -1,0 +1,22 @@
+default_context:
+  description: "Installs ccache"
+  feature_name: "ccache (via asdf)"
+  feature_id: "ccache-asdf"
+  test_command: "ccache --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "ccache"
+      display_name: "ccache"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
+    aptget: 
+    - package_name: build-essential
+      display_name: build-essential
+      exposed: false
+    - package_name: cmake
+      display_name: cmake
+      exposed: false
+    

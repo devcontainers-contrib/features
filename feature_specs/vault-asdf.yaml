@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs vault"
+  feature_name: "vault (via asdf)"
+  feature_id: "vault-asdf"
+  test_command: "vault --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "vault"
+      display_name: "vault"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs consul"
+  feature_name: "consul (via asdf)"
+  feature_id: "consul-asdf"
+  test_command: "consul --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "consul"
+      display_name: "consul"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

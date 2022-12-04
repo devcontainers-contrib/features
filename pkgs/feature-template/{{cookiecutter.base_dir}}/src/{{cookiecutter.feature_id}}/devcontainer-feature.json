@@ -1,4 +1,3 @@
-{%- set exposed_aptget_packages = (cookiecutter.content.aptget | selectattr('exposed', 'equalto', 'True') | list) -%}
 {
     "name": "{{cookiecutter.feature_name}}",
     "id": "{{cookiecutter.feature_id}}",
@@ -6,9 +5,14 @@
     "description": "{{cookiecutter.description}}",
     "documentationURL": "{{cookiecutter.gitrepo}}/tree/main/src/{{cookiecutter.feature_id}}",
     "installAfter": [
-        "ghcr.io/devcontainers/features/python:latest"
+        "ghcr.io/devcontainers/features/python:latest",
+        "ghcr.io/devcontainers/features/node:latest"
+
     ],
     "options": {
+        {% if cookiecutter.content.aptget is defined and cookiecutter.content.aptget |length > 0 %}   
+
+        {%- set exposed_aptget_packages = (cookiecutter.content.aptget | selectattr('exposed', 'equalto', 'True') | list) -%}
 
         {% for aptget_package in exposed_aptget_packages -%} 
         {%- if aptget_package.optional == "True" %}   
@@ -33,6 +37,9 @@
         {%- endif %}
 
         {% endfor -%}
+
+        {%- endif %}
+
         {% if cookiecutter.content.pipx is defined and cookiecutter.content.pipx |length > 0 %}   
 
         {% for pipx_package in cookiecutter.content.pipx %}

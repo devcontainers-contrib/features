@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Meson"
+  feature_name: "Meson (via asdf)"
+  feature_id: "meson-asdf"
+  test_command: "meson --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "meson"
+      display_name: "Meson"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

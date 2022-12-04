@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Elm"
+  feature_name: "Elm (via asdf)"
+  feature_id: "elm-asdf"
+  test_command: "elm --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "elm"
+      display_name: "Elm"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

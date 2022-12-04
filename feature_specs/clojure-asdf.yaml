@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Clojure"
+  feature_name: "Clojure (via asdf)"
+  feature_id: "clojure-asdf"
+  test_command: "clojure --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "clojure"
+      display_name: "Clojure"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

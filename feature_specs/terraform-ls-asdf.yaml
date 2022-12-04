@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs terraform-ls"
+  feature_name: "terraform-ls (via asdf)"
+  feature_id: "terraform-ls-asdf"
+  test_command: "terraform-ls --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "terraform-ls"
+      display_name: "terraform-ls"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

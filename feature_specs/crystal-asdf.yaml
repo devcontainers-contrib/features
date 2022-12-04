@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Crystal"
+  feature_name: "Crystal (via asdf)"
+  feature_id: "crystal-asdf"
+  test_command: "crystal --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "crystal"
+      display_name: "Crystal"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

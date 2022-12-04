@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs grpcurl"
+  feature_name: "grpcurl (via asdf)"
+  feature_id: "grpcurl-asdf"
+  test_command: "grpcurl --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "grpcurl"
+      display_name: "grpcurl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

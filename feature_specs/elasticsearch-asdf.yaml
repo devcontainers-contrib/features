@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Elasticsearch"
+  feature_name: "Elasticsearch (via asdf)"
+  feature_id: "elasticsearch-asdf"
+  test_command: "elasticsearch --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "elasticsearch"
+      display_name: "Elasticsearch"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

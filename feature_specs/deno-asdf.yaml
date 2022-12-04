@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Deno"
+  feature_name: "Deno (via asdf)"
+  feature_id: "deno-asdf"
+  test_command: "deno --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "deno"
+      display_name: "Deno"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: Install act
+  feature_name: act
+  feature_id: act-asdf
+  test_command: act --version
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: act
+      display_name: act
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Haxe"
+  feature_name: "Haxe (via asdf)"
+  feature_id: "haxe-asdf"
+  test_command: "haxe --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "haxe"
+      display_name: "Haxe"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs sentinel"
+  feature_name: "sentinel (via asdf)"
+  feature_id: "sentinel-asdf"
+  test_command: "sentinel --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "sentinel"
+      display_name: "sentinel"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

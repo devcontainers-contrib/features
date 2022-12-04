@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Nim"
+  feature_name: "Nim (via asdf)"
+  feature_id: "nim-asdf"
+  test_command: "nim --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "nim"
+      display_name: "Nim"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs direnv"
+  feature_name: "direnv (via asdf)"
+  feature_id: "direnv-asdf"
+  test_command: "direnv --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "direnv"
+      display_name: "direnv"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

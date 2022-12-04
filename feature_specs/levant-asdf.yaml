@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs levant"
+  feature_name: "levant (via asdf)"
+  feature_id: "levant-asdf"
+  test_command: "levant --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "levant"
+      display_name: "levant"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
