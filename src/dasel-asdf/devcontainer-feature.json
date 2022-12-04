@@ -1,0 +1,12 @@
+{
+    "name": "Dasel (via asdf)",
+    "id": "dasel-asdf",
+    "version": "1.1.8",
+    "description": "Installs Dasel",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/dasel-asdf",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest",
+        "ghcr.io/devcontainers/features/node:latest"
+    ],
+    "options": {}
+}

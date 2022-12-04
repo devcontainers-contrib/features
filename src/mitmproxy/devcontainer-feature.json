@@ -1,11 +1,12 @@
 {
     "name": "mitmproxy",
     "id": "mitmproxy",
-    "version": "1.1.7",
+    "version": "1.1.8",
     "description": "mitmproxy is an interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mitmproxy",
     "installAfter": [
-        "ghcr.io/devcontainers/features/python:latest"
+        "ghcr.io/devcontainers/features/python:latest",
+        "ghcr.io/devcontainers/features/node:latest"
     ],
     "options": {
         "version": {

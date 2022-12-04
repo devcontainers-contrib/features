@@ -1,0 +1,12 @@
+{
+    "name": "Nim (via asdf)",
+    "id": "nim-asdf",
+    "version": "1.1.8",
+    "description": "Installs Nim",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/nim-asdf",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest",
+        "ghcr.io/devcontainers/features/node:latest"
+    ],
+    "options": {}
+}
