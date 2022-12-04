@@ -1,6 +1,6 @@
 default_context:
   description: Hatch is a modern, extensible Python project manager.
-  feature_name: Hatch
+  feature_name: Hatch (via pipx)
   feature_id: hatch
   test_command: hatch --version
   gitrepo: http://github.com/devcontainers-contrib/features

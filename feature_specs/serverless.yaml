@@ -1,6 +1,6 @@
 default_context:
   description: Serverless Framework is a widely used open-source IaC tool that allows you to build, and deploy serverless applications on multiple cloud providers.
-  feature_name: Serverless Framework
+  feature_name: Serverless Framework (via npm)
   feature_id: serverless
   test_command: serverless --version
   gitrepo: http://github.com/devcontainers-contrib/features

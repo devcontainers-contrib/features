@@ -1,6 +1,6 @@
 default_context:
   description: nox is a command-line tool that automates testing in multiple Python environments.
-  feature_name: nox
+  feature_name: nox (via pipx)
   feature_id: nox
   test_command: nox --version
   gitrepo: http://github.com/devcontainers-contrib/features

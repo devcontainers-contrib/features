@@ -1,5 +1,5 @@
 {
-    "name": "Jest",
+    "name": "Jest (via npm)",
     "id": "jest",
     "version": "1.1.8",
     "description": "Jest is a delightful JavaScript Testing Framework with a focus on simplicity",

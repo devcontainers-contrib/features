@@ -1,5 +1,5 @@
 {
-    "name": "Cookiecutter",
+    "name": "Cookiecutter (via pipx)",
     "id": "cookiecutter",
     "version": "1.1.8",
     "description": "Cookiecutter creates projects from project templates.",

@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs Crystal"
+  description: "Crystal is a general-purpose, object-oriented programming language"
   feature_name: "Crystal (via asdf)"
   feature_id: "crystal-asdf"
   test_command: "crystal --version"

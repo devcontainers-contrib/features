@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs consul"
+  description: "Consul is a service networking solution to automate network configurations, discover services, and enable secure connectivity across any cloud or runtime."
   feature_name: "consul (via asdf)"
   feature_id: "consul-asdf"
   test_command: "consul --version"

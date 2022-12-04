@@ -1,5 +1,5 @@
 {
-    "name": "Lektor",
+    "name": "Lektor (via npm)",
     "id": "lektor",
     "version": "1.1.8",
     "description": "Lektor is a static website generator.",

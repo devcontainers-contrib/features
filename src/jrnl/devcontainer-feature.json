@@ -1,5 +1,5 @@
 {
-    "name": "jrnl",
+    "name": "jrnl (via pipx)",
     "id": "jrnl",
     "version": "1.1.8",
     "description": "jrnl is a simple journal application for the command line.",

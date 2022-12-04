@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs Opam"
+  description: "opam is a source-based package manager for OCaml."
   feature_name: "Opam (via asdf)"
   feature_id: "opam-asdf"
   test_command: "opam --version"

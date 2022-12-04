@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs sentinel"
+  description: "Sentinel is an embeddable policy as code framework to enable fine-grained, logic-based policy decisions that can be extended to source external information to make decisions."
   feature_name: "sentinel (via asdf)"
   feature_id: "sentinel-asdf"
   test_command: "sentinel --version"

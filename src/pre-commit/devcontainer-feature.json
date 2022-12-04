@@ -1,5 +1,5 @@
 {
-    "name": "Pre-Commit",
+    "name": "Pre-Commit (via pipx)",
     "id": "pre-commit",
     "version": "1.1.8",
     "description": "Pre-Commit is a framework for managing and maintaining multi-language pre-commit hooks.",

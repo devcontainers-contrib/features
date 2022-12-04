@@ -1,6 +1,6 @@
 default_context:
   description: Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun.
-  feature_name: Mocha
+  feature_name: Mocha (via npm)
   feature_id: mocha
   test_command: mocha --version
   gitrepo: http://github.com/devcontainers-contrib/features

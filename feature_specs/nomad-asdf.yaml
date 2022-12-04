@@ -1,13 +1,13 @@
 default_context:
-  description: "Installs nomad"
-  feature_name: "nomad (via asdf)"
+  description: "Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications."
+  feature_name: "Nomad (via asdf)"
   feature_id: "nomad-asdf"
   test_command: "nomad --version"
   gitrepo: http://github.com/devcontainers-contrib/features
   content:
     asdf:
     - package_name: "nomad"
-      display_name: "nomad"
+      display_name: "Nomad"
       version_alias: version
       default: latest
       exposed: true

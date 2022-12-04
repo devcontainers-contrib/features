@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs Racket"
+  description: "The Racket language is a modern dialect of Lisp and a descendant of Scheme."
   feature_name: "Racket (via asdf)"
   feature_id: "racket-asdf"
   test_command: "racket --version"

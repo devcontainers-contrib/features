@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs Ninja"
+  description: "Ninja is a small build system with a focus on speed."
   feature_name: "Ninja (via asdf)"
   feature_id: "ninja-asdf"
   test_command: "ninja --version"

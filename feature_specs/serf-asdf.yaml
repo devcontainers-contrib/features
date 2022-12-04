@@ -1,13 +1,13 @@
 default_context:
-  description: "Installs serf"
-  feature_name: "serf (via asdf)"
+  description: "Serf is a decentralized solution for cluster membership, failure detection, and orchestration."
+  feature_name: "Serf (via asdf)"
   feature_id: "serf-asdf"
   test_command: "serf --version"
   gitrepo: http://github.com/devcontainers-contrib/features
   content:
     asdf:
     - package_name: "serf"
-      display_name: "serf"
+      display_name: "Serf"
       version_alias: version
       default: latest
       exposed: true

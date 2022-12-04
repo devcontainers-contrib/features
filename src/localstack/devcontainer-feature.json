@@ -1,5 +1,5 @@
 {
-    "name": "Localstack",
+    "name": "Localstack (via pipx)",
     "id": "localstack",
     "version": "1.1.8",
     "description": "Localstack is a fully functional local AWS cloud stack.",

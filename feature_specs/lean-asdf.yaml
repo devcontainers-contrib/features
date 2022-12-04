@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs Lean"
+  description: "Lean is a functional programming language that makes it easy to write correct and maintainable code."
   feature_name: "Lean (via asdf)"
   feature_id: "lean-asdf"
   test_command: "lean --version"

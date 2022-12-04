@@ -1,6 +1,6 @@
 default_context:
   description: vtop is a graphical activity monitor for the command line.
-  feature_name: vtop
+  feature_name: vtop (via npm)
   feature_id: vtop
   test_command: vtop --version
   gitrepo: http://github.com/devcontainers-contrib/features

@@ -1,5 +1,5 @@
 {
-    "name": "vtop",
+    "name": "vtop (via npm)",
     "id": "vtop",
     "version": "1.1.8",
     "description": "vtop is a graphical activity monitor for the command line.",

@@ -1,6 +1,6 @@
 default_context:
   description: Pre-Commit is a framework for managing and maintaining multi-language pre-commit hooks.
-  feature_name: Pre-Commit
+  feature_name: Pre-Commit (via pipx)
   feature_id: pre-commit
   test_command: pre-commit --version
   gitrepo: http://github.com/devcontainers-contrib/features

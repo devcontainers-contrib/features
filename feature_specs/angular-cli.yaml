@@ -1,6 +1,6 @@
 default_context:
   description: Angular CLI is a command-line interface tool that you use to initialize, develop, scaffold, and maintain Angular applications directly from a command shell.
-  feature_name: Angular CLI
+  feature_name: Angular CLI (via npm)
   feature_id: angular-cli
   test_command: ng --help
   gitrepo: http://github.com/devcontainers-contrib/features

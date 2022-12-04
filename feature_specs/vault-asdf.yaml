@@ -1,13 +1,13 @@
 default_context:
-  description: "Installs vault"
-  feature_name: "vault (via asdf)"
+  description: "Vault secures, stores, and tightly controls access to tokens, passwords, certificates, API keys, and other secrets in modern computing."
+  feature_name: "Vault (via asdf)"
   feature_id: "vault-asdf"
   test_command: "vault --version"
   gitrepo: http://github.com/devcontainers-contrib/features
   content:
     asdf:
     - package_name: "vault"
-      display_name: "vault"
+      display_name: "Vault"
       version_alias: version
       default: latest
       exposed: true

@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs Clojure"
+  description: "Clojure is a dialect of Lisp, and shares with Lisp the code-as-data philosophy and a powerful macro system."
   feature_name: "Clojure (via asdf)"
   feature_id: "clojure-asdf"
   test_command: "clojure --version"

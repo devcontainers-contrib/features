@@ -1,6 +1,6 @@
 default_context:
   description: Gulp CLI is Command Line Utility for Gulp
-  feature_name: Gulp CLI
+  feature_name: Gulp CLI (via npm)
   feature_id: gulp-cli
   test_command: gulp --version
   gitrepo: http://github.com/devcontainers-contrib/features

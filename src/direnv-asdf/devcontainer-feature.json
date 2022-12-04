@@ -2,7 +2,7 @@
     "name": "direnv (via asdf)",
     "id": "direnv-asdf",
     "version": "1.1.8",
-    "description": "Installs direnv",
+    "description": "direnv is an extension for your shell. It augments existing shells with a new feature that can load and unload environment variables depending on the current directory.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/direnv-asdf",
     "installAfter": [
         "ghcr.io/devcontainers/features/python:latest",

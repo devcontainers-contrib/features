@@ -1,7 +1,7 @@
 default_context:
   description: MkDocs is a fast, simple and downright gorgeous static site generator
     that's geared towards building project documentation.
-  feature_name: MkDocs
+  feature_name: MkDocs (via pipx)
   feature_id: mkdocs
   test_command: mkdocs --version
   gitrepo: http://github.com/devcontainers-contrib/features

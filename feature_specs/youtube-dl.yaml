@@ -1,6 +1,6 @@
 default_context:
   description: youtube-dl is a command-line program to download videos from YouTube.com and other video sites. 
-  feature_name: youtube-dl
+  feature_name: youtube-dl (via pipx)
   feature_id: youtube-dl
   test_command: youtube-dl --version
   gitrepo: http://github.com/devcontainers-contrib/features

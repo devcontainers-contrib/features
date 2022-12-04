@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs svu"
+  description: "svu is a tool to manage semantic versions at ease."
   feature_name: "svu (via asdf)"
   feature_id: "svu-asdf"
   test_command: "svu --version"

@@ -1,5 +1,5 @@
 {
-    "name": "Ansible",
+    "name": "Ansible (via pipx)",
     "id": "ansible",
     "version": "1.1.8",
     "description": "Ansible is a suite of software tools that enables infrastructure as code.",

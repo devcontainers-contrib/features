@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs OCaml"
+  description: "OCaml is a general-purpose, industrial-strength programming language with an emphasis on expressiveness and safety."
   feature_name: "OCaml (via asdf)"
   feature_id: "ocaml-asdf"
   test_command: "ocaml --version"

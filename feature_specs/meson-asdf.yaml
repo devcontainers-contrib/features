@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs Meson"
+  description: "Meson is an open source build system meant to be both extremely fast, and, even more importantly, as user friendly as possible."
   feature_name: "Meson (via asdf)"
   feature_id: "meson-asdf"
   test_command: "meson --version"

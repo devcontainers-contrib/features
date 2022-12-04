@@ -1,6 +1,6 @@
 default_context:
   description: fkill fabulously kill processes. Cross-platform.
-  feature_name: fkill
+  feature_name: fkill (via npm)
   feature_id: fkill
   test_command: fkill --version
   gitrepo: http://github.com/devcontainers-contrib/features

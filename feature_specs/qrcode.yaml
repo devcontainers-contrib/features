@@ -1,6 +1,6 @@
 default_context:
   description: qrcode is a command line QR-Code generator.
-  feature_name: qrcode
+  feature_name: qrcode (via pipx)
   feature_id: qrcode
   test_command: qr --version
   gitrepo: http://github.com/devcontainers-contrib/features

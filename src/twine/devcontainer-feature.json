@@ -1,5 +1,5 @@
 {
-    "name": "Twine",
+    "name": "Twine (via pipx)",
     "id": "twine",
     "version": "1.1.8",
     "description": "Twine is a utility for publishing Python packages on PyPI.",

@@ -1,5 +1,5 @@
 {
-    "name": "Less (Leaner Style Sheets)",
+    "name": "Less (via npm)",
     "id": "less",
     "version": "1.1.8",
     "description": "Less is a backwards-compatible language extension for CSS",

@@ -1,5 +1,5 @@
 {
-    "name": "Black",
+    "name": "Black (via pipx)",
     "id": "black",
     "version": "1.1.8",
     "description": "Black is an uncompromising Python code formatter.",

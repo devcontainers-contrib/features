@@ -2,7 +2,7 @@
     "name": "svu (via asdf)",
     "id": "svu-asdf",
     "version": "1.1.8",
-    "description": "Installs svu",
+    "description": "svu is a tool to manage semantic versions at ease.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/svu-asdf",
     "installAfter": [
         "ghcr.io/devcontainers/features/python:latest",

@@ -1,6 +1,6 @@
 default_context:
   description: tox is a generic virtual environment management and test command line tool.
-  feature_name: tox
+  feature_name: tox (via pipx)
   feature_id: tox
   test_command: tox --version
   gitrepo: http://github.com/devcontainers-contrib/features

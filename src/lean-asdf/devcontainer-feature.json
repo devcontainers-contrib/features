@@ -2,7 +2,7 @@
     "name": "Lean (via asdf)",
     "id": "lean-asdf",
     "version": "1.1.8",
-    "description": "Installs Lean",
+    "description": "Lean is a functional programming language that makes it easy to write correct and maintainable code.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/lean-asdf",
     "installAfter": [
         "ghcr.io/devcontainers/features/python:latest",

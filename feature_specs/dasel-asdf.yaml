@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs Dasel"
+  description: "Dasel (short for data-selector) allows you to query and modify data structures using selector strings."
   feature_name: "Dasel (via asdf)"
   feature_id: "dasel-asdf"
   test_command: "dasel --version"

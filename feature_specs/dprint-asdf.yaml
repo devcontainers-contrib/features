@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs dprint"
+  description: "dprint is a pluggable and configurable code formatting platform written in Rust."
   feature_name: "dprint (via asdf)"
   feature_id: "dprint-asdf"
   test_command: "dprint --version"

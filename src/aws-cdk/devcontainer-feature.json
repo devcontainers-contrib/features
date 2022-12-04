@@ -1,5 +1,5 @@
 {
-    "name": "AWS Cloud Development Kit (AWS CDK)",
+    "name": "AWS Cloud Development Kit (AWS CDK) (via npm)",
     "id": "aws-cdk",
     "version": "1.1.8",
     "description": "AWS CDK is an open-source software development framework to define cloud infrastructure in code and provision it through AWS CloudFormation.",

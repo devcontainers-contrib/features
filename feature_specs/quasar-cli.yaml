@@ -1,6 +1,6 @@
 default_context:
   description: Quasar is an MIT licensed open-source Vue.js based framework, which allows you as a web developer to quickly create responsive websites/apps in many flavours.
-  feature_name: Quasar CLI
+  feature_name: Quasar CLI (via npm)
   feature_id: quasar-cli
   test_command: quasar --version
   gitrepo: http://github.com/devcontainers-contrib/features

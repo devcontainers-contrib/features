@@ -1,5 +1,5 @@
 {
-    "name": "Express Application Generator",
+    "name": "Express Application Generator (via npm)",
     "id": "express-generator",
     "version": "1.1.8",
     "description": "Express Application Generator is a handy tool for creating skeleton Express web apps.",

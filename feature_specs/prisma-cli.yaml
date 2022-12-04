@@ -1,6 +1,6 @@
 default_context:
   description: Prisma is a next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB.
-  feature_name: Prisma CLI
+  feature_name: Prisma CLI (via npm)
   feature_id: prisma
   test_command: prisma --help
   gitrepo: http://github.com/devcontainers-contrib/features

@@ -1,5 +1,5 @@
 {
-    "name": "Vulture",
+    "name": "Vulture (via pipx)",
     "id": "vulture",
     "version": "1.1.8",
     "description": "Vulture finds unused code in Python programs.",

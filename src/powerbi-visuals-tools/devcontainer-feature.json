@@ -1,5 +1,5 @@
 {
-    "name": "PowerBI Visual Tools (pbiviz)",
+    "name": "PowerBI Visual Tools (pbiviz) (via npm)",
     "id": "powerbi-visuals-tools",
     "version": "1.1.8",
     "description": "PowerBI Visual Tools Contains tools for building/packaging Power BI visuals",

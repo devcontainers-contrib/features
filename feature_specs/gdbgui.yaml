@@ -1,6 +1,6 @@
 default_context:
   description: gdbgui is a browser-based frontend to gdb (gnu debugger).
-  feature_name: gdbgui
+  feature_name: gdbgui (via pipx)
   feature_id: gdbgui
   test_command: gdbgui --version
   gitrepo: http://github.com/devcontainers-contrib/features

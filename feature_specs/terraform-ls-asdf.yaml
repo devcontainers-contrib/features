@@ -1,6 +1,6 @@
 default_context:
-  description: "Installs terraform-ls"
-  feature_name: "terraform-ls (via asdf)"
+  description: "The official Terraform language server (terraform-ls) maintained by HashiCorp provides IDE features to any LSP-compatible editor."
+  feature_name: "Terraform Language Server (terraform-ls) (via asdf)"
   feature_id: "terraform-ls-asdf"
   test_command: "terraform-ls --version"
   gitrepo: http://github.com/devcontainers-contrib/features

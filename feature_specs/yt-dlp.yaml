@@ -1,6 +1,6 @@
 default_context:
   description: yt-dlp is a youtube-dl fork with additional features and fixes. 
-  feature_name: yt-dlp
+  feature_name: yt-dlp (via pipx)
   feature_id: yt-dlp
   test_command: yt-dlp --version
   gitrepo: http://github.com/devcontainers-contrib/features

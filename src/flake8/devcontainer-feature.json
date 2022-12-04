@@ -1,5 +1,5 @@
 {
-    "name": "Flake8",
+    "name": "Flake8 (via pipx)",
     "id": "flake8",
     "version": "1.1.8",
     "description": "Flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins.",

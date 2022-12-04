@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs Deno"
+  description: "Deno is a simple, modern runtime for JavaScript and TypeScript that uses V8 and is built in Rust."
   feature_name: "Deno (via asdf)"
   feature_id: "deno-asdf"
   test_command: "deno --version"

@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs Elm"
+  description: "Elm is a domain-specific programming language for declaratively creating web browser-based graphical user interfaces."
   feature_name: "Elm (via asdf)"
   feature_id: "elm-asdf"
   test_command: "elm --version"

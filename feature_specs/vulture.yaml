@@ -1,6 +1,6 @@
 default_context:
   description: Vulture finds unused code in Python programs.
-  feature_name: Vulture
+  feature_name: Vulture (via pipx)
   feature_id: vulture
   test_command: vulture --version
   gitrepo: http://github.com/devcontainers-contrib/features

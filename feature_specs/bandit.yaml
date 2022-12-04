@@ -1,6 +1,6 @@
 default_context:
   description: Bandit is a tool designed to find common security issues in Python code.
-  feature_name: Bandit
+  feature_name: Bandit (via pipx)
   feature_id: bandit
   test_command: bandit --version
   gitrepo: http://github.com/devcontainers-contrib/features

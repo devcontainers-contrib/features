@@ -1,5 +1,5 @@
 {
-    "name": "Coverage.py",
+    "name": "Coverage.py (via pipx)",
     "id": "coverage-py",
     "version": "1.1.8",
     "description": "Coverage.py is a tool for measuring code coverage of Python programs.",

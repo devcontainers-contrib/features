@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs Haxe"
+  description: "Haxe is an open source high-level cross-platform programming language and compiler."
   feature_name: "Haxe (via asdf)"
   feature_id: "haxe-asdf"
   test_command: "haxe --version"

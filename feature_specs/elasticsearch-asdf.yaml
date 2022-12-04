@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs Elasticsearch"
+  description: "Elasticsearch is a search engine based on the Lucene library."
   feature_name: "Elasticsearch (via asdf)"
   feature_id: "elasticsearch-asdf"
   test_command: "elasticsearch --version"

@@ -1,6 +1,6 @@
 default_context:
   description: The tldr pages are a community effort to simplify the beloved man pages with practical examples.
-  feature_name: tldr
+  feature_name: tldr (via npm)
   feature_id: tldr
   test_command: tldr --version
   gitrepo: http://github.com/devcontainers-contrib/features

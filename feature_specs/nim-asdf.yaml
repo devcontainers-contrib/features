@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs Nim"
+  description: "Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula."
   feature_name: "Nim (via asdf)"
   feature_id: "nim-asdf"
   test_command: "nim --version"

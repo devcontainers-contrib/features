@@ -1,6 +1,6 @@
 default_context:
-  description: Install act
-  feature_name: act
+  description: Act is an open source project that allows you to run your github flow locally. 
+  feature_name: act (via asdf)
   feature_id: act-asdf
   test_command: act --version
   gitrepo: http://github.com/devcontainers-contrib/features

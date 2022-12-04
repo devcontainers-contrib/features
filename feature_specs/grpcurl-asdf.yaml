@@ -1,6 +1,6 @@
 default_context:
-  description: "Installs grpcurl"
-  feature_name: "grpcurl (via asdf)"
+  description: "gRPCurl is a command-line tool that lets you interact with gRPC servers."
+  feature_name: "gRPCurl (via asdf)"
   feature_id: "grpcurl-asdf"
   test_command: "grpcurl --version"
   gitrepo: http://github.com/devcontainers-contrib/features

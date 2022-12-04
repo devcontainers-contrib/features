@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs levant"
+  description: "Levant is an open source templating and deployment tool for HashiCorp Nomad jobs"
   feature_name: "levant (via asdf)"
   feature_id: "levant-asdf"
   test_command: "levant --version"

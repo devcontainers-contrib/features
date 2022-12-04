@@ -1,5 +1,5 @@
 {
-    "name": "Datasette",
+    "name": "Datasette (via pipx)",
     "id": "datasette",
     "version": "1.1.8",
     "description": "Datasette is a tool for exploring and publishing data and is aimed at data journalists, museum curators, archivists, local governments, scientists and researchers.",

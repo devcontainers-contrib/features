@@ -1,6 +1,6 @@
 default_context:
   description: isort is a Python utility / library to sort imports alphabetically, and automatically separated into sections and by type.
-  feature_name: isort
+  feature_name: isort (via pipx)
   feature_id: isort
   test_command: isort --version
   gitrepo: http://github.com/devcontainers-contrib/features

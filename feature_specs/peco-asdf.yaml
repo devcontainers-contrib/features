@@ -1,5 +1,5 @@
 default_context:
-  description: "Installs peco"
+  description: "peco is simplistic interactive filtering tool."
   feature_name: "peco (via asdf)"
   feature_id: "peco-asdf"
   test_command: "peco --version"

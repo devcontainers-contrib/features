@@ -1,6 +1,6 @@
 default_context:
-  description: "Installs ccache"
-  feature_name: "ccache (via asdf)"
+  description: "Ccache is a compiler cache. It speeds up recompilation by caching previous compilations and detecting when the same compilation is being done again."
+  feature_name: "Ccache (via asdf)"
   feature_id: "ccache-asdf"
   test_command: "ccache --version"
   gitrepo: http://github.com/devcontainers-contrib/features

@@ -1,5 +1,5 @@
 {
-    "name": "Brownie",
+    "name": "Brownie (via pipx)",
     "id": "brownie",
     "version": "1.1.8",
     "description": "Brownie is a Python-based development and testing framework for smart contracts targeting the Ethereum Virtual Machine.",

@@ -1,6 +1,6 @@
 default_context:
   description: Twine is a utility for publishing Python packages on PyPI.
-  feature_name: Twine
+  feature_name: Twine (via pipx)
   feature_id: twine
   test_command: twine --version
   gitrepo: http://github.com/devcontainers-contrib/features

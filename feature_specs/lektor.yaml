@@ -1,6 +1,6 @@
 default_context:
   description: Lektor is a static website generator.
-  feature_name: Lektor
+  feature_name: Lektor (via npm)
   feature_id: lektor
   test_command: lektor --version
   gitrepo: http://github.com/devcontainers-contrib/features

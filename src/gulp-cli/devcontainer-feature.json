@@ -1,5 +1,5 @@
 {
-    "name": "Gulp CLI",
+    "name": "Gulp CLI (via npm)",
     "id": "gulp-cli",
     "version": "1.1.8",
     "description": "Gulp CLI is Command Line Utility for Gulp",

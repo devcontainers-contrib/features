@@ -1,6 +1,6 @@
 default_context:
   description: Flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins.
-  feature_name: Flake8
+  feature_name: Flake8 (via pipx)
   feature_id: flake8
   test_command: flake8 --version
   gitrepo: http://github.com/devcontainers-contrib/features
