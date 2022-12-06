@@ -1,7 +1,5 @@
 # Community devcontainer features
 
-[![Gitter](https://img.shields.io/gitter/room/devcontainers-contrib/community)](https://gitter.im/devcontainers-contrib/community)
-
 🐳 Extra add-in features for
 [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) and
 [GitHub Codespaces](https://github.com/features/codespaces)
@@ -10,10 +8,11 @@
 
 ![](https://i.imgur.com/W7t3YsC.png)
 
-**[Overview](https://github.com/devcontainers-contrib/features#readme)** |
-[User docs](https://github.com/devcontainers-contrib/features#usage) |
-[Contributing](https://github.com/devcontainers-contrib/features/blob/main/CONTRIBUTING.md)
-| [Developer wiki](https://github.com/devcontainers-contrib/features/wiki)
+[![Overview](https://img.shields.io/static/v1?style=for-the-badge&message=Overview&color=018EF5&logo=ReadMe&logoColor=FFFFFF&label=)](https://github.com/devcontainers-contrib/features#readme)
+[![User docs](https://img.shields.io/static/v1?style=for-the-badge&message=User%20docs&color=018EF5&logo=ReadMe&logoColor=FFFFFF&label=)](https://github.com/devcontainers-contrib/features#usage)
+[![Contribute](https://img.shields.io/static/v1?style=for-the-badge&message=Contribute&color=181717&logo=GitHub&logoColor=FFFFFF&label=)](https://github.com/devcontainers-contrib/features/blob/main/CONTRIBUTING.md)
+[![Dev wiki](https://img.shields.io/static/v1?style=for-the-badge&message=Dev%20wiki&color=181717&logo=GitHub&logoColor=FFFFFF&label=)](https://github.com/devcontainers-contrib/features/wiki)
+[![Chat](https://img.shields.io/static/v1?style=for-the-badge&message=Chat&color=ED1965&logo=Gitter&logoColor=FFFFFF&label=)](https://gitter.im/devcontainers-contrib/community)
 
 </div>
 
