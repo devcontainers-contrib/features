@@ -4,6 +4,7 @@ GHC_VERSION="${GHCVERSION:-"latest"}"
 CABAL_VERSION="${CABALVERSION:-"latest"}"
 INCLUDE_STACK="${INSTALLSTACK:-"true"}"
 INCLUDE_HLS="${INSTALLHLS:-"true"}"
+DOWNGRADE_GHC_TO_SUPPORT_HLS="${DOWNGRADEGHCTOSUPPORTHLS:-"true"}"
 ADJUST_BASHRC="${ADJUSTBASH:-"true"}"
 
 INSTALL_STACK_GHCUP_HOOK="${INSTALLSTACKGHCUPHOOK:-"true"}"
@@ -63,6 +64,26 @@ sudo -iu "$_REMOTE_USER" <<EOF
 
 	# Update PATH so that Cabal is accessible, the same as will be done via ~/.bashrc in the future
 	. "${_REMOTE_USER_HOME}/.local/share/ghcup/env"
+
+	if [[ "${DOWNGRADE_GHC_TO_SUPPORT_HLS}" = "true" ]]; then
+		if [[ "${INCLUDE_HLS}" = "true" ]]; then
+			IS_GHC_POWERED_BY_HLS=\`ghcup list -c set -t ghc -r | grep 'hls-powered'\`
+			if [[ -z "\${IS_GHC_POWERED_BY_HLS}" ]]; then
+				echo "This GHC is not HLS-powered..."
+				CLOSEST_POWERED_GHC=\`ghcup list -c available -t ghc -r | grep -m1 "${GHC_VERSION}" -B 10 | tac | grep -m1 'hls-powered'\`
+				if [[ ! -z "\${CLOSEST_POWERED_GHC}" ]]; then
+					# Trim down to just the version number
+					CLOSEST_POWERED_GHC="\${CLOSEST_POWERED_GHC#*ghc }"
+					CLOSEST_POWERED_GHC="\${CLOSEST_POWERED_GHC%base*}"
+					CLOSEST_POWERED_GHC="\${CLOSEST_POWERED_GHC% *}"
+					echo "Downgrading to GHC \${CLOSEST_POWERED_GHC}..."
+					ghcup install ghc \${CLOSEST_POWERED_GHC} && ghcup set ghc "\${CLOSEST_POWERED_GHC}"
+				else
+					echo "No HLS-powered GHC found. Skipping GHC downgrade."
+				fi
+			fi
+		fi
+	fi
 
 	if [[ ! -z "${CABAL_INSTALLS}" ]]; then
 		cabal update && echo "${CABAL_INSTALLS}" | xargs cabal install
