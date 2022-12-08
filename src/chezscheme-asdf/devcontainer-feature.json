@@ -1,7 +1,7 @@
 {
     "name": "chezscheme (via asdf)",
     "id": "chezscheme-asdf",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "Chez Scheme is both a programming language and an implementation of that language, with supporting tools and documentation.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/chezscheme-asdf",
     "installAfter": [

@@ -1,7 +1,7 @@
 {
     "name": "Lektor (via npm)",
     "id": "lektor",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "Lektor is a static website generator.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/lektor",
     "installAfter": [
@@ -10,7 +10,7 @@
     ],
     "options": {
         "version": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest"
             ],

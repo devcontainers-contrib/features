@@ -1,7 +1,7 @@
 {
     "name": "Terraform (via asdf)",
     "id": "terraform-asdf",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "Terraform is an open-source infrastructure as code software tool that enables you to safely and predictably create, change, and improve infrastructure.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/terraform-asdf",
     "installAfter": [

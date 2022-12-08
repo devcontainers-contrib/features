@@ -1,7 +1,7 @@
 {
     "name": "Gulp CLI (via npm)",
     "id": "gulp-cli",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "Gulp CLI is Command Line Utility for Gulp",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/gulp-cli",
     "installAfter": [
@@ -10,7 +10,7 @@
     ],
     "options": {
         "version": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest"
             ],

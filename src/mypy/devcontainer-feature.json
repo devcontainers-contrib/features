@@ -1,7 +1,7 @@
 {
     "name": "Mypy (via pipx)",
     "id": "mypy",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "Mypy is a static type checker for Python.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mypy",
     "installAfter": [
@@ -10,7 +10,7 @@
     ],
     "options": {
         "version": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest"
             ],

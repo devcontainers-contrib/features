@@ -1,7 +1,7 @@
 {
     "name": "fkill (via npm)",
     "id": "fkill",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "fkill fabulously kill processes. Cross-platform.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/fkill",
     "installAfter": [
@@ -10,7 +10,7 @@
     ],
     "options": {
         "version": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest"
             ],

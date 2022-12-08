@@ -1,7 +1,7 @@
 {
     "name": "JSHint (via npm)",
     "id": "jshint",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "JSHint is a tool that helps to detect errors and potential problems in your JavaScript code.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jshint",
     "installAfter": [
@@ -10,7 +10,7 @@
     ],
     "options": {
         "version": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest"
             ],
