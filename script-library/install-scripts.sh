@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 updaterc() {
     # This is part of devcontainers-contrib script library
-    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.8/script-library
+    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.9/script-library
     echo "Updating /etc/bash.bashrc and /etc/zsh/zshrc..."
     if [[ "$(cat /etc/bash.bashrc)" != *"$1"* ]]; then
         echo -e "$1" >> /etc/bash.bashrc
@@ -13,7 +13,7 @@ updaterc() {
 
 check_packages() {
     # This is part of devcontainers-contrib script library
-    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.8/script-library
+    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.9/script-library
   if ! dpkg -s "$@" > /dev/null 2>&1; then
     if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
       echo "Running apt-get update..."
@@ -25,7 +25,7 @@ check_packages() {
 
 install_via_npm() {
     # This is part of devcontainers-contrib script library
-    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.8/script-library
+    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.9/script-library
     PACKAGE=$1
     
     # install node+npm if does not exists
@@ -43,7 +43,7 @@ install_via_npm() {
 
 install_via_asdf() {
     # This is part of devcontainers-contrib script library
-    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.8/script-library
+    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.9/script-library
     PACKAGE=$1
     VERSION=$2
     REPO=$3
@@ -72,7 +72,7 @@ EOF
 
 install_via_pipx() {
     # This is part of devcontainers-contrib script library
-    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.8/script-library
+    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.9/script-library
     PACKAGES=("$@")
     arraylength="${#PACKAGES[@]}"
 
@@ -109,7 +109,7 @@ install_via_pipx() {
 
 find_version_from_git_tags() {
     # This is part of devcontainers-contrib script library
-    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.8/script-library
+    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.9/script-library
     local variable_name=$1
     local requested_version=${!variable_name}
     if [ "${requested_version}" = "none" ]; then return; fi

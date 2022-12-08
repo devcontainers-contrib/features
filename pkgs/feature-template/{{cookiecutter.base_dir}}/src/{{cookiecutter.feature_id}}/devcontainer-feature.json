@@ -17,7 +17,7 @@
         {% for aptget_package in exposed_aptget_packages -%} 
         {%- if aptget_package.optional == "True" %}   
         "{% if aptget_package.version_alias is defined %}{{aptget_package.version_alias}}{% else %}{{ aptget_package.display_name | to_camel_case }}{% endif %}": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest",
                 "none"
@@ -27,7 +27,7 @@
         },
         {% else %}
         "{% if aptget_package.version_alias is defined %}{{aptget_package.version_alias}}{% else %}{{ aptget_package.display_name | to_camel_case }}{% endif %}": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest",
             ],
@@ -48,7 +48,7 @@
         {%- if pipx_package.optional == "True" %}   
 
         "{% if pipx_package.version_alias is defined %}{{pipx_package.version_alias}}{% else %}{{ pipx_package.display_name | to_camel_case }}{% endif %}": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest",
                 "none"
@@ -58,7 +58,7 @@
         },
         {% else %}
         "{% if pipx_package.version_alias is defined %}{{pipx_package.version_alias}}{% else %}{{ pipx_package.display_name | to_camel_case }}{% endif %}": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest",
             ],
@@ -75,7 +75,7 @@
         {%- if pipx_injection.optional == "True" %}   
 
         "{% if pipx_injection.version_alias is defined %}{{pipx_injection.version_alias}}{% else %}{{ pipx_injection.display_name | to_camel_case }}{% endif %}": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest",
                 "none"
@@ -85,7 +85,7 @@
         },
         {% else %}
         "{% if pipx_injection.version_alias is defined %}{{pipx_injection.version_alias}}{% else %}{{ pipx_injection.display_name | to_camel_case }}{% endif %}": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest",
             ],
@@ -109,7 +109,7 @@
         {%- if npm_package.optional == "True" %}   
 
         "{% if npm_package.version_alias is defined %}{{npm_package.version_alias}}{% else %}{{ npm_package.display_name | to_camel_case }}{% endif %}": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest",
                 "none"
@@ -119,7 +119,7 @@
         },
         {% else %}
         "{% if npm_package.version_alias is defined %}{{npm_package.version_alias}}{% else %}{{ npm_package.display_name | to_camel_case }}{% endif %}": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest",
             ],
