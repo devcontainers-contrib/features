@@ -1,7 +1,7 @@
 {
     "name": "Hatch (via pipx)",
     "id": "hatch",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "Hatch is a modern, extensible Python project manager.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/hatch",
     "installAfter": [
@@ -10,7 +10,7 @@
     ],
     "options": {
         "version": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest"
             ],

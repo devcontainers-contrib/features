@@ -1,7 +1,7 @@
 {
     "name": "Jest (via npm)",
     "id": "jest",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "Jest is a delightful JavaScript Testing Framework with a focus on simplicity",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jest",
     "installAfter": [
@@ -10,7 +10,7 @@
     ],
     "options": {
         "version": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest"
             ],

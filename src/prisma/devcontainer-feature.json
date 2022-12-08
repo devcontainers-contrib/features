@@ -1,7 +1,7 @@
 {
     "name": "Prisma CLI (via npm)",
     "id": "prisma",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "Prisma is a next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/prisma",
     "installAfter": [
@@ -10,7 +10,7 @@
     ],
     "options": {
         "version": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest"
             ],

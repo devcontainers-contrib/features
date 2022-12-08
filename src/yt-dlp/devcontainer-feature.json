@@ -1,7 +1,7 @@
 {
     "name": "yt-dlp (via pipx)",
     "id": "yt-dlp",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "yt-dlp is a youtube-dl fork with additional features and fixes.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/yt-dlp",
     "installAfter": [
@@ -10,7 +10,7 @@
     ],
     "options": {
         "version": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest"
             ],

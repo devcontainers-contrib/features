@@ -1,7 +1,7 @@
 {
     "name": "PDM (via pipx)",
     "id": "pdm",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "PDM is a modern Python package and dependency manager supporting the latest PEP standards.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pdm",
     "installAfter": [
@@ -10,7 +10,7 @@
     ],
     "options": {
         "version": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest"
             ],

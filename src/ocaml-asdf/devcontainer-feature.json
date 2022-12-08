@@ -1,7 +1,7 @@
 {
     "name": "OCaml (via asdf)",
     "id": "ocaml-asdf",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "OCaml is a general-purpose, industrial-strength programming language with an emphasis on expressiveness and safety.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ocaml-asdf",
     "installAfter": [

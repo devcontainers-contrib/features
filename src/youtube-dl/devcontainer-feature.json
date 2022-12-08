@@ -1,7 +1,7 @@
 {
     "name": "youtube-dl (via pipx)",
     "id": "youtube-dl",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "youtube-dl is a command-line program to download videos from YouTube.com and other video sites.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/youtube-dl",
     "installAfter": [
@@ -10,7 +10,7 @@
     ],
     "options": {
         "version": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest"
             ],

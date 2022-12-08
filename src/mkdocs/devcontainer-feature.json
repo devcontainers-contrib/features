@@ -1,7 +1,7 @@
 {
     "name": "MkDocs (via pipx)",
     "id": "mkdocs",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "MkDocs is a fast, simple and downright gorgeous static site generator that's geared towards building project documentation.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mkdocs",
     "installAfter": [
@@ -10,7 +10,7 @@
     ],
     "options": {
         "version": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest"
             ],
@@ -18,7 +18,7 @@
             "description": "Select the version of MKDocs to install."
         },
         "mkdocsMaterialPlugin": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest",
                 "none"
@@ -27,7 +27,7 @@
             "description": "Select the version of mkdocs-material-plugin to install. 'none' will skip installation."
         },
         "pymdownExtensionsPlugin": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest",
                 "none"
@@ -36,7 +36,7 @@
             "description": "Select the version of pymdown-extensions-plugin to install. 'none' will skip installation."
         },
         "mkdocstringsPlugin": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest",
                 "none"
@@ -45,7 +45,7 @@
             "description": "Select the version of mkdocstrings-plugin to install. 'none' will skip installation."
         },
         "mkdocsMonorepoPlugin": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest",
                 "none"
@@ -54,7 +54,7 @@
             "description": "Select the version of mkdocs-monorepo-plugin to install. 'none' will skip installation."
         },
         "mkdocsPdfExportPlugin": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest",
                 "none"
@@ -63,7 +63,7 @@
             "description": "Select the version of mkdocs-pdf-export-plugin to install. 'none' will skip installation."
         },
         "mkdocsAwesomePagesPlugin": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest",
                 "none"

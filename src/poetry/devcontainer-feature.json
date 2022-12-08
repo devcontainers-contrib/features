@@ -1,7 +1,7 @@
 {
     "name": "Poetry (via pipx)",
     "id": "poetry",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "Poetry is a tool for dependency management and packaging in Python.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/poetry",
     "installAfter": [
@@ -10,7 +10,7 @@
     ],
     "options": {
         "version": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest"
             ],

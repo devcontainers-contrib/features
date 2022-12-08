@@ -1,7 +1,7 @@
 {
     "name": "AWS Cloud Development Kit (AWS CDK) (via npm)",
     "id": "aws-cdk",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "description": "AWS CDK is an open-source software development framework to define cloud infrastructure in code and provision it through AWS CloudFormation.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/aws-cdk",
     "installAfter": [
@@ -10,7 +10,7 @@
     ],
     "options": {
         "version": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest"
             ],
