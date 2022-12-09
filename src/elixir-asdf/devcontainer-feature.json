@@ -8,5 +8,30 @@
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],
-    "options": {}
+    "options": {
+        "elixirVersion": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "1.14.2",
+                "1.13.4",
+                "1.12.3"
+            ],
+            "default": "latest",
+            "description": "Select the Elixir version."
+        },
+        "erlangVersion": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "25.1.2",
+                "25.0.4",
+                "24.3.4",
+                "24.2.2",
+                "23.3.4"
+            ],
+            "default": "latest",
+            "description": "Select the Erlang version. Erlang is a dependency of Elixir."
+        }
+    }
 }
