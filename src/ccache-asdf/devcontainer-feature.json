@@ -1,12 +1,21 @@
 {
     "name": "Ccache (via asdf)",
     "id": "ccache-asdf",
-    "version": "1.1.9",
+    "version": "1.2.0",
     "description": "Ccache is a compiler cache. It speeds up recompilation by caching previous compilations and detecting when the same compilation is being done again.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ccache-asdf",
     "installAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],
-    "options": {}
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of ccache to install."
+        }
+    }
 }

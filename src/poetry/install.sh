@@ -39,7 +39,7 @@ install_via_pipx() {
 	pipx_bin=pipx
 	# if pipx not exists - install it
 	if ! type pipx >/dev/null 2>&1; then
-		pip3 install --disable-pip-version-check --no-cache-dir --user pipx
+		pip3 install --disable-pip-version-check --no-cache-dir --user pipx packaging==21.3
 		pipx_bin=/tmp/pip-tmp/bin/pipx
 	fi
 	# install main package
