@@ -1,12 +1,21 @@
 {
     "name": "Serf (via asdf)",
     "id": "serf-asdf",
-    "version": "1.1.9",
+    "version": "1.2.0",
     "description": "Serf is a decentralized solution for cluster membership, failure detection, and orchestration.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/serf-asdf",
     "installAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],
-    "options": {}
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of Serf to install."
+        }
+    }
 }

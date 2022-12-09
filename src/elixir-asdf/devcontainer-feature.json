@@ -1,7 +1,7 @@
 {
     "name": "Elixir (via asdf)",
     "id": "elixir-asdf",
-    "version": "1.0.0",
+    "version": "1.2.0",
     "description": "Elixir is a functional, concurrent, general-purpose programming language that runs on the BEAM virtual machine which is also used to implement the Erlang programming language.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/elixir-asdf",
     "installAfter": [
@@ -12,26 +12,18 @@
         "elixirVersion": {
             "type": "string",
             "proposals": [
-                "latest",
-                "1.14.2",
-                "1.13.4",
-                "1.12.3"
+                "latest"
             ],
             "default": "latest",
-            "description": "Select the Elixir version."
+            "description": "Select the version of Elixir to install."
         },
         "erlangVersion": {
             "type": "string",
             "proposals": [
-                "latest",
-                "25.1.2",
-                "25.0.4",
-                "24.3.4",
-                "24.2.2",
-                "23.3.4"
+                "latest"
             ],
             "default": "latest",
-            "description": "Select the Erlang version. Erlang is a dependency of Elixir."
+            "description": "Select the version of Erlang to install."
         }
     }
 }
