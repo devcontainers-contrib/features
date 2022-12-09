@@ -1,0 +1,64 @@
+default_context:
+  description: "Erlang is a general-purpose, concurrent, functional programming language, and a garbage-collected runtime system."
+  feature_name: "Erlang (via asdf)"
+  feature_id: "erlang-asdf"
+  test_command: "erl -eval '{ok, Version} = file:read_file(filename:join([code:root_dir(), \"releases\", erlang:system_info(otp_release), \"OTP_VERSION\"])), io:fwrite(Version), halt().' -noshell"
+  # test_command: "erl -eval '{ok, Version} = file:read_file(filename:join([code:root_dir(), \"releases\", erlang:system_info(otp_release), "OTP_VERSION"])), io:fwrite(Version), halt().' -noshell"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "erlang"
+      display_name: "Erlang"
+      version_alias: erlangVersion
+      default: latest
+      exposed: true
+      optional: false
+    aptget:
+    - package_name: build-essential
+      display_name: build-essential
+      exposed: false
+    - package_name: autoconf
+      display_name: autoconf
+      exposed: false
+    - package_name: m4
+      display_name: m4
+      exposed: false
+    - package_name: libncurses5-dev
+      display_name: libncurses5-dev
+      exposed: false
+    - package_name: libwxgtk3.0-gtk3-dev
+      display_name: libwxgtk3.0-gtk3-dev
+      exposed: false
+    - package_name: libwxgtk-webview3.0-gtk3-dev
+      display_name: libwxgtk-webview3.0-gtk3-dev
+      exposed: false
+    - package_name: libgl1-mesa-dev
+      display_name: libgl1-mesa-dev
+      exposed: false
+    - package_name: libglu1-mesa-dev
+      display_name: libglu1-mesa-dev
+      exposed: false
+    - package_name: libpng-dev
+      display_name: libpng-dev
+      exposed: false
+    - package_name: libssh-dev
+      display_name: libssh-dev
+      exposed: false
+    - package_name: unixodbc-dev
+      display_name: unixodbc-dev
+      exposed: false
+    - package_name: xsltproc
+      display_name: xsltproc
+      exposed: false
+    - package_name: fop
+      display_name: fop
+      exposed: false
+    - package_name: libxml2-utils
+      display_name: libxml2-utils
+      exposed: false
+    - package_name: libncurses-dev
+      display_name: libncurses-dev
+      exposed: false
+    - package_name: openjdk-11-jdk
+      display_name: openjdk-11-jdk
+      exposed: false
