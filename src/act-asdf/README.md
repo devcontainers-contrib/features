@@ -15,7 +15,7 @@ Act is an open source project that allows you to run your github flow locally.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-
+| version | Select the version of act to install. | string | latest |
 
 
 

@@ -15,7 +15,7 @@ Crystal is a general-purpose, object-oriented programming language
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-
+| version | Select the version of Crystal to install. | string | latest |
 
 
 

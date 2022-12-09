@@ -15,7 +15,7 @@ yamllint is a Python utility / library to sort imports alphabetically, and autom
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of yamllint to install. | boolean | latest |
+| version | Select the version of yamllint to install. | string | latest |
 
 
 

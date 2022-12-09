@@ -15,7 +15,7 @@ cmctl is a command line tool that can help you manage cert-manager and its resou
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-
+| version | Select the version of cmctl to install. | string | latest |
 
 
 

@@ -15,7 +15,7 @@ Mocha is a feature-rich JavaScript test framework running on Node.js and in the 
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Mocha to install. | boolean | latest |
+| version | Select the version of Mocha to install. | string | latest |
 
 
 

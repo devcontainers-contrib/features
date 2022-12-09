@@ -15,7 +15,7 @@ direnv is an extension for your shell. It augments existing shells with a new fe
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-
+| version | Select the version of direnv to install. | string | latest |
 
 
 

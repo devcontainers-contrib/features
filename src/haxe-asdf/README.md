@@ -15,7 +15,7 @@ Haxe is an open source high-level cross-platform programming language and compil
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-
+| version | Select the version of Haxe to install. | string | latest |
 
 
 

@@ -15,7 +15,7 @@ AWS CDK is an open-source software development framework to define cloud infrast
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of AWS-CDK to install. | boolean | latest |
+| version | Select the version of AWS-CDK to install. | string | latest |
 
 
 

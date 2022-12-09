@@ -15,7 +15,7 @@ isort is a Python utility / library to sort imports alphabetically, and automati
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of isort to install. | boolean | latest |
+| version | Select the version of isort to install. | string | latest |
 
 
 

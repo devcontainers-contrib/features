@@ -15,7 +15,7 @@ Terraform is an open-source infrastructure as code software tool that enables yo
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-
+| version | Select the version of Terraform to install. | string | latest |
 
 
 

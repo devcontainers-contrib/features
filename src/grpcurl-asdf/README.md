@@ -15,7 +15,7 @@ gRPCurl is a command-line tool that lets you interact with gRPC servers.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-
+| version | Select the version of grpcurl to install. | string | latest |
 
 
 

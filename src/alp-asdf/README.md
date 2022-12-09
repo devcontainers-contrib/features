@@ -15,7 +15,7 @@ Installs alp
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-
+| version | Select the version of alp to install. | string | latest |
 
 
 

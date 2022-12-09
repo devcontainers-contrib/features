@@ -15,7 +15,7 @@ Pipenv automatically creates and manages a virtualenv for your projects.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Pipenv to install. | boolean | latest |
+| version | Select the version of Pipenv to install. | string | latest |
 
 
 

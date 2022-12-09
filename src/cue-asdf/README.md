@@ -15,7 +15,7 @@ CUE is an open source data constraint language which aims to simplify tasks invo
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-
+| version | Select the version of CUE to install. | string | latest |
 
 
 

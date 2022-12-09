@@ -15,7 +15,7 @@ Express Application Generator is a handy tool for creating skeleton Express web 
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Express application generator to install. | boolean | latest |
+| version | Select the version of Express application generator to install. | string | latest |
 
 
 

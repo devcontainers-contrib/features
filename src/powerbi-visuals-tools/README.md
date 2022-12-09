@@ -15,7 +15,7 @@ PowerBI Visual Tools Contains tools for building/packaging Power BI visuals
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of PowerBI Visual Tools to install. | boolean | latest |
+| version | Select the version of PowerBI Visual Tools to install. | string | latest |
 
 
 

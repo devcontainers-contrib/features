@@ -15,7 +15,7 @@ Nomad is an easy-to-use, flexible, and performant workload orchestrator that can
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-
+| version | Select the version of Nomad to install. | string | latest |
 
 
 
