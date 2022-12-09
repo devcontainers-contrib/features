@@ -10,6 +10,36 @@
 
     ],
     "options": {
+        {% if cookiecutter.content.asdf is defined and cookiecutter.content.asdf |length > 0 %}   
+
+        {%- set exposed_asdf_packages = (cookiecutter.content.asdf | selectattr('exposed', 'equalto', 'True') | list) -%}
+
+        {% for asdf_package in exposed_asdf_packages -%} 
+        {%- if asdf_package.optional == "True" %}   
+        "{% if asdf_package.version_alias is defined %}{{asdf_package.version_alias}}{% else %}{{ asdf_package.display_name | to_camel_case }}{% endif %}": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": {{ asdf_package.default }},
+            "description": "Select the version of {{asdf_package.display_name}} to install. 'none' will skip installation."
+        },
+        {% else %}
+        "{% if asdf_package.version_alias is defined %}{{asdf_package.version_alias}}{% else %}{{ aptgetasdf_package_package.display_name | to_camel_case }}{% endif %}": {
+            "type": "string",
+            "proposals": [
+                "latest",
+            ],
+            "default": {{ asdf_package.default }},
+            "description": "Select the version of {{asdf_package.display_name}} to install."
+        },
+        {%- endif %}
+
+        {% endfor -%}
+
+        {%- endif %}
+
         {% if cookiecutter.content.aptget is defined and cookiecutter.content.aptget |length > 0 %}   
 
         {%- set exposed_aptget_packages = (cookiecutter.content.aptget | selectattr('exposed', 'equalto', 'True') | list) -%}

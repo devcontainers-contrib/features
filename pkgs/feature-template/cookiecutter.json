@@ -5,7 +5,7 @@
     "feature_id": "feature_id",
     "test_command": "test_command",
     "gitrepo": "http://github.com/devcontainers-contrib/features",
-    "version": "1.1.9",
+    "version": "1.2.0",
     "content": {
         "pipx": [],
         "aptget": []
