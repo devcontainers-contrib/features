@@ -15,7 +15,7 @@ Installs Neko Virtual Machine
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-
+| version | Select the version of Neko Virtual Machine to install. | string | latest |
 
 
 

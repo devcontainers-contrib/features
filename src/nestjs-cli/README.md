@@ -15,7 +15,7 @@ Nestjs is a progressive Node.js framework for building efficient, reliable and s
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of NestJS CLI to install. | boolean | latest |
+| version | Select the version of NestJS CLI to install. | string | latest |
 
 
 

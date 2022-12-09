@@ -15,7 +15,7 @@ Rollup is a module bundler for JavaScript which compiles small pieces of code in
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of rollup to install. | boolean | latest |
+| version | Select the version of rollup to install. | string | latest |
 
 
 

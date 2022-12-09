@@ -15,7 +15,7 @@ Installs tfc-agent
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-
+| version | Select the version of tfc-agent to install. | string | latest |
 
 
 

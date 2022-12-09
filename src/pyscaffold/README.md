@@ -15,7 +15,7 @@ PyScaffold is a python project template generator with batteries included.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of PyScaffold to install. | boolean | latest |
+| version | Select the version of PyScaffold to install. | string | latest |
 
 
 

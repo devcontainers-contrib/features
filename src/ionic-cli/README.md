@@ -15,7 +15,7 @@ The Ionic command-line interface (CLI) is the go-to tool for developing Ionic ap
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Ionic CLI to install. | boolean | latest |
+| version | Select the version of Ionic CLI to install. | string | latest |
 
 
 

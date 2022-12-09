@@ -15,7 +15,7 @@ The official Terraform language server (terraform-ls) maintained by HashiCorp pr
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-
+| version | Select the version of terraform-ls to install. | string | latest |
 
 
 

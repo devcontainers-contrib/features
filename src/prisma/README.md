@@ -15,7 +15,7 @@ Prisma is a next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, Ma
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Prisma CLI to install. | boolean | latest |
+| version | Select the version of Prisma CLI to install. | string | latest |
 
 
 

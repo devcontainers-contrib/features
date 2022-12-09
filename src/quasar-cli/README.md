@@ -15,7 +15,7 @@ Quasar is an MIT licensed open-source Vue.js based framework, which allows you a
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Quasar CLI to install. | boolean | latest |
+| version | Select the version of Quasar CLI to install. | string | latest |
 
 
 

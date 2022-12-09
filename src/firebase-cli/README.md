@@ -15,7 +15,7 @@ The Firebase CLI (GitHub) provides a variety of tools for managing, viewing, and
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Firebase to install. | boolean | latest |
+| version | Select the version of Firebase to install. | string | latest |
 
 
 

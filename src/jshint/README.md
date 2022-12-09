@@ -15,7 +15,7 @@ JSHint is a tool that helps to detect errors and potential problems in your Java
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of JSHint to install. | boolean | latest |
+| version | Select the version of JSHint to install. | string | latest |
 
 
 

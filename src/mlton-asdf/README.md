@@ -15,7 +15,7 @@ MLton is a whole-program optimizing compiler for the Standard ML programming lan
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-
+| version | Select the version of mlton to install. | string | latest |
 
 
 

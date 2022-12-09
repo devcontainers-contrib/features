@@ -15,13 +15,13 @@ MkDocs is a fast, simple and downright gorgeous static site generator that's gea
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of MKDocs to install. | boolean | latest |
-| mkdocsMaterialPlugin | Select the version of mkdocs-material-plugin to install. 'none' will skip installation. | boolean | latest |
-| pymdownExtensionsPlugin | Select the version of pymdown-extensions-plugin to install. 'none' will skip installation. | boolean | none |
-| mkdocstringsPlugin | Select the version of mkdocstrings-plugin to install. 'none' will skip installation. | boolean | none |
-| mkdocsMonorepoPlugin | Select the version of mkdocs-monorepo-plugin to install. 'none' will skip installation. | boolean | none |
-| mkdocsPdfExportPlugin | Select the version of mkdocs-pdf-export-plugin to install. 'none' will skip installation. | boolean | none |
-| mkdocsAwesomePagesPlugin | Select the version of mkdocs-awesome-pages-plugin to install. 'none' will skip installation. | boolean | none |
+| version | Select the version of MKDocs to install. | string | latest |
+| mkdocsMaterialPlugin | Select the version of mkdocs-material-plugin to install. 'none' will skip installation. | string | latest |
+| pymdownExtensionsPlugin | Select the version of pymdown-extensions-plugin to install. 'none' will skip installation. | string | none |
+| mkdocstringsPlugin | Select the version of mkdocstrings-plugin to install. 'none' will skip installation. | string | none |
+| mkdocsMonorepoPlugin | Select the version of mkdocs-monorepo-plugin to install. 'none' will skip installation. | string | none |
+| mkdocsPdfExportPlugin | Select the version of mkdocs-pdf-export-plugin to install. 'none' will skip installation. | string | none |
+| mkdocsAwesomePagesPlugin | Select the version of mkdocs-awesome-pages-plugin to install. 'none' will skip installation. | string | none |
 
 
 

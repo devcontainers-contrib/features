@@ -15,7 +15,7 @@ The Amplify Command Line Interface (CLI) is a unified toolchain to create AWS cl
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of AWS Amplify CLI to install. | boolean | latest |
+| version | Select the version of AWS Amplify CLI to install. | string | latest |
 
 
 

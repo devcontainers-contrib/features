@@ -15,7 +15,7 @@ Gulp CLI is Command Line Utility for Gulp
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Gulp CLI to install. | boolean | latest |
+| version | Select the version of Gulp CLI to install. | string | latest |
 
 
 

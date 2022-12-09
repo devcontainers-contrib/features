@@ -15,7 +15,7 @@ Ninja is a small build system with a focus on speed.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-
+| version | Select the version of Ninja to install. | string | latest |
 
 
 
