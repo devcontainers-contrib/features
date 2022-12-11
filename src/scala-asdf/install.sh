@@ -30,6 +30,9 @@ check_packages() {
 	fi
 }
 
+aptget_packages=(openjdk-11-jdk)
+check_packages "${aptget_packages[@]}"
+
 updaterc() {
 	# This is part of devcontainers-contrib script library
 	# source: https://github.com/devcontainers-contrib/features/tree/v1.1.8/script-library

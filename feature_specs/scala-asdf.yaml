@@ -12,4 +12,7 @@ default_context:
       default: latest
       exposed: true
       optional: false
-    aptget: []
+    aptget:
+    - package_name: openjdk-11-jdk
+      display_name: openjdk-11-jdk
+      exposed: false
