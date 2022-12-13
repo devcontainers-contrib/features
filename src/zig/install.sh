@@ -25,45 +25,8 @@ check_packages() {
 	fi
 }
 
-# Figure out correct version of a three part version number is not passed
-find_version_from_git_tags() {
-	local variable_name=$1
-	local requested_version=${!variable_name}
-	if [ "${requested_version}" = "none" ]; then return; fi
-	local repository=$2
-	local prefix=${3:-"tags/v"}
-	local separator=${4:-"."}
-	local last_part_optional=${5:-"false"}
-	if [ "$(echo "${requested_version}" | grep -o "." | wc -l)" != "2" ]; then
-		local escaped_separator=${separator//./\\.}
-		local last_part
-		if [ "${last_part_optional}" = "true" ]; then
-			last_part="(${escaped_separator}[0-9]+)?"
-		else
-			last_part="${escaped_separator}[0-9]+"
-		fi
-		local regex="${prefix}\\K[0-9]+${escaped_separator}[0-9]+${last_part}$"
-		local version_list="$(git ls-remote --tags ${repository} | grep -oP "${regex}" | tr -d ' ' | tr "${separator}" "." | sort -rV)"
-		if [ "${requested_version}" = "latest" ] || [ "${requested_version}" = "current" ] || [ "${requested_version}" = "lts" ]; then
-			declare -g ${variable_name}="$(echo "${version_list}" | head -n 1)"
-		else
-			set +e
-			declare -g ${variable_name}="$(echo "${version_list}" | grep -E -m 1 "^${requested_version//./\\.}([\\.\\s]|$)")"
-			set -e
-		fi
-	fi
-	if [ -z "${!variable_name}" ] || ! echo "${version_list}" | grep "^${!variable_name//./\\.}$" >/dev/null 2>&1; then
-		echo -e "Invalid ${variable_name} value: ${requested_version}\nValid values:\n${version_list}" >&2
-		exit 1
-	fi
-	echo "${variable_name}=${!variable_name}"
-}
-
-# zig repo tag verisons without "v" prefix
-find_version_from_git_tags ZIG_VERSION 'https://github.com/ziglang/zig' "tags/"
-
-# make sure we have curl
-check_packages curl xz-utils
+# make sure we have curl and jq
+check_packages curl xz-utils jq
 
 # remove existing instalations
 rm -rf /usr/local/lib/zig
@@ -71,7 +34,15 @@ rm -rf /usr/local/lib/zig
 # make sure /usr/local/lib/zig exists
 mkdir -p /usr/local/lib/zig
 
-DOWNLOAD_URL=https://ziglang.org/download/${ZIG_VERSION}/zig-linux-${ARCH}-${ZIG_VERSION}.tar.xz
+INDEX_URL="https://ziglang.org/download/index.json"
+
+if [[ "$ZIG_VERSION" == "latest" || "$ZIG_VERSION" == "current" || "$ZIG_VERSION" == "lts" ]]
+then
+	# for latest we download the latest *release* version
+	DOWNLOAD_URL=$(curl -sSL $INDEX_URL | jq -r 'to_entries[1].value."'"$ARCH"'-linux".tarball')
+else
+	DOWNLOAD_URL=$(curl -sSL $INDEX_URL | jq -r '."'"$ZIG_VERSION"'"."'"$ARCH"'-linux".tarball')
+fi
 
 # download binary, untar and ln into /usr/local/bin
 curl -sSL $DOWNLOAD_URL | tar xJ -C /usr/local/lib/zig --strip-components 1
