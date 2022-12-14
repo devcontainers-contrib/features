@@ -15,10 +15,6 @@ tar xzfv my-package.tgz
 
 **TL;DR:** `check_packages` is an abstraction to install a package if needed.
 
-## Why is the project structured the way it is?
-
-TODO: Answer "Why is the project structured the way it is?"
-
 ## What is `dev-container-features-test-lib`?
 
 It's a shell script that magically appears ✨ in the same working directory when
@@ -30,10 +26,8 @@ you run `devcontainer features test`. It contains three functions:
 
 It is useful as a rudimentary testing framework.
 
-👨‍💻 Source code:
-[cli/src/spec-node/featuresCLI/utils.ts · devcontainers/cli](https://github.com/devcontainers/cli/blob/main/src/spec-node/featuresCLI/utils.ts#L59)
-\
-🔰 Examples: [cli/docs/features/test.md · devcontainers/cli](https://github.com/devcontainers/cli/blob/main/docs/features/test.md)
+👨‍💻 Source code: [devcontainers/cli/src/spec-node/featuresCLI/utils.ts] \
+🔰 Examples: [devcontainers/cli/docs/features/test.md]
 
 ## What does `exec $SHELL` do?
 
@@ -122,13 +116,14 @@ the developer will use to connect to the terminal environment when they start th
 We can use this in combination with [`sudo`] or [`su`] to execute commands as this user.
 
 ```sh
-sudo -EHu "$_REMOTE_USER"
+su "$_REMOTE_USER" -c "echo Hello!"
 ```
 
-```sh
-sudo -iu
-```
+📖 Example: [devcontainers/features/src/node/install.sh]
 
 [`sudo`]: https://cheat.sh/sudo
 [`su`]: https://cheat.sh/su
 [`$_REMOTE_USER`]: https://github.com/devcontainers/spec/blob/main/proposals/features-user-env-variables.md
+[devcontainers/cli/src/spec-node/featuresCLI/utils.ts]: https://github.com/devcontainers/cli/blob/main/src/spec-node/featuresCLI/utils.ts#L59
+[devcontainers/cli/docs/features/test.md]: https://github.com/devcontainers/cli/blob/main/docs/features/test.md
+[devcontainers/features/src/node/install.sh]: https://github.com/devcontainers/features/blob/main/src/node/install.sh#L155
