@@ -1,6 +1,6 @@
 default_context:
   description: Cookiecutter creates projects from project templates.
-  feature_name: Cookiecutter
+  feature_name: Cookiecutter (via pipx)
   feature_id: cookiecutter
   test_command: cookiecutter --version
   gitrepo: http://github.com/devcontainers-contrib/features

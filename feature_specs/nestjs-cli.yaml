@@ -1,6 +1,6 @@
 default_context:
   description: Nestjs is a progressive Node.js framework for building efficient, reliable and scalable server-side applications.
-  feature_name: NestJS CLI
+  feature_name: NestJS CLI (via npm)
   feature_id: nestjs-cli
   test_command: nest --version
   gitrepo: http://github.com/devcontainers-contrib/features

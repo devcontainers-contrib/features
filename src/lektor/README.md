@@ -1,5 +1,5 @@
 
-# Lektor (lektor)
+# Lektor (via npm) (lektor)
 
 Lektor is a static website generator.
 
@@ -15,7 +15,7 @@ Lektor is a static website generator.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of lektor to install. | boolean | latest |
+| version | Select the version of lektor to install. | string | latest |
 
 
 

@@ -1,7 +1,7 @@
 
-# JSHint (jshint)
+# JSHint (via npm) (jshint)
 
-JSHint  a tool that helps to detect errors and potential problems in your JavaScript code.
+JSHint is a tool that helps to detect errors and potential problems in your JavaScript code.
 
 ## Example Usage
 
@@ -15,7 +15,7 @@ JSHint  a tool that helps to detect errors and potential problems in your JavaSc
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of JSHint to install. | boolean | latest |
+| version | Select the version of JSHint to install. | string | latest |
 
 
 

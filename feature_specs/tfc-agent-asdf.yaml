@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs tfc-agent"
+  feature_name: "tfc-agent (via asdf)"
+  feature_id: "tfc-agent-asdf"
+  test_command: "tfc-agent -v"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "tfc-agent"
+      display_name: "tfc-agent"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

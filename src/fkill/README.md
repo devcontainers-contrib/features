@@ -1,5 +1,5 @@
 
-# fkill (fkill)
+# fkill (via npm) (fkill)
 
 fkill fabulously kill processes. Cross-platform.
 
@@ -15,7 +15,7 @@ fkill fabulously kill processes. Cross-platform.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of fkill to install. | boolean | latest |
+| version | Select the version of fkill to install. | string | latest |
 
 
 

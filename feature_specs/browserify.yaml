@@ -1,6 +1,6 @@
 default_context:
   description: Browserify lets you require('modules') in the browser by bundling up all of your dependencies.
-  feature_name: Browserify
+  feature_name: Browserify (via npm)
   feature_id: browserify
   test_command: browserify --version
   gitrepo: http://github.com/devcontainers-contrib/features

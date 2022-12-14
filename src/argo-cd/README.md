@@ -1,5 +1,5 @@
 
-# Argo CD CLI (argo-cd)
+# ArgoCD CLI (via Github Releases) (argo-cd)
 
 Declarative GitOps CD for Kubernetes
 

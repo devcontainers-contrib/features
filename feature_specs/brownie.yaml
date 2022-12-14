@@ -1,6 +1,6 @@
 default_context:
   description: Brownie is a Python-based development and testing framework for smart contracts targeting the Ethereum Virtual Machine.
-  feature_name: Brownie
+  feature_name: Brownie (via pipx)
   feature_id: brownie
   test_command: brownie --version
   gitrepo: http://github.com/devcontainers-contrib/features

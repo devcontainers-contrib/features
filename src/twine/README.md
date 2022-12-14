@@ -1,5 +1,5 @@
 
-# Twine (twine)
+# Twine (via pipx) (twine)
 
 Twine is a utility for publishing Python packages on PyPI.
 
@@ -15,7 +15,7 @@ Twine is a utility for publishing Python packages on PyPI.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of twine to install. | boolean | latest |
+| version | Select the version of twine to install. | string | latest |
 
 
 

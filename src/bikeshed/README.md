@@ -1,7 +1,7 @@
 
-# Bikeshed (bikeshed)
+# Bikeshed (via pipx) (bikeshed)
 
-🚲 A preprocessor for anyone writing specifications that converts source files into actual specs.
+A preprocessor for anyone writing specifications that converts source files into actual specs.
 
 ## Example Usage
 

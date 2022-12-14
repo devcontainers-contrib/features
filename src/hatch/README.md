@@ -1,5 +1,5 @@
 
-# Hatch (hatch)
+# Hatch (via pipx) (hatch)
 
 Hatch is a modern, extensible Python project manager.
 
@@ -15,7 +15,7 @@ Hatch is a modern, extensible Python project manager.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Hatch to install. | boolean | latest |
+| version | Select the version of Hatch to install. | string | latest |
 
 
 

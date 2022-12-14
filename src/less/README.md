@@ -1,5 +1,5 @@
 
-# Less (Leaner Style Sheets) (less)
+# Less (via npm) (less)
 
 Less is a backwards-compatible language extension for CSS
 
@@ -15,7 +15,7 @@ Less is a backwards-compatible language extension for CSS
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Less to install. | boolean | latest |
+| version | Select the version of Less to install. | string | latest |
 
 
 

@@ -1,5 +1,5 @@
 
-# Vue CLI (vue-cli)
+# Vue CLI (via npm) (vue-cli)
 
 Vue CLI is a full system for rapid Vue.js development.
 
@@ -15,7 +15,7 @@ Vue CLI is a full system for rapid Vue.js development.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Vue CLI to install. | boolean | latest |
+| version | Select the version of Vue CLI to install. | string | latest |
 
 
 

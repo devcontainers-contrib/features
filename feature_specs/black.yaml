@@ -1,6 +1,6 @@
 default_context:
   description: Black is an uncompromising Python code formatter.
-  feature_name: Black
+  feature_name: Black (via pipx)
   feature_id: black
   test_command: black --version
   gitrepo: http://github.com/devcontainers-contrib/features

@@ -1,5 +1,5 @@
 
-# Argo Workflows CLI (argo-workflows)
+# Argo Workflows CLI (via Github Releases) (argo-workflows)
 
 Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes
 

@@ -1,5 +1,5 @@
 
-# yt-dlp (yt-dlp)
+# yt-dlp (via pipx) (yt-dlp)
 
 yt-dlp is a youtube-dl fork with additional features and fixes.
 
@@ -15,7 +15,7 @@ yt-dlp is a youtube-dl fork with additional features and fixes.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of yt-dlp to install. | boolean | latest |
+| version | Select the version of yt-dlp to install. | string | latest |
 
 
 

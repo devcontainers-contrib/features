@@ -1,6 +1,6 @@
 default_context:
   description: Less is a backwards-compatible language extension for CSS
-  feature_name: Less (Leaner Style Sheets)
+  feature_name: Less (via npm)
   feature_id: less
   test_command: less --version
   gitrepo: http://github.com/devcontainers-contrib/features

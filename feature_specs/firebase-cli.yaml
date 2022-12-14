@@ -1,6 +1,6 @@
 default_context:
   description: The Firebase CLI (GitHub) provides a variety of tools for managing, viewing, and deploying to Firebase projects.
-  feature_name: Firebase
+  feature_name: Firebase CLI (via npm)
   feature_id: firebase-cli
   test_command: firebase --version
   gitrepo: http://github.com/devcontainers-contrib/features

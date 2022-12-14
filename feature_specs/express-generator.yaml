@@ -1,6 +1,6 @@
 default_context:
   description: Express Application Generator is a handy tool for creating skeleton Express web apps.
-  feature_name: Express Application Generator 
+  feature_name: Express Application Generator (via npm)
   feature_id: express-generator
   test_command: express --version
   gitrepo: http://github.com/devcontainers-contrib/features

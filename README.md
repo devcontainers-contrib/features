@@ -1,5 +1,7 @@
 # Community devcontainer features
 
+[![Gitter](https://img.shields.io/gitter/room/devcontainers-contrib/community)](https://gitter.im/devcontainers-contrib/community)
+
 🐳 Extra add-in features for
 [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) and
 [GitHub Codespaces](https://github.com/features/codespaces)
@@ -35,7 +37,8 @@ Just add a `.devcontainer/devcontainer.json` file with a `features` key. It's
 very similar to NPM's `package.json` and `dependencies` object, just with the
 addition of an `options` object.
 
-📚 Make sure to inspect each feature for feature-specific options
+📚 Make sure to inspect each feature for feature-specific options \
+⚠️ We only officially support [debian](https://hub.docker.com/_/debian)-based images
 
 ```json
 {

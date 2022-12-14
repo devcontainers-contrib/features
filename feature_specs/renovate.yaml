@@ -1,6 +1,6 @@
 default_context:
   description: Renovate is a universal dependency update tool. Multi-platform and multi-language.
-  feature_name: Renovate CLI
+  feature_name: Renovate CLI (via npm)
   feature_id: renovate-cli
   test_command: renovate --version
   gitrepo: http://github.com/devcontainers-contrib/features

@@ -1,15 +1,16 @@
 {
-    "name": "Coverage.py",
+    "name": "Coverage.py (via pipx)",
     "id": "coverage-py",
-    "version": "1.1.7",
+    "version": "1.2.0",
     "description": "Coverage.py is a tool for measuring code coverage of Python programs.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/coverage-py",
     "installAfter": [
-        "ghcr.io/devcontainers/features/python:latest"
+        "ghcr.io/devcontainers/features/python:latest",
+        "ghcr.io/devcontainers/features/node:latest"
     ],
     "options": {
         "version": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest"
             ],

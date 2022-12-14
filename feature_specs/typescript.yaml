@@ -1,6 +1,6 @@
 default_context:
   description: TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
-  feature_name: TypeScript
+  feature_name: TypeScript (via npm)
   feature_id: typescript
   test_command: tsc --version
   gitrepo: http://github.com/devcontainers-contrib/features

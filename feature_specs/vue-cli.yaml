@@ -1,6 +1,6 @@
 default_context:
   description: Vue CLI is a full system for rapid Vue.js development.
-  feature_name: Vue CLI
+  feature_name: Vue CLI (via npm)
   feature_id: vue-cli
   test_command: vue --help
   gitrepo: http://github.com/devcontainers-contrib/features

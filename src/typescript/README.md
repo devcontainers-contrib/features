@@ -1,5 +1,5 @@
 
-# TypeScript (typescript)
+# TypeScript (via npm) (typescript)
 
 TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
 
@@ -15,7 +15,7 @@ TypeScript is a strongly typed programming language that builds on JavaScript, g
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of TypeScript to install. | boolean | latest |
+| version | Select the version of TypeScript to install. | string | latest |
 
 
 

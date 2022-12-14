@@ -13,20 +13,10 @@ GDBGUI=${VERSION:-"latest"}
 rm -rf /var/lib/apt/lists/*
 
 if [ "$(id -u)" -ne 0 ]; then
-	echo -e 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
+	echo -e 'Script must be run as 
+    root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
 	exit 1
 fi
-
-# Checks if packages are installed and installs them if not
-check_packages() {
-	if ! dpkg -s "$@" >/dev/null 2>&1; then
-		if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
-			echo "Running apt-get update..."
-			apt-get update -y
-		fi
-		apt-get -y install --no-install-recommends "$@"
-	fi
-}
 
 install_via_pipx() {
 	# This is part of devcontainers-contrib script library
@@ -49,7 +39,7 @@ install_via_pipx() {
 	pipx_bin=pipx
 	# if pipx not exists - install it
 	if ! type pipx >/dev/null 2>&1; then
-		pip3 install --disable-pip-version-check --no-cache-dir --user pipx
+		pip3 install --disable-pip-version-check --no-cache-dir --user pipx packaging==21.3
 		pipx_bin=/tmp/pip-tmp/bin/pipx
 	fi
 	# install main package

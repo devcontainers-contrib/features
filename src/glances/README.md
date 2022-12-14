@@ -1,5 +1,5 @@
 
-# Glances (glances)
+# Glances (via pipx) (glances)
 
 Glances is a cross-platform monitoring tool which aims to present a large amount of monitoring information through a curses or Web based interface.
 
@@ -15,7 +15,7 @@ Glances is a cross-platform monitoring tool which aims to present a large amount
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Glances to install. | boolean | latest |
+| version | Select the version of Glances to install. | string | latest |
 
 
 

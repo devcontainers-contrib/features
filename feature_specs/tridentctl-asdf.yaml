@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs tridentctl"
+  feature_name: "tridentctl (via asdf)"
+  feature_id: "tridentctl-asdf"
+  test_command: "tridentctl --help"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "tridentctl"
+      display_name: "tridentctl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

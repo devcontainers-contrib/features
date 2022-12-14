@@ -1,5 +1,5 @@
 
-# Cookiecutter (cookiecutter)
+# Cookiecutter (via pipx) (cookiecutter)
 
 Cookiecutter creates projects from project templates.
 
@@ -15,7 +15,7 @@ Cookiecutter creates projects from project templates.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Cookiecutter to install. | boolean | latest |
+| version | Select the version of Cookiecutter to install. | string | latest |
 
 
 

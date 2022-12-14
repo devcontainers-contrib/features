@@ -1,5 +1,5 @@
 
-# PowerBI Visual Tools (pbiviz) (powerbi-visuals-tools)
+# PowerBI Visual Tools (pbiviz) (via npm) (powerbi-visuals-tools)
 
 PowerBI Visual Tools Contains tools for building/packaging Power BI visuals
 
@@ -15,7 +15,7 @@ PowerBI Visual Tools Contains tools for building/packaging Power BI visuals
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of PowerBI Visual Tools to install. | boolean | latest |
+| version | Select the version of PowerBI Visual Tools to install. | string | latest |
 
 
 

@@ -1,6 +1,6 @@
 default_context:
   description: Ansible is a suite of software tools that enables infrastructure as code.
-  feature_name: Ansible
+  feature_name: Ansible (via pipx)
   feature_id: ansible
   test_command: ansible --version
   gitrepo: http://github.com/devcontainers-contrib/features

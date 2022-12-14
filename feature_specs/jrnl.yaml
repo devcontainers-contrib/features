@@ -1,6 +1,6 @@
 default_context:
   description: jrnl is a simple journal application for the command line.
-  feature_name: jrnl
+  feature_name: jrnl (via pipx)
   feature_id: jrnl
   test_command: jrnl --version
   gitrepo: http://github.com/devcontainers-contrib/features

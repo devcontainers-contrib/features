@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs alp"
+  feature_name: "alp (via asdf)"
+  feature_id: "alp-asdf"
+  test_command: "alp --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "alp"
+      display_name: "alp"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

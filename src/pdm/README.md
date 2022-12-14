@@ -1,5 +1,5 @@
 
-# PDM (pdm)
+# PDM (via pipx) (pdm)
 
 PDM is a modern Python package and dependency manager supporting the latest PEP standards.
 
@@ -15,7 +15,7 @@ PDM is a modern Python package and dependency manager supporting the latest PEP 
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of pdm to install. | boolean | latest |
+| version | Select the version of pdm to install. | string | latest |
 
 
 

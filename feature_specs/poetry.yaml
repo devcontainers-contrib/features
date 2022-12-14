@@ -1,6 +1,6 @@
 default_context:
   description: Poetry is a tool for dependency management and packaging in Python.
-  feature_name: Poetry
+  feature_name: Poetry (via pipx)
   feature_id: poetry
   test_command: poetry --version
   gitrepo: http://github.com/devcontainers-contrib/features

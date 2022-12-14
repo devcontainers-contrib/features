@@ -1,5 +1,5 @@
 
-# Renovate CLI (renovate-cli)
+# Renovate CLI (via npm) (renovate-cli)
 
 Renovate is a universal dependency update tool. Multi-platform and multi-language.
 
@@ -15,7 +15,7 @@ Renovate is a universal dependency update tool. Multi-platform and multi-languag
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Renovate CLI to install. | boolean | latest |
+| version | Select the version of Renovate CLI to install. | string | latest |
 
 
 

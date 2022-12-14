@@ -1,15 +1,16 @@
 {
-    "name": "Vue CLI",
+    "name": "Vue CLI (via npm)",
     "id": "vue-cli",
-    "version": "1.1.7",
+    "version": "1.2.0",
     "description": "Vue CLI is a full system for rapid Vue.js development.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/vue-cli",
     "installAfter": [
-        "ghcr.io/devcontainers/features/python:latest"
+        "ghcr.io/devcontainers/features/python:latest",
+        "ghcr.io/devcontainers/features/node:latest"
     ],
     "options": {
         "version": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest"
             ],

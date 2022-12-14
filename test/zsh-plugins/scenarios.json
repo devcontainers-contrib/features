@@ -1,0 +1,11 @@
+{
+  "install_plugins": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "zsh-plugins": {
+        "plugins": "npm dogesay",
+        "omzPlugins": "https://github.com/txstc55/dogesay"
+      }
+    }
+  }
+}

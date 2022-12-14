@@ -1,6 +1,6 @@
 default_context:
   description: AWS CDK is an open-source software development framework to define cloud infrastructure in code and provision it through AWS CloudFormation.
-  feature_name: AWS Cloud Development Kit (AWS CDK)
+  feature_name: AWS Cloud Development Kit (AWS CDK) (via npm)
   feature_id: aws-cdk
   test_command: cdk --version
   gitrepo: http://github.com/devcontainers-contrib/features

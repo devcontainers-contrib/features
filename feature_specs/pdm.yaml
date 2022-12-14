@@ -1,6 +1,6 @@
 default_context:
   description: PDM is a modern Python package and dependency manager supporting the latest PEP standards.
-  feature_name: PDM
+  feature_name: PDM (via pipx)
   feature_id: pdm
   test_command: pdm --version
   gitrepo: http://github.com/devcontainers-contrib/features

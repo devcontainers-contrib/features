@@ -1,6 +1,6 @@
 default_context:
   description: Pylint is a static code analyser for Python 2 or 3.
-  feature_name: Pylint
+  feature_name: Pylint (via pipx)
   feature_id: pylint
   test_command: pylint --version
   gitrepo: http://github.com/devcontainers-contrib/features

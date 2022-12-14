@@ -1,5 +1,5 @@
 
-# gdbgui (gdbgui)
+# gdbgui (via pipx) (gdbgui)
 
 gdbgui is a browser-based frontend to gdb (gnu debugger).
 
@@ -15,7 +15,7 @@ gdbgui is a browser-based frontend to gdb (gnu debugger).
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of gdbgui to install. | boolean | latest |
+| version | Select the version of gdbgui to install. | string | latest |
 
 
 

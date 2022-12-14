@@ -1,5 +1,5 @@
 
-# mitmproxy (mitmproxy)
+# mitmproxy (via pipx) (mitmproxy)
 
 mitmproxy is an interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers
 
@@ -15,7 +15,7 @@ mitmproxy is an interactive TLS-capable intercepting HTTP proxy for penetration 
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of mitmproxy to install. | boolean | latest |
+| version | Select the version of mitmproxy to install. | string | latest |
 
 
 

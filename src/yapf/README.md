@@ -1,5 +1,5 @@
 
-# yapf (yapf)
+# yapf (via pipx) (yapf)
 
 yapf is a formatter for Python files.
 
@@ -15,7 +15,7 @@ yapf is a formatter for Python files.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of yapf to install. | boolean | latest |
+| version | Select the version of yapf to install. | string | latest |
 
 
 

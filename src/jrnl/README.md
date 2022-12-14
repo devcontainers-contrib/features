@@ -1,5 +1,5 @@
 
-# jrnl (jrnl)
+# jrnl (via pipx) (jrnl)
 
 jrnl is a simple journal application for the command line.
 
@@ -15,7 +15,7 @@ jrnl is a simple journal application for the command line.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of jrnl to install. | boolean | latest |
+| version | Select the version of jrnl to install. | string | latest |
 
 
 

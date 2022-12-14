@@ -1,5 +1,5 @@
 
-# Bandit (bandit)
+# Bandit (via pipx) (bandit)
 
 Bandit is a tool designed to find common security issues in Python code.
 
@@ -15,7 +15,7 @@ Bandit is a tool designed to find common security issues in Python code.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Bandit to install. | boolean | latest |
+| version | Select the version of Bandit to install. | string | latest |
 
 
 

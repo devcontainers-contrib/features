@@ -1,6 +1,6 @@
 default_context:
-  description: JSHint  a tool that helps to detect errors and potential problems in your JavaScript code.
-  feature_name: JSHint
+  description: JSHint is a tool that helps to detect errors and potential problems in your JavaScript code.
+  feature_name: JSHint (via npm)
   feature_id: jshint
   test_command: jshint --version
   gitrepo: http://github.com/devcontainers-contrib/features

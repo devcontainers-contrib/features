@@ -1,6 +1,6 @@
 default_context:
   description: Flit is a simple way to put Python packages and modules on PyPI.
-  feature_name: Flit
+  feature_name: Flit (via pipx)
   feature_id: flit
   test_command: flit --version
   gitrepo: http://github.com/devcontainers-contrib/features

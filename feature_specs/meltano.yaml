@@ -1,6 +1,6 @@
 default_context:
   description: Meltano lets you extract and load data with a software development-inspired approach that that delivers flexibility and limitless collaboration.
-  feature_name: Meltano ELT
+  feature_name: Meltano ELT (via pipx)
   feature_id: meltano
   test_command: meltano --version
   gitrepo: http://github.com/devcontainers-contrib/features

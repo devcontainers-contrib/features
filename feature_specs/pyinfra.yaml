@@ -1,10 +1,9 @@
 default_context:
   description: pyinfra is a Python alternative to Ansible where you don't write your deployment in YAML file, but in Python.
-  feature_name: pyinfra
+  feature_name: pyinfra (via pipx)
   feature_id: pyinfra
   test_command: pyinfra --version
   gitrepo: http://github.com/devcontainers-contrib/features
-  version: 1.1.0
   content:
     pipx:
     - package_name: pyinfra

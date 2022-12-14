@@ -1,6 +1,6 @@
 default_context:
   description: Jest is a delightful JavaScript Testing Framework with a focus on simplicity
-  feature_name: Jest
+  feature_name: Jest (via npm)
   feature_id: jest
   test_command: jest --version
   gitrepo: http://github.com/devcontainers-contrib/features

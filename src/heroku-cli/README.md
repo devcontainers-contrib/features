@@ -1,5 +1,5 @@
 
-# Heroku CLI (heroku-cli)
+# Heroku CLI (via cli-assets.heroku.com) (heroku-cli)
 
 Heroku CLI allows you to interact with the Heroku API via the command line
 
