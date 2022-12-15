@@ -1,4 +1,4 @@
-name: "CI - Test Features"
+name: "CI - Test Features - Ray"
 on:
   workflow_dispatch:
 
