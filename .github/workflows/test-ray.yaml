@@ -13,7 +13,7 @@ jobs:
         run: npm install -g @devcontainers/cli
 
       - name: "Install test requirements"
-        run: pip install ./requirements-tests.yaml
+        run: pip install -r ./requirements-tests.text
 
       - name: "Running tests"
         run: |
