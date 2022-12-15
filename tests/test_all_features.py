@@ -30,5 +30,5 @@ def test_assert_good_exitcode(shell, base_dir: str, image: str):
         print(ret.stdout)
         print(ret.stderr)
 
-   for ret in rets:
+    for ret in rets:
         assert ret.returncode == 0
