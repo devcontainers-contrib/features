@@ -19,6 +19,7 @@ jobs:
       - name: "Running tests"
         run: |
           cd tests
+          ray start --head --port=6379
           python3 -m pytest test_all_features.py -s --base_dir /workspaces/features --image "mcr.microsoft.com/devcontainers/base:debian"
 
   test-global:
