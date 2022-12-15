@@ -1,7 +1,7 @@
 name: "CI - Test Features - Ray"
 on:
   workflow_dispatch:
-
+  push:
 jobs:
   test:
     runs-on: ubuntu-latest
