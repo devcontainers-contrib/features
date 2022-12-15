@@ -1,0 +1,33 @@
+name: "CI - Test Features"
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
+
+      - name: "Install test requirements"
+        run: pip install ./requirements-tests.yaml
+
+      - name: "Running tests"
+        run: |
+          cd tests
+          python3 -m pytest test_all_features.py -s --base_dir /workspaces/features --image "mcr.microsoft.com/devcontainers/base:debian"
+
+  test-global:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
+
+      - name: "Testing global scenarios"
+        run: devcontainer features test --global-scenarios-only .

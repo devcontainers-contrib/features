@@ -1,0 +1,3 @@
+ray[default]
+pytest
+pytest-shell-utilities
