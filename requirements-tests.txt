@@ -1,3 +1,4 @@
 ray[default]
 pytest
 pytest-shell-utilities
+tqdm
