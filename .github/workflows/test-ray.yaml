@@ -16,7 +16,7 @@ jobs:
         run: |
           ls 
           pwd
-          pip install -r ./requirements-tests.text
+          python3 -m pip install -r requirements-tests.text
 
       - name: "Running tests"
         run: |
