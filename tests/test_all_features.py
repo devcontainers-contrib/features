@@ -13,7 +13,7 @@ def image(pytestconfig):
 
 
 def test_assert_good_exitcode(shell, base_dir: str, image: str):
-    ray.init(address='auto')
+    ray.init(address='auto', log_to_driver=True, logging_level=0)
 
     @ray.remote
     def remote_ray_task(shell, args):
@@ -24,10 +24,11 @@ def test_assert_good_exitcode(shell, base_dir: str, image: str):
         return ["devcontainer", "features" ,"test", "-p", base_dir, "-f", feature_name ,"-i" ,image]
 
     feature_names = os.listdir(os.path.join(base_dir ,"src"))
-    feature_names = feature_names[:2]
     futures = [remote_ray_task.remote(shell, get_devcontainer_shell_args(base_dir,feature_name, image)) for feature_name in feature_names]
     rets = ray.get(futures)
     for ret in rets:
         print(ret.stdout)
         print(ret.stderr)
+
+   for ret in rets:
         assert ret.returncode == 0
