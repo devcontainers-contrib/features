@@ -14,6 +14,7 @@ jobs:
 
       - name: "Install test requirements"
         run: |
+          env
           python3 -m pip install -r requirements-tests.txt
 
       - name: "Running tests"
