@@ -29,7 +29,7 @@ jobs:
       - name: testing_input
         run: |
           echo hi 
-          echo ${{ needs.find-feature.outputs.all_features }}
+          echo '${{ needs.find-feature.outputs.all_features }}'
           echo ${{ fromJson( needs.find-feature.outputs.all_features )}}
 
       # - name: "Install latest devcontainer CLI"
