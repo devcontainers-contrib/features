@@ -36,12 +36,12 @@ def test_assert_good_exitcode(shell, base_dir: str, image: str, feature_ids: lis
 
     @ray.remote
     def remote_ray_task(shell, args):
-        ret = shell.run(*args)
+        ret = shell.run(args , shell=True)
         return ret
 
     def get_devcontainer_shell_args(base_dir: str, feature_id: str, image: str) -> list[str]:
-        return ["devcontainer", "features" ,"test", "-p", base_dir, "-f", feature_id ,"-i" ,image]
-
+        return f"devcontainer features test -p {base_dir} -f {feature_id} -i {image} && docker system prune -a -f && docker buildx prune -a -f --keep-storage=1gb --verbose"
+        
     futures = [remote_ray_task.remote(shell, get_devcontainer_shell_args(base_dir,feature_id, image)) for feature_id in feature_ids]
 
     rets = tqdm(ray_get_iterator(futures, verbose=True), total=len(futures))
