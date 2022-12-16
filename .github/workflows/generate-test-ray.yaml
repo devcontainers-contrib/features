@@ -14,9 +14,10 @@ jobs:
       - uses: actions/checkout@v3
 
       - uses: dorny/paths-filter@v2
-        list-files: json
+        
         id: filter
         with:
+          list-files: json
           filters: |
             src: ./src/**
             test: ./test/*
@@ -58,43 +59,45 @@ jobs:
 
 
 
-      # - name: Shell Linter
-      #   uses: azohra/shell-linter@v0.6.0
-      #   with:
-      #     path: "src/**/*.sh"
-      #     severity: "error" # [style, info, warning, error]
-      #   env:
-      #     SHELLCHECK_OPTS: -e SC2072 # Acceptable use of decimal comparison
+      - name: Shell Linter
+        uses: azohra/shell-linter@v0.6.0
+        with:
+          path: "src/**/*.sh"
+          severity: "error" # [style, info, warning, error]
+        env:
+          SHELLCHECK_OPTS: -e SC2072 # Acceptable use of decimal comparison
 
-      # - name: "Install latest devcontainer CLI"
-      #   run: npm install -g @devcontainers/cli
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
 
-      # - name: "Install test requirements"
-      #   run: |
-      #     python3 -m pip install -r requirements-tests.txt
+      - name: "Install test requirements"
+        run: |
+          python3 -m pip install -r requirements-tests.txt
 
-      # - name: "install generator"
-      #   run: |
-      #     pipx install cookiecutter
-      #     pipx install shfmt-py
+      - name: "install generator"
+        run: |
+          pipx install cookiecutter
+          pipx install shfmt-py
 
-      # - name: Generate
-      #   id: generate
-      #   run: |
-      #     set -e
-      #     cd ..
-      #     jq -c '.[]' <<< '${{ needs.find-feature.outputs.generated_features }}' | while read i; do
-      #         cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file ./features/feature_specs/$(echo $i | tr -d '"').yaml 
-      #     done
-      #     cd features
+      - name: Generate
+        id: generate
+        run: |
+          set -e
+          cd ..
+          jq -c '.[]' <<< '${{ needs.find-feature.outputs.generated_features }}' | while read i; do
+              cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file ./features/feature_specs/$(echo $i | tr -d '"').yaml 
+          done
+          cd features
         
-      # - name: "Running tests"
-      #   run: |
-      #     docker pull mcr.microsoft.com/devcontainers/base:debian
-      #     cd tests
-      #     ray start --head --port=6379
-      #     python3 -m pytest test_all_features.py -s --base_dir $GITHUB_WORKSPACE --image "mcr.microsoft.com/devcontainers/base:debian" --feature_ids '${{ needs.find-feature.outputs.all_features }}'
-      #     cd ..
+      - name: "Running tests"
+        run: |
+          docker pull mcr.microsoft.com/devcontainers/base:debian
+          cd tests
+          ray start --head --port=6379
+          export RAY_ROTATION_MAX_BYTES=1024000
+          export RAY_ROTATION_BACKUP_COUNT=1
+          python3 -u -m pytest test_all_features.py -s --base_dir $GITHUB_WORKSPACE --image "mcr.microsoft.com/devcontainers/base:debian" --feature_ids '${{ needs.find-feature.outputs.all_features }}'
+          cd ..
 
   test-global:
     runs-on: ubuntu-latest
