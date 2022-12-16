@@ -7,8 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       src: ${{ steps.filter.outputs.src }}
-      test: ${{ steps.filter.outputs.srtestc }}
+      test: ${{ steps.filter.outputs.test }}
       feature_specs: ${{ steps.filter.outputs.feature_specs }}
+      hello: ${{ steps.filter.outputs.changes }} 
     steps:
       - uses: actions/checkout@v3
 
@@ -46,7 +47,7 @@ jobs:
         run: |
           echo '${{ needs.detect-changes.outputs.feature_specs }}'
           echo '${{ needs.detect-changes.outputs.src }}'
-
+          echo '${{ needs.detect-changes.outputs.hello }}'
           echo '${{ needs.detect-changes.outputs.test }}'
 
 
