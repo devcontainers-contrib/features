@@ -1,4 +1,4 @@
-name: "CI - Test Features - Ray"
+name: "Generate and test features using Ray"
 on:
   workflow_dispatch:
   push:
@@ -52,6 +52,7 @@ jobs:
         run: |
           cd tests
           ray start --head --port=6379
+          echo "${{ needs.find-feature.outputs.all_features }}"
           python3 -m pytest test_all_features.py -s --base_dir $GITHUB_WORKSPACE --image "mcr.microsoft.com/devcontainers/base:debian" --feature_ids "${{ needs.find-feature.outputs.all_features }}"
 
   test-global:
