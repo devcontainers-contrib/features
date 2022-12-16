@@ -6,7 +6,9 @@ jobs:
   detect-changes:
     runs-on: ubuntu-latest
     outputs:
-      changes: ${{ steps.filter.outputs.changes }}
+      src: ${{ steps.filter.outputs.src }}
+      test: ${{ steps.filter.outputs.srtestc }}
+      feature_specs: ${{ steps.filter.outputs.feature_specs }}
     steps:
       - uses: actions/checkout@v3
 
@@ -42,7 +44,11 @@ jobs:
 
       - name: "test changes"
         run: |
-          echo '${{ needs.detect-changes.outputs.changes }}'
+          echo '${{ needs.detect-changes.outputs.feature_specs }}'
+          echo '${{ needs.detect-changes.outputs.src }}'
+
+          echo '${{ needs.detect-changes.outputs.test }}'
+
 
       # - name: Shell Linter
       #   uses: azohra/shell-linter@v0.6.0
