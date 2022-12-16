@@ -50,7 +50,7 @@ jobs:
           set -e
           cd ..
           jq -c '.[]' <<< '${{ needs.find-feature.outputs.generated_features }}' | while read i; do
-              cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file ./features/feature_specs/$(echo '$i' | tr -d '"').yaml 
+              cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file ./features/feature_specs/$(echo $i | tr -d '"').yaml 
           done
           cd features
         
