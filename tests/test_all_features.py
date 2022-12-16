@@ -1,5 +1,6 @@
 import ray
 import os
+from typing import Optional
 import pytest
 import json
 
@@ -8,7 +9,6 @@ from tqdm import tqdm
 @pytest.fixture(scope="session")
 def base_dir(pytestconfig):
     return pytestconfig.getoption("base_dir")
-
 
 @pytest.fixture(scope="session")
 def feature_ids(pytestconfig):
@@ -40,7 +40,7 @@ def test_assert_good_exitcode(shell, base_dir: str, image: str, feature_ids: lis
         return ret
 
     def get_devcontainer_shell_args(base_dir: str, feature_id: str, image: str) -> str:
-        return f"devcontainer features test -p {base_dir} -f {feature_id} -i {image} && docker system prune -f && docker buildx prune -a -f --keep-storage=1gb --verbose"
+        return f"devcontainer features test -p {base_dir} -f {feature_id} -i {image}"
 
     futures = [remote_ray_task.remote(shell, get_devcontainer_shell_args(base_dir,feature_id, image)) for feature_id in feature_ids]
 
