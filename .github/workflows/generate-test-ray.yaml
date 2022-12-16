@@ -3,31 +3,6 @@ on:
   workflow_dispatch:
   push:
 jobs:
-  detect-changes:
-    runs-on: ubuntu-latest
-    outputs:
-      src: ${{ steps.filter.outputs.src }}
-      test: ${{ steps.filter.outputs.test }}
-      feature_specs: ${{ steps.filter.outputs.feature_specs }}
-      hello: ${{ steps.filter.outputs.changes }} 
-      
-      src_files: ${{ steps.filter.outputs.src_files }}
-      test_files: ${{ steps.filter.outputs.test_files }}
-      feature_specs_files: ${{ steps.filter.outputs.feature_specs_files }}
-      hello_files: ${{ steps.filter.outputs.changes_files }} 
-    steps:
-      - uses: actions/checkout@v3
-
-      - uses: dorny/paths-filter@v2
-        
-        id: filter
-        with:
-          list-files: json
-          filters: |
-            src: ./src/**
-            test: ./test/*
-            feature_specs: ./feature_specs/**
-
   find-feature:
     if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
     runs-on: ubuntu-latest
@@ -43,26 +18,12 @@ jobs:
           path: .
 
   test:
-    needs: [find-feature, detect-changes]
+    needs: [find-feature]
 
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
       - uses: actions/checkout@v3
-
-      - name: "test changes"
-        run: |
-          echo '${{ needs.detect-changes.outputs.feature_specs }}'
-          echo '${{ needs.detect-changes.outputs.src }}'
-          echo '${{ needs.detect-changes.outputs.test }}'
-          echo '${{ needs.detect-changes.outputs.hello }}'
-
-          echo '${{ needs.detect-changes.outputs.feature_specs_files }}'
-          echo '${{ needs.detect-changes.outputs.src_files }}'
-          echo '${{ needs.detect-changes.outputs.test_files }}'
-          echo '${{ needs.detect-changes.outputs.hello_files }}'
-
-
 
       - name: Shell Linter
         uses: azohra/shell-linter@v0.6.0
@@ -101,7 +62,7 @@ jobs:
           export RAY_ROTATION_MAX_BYTES=1024000
           export RAY_ROTATION_BACKUP_COUNT=1
 
-          ray start --head --port=6379
+          ray start --head --disable-usage-stats --port=6379
    
           python3 -u -m pytest test_all_features.py -s --base_dir $GITHUB_WORKSPACE --image "mcr.microsoft.com/devcontainers/base:debian" --feature_ids '${{ needs.find-feature.outputs.all_features }}'
           cd ..

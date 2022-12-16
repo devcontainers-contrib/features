@@ -1,0 +1,56 @@
+name: 'List changed features'
+description: 'Get a json list the changed features (accounting for generator changes)'
+inputs:
+  path:
+    description: 'Base feature folder (containing src and test folders)'
+    required: true
+outputs:
+  changed_features: # id of output
+    description: 'A JSON formatted list of all changed features'
+    value: ${{ steps.feature-finder.outputs.changed_features }} 
+
+runs:
+  using: 'composite'
+  steps:
+    - run: sudo apt update && sudo apt install tree jq -y
+      shell: bash
+
+    - uses: dorny/paths-filter@v2
+      id: filter
+      with:
+        list-files: json
+        filters: |
+          src: 
+            - src/**/*.sh
+          test: 
+            - test/**/*.sh
+          feature_specs: 
+            - feature_specs/**
+          generator:
+            -/pkgs/**
+              
+    - id: feature-finder
+      shell: bash
+      run: |
+        cd ${{ inputs.path }}
+        
+        sudo tree -J  ./feature_specs | sudo jq -c '.[0].contents | map(.name) | map(sub(".yaml"; ""))' > all_generated_features.json
+
+        echo '${{ steps.filter.outputs.src_files }}' > src_files.json
+        echo '${{ steps.filter.outputs.test_files }}' > test_files.json
+        echo '${{ steps.filter.outputs.feature_specs_files }}' > feature_specs_files.json
+
+        cat src_files.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))') > changed_src_features.json
+        cat test_files.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))') > changed_test_features.json
+        cat feature_specs_files.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))') > changed_feature_specs_features.json
+        
+        jq -sc '.[0] + .[1] + .[2] + .[3] | unique'  f.json f2.json f3.json f4.json > changed_features.json
+
+        if [ ${{ steps.filter.outputs.generator }} ] ; then
+          jq -sc '.[0] + .[1] | unique'  changed_features.json all_generated_features.json > changed_features.json
+        fi
+
+        changed_features=$(cat changed_features.json)
+        echo "changed_features=$changed_features" >> $GITHUB_OUTPUT
+
+    
