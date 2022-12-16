@@ -59,7 +59,7 @@ jobs:
           cd tests
           ray start --head --port=6379
           echo "${{ needs.find-feature.outputs.all_features }}"
-          python3 -m pytest test_all_features.py -s --base_dir $GITHUB_WORKSPACE --image "mcr.microsoft.com/devcontainers/base:debian" --feature_ids '${{ needs.find-feature.outputs.all_features }}'
+          python3 -m pytest test_all_features.py -s --base_dir $GITHUB_WORKSPACE --image "mcr.microsoft.com/devcontainers/base:debian" --feature_ids $(echo '${{ needs.find-feature.outputs.all_features }}' | tr -d '"')
 
   test-global:
     runs-on: ubuntu-latest
