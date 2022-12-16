@@ -1,12 +1,19 @@
 import ray
 import os
 import pytest
-from tqdm import tqdm
+import json
 
+from tqdm import tqdm
 
 @pytest.fixture(scope="session")
 def base_dir(pytestconfig):
     return pytestconfig.getoption("base_dir")
+
+
+@pytest.fixture(scope="session")
+def feature_ids(pytestconfig):
+    feature_ids_str = pytestconfig.getoption("feature_ids")
+    return json.loads(feature_ids_str)
 
 @pytest.fixture(scope="session")
 def image(pytestconfig):
@@ -23,8 +30,8 @@ def ray_get_iterator(obj_ids, verbose: bool):
 
 
 
+def test_assert_good_exitcode(shell, base_dir: str, image: str, feature_ids: list[str]):
 
-def test_assert_good_exitcode(shell, base_dir: str, image: str):
     ray.init(address='auto', log_to_driver=True, logging_level=0)
 
     @ray.remote
@@ -32,14 +39,14 @@ def test_assert_good_exitcode(shell, base_dir: str, image: str):
         ret = shell.run(*args)
         return ret
 
-    def get_devcontainer_shell_args(base_dir: str, feature_name: str, image: str) -> list[str]:
-        return ["devcontainer", "features" ,"test", "-p", base_dir, "-f", feature_name ,"-i" ,image]
+    def get_devcontainer_shell_args(base_dir: str, feature_id: str, image: str) -> list[str]:
+        return ["devcontainer", "features" ,"test", "-p", base_dir, "-f", feature_id ,"-i" ,image]
 
-    feature_names = os.listdir(os.path.join(base_dir ,"src"))
-    futures = [remote_ray_task.remote(shell, get_devcontainer_shell_args(base_dir,feature_name, image)) for feature_name in feature_names]
+    futures = [remote_ray_task.remote(shell, get_devcontainer_shell_args(base_dir,feature_id, image)) for feature_id in feature_ids]
 
     rets = tqdm(ray_get_iterator(futures, verbose=True), total=len(futures))
 
     # for ret in rets:
-    for ret in rets:
-        assert ret.returncode == 0
+    bad_rets = [ret for ret in rets if ret.returncode != 0]
+
+    assert len(bad_rets) == 0, f"{len(bad_rets)} features failed:\n {bad_rets}"
