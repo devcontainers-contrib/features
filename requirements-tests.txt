@@ -2,3 +2,4 @@ ray[default]
 pytest
 pytest-shell-utilities
 tqdm
+more_itertools

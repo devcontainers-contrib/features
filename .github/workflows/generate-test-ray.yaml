@@ -17,15 +17,11 @@ jobs:
         with:
           path: .
 
-  test-worker:
+  test:
     needs: [find-feature]
 
     runs-on: ubuntu-latest
     continue-on-error: true
-    strategy:
-      matrix:
-        chunk: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-
     steps:
       - uses: actions/checkout@v3
 
@@ -61,18 +57,14 @@ jobs:
 
       - name: "Running tests"
         run: |
-          cd tests
-
           docker pull mcr.microsoft.com/devcontainers/base:debian
-
+          cd tests
           export RAY_ROTATION_MAX_BYTES=1024000
           export RAY_ROTATION_BACKUP_COUNT=1
+
           ray start --head --disable-usage-stats --port=6379
 
-          echo '${{ needs.find-feature.outputs.all_features }}' | python3 -u chunk_json_stdin.py 10 "${{ matrix.chunk }}" > chunked_feature_ids.json
-
-          python3 -u -m pytest test_all_features.py -s --base_dir $GITHUB_WORKSPACE --image "mcr.microsoft.com/devcontainers/base:debian" --feature_ids $(cat chunked_feature_ids.json)
-
+          python3 -u -m pytest test_all_features.py -s --base_dir $GITHUB_WORKSPACE --image "mcr.microsoft.com/devcontainers/base:debian" --feature_ids '${{ needs.find-feature.outputs.all_features }}'
           cd ..
 
   test-global:
