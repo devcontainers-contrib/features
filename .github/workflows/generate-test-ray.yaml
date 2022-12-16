@@ -48,7 +48,7 @@ jobs:
           echo '${{ needs.detect-changes.outputs.feature_specs }}'
           echo '${{ needs.detect-changes.outputs.src }}'
           echo '${{ needs.detect-changes.outputs.test }}'
-          cho '${{ needs.detect-changes.outputs.hello }}'
+          echo '${{ needs.detect-changes.outputs.hello }}'
 
 
 
