@@ -17,8 +17,8 @@ jobs:
         id: filter
         with:
           filters: |
-            src: ./src/**/**
-            test: ./test/**/**
+            src: ./src/**
+            test: ./test/*
             feature_specs: ./feature_specs/**
 
   find-feature:
@@ -47,8 +47,9 @@ jobs:
         run: |
           echo '${{ needs.detect-changes.outputs.feature_specs }}'
           echo '${{ needs.detect-changes.outputs.src }}'
-          echo '${{ needs.detect-changes.outputs.hello }}'
           echo '${{ needs.detect-changes.outputs.test }}'
+          cho '${{ needs.detect-changes.outputs.hello }}'
+
 
 
       # - name: Shell Linter
