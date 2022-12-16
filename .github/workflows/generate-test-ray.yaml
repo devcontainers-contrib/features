@@ -1,0 +1,67 @@
+name: "CI - Test Features - Ray"
+on:
+  workflow_dispatch:
+  push:
+jobs:
+
+  find-feature:
+    if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
+    runs-on: ubuntu-latest
+    name: Find features
+    outputs:
+      generated_features: ${{ steps.feature-specs.outputs.generated_features }}
+      all_features: ${{ steps.feature-specs.outputs.all_features }}
+    steps:
+      - uses: actions/checkout@v3    
+      - id: feature-specs
+        uses: ./.github/actions/list-features-action
+        with:
+          path: .
+
+  test:
+    needs: [find-feature]
+
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
+
+      - name: "Install test requirements"
+        run: |
+          python3 -m pip install -r requirements-tests.txt
+
+      - name: "install generator"
+        run: |
+          pipx install cookiecutter
+          pipx install shfmt-py
+
+      - name: Generate
+        id: generate
+        run: |
+          set -e
+          if  jq -e 'any(. == "${{ matrix.features }}")' <<<  '${{ needs.find-feature.outputs.generated_features }}'; then
+          cd ..
+          cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file ./features/feature_specs/${{ matrix.features }}.yaml
+          cd features
+          fi
+        
+      - name: "Running tests"
+        run: |
+          cd tests
+          ray start --head --port=6379
+          python3 -m pytest test_all_features.py -s --base_dir $GITHUB_WORKSPACE --image "mcr.microsoft.com/devcontainers/base:debian" --feature_ids "${{ needs.find-feature.outputs.all_features }}"
+
+  test-global:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
+
+      - name: "Testing global scenarios"
+        run: devcontainer features test --global-scenarios-only .
