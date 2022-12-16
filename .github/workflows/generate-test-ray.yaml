@@ -17,7 +17,7 @@ jobs:
         with:
           path: .
 
-  test:
+  test-worker:
     needs: [find-feature]
 
     runs-on: ubuntu-latest
@@ -69,7 +69,7 @@ jobs:
           export RAY_ROTATION_BACKUP_COUNT=1
           ray start --head --disable-usage-stats --port=6379
 
-          echo '${{ needs.find-feature.outputs.all_features }}' | python3 -u chunk_json_stdin.py 10 "${{ matrix.features }}" > chunked_feature_ids.json
+          echo '${{ needs.find-feature.outputs.all_features }}' | python3 -u chunk_json_stdin.py 10 "${{ matrix.chunk }}" > chunked_feature_ids.json
 
           python3 -u -m pytest test_all_features.py -s --base_dir $GITHUB_WORKSPACE --image "mcr.microsoft.com/devcontainers/base:debian" --feature_ids $(cat chunked_feature_ids.json)
 
