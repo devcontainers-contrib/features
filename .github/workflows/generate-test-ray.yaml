@@ -93,9 +93,11 @@ jobs:
         run: |
           docker pull mcr.microsoft.com/devcontainers/base:debian
           cd tests
-          ray start --head --port=6379
           export RAY_ROTATION_MAX_BYTES=1024000
           export RAY_ROTATION_BACKUP_COUNT=1
+
+          ray start --head --port=6379
+   
           python3 -u -m pytest test_all_features.py -s --base_dir $GITHUB_WORKSPACE --image "mcr.microsoft.com/devcontainers/base:debian" --feature_ids '${{ needs.find-feature.outputs.all_features }}'
           cd ..
 
