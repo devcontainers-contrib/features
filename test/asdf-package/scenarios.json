@@ -2,7 +2,7 @@
     "install_act": {
         "image": "debian:bullseye",
         "features": {
-            "npm-package": {
+            "asdf-package": {
                 "version": "latest",
                 "plugin": "act"
             }

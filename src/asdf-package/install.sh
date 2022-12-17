@@ -51,7 +51,7 @@ install_via_asdf() {
 	REPO=$3
 
 	# install git and curl if does not exists
-	check_packages curl git
+	check_packages curl git ca-certificates
 	if ! type asdf >/dev/null 2>&1; then
 		su - "$_REMOTE_USER" <<EOF
             git clone --depth=1 \
@@ -62,10 +62,16 @@ install_via_asdf() {
             -c receive.fsck.zeroPaddedFilemode=ignore \
             "https://github.com/asdf-vm/asdf.git" $_REMOTE_USER_HOME/.asdf 2>&1
 
-            updaterc ". $_REMOTE_USER_HOME/.asdf/asdf.sh"
+
+            if [ ! -f "\${HOME}/.bashrc" ] || [ ! -s "\${HOME}/.bashrc" ] ; then
+                cp  /etc/skel/.bashrc "\${HOME}/.bashrc"
+            fi
+            if  [ ! -f "\${HOME}/.profile" ] || [ ! -s "\${HOME}/.profile" ] ; then
+                cp  /etc/skel/.profile "\${HOME}/.profile"
+            fi
 
             . $_REMOTE_USER_HOME/.asdf/asdf.sh
-            
+
             if asdf list "$PLUGIN"; then
                 echo "$PLUGIN  already exists - skipping installation"
                 exit 0
@@ -75,6 +81,9 @@ install_via_asdf() {
             asdf install "$PLUGIN" "$VERSION"
             asdf global "$PLUGIN" "$VERSION"
 EOF
+
+		updaterc ". $_REMOTE_USER_HOME/.asdf/asdf.sh"
+
 	fi
 }
 
