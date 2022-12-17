@@ -33,6 +33,17 @@ def ray_get_iterator(obj_ids, verbose: bool):
 
 
 def test_assert_good_exitcode(shell, base_dir: str, image: str, feature_ids: list[str]):
+    """
+    example usage:
+
+    ```
+    ray start --head --disable-usage-stats --port=6379
+
+    python3 -u -m pytest test_all_features.py -s --base_dir $GITHUB_WORKSPACE --image "mcr.microsoft.com/devcontainers/base:debian" --feature_ids $(sudo tree -J -d  ./src | sudo jq -c '.[0].contents | map(.name)')
+
+    ray stop  
+    ```
+    """
 
     feature_ids_chunks = list(chunked(feature_ids, CHUNK_SIZE))
     ray.init(address='auto', log_to_driver=True, logging_level=0)
