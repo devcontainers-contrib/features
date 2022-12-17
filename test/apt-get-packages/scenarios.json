@@ -1,0 +1,11 @@
+{
+    "install_cowsay_build_essential": {
+        "image": "debian:bullseye",
+        "features": {
+            "apt-get-packages": {
+                "version": "latest",
+                "packages": "cowsay build-essential"
+            }
+        }
+    }
+}

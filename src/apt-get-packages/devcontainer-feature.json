@@ -1,0 +1,19 @@
+{
+    "name": "apt-get packages",
+    "id": "apt-get-packages",
+    "version": "1.0.0",
+    "description": "Installs an apt-get packages (debian).",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/apt-get-package",
+    "installAfter": [],
+    "options": {
+        "packages": {
+            "type": "string",
+            "proposals": [
+                "gcc",
+                "curl"
+            ],
+            "default": "",
+            "description": "Space delimitered apt-get packages to install."
+        }
+    }
+}
