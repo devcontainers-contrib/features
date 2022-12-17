@@ -30,4 +30,6 @@ check_packages() {
 }
 
 packages_array=("$PACKAGES")
+
+# shellcheck disable=SC2068
 check_packages ${packages_array[@]}
