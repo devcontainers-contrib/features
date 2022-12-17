@@ -65,7 +65,7 @@ runs:
         jq -sc '.[0] + .[1] + .[2] | unique'  src_files.json test_files.json feature_specs_files.json > changed_features.json
 
 
-        if [ ${{ steps.filter.outputs.generator }} ] ; then
+        if ${{ steps.filter.outputs.generator }} ; then
           echo '${{ steps.filter.outputs.generator_files }}'
           jq -sc '.[0] + .[1] | unique'  changed_features.json all_generated_features.json > changed_features.json
         fi
