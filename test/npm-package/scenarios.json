@@ -1,0 +1,20 @@
+{
+    "install_angular_cli": {
+        "image": "debian:bullseye",
+        "features": {
+            "npm-package": {
+                "version": "latest",
+                "package": "@angular/cli"
+            }
+        }
+    },
+    "install_typescript": {
+        "image": "debian:bullseye",
+        "features": {
+            "npm-package": {
+                "version": "latest",
+                "package": "typescript"
+            }
+        }
+    }
+}

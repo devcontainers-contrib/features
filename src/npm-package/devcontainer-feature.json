@@ -1,0 +1,30 @@
+{
+    "name": "npm package",
+    "id": "npm-package",
+    "version": "1.0.0",
+    "description": "Installs an npm package.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/npm-package",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/node:latest"
+    ],
+    "options": {
+        "package": {
+            "type": "string",
+            "proposals": [
+                "typescript",
+                "vtop",
+                "fkill-cli"
+            ],
+            "default": "",
+            "description": "Select the npm package to install."
+        },
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of the npm package to install."
+        }
+    }
+}
