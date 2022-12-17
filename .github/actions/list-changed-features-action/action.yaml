@@ -56,7 +56,7 @@ runs:
         cat test_files.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))' > changed_test_features.json
         cat feature_specs_files.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))' > changed_feature_specs_features.json
 
-        jq -sc '.[0] + .[1] + .[2] + .[3] | unique'  f.json f2.json f3.json f4.json > changed_features.json
+        jq -sc '.[0] + .[1] + .[2] | unique'  src_files.json test_files.json feature_specs_files.json > changed_features.json
 
         if [ ${{ steps.filter.outputs.generator }} ] ; then
           jq -sc '.[0] + .[1] | unique'  changed_features.json all_generated_features.json > changed_features.json
