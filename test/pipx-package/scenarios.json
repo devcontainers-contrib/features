@@ -1,0 +1,12 @@
+{
+    "install_black": {
+        "image": "debian:bullseye",
+        "features": {
+            "pipx-package": {
+                "version": "latest",
+                "package": "black",
+                "injections": "tqdm pylint"
+            }
+        }
+    }
+}

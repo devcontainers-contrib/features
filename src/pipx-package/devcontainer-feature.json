@@ -1,0 +1,36 @@
+{
+    "name": "Pipx package",
+    "id": "pipx-package",
+    "version": "1.0.0",
+    "description": "Installs a pipx package.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pipx-package",
+    "installAfter": [
+        "ghcr.io/devcontainers/features/python:latest"
+    ],
+    "options": {
+        "package": {
+            "type": "string",
+            "proposals": [
+                "black"
+            ],
+            "default": "",
+            "description": "Select the pipx package to install."
+        },
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of the pipx package to install."
+        },
+        "injections": {
+            "type": "string",
+            "proposals": [
+                "pylint pytest"
+            ],
+            "default": "",
+            "description": "Space delimitered list of python packages to inject into the main package env"
+        }
+    }
+}
