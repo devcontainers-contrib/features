@@ -20,13 +20,13 @@ if [ "$(id -u)" -ne 0 ]; then
 fi
 
 updaterc() {
-    echo "Updating /etc/bash.bashrc and /etc/zsh/zshrc..."
-    if [[ "$(cat /etc/bash.bashrc)" != *"$1"* ]]; then
-        echo -e "$1" >> /etc/bash.bashrc
-    fi
-    if [ -f "/etc/zsh/zshrc" ] && [[ "$(cat /etc/zsh/zshrc)" != *"$1"* ]]; then
-        echo -e "$1" >> /etc/zsh/zshrc
-    fi
+	echo "Updating /etc/bash.bashrc and /etc/zsh/zshrc..."
+	if [[ "$(cat /etc/bash.bashrc)" != *"$1"* ]]; then
+		echo -e "$1" >>/etc/bash.bashrc
+	fi
+	if [ -f "/etc/zsh/zshrc" ] && [[ "$(cat /etc/zsh/zshrc)" != *"$1"* ]]; then
+		echo -e "$1" >>/etc/zsh/zshrc
+	fi
 }
 
 install_via_pipx() {
@@ -39,7 +39,6 @@ install_via_pipx() {
 		apt-get update -y
 		apt-get -y install python3-minimal python3-pip libffi-dev python3-venv
 	fi
-
 
 	export PYTHONUSERBASE=/tmp/pip-tmp
 	export PIP_CACHE_DIR=/tmp/pip-tmp/cache
