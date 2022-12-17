@@ -1,22 +1,20 @@
-name: "Generate and test features"
+name: "Generate and test features - (changes only)"
 on:
   workflow_dispatch:
-
   pull_request:
 
 jobs:
-
   find-feature:
     if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
     runs-on: ubuntu-latest
-    name: Find features
+    name: Find changed features
     outputs:
-      generated_features: ${{ steps.feature-specs.outputs.generated_features }}
-      all_features: ${{ steps.feature-specs.outputs.all_features }}
+      changed_features: ${{ steps.feature-specs.outputs.changed_features }}
+
     steps:
-      - uses: actions/checkout@v3    
+      - uses: actions/checkout@v3
       - id: feature-specs
-        uses: ./.github/actions/list-features-action
+        uses: ./.github/actions/list-changed-features-action
         with:
           path: .
 
@@ -26,11 +24,19 @@ jobs:
     continue-on-error: true
     strategy:
       matrix:
-        features: ${{ fromJson( needs.find-feature.outputs.all_features )}}
+        features: ${{ fromJson( needs.find-feature.outputs.changed_features )}}
         baseImage: ["mcr.microsoft.com/devcontainers/base:debian"]
 
     steps:
       - uses: actions/checkout@v3
+
+      - name: Shell Linter
+        uses: azohra/shell-linter@v0.6.0
+        with:
+          path: "src/**/*.sh"
+          severity: "error" # [style, info, warning, error]
+        env:
+          SHELLCHECK_OPTS: -e SC2072 # Acceptable use of decimal comparison
 
       - name: "install generator"
         run: |
@@ -40,26 +46,20 @@ jobs:
       - name: Generate
         id: generate
         run: |
+          generated_features=$(sudo tree -J  ./feature_specs | sudo jq -c '.[0].contents | map(.name) | map(sub(".yaml"; ""))')
+
           set -e
-          if  jq -e 'any(. == "${{ matrix.features }}")' <<<  '${{ needs.find-feature.outputs.generated_features }}'; then
+          if  jq -e 'any(. == "${{ matrix.features }}")' <<< $generated_features; then
           cd ..
           cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file ./features/feature_specs/${{ matrix.features }}.yaml
           cd features
           fi
-        
+
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
 
       - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
         run: devcontainer features test -f ${{ matrix.features }} -i ${{ matrix.baseImage }} .
-      
-      - name: Shell Linter
-        uses: azohra/shell-linter@v0.6.0
-        with:
-          path: "src/**/*.sh"
-          severity: "error" # [style, info, warning, error]
-        env:
-          SHELLCHECK_OPTS: -e SC2072 # Acceptable use of decimal comparison
 
   test-global:
     runs-on: ubuntu-latest

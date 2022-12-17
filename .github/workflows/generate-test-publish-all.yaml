@@ -1,13 +1,8 @@
 name: "Generate test and publish features"
 on:
-  push:
-    branches:
-      - main
-      
   workflow_dispatch:
 
 jobs:
-
   find-feature:
     if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
     runs-on: ubuntu-latest
@@ -16,7 +11,7 @@ jobs:
       generated_features: ${{ steps.feature-specs.outputs.generated_features }}
       all_features: ${{ steps.feature-specs.outputs.all_features }}
     steps:
-      - uses: actions/checkout@v3    
+      - uses: actions/checkout@v3
       - id: feature-specs
         uses: ./.github/actions/list-features-action
         with:
@@ -34,6 +29,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Shell Linter
+        uses: azohra/shell-linter@v0.6.0
+        with:
+          path: "src/**/*.sh"
+          severity: "error" # [style, info, warning, error]
+        env:
+          SHELLCHECK_OPTS: -e SC2072 # Acceptable use of decimal comparison
+
       - name: "install generator"
         run: |
           pipx install cookiecutter
@@ -42,26 +45,21 @@ jobs:
       - name: Generate
         id: generate
         run: |
+          generated_features=$(sudo tree -J  ./feature_specs | sudo jq -c '.[0].contents | map(.name) | map(sub(".yaml"; ""))')
+
           set -e
-          if  jq -e 'any(. == "${{ matrix.features }}")' <<<  '${{ needs.find-feature.outputs.generated_features }}'; then
+          if  jq -e 'any(. == "${{ matrix.features }}")' <<<  $generated_features ; then
           cd ..
           cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file ./features/feature_specs/${{ matrix.features }}.yaml
           cd features
           fi
-        
+
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
 
       - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
         run: devcontainer features test -f ${{ matrix.features }} -i ${{ matrix.baseImage }} .
-      
-      - name: Shell Linter
-        uses: azohra/shell-linter@v0.6.0
-        with:
-          path: "src/**/*.sh"
-          severity: "error" # [style, info, warning, error]
-        env:
-          SHELLCHECK_OPTS: -e SC2072 # Acceptable use of decimal comparison
+
   create-pr:
     needs: [test]
     runs-on: ubuntu-latest
@@ -80,7 +78,7 @@ jobs:
           cd ..
           for d in ./features/feature_specs/* ; do  cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file "$d"; done
           cd features
-        
+
       - name: Create PR for Features
         id: push_image_info
         env:

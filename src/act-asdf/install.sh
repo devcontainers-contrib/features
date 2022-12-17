@@ -6,6 +6,7 @@
 
 set -e
 
+
 # asdf plugin version for act
 ACT=${VERSION:-"latest"}
 
