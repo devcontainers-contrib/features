@@ -1,0 +1,27 @@
+{
+    "name": "asdf package",
+    "id": "asdf-package",
+    "version": "1.0.0",
+    "description": "Installs an asdf package.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/asdf-package",
+    "installAfter": [],
+    "options": {
+        "plugin": {
+            "type": "string",
+            "proposals": [
+                "act",
+                "nomad"
+            ],
+            "default": "",
+            "description": "Select the asdf plugin to install."
+        },
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of the asdf plugin to install."
+        }
+    }
+}

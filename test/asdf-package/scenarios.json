@@ -1,0 +1,11 @@
+{
+    "install_act": {
+        "image": "debian:bullseye",
+        "features": {
+            "npm-package": {
+                "version": "latest",
+                "plugin": "act"
+            }
+        }
+    }
+}
