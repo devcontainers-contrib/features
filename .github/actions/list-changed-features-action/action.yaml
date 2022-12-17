@@ -1,16 +1,24 @@
-name: 'List changed features'
-description: 'Get a json list the changed features (accounting for generator changes)'
+name: "List changed features"
+description: "Get a json list the changed features (accounting for generator changes)"
 inputs:
   path:
-    description: 'Base feature folder (containing src and test folders)'
+    description: "Base feature folder (containing src and test folders)"
     required: true
 outputs:
   changed_features: # id of output
-    description: 'A JSON formatted list of all changed features'
-    value: ${{ steps.feature-finder.outputs.changed_features }} 
+    description: "A JSON formatted list of all changed features"
+    value: ${{ steps.feature-finder.outputs.changed_features }}
+
+  all_features: # id of output
+    description: "A JSON formatted list of all features"
+    value: ${{ steps.feature-finder.outputs.all_features }}
+
+  all_generated_features: # id of output
+    description: "A JSON formatted list of all generated features"
+    value: ${{ steps.feature-finder.outputs.all_generated_features }}
 
 runs:
-  using: 'composite'
+  using: "composite"
   steps:
     - run: sudo apt update && sudo apt install tree jq -y
       shell: bash
@@ -28,13 +36,17 @@ runs:
             - feature_specs/**
           generator:
             -/pkgs/**
-              
+
     - id: feature-finder
       shell: bash
       run: |
         cd ${{ inputs.path }}
-        
+
         sudo tree -J  ./feature_specs | sudo jq -c '.[0].contents | map(.name) | map(sub(".yaml"; ""))' > all_generated_features.json
+        sudo tree -J -d  ./src | sudo jq -c '.[0].contents | map(.name)' > all_src_features.json
+        all_features=$(jq -sc '.[0] + .[1] | unique'  folders.json specs.json)
+        all_generated_features=$(cat all_generated_features.json)
+
 
         echo '${{ steps.filter.outputs.src_files }}' > src_files.json
         echo '${{ steps.filter.outputs.test_files }}' > test_files.json
@@ -43,7 +55,7 @@ runs:
         cat src_files.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))') > changed_src_features.json
         cat test_files.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))') > changed_test_features.json
         cat feature_specs_files.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))') > changed_feature_specs_features.json
-        
+
         jq -sc '.[0] + .[1] + .[2] + .[3] | unique'  f.json f2.json f3.json f4.json > changed_features.json
 
         if [ ${{ steps.filter.outputs.generator }} ] ; then
@@ -51,6 +63,8 @@ runs:
         fi
 
         changed_features=$(cat changed_features.json)
-        echo "changed_features=$changed_features" >> $GITHUB_OUTPUT
 
-    
+
+        echo "changed_features=$changed_features" >> $GITHUB_OUTPUT
+        echo "all_features=$all_features" >> $GITHUB_OUTPUT
+        echo "all_generated_features=$all_generated_features" >> $GITHUB_OUTPUT
