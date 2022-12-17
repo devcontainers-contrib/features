@@ -1,4 +1,4 @@
-name: "Generate and test features"
+name: "Generate and test features - (changes only)"
 on:
   workflow_dispatch:
   push:

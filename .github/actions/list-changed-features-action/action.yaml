@@ -52,9 +52,9 @@ runs:
         echo '${{ steps.filter.outputs.test_files }}' > test_files.json
         echo '${{ steps.filter.outputs.feature_specs_files }}' > feature_specs_files.json
 
-        cat src_files.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))') > changed_src_features.json
-        cat test_files.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))') > changed_test_features.json
-        cat feature_specs_files.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))') > changed_feature_specs_features.json
+        cat src_files.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))' > changed_src_features.json
+        cat test_files.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))' > changed_test_features.json
+        cat feature_specs_files.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))' > changed_feature_specs_features.json
 
         jq -sc '.[0] + .[1] + .[2] + .[3] | unique'  f.json f2.json f3.json f4.json > changed_features.json
 
