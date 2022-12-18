@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [main]
+    branches: [main, jcbhmr-initiative]
     paths: [README.md, .github/workflows/test.yml]
   workflow_dispatch:
 jobs:

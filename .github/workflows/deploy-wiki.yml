@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [main]
+    branches: [main, jcbhmr-initiative]
     paths: [wiki/**, .github/workflows/deploy-wiki.yml]
 concurrency:
   group: wiki
