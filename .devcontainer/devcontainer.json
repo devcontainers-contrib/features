@@ -6,7 +6,8 @@
     }
   },
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker": {}
+    "ghcr.io/devcontainers/features/docker-in-docker": {},
+    "ghcr.io/devcontainers-contrib/features/deno": {}
   },
   "postCreateCommand": "./configure"
 }
