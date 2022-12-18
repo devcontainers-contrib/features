@@ -1,17 +1,25 @@
 on:
   push:
     branches: [main]
-    paths: [wiki/**, .github/workflows/deploy-wiki.yml]
-concurrency:
-  group: wiki
-  cancel-in-progress: true
+    paths: [docs/**, .github/workflows/deploy.yml]
 jobs:
-  deploy-wiki:
+  pages:
     runs-on: ubuntu-latest
     environment:
-      name: github-wiki
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: true
+    permissions: write-all
     steps:
       - uses: actions/checkout@v3
-      - uses: akshnz/deploy-wiki@main
+      - uses: devcontainers/ci@v0.2
+        with:
+          runCmd: cd docs && npm ci && npm pack --dry-run
+      - uses: actions/configure-pages@v2
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: docs/dist
+      - uses: actions/deploy-pages@v1
         id: deployment
