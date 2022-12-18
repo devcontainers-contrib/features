@@ -1,0 +1,17 @@
+on:
+  push:
+    branches: [main]
+    paths: [wiki/**, .github/workflows/deploy-wiki.yml]
+concurrency:
+  group: wiki
+  cancel-in-progress: true
+jobs:
+  deploy-wiki:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-wiki
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: akshnz/deploy-wiki@main
+        id: deployment
