@@ -1,0 +1,16 @@
+on:
+  push:
+    branches: [main]
+    paths: [README.md, .github/workflows/test.yml]
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: devcontainers/ci@v0.2
+        with:
+          runCmd: tools/update-readme.js
+      # ⚠️ This auto-commits! Users WILL have to pull! We only do this on the
+      # main branch, so it's not THAT big of a deal.
+      - uses: stefanzweifel/git-auto-commit-action@v4
