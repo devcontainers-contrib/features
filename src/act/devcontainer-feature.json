@@ -1,0 +1,22 @@
+{
+  "name": "act",
+  "id": "act",
+  "version": "4.0.0",
+  "description": "Run your GitHub Actions locally 🚀",
+  "documentationURL": "http://devcontainers-contrib.github.io/features/act",
+  "_homepage": "https://github.com/nektos/act#readme",
+  "licenseURL": "https://github.com/devcontainers-contrib/features/blob/main/LICENSE",
+  "options": {
+    "version": {
+      "type": "string",
+      "proposals": ["latest"],
+      "default": "latest",
+      "description": "Select the version of act to install."
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["cschleiden.vscode-github-actions"]
+    }
+  }
+}
