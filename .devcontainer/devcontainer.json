@@ -1,18 +1,12 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:linux",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node",
   "customizations": {
     "vscode": {
-      "extensions": [
-        "mads-hartmann.bash-ide-vscode",
-        "samuelcolvin.jinjahtml"
-      ]
+      "extensions": ["lizebang.bash-extension-pack", "esbenp.prettier-vscode"]
     }
   },
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-    "ghcr.io/devcontainers-contrib/features/cookiecutter:1": {},
-    "ghcr.io/devcontainers/features/common-utils:1": {},
-    "ghcr.io/lukewiwa/features/shellcheck:0": {}
+    "ghcr.io/devcontainers/features/docker-in-docker": {}
   },
-  "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh > postCreateCommand.log"
+  "postCreateCommand": "./configure"
 }
