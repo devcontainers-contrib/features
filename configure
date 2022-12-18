@@ -1,14 +1,17 @@
 #!/bin/bash -e
-
-# We need the devcontainers CLI so that we can test these features. Since this
-# isn't a full-on npm project, we just need to pluck this one global dep.
-npm i -g @devcontainers/cli
-
-# For the documentation website, we use mdBook [1] to turn Markdown files into
-# a pretty HTML website. The recommended way to it is to use the raw binary. If
-# we install it with cargo install, then it takes literally like 7 minutes to
-# compile the entire thing.
+# This is the ./configure script [1] for this project. It is responsible for
+# configuring the local state of this particular folder. It will assume that
+# the current environment is a fresh clone of this repository. It will also assume
+# that the current environment is a Linux machine with the appropriate tools
+# installed as specified in the .devcontainer/devcontainer.json file.
 #
-# [1]: https://rust-lang.github.io/mdBook/
-RELEASE_TGZ="https://github.com/rust-lang/mdBook/releases/download/v0.4.25/mdbook-v0.4.25-x86_64-unknown-linux-gnu.tar.gz"
-curl -sSL "$RELEASE_TGZ" | sudo tar -xzvC /usr/local/bin
+# 1. Install the devcontainers CLI [2].
+# 2. Install Eleventy [3].
+#
+# [1]: https://en.wikipedia.org/wiki/Configure_script
+# [2]: https://github.com/devcontainers/cli#readme
+# [3]: https://www.11ty.dev/
+
+# 1. Install the devcontainers CLI [2].
+# 2. Install Eleventy [3].
+npm i -g @devcontainers/cli @11ty/eleventy

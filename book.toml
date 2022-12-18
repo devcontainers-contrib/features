@@ -1,6 +1,0 @@
-[book]
-authors = ["Jacob Hummer"]
-language = "en"
-multilingual = false
-src = "docs"
-title = "devcontainer community features"
