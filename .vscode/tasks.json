@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "test",
+      "detail": "Test all features",
+      "type": "shell",
+      "command": "devcontainer features test",
+      "group": { "kind": "test", "isDefault": true }
+    },
+    {
+      "label": "build",
+      "detail": "Build all features",
+      "type": "shell",
+      "command": "devcontainer features package -f src",
+      "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "docs-dev",
+      "detail": "Start a dev preview of the docs site",
+      "type": "shell",
+      "command": "eleventy --input docs --serve"
+    },
+    {
+      "label": "docs-build",
+      "detail": "Build the docs site",
+      "type": "shell",
+      "command": "eleventy --input docs",
+      "group": "build"
+    },
+    {
+      "label": "update-readme",
+      "detail": "Update the README.md file",
+      "type": "shell",
+      "command": "tools/update-readme.js"
+    }
+  ]
+}
