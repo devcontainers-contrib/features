@@ -10,4 +10,6 @@ jobs:
       - uses: actions/checkout@v3
       - uses: devcontainers/ci@v0.2
         with:
-          runCmd: devcontainer features test
+          runCmd: |
+            tools/prebuild.sh
+            devcontainer features test

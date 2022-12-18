@@ -7,17 +7,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: docker/login-action@v2
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+      # All variables need to be EXPLICITLY passed in. Including default GitHub
+      # Actions variables. Below in the steps.env area are the env vars that get
+      # passed to the devcontainers/ci action. Inside the devcontainers/ci
+      # action, we need to specify any of these vars to get passed to the actual
+      # devcontainer itself.
+      #
+      # https://docs.github.com/en/actions/learn-github-actions/environment-variables#default-environment-variables
+      # https://github.com/devcontainers/ci/blob/main/docs/github-action.md#inputs
       - uses: devcontainers/ci@v0.2
         with:
-          runCmd: tools/publish.sh
-          # All variables need to be EXPLICITLY passed in. Including default
-          # GitHub Actions variables.
-          # https://docs.github.com/en/actions/learn-github-actions/environment-variables#default-environment-variables
+          runCmd: |
+            docker login -u "$GITHUB_ACTOR" -p "$GITHUB_TOKEN" ghcr.io
+            tools/prebuild.sh
+            devcontainer features publish -n "$GITHUB_REPOSITORY" src
           env: |
+            GITHUB_ACTOR
+            GITHUB_TOKEN
             GITHUB_REPOSITORY
-            GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

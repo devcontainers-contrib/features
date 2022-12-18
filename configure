@@ -3,3 +3,12 @@
 # We need the devcontainers CLI so that we can test these features. Since this
 # isn't a full-on npm project, we just need to pluck this one global dep.
 npm i -g @devcontainers/cli
+
+# For the documentation website, we use mdBook [1] to turn Markdown files into
+# a pretty HTML website. The recommended way to it is to use the raw binary. If
+# we install it with cargo install, then it takes literally like 7 minutes to
+# compile the entire thing.
+#
+# [1]: https://rust-lang.github.io/mdBook/
+RELEASE_TGZ="https://github.com/rust-lang/mdBook/releases/download/v0.4.25/mdbook-v0.4.25-x86_64-unknown-linux-gnu.tar.gz"
+curl -sSL "$RELEASE_TGZ" | sudo tar -xzvC /usr/local/bin
