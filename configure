@@ -1,0 +1,5 @@
+#!/bin/bash -e
+
+# We need the devcontainers CLI so that we can test these features. Since this
+# isn't a full-on npm project, we just need to pluck this one global dep.
+npm i -g @devcontainers/cli
