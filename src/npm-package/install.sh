@@ -53,7 +53,7 @@ install_via_npm() {
 	if [ "$VERSION" = "latest" ]; then
 		npm_installation="$PACKAGE"
 	else
-		npm_installation="$PACKAGE==$VERSION"
+		npm_installation="${PACKAGE}@${VERSION}"
 	fi
 
 	npm install -g --omit=dev "$npm_installation"
