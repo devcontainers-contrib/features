@@ -1,7 +1,7 @@
 {
     "name": "Vulture (via pipx)",
     "id": "vulture",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Vulture finds unused code in Python programs.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/vulture",
     "installsAfter": [

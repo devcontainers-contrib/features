@@ -1,7 +1,7 @@
 {
     "name": "alp (via asdf)",
     "id": "alp-asdf",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Installs alp",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/alp-asdf",
     "installsAfter": [

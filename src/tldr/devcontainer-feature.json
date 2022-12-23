@@ -1,7 +1,7 @@
 {
     "name": "tldr (via npm)",
     "id": "tldr",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "The tldr pages are a community effort to simplify the beloved man pages with practical examples.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tldr",
     "installsAfter": [

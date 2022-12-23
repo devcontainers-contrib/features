@@ -1,7 +1,7 @@
 {
     "name": "Deno (via asdf)",
     "id": "deno-asdf",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Deno is a simple, modern runtime for JavaScript and TypeScript that uses V8 and is built in Rust.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/deno-asdf",
     "installsAfter": [

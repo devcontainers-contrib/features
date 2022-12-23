@@ -1,7 +1,7 @@
 {
     "name": "PowerBI Visual Tools (pbiviz) (via npm)",
     "id": "powerbi-visuals-tools",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "PowerBI Visual Tools Contains tools for building/packaging Power BI visuals",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/powerbi-visuals-tools",
     "installsAfter": [

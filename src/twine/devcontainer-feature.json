@@ -1,7 +1,7 @@
 {
     "name": "Twine (via pipx)",
     "id": "twine",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Twine is a utility for publishing Python packages on PyPI.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/twine",
     "installsAfter": [

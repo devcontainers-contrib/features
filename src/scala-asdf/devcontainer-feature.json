@@ -1,7 +1,7 @@
 {
     "name": "scala (via asdf)",
     "id": "scala-asdf",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Scala combines object-oriented and functional programming in one concise, high-level language",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/scala-asdf",
     "installsAfter": [

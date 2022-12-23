@@ -1,7 +1,7 @@
 {
     "name": "Browserify (via npm)",
     "id": "browserify",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Browserify lets you require('modules') in the browser by bundling up all of your dependencies.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/browserify",
     "installsAfter": [

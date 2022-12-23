@@ -1,7 +1,7 @@
 {
     "name": "Kubectl (via asdf)",
     "id": "kubectl-asdf",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Installs Kubectl",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/kubectl-asdf",
     "installsAfter": [

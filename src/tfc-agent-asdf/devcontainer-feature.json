@@ -1,7 +1,7 @@
 {
     "name": "tfc-agent (via asdf)",
     "id": "tfc-agent-asdf",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Installs tfc-agent",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tfc-agent-asdf",
     "installsAfter": [

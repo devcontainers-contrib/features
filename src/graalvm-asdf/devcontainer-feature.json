@@ -1,7 +1,7 @@
 {
     "name": "GraalVM (via asdf)",
     "id": "graalvm-asdf",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "GraalVM is a high-performance JDK designed to accelerate Java application performance while consuming fewer resources.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/graalvm-asdf",
     "installsAfter": [

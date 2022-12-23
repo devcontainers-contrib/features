@@ -1,7 +1,7 @@
 {
     "name": "sentinel (via asdf)",
     "id": "sentinel-asdf",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Sentinel is an embeddable policy as code framework to enable fine-grained, logic-based policy decisions that can be extended to source external information to make decisions.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/sentinel-asdf",
     "installsAfter": [

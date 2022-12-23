@@ -1,7 +1,7 @@
 {
     "name": "Express Application Generator (via npm)",
     "id": "express-generator",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Express Application Generator is a handy tool for creating skeleton Express web apps.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/express-generator",
     "installsAfter": [

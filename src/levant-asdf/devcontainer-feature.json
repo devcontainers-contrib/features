@@ -1,7 +1,7 @@
 {
     "name": "levant (via asdf)",
     "id": "levant-asdf",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Levant is an open source templating and deployment tool for HashiCorp Nomad jobs",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/levant-asdf",
     "installsAfter": [

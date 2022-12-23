@@ -1,7 +1,7 @@
 {
     "name": "consul (via asdf)",
     "id": "consul-asdf",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Consul is a service networking solution to automate network configurations, discover services, and enable secure connectivity across any cloud or runtime.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/consul-asdf",
     "installsAfter": [

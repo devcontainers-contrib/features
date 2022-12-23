@@ -1,7 +1,7 @@
 {
     "name": "Dasel (via asdf)",
     "id": "dasel-asdf",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Dasel (short for data-selector) allows you to query and modify data structures using selector strings.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/dasel-asdf",
     "installsAfter": [

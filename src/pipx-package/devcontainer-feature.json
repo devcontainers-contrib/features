@@ -1,7 +1,7 @@
 {
     "name": "Pipx package",
     "id": "pipx-package",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Installs a pipx package.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pipx-package",
     "installsAfter": [

@@ -1,7 +1,7 @@
 {
     "name": "Serf (via asdf)",
     "id": "serf-asdf",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Serf is a decentralized solution for cluster membership, failure detection, and orchestration.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/serf-asdf",
     "installsAfter": [

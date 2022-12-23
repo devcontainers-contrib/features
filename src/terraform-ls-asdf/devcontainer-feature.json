@@ -1,7 +1,7 @@
 {
     "name": "Terraform Language Server (terraform-ls) (via asdf)",
     "id": "terraform-ls-asdf",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "The official Terraform language server (terraform-ls) maintained by HashiCorp provides IDE features to any LSP-compatible editor.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/terraform-ls-asdf",
     "installsAfter": [
