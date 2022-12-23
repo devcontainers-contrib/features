@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Quasar is an MIT licensed open-source Vue.js based framework, which allows you as a web developer to quickly create responsive websites/apps in many flavours.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/quasar-cli",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

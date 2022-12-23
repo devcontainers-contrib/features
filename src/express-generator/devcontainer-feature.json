@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Express Application Generator is a handy tool for creating skeleton Express web apps.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/express-generator",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

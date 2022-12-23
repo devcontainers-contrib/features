@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "pyinfra is a Python alternative to Ansible where you don't write your deployment in YAML file, but in Python.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pyinfra",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

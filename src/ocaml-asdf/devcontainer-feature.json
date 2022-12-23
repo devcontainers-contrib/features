@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "OCaml is a general-purpose, industrial-strength programming language with an emphasis on expressiveness and safety.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ocaml-asdf",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

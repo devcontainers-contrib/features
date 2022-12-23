@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "The Firebase CLI (GitHub) provides a variety of tools for managing, viewing, and deploying to Firebase projects.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/firebase-cli",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

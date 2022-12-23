@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Datasette is a tool for exploring and publishing data and is aimed at data journalists, museum curators, archivists, local governments, scientists and researchers.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/datasette",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

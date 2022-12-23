@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "The Ionic command-line interface (CLI) is the go-to tool for developing Ionic apps.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ionic-cli",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

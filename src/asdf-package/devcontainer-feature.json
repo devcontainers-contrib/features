@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "description": "Installs an asdf package.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/asdf-package",
-    "installAfter": [],
+    "installsAfter": [],
     "options": {
         "plugin": {
             "type": "string",

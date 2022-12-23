@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Serf is a decentralized solution for cluster membership, failure detection, and orchestration.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/serf-asdf",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

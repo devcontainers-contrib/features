@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Consul is a service networking solution to automate network configurations, discover services, and enable secure connectivity across any cloud or runtime.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/consul-asdf",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Serverless Framework is a widely used open-source IaC tool that allows you to build, and deploy serverless applications on multiple cloud providers.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/serverless",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

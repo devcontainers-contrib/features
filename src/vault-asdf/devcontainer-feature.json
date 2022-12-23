@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Vault secures, stores, and tightly controls access to tokens, passwords, certificates, API keys, and other secrets in modern computing.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/vault-asdf",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

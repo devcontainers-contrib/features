@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "GraalVM is a high-performance JDK designed to accelerate Java application performance while consuming fewer resources.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/graalvm-asdf",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

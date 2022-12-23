@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "MLton is a whole-program optimizing compiler for the Standard ML programming language.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mlton-asdf",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

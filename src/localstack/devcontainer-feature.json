@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Localstack is a fully functional local AWS cloud stack.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/localstack",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

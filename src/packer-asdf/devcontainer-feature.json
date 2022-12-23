@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Packer is a free and open source tool for creating golden images for multiple platforms from a single source configuration.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/packer-asdf",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

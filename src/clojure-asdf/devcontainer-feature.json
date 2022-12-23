@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Clojure is a dialect of Lisp, and shares with Lisp the code-as-data philosophy and a powerful macro system.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/clojure-asdf",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

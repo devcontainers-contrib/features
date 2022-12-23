@@ -4,7 +4,7 @@
     "version": "{{cookiecutter.version}}",
     "description": "{{cookiecutter.description}}",
     "documentationURL": "{{cookiecutter.gitrepo}}/tree/main/src/{{cookiecutter.feature_id}}",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
 

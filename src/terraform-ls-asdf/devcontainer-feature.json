@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "The official Terraform language server (terraform-ls) maintained by HashiCorp provides IDE features to any LSP-compatible editor.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/terraform-ls-asdf",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

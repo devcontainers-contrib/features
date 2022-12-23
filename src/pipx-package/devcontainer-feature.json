@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "description": "Installs a pipx package.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pipx-package",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest"
     ],
     "options": {

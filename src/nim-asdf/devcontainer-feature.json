@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/nim-asdf",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

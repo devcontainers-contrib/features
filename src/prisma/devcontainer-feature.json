@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Prisma is a next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/prisma",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

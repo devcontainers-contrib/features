@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "youtube-dl is a command-line program to download videos from YouTube.com and other video sites.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/youtube-dl",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

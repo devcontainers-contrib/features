@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "The Amplify Command Line Interface (CLI) is a unified toolchain to create AWS cloud services for your app. Let's go ahead and install the Amplify CLI.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/amplify-cli",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

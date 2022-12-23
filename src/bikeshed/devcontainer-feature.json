@@ -4,7 +4,7 @@
     "version": "1.0.1",
     "description": "A preprocessor for anyone writing specifications that converts source files into actual specs.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/bikeshed",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest"
     ],
     "options": {

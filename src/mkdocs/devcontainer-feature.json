@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "MkDocs is a fast, simple and downright gorgeous static site generator that's geared towards building project documentation.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mkdocs",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

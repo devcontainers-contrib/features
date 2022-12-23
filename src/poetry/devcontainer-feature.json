@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Poetry is a tool for dependency management and packaging in Python.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/poetry",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

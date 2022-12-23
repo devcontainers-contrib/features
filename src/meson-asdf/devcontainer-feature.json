@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Meson is an open source build system meant to be both extremely fast, and, even more importantly, as user friendly as possible.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/meson-asdf",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

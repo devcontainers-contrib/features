@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Nestjs is a progressive Node.js framework for building efficient, reliable and scalable server-side applications.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/nestjs-cli",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],

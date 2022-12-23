@@ -4,7 +4,7 @@
     "version": "1.2.0",
     "description": "Waypoint is an open source solution that provides a modern workflow for build, deploy, and release across platforms.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/waypoint-asdf",
-    "installAfter": [
+    "installsAfter": [
         "ghcr.io/devcontainers/features/python:latest",
         "ghcr.io/devcontainers/features/node:latest"
     ],
