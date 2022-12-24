@@ -1,0 +1,21 @@
+{
+    "name": "Perl (via asdf)",
+    "id": "perl-asdf",
+    "version": "1.2.0",
+    "description": "Perl is a general-purpose, interpreted, dynamic programming language.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/perl-asdf",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/python:latest",
+        "ghcr.io/devcontainers/features/node:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of Perl to install."
+        }
+    }
+}
