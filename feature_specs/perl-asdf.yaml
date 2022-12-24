@@ -1,0 +1,14 @@
+default_context:
+  description: "Perl is a general-purpose, interpreted, dynamic programming language."
+  feature_name: "Perl (via asdf)"
+  feature_id: "perl-asdf"
+  test_command: "perl --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "perl"
+      display_name: "Perl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
