@@ -1,0 +1,21 @@
+{
+    "name": "AssemblyScript (via npm)",
+    "id": "assemblyscript",
+    "version": "1.2.0",
+    "description": "AssemblyScript compiles a variant of TypeScript to WebAssembly using Binaryen.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/assemblyscript",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/python:latest",
+        "ghcr.io/devcontainers/features/node:latest"
+    ],
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of assemblyscript to install."
+        }
+    }
+}

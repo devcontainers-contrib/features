@@ -1,0 +1,15 @@
+default_context:
+  description: AssemblyScript compiles a variant of TypeScript to WebAssembly using Binaryen.
+  feature_name: AssemblyScript (via npm)
+  feature_id: assemblyscript
+  test_command: asc --version
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    npm:
+    - package_name: assemblyscript
+      display_name: assemblyscript
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
+    aptget: []
