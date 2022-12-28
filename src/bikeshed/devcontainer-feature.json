@@ -1,7 +1,7 @@
 {
     "name": "Bikeshed (via pipx)",
     "id": "bikeshed",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A preprocessor for anyone writing specifications that converts source files into actual specs.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/bikeshed",
     "installsAfter": [
@@ -9,7 +9,7 @@
     ],
     "options": {
         "version": {
-            "type": "boolean",
+            "type": "string",
             "proposals": [
                 "latest"
             ],
