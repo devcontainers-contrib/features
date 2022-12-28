@@ -1,21 +1,20 @@
 {
-    "name": "Express Application Generator (via npm)",
     "id": "express-generator",
-    "version": "1.2.1",
-    "description": "Express Application Generator is a handy tool for creating skeleton Express web apps.",
+    "version": "2.0.0",
+    "name": "Express Application Generator (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/express-generator",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Express Application Generator is a handy tool for creating skeleton Express web apps.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Express Application Generator to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Express application generator to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package:1.0.1"
+    ]
 }

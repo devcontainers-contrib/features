@@ -1,21 +1,20 @@
 {
-    "name": "mlton (via asdf)",
     "id": "mlton-asdf",
-    "version": "1.2.1",
-    "description": "MLton is a whole-program optimizing compiler for the Standard ML programming language.",
+    "version": "2.0.0",
+    "name": "mlton (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mlton-asdf",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "MLton is a whole-program optimizing compiler for the Standard ML programming language.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of mlton to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of mlton to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+    ]
 }

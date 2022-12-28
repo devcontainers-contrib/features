@@ -1,111 +1,29 @@
 {
-    "name": "Flake8 (via pipx)",
     "id": "flake8",
-    "version": "1.2.1",
-    "description": "Flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins.",
+    "version": "2.0.0",
+    "name": "Flake8 (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/flake8",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Flake8 to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Flake8 to install."
+            "type": "string"
         },
-        "flake8Black": {
-            "type": "string",
+        "plugins": {
+            "default": "",
+            "description": "A space delimitered list of flake8 plugins (will be injected into the flake8 pipx env). see proposals for examples",
             "proposals": [
-                "latest",
-                "none"
+                "flake8-black",
+                "flake8-black flake8-isort flake8-print flake8-bandit flake8-pylint flake8-builtins flake8-spellcheck flake8-pytest-style flake8-django flake8-fastapi"
             ],
-            "default": "none",
-            "description": "Select the version of flake8-black to install. 'none' will skip installation."
-        },
-        "flake8Isort": {
-            "type": "string",
-            "proposals": [
-                "latest",
-                "none"
-            ],
-            "default": "none",
-            "description": "Select the version of flake8-isort to install. 'none' will skip installation."
-        },
-        "flake8Print": {
-            "type": "string",
-            "proposals": [
-                "latest",
-                "none"
-            ],
-            "default": "none",
-            "description": "Select the version of flake8-print to install. 'none' will skip installation."
-        },
-        "flake8Bandit": {
-            "type": "string",
-            "proposals": [
-                "latest",
-                "none"
-            ],
-            "default": "none",
-            "description": "Select the version of flake8-bandit to install. 'none' will skip installation."
-        },
-        "flake8Pylint": {
-            "type": "string",
-            "proposals": [
-                "latest",
-                "none"
-            ],
-            "default": "none",
-            "description": "Select the version of flake8-pylint to install. 'none' will skip installation."
-        },
-        "flake8Builtins": {
-            "type": "string",
-            "proposals": [
-                "latest",
-                "none"
-            ],
-            "default": "none",
-            "description": "Select the version of flake8-builtins to install. 'none' will skip installation."
-        },
-        "flake8Spellcheck": {
-            "type": "string",
-            "proposals": [
-                "latest",
-                "none"
-            ],
-            "default": "none",
-            "description": "Select the version of flake8-spellcheck to install. 'none' will skip installation."
-        },
-        "flake8PytestStyle": {
-            "type": "string",
-            "proposals": [
-                "latest",
-                "none"
-            ],
-            "default": "none",
-            "description": "Select the version of flake8-pytest-style to install. 'none' will skip installation."
-        },
-        "flake8Django": {
-            "type": "string",
-            "proposals": [
-                "latest",
-                "none"
-            ],
-            "default": "none",
-            "description": "Select the version of flake8-django to install. 'none' will skip installation."
-        },
-        "flake8Fastapi": {
-            "type": "string",
-            "proposals": [
-                "latest",
-                "none"
-            ],
-            "default": "none",
-            "description": "Select the version of flake8-fastapi to install. 'none' will skip installation."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ]
 }

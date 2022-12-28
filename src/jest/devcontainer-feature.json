@@ -1,21 +1,20 @@
 {
-    "name": "Jest (via npm)",
     "id": "jest",
-    "version": "1.2.1",
-    "description": "Jest is a delightful JavaScript Testing Framework with a focus on simplicity",
+    "version": "2.0.0",
+    "name": "Jest (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jest",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Jest is a delightful JavaScript Testing Framework with a focus on simplicity",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Jest to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Jest to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package:1.0.1"
+    ]
 }

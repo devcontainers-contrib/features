@@ -1,21 +1,20 @@
 {
-    "name": "Haxe (via asdf)",
     "id": "haxe-asdf",
-    "version": "1.2.1",
-    "description": "Haxe is an open source high-level cross-platform programming language and compiler.",
+    "version": "2.0.0",
+    "name": "Haxe (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/haxe-asdf",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Haxe is an open source high-level cross-platform programming language and compiler.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Haxe to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Haxe to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+    ]
 }

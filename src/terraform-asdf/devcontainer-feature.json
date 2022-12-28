@@ -1,21 +1,20 @@
 {
-    "name": "Terraform (via asdf)",
     "id": "terraform-asdf",
-    "version": "1.2.1",
-    "description": "Terraform is an open-source infrastructure as code software tool that enables you to safely and predictably create, change, and improve infrastructure.",
+    "version": "2.0.0",
+    "name": "Terraform (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/terraform-asdf",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Terraform is an open-source infrastructure as code software tool that enables you to safely and predictably create, change, and improve infrastructure.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Terraform to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Terraform to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+    ]
 }

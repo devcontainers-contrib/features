@@ -1,75 +1,28 @@
 {
-    "name": "MkDocs (via pipx)",
     "id": "mkdocs",
-    "version": "1.2.1",
-    "description": "MkDocs is a fast, simple and downright gorgeous static site generator that's geared towards building project documentation.",
+    "version": "2.0.0",
+    "name": "MkDocs (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mkdocs",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "MkDocs is a fast, simple and downright gorgeous static site generator that's geared towards building project documentation.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of MkDocs to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of MKDocs to install."
+            "type": "string"
         },
-        "mkdocsMaterialPlugin": {
-            "type": "string",
+        "plugins": {
+            "default": "mkdocs-material",
+            "description": "A space delimitered list of mkdocs plugins (will be injected into the mkdocs pipx env). see proposals for example",
             "proposals": [
-                "latest",
-                "none"
+                "mkdocs-material pymdown-extensions mkdocstrings[crystal,python] mkdocs-monorepo-plugin mkdocs-pdf-export-plugin mkdocs-awesome-pages-plugin"
             ],
-            "default": "latest",
-            "description": "Select the version of mkdocs-material-plugin to install. 'none' will skip installation."
-        },
-        "pymdownExtensionsPlugin": {
-            "type": "string",
-            "proposals": [
-                "latest",
-                "none"
-            ],
-            "default": "none",
-            "description": "Select the version of pymdown-extensions-plugin to install. 'none' will skip installation."
-        },
-        "mkdocstringsPlugin": {
-            "type": "string",
-            "proposals": [
-                "latest",
-                "none"
-            ],
-            "default": "none",
-            "description": "Select the version of mkdocstrings-plugin to install. 'none' will skip installation."
-        },
-        "mkdocsMonorepoPlugin": {
-            "type": "string",
-            "proposals": [
-                "latest",
-                "none"
-            ],
-            "default": "none",
-            "description": "Select the version of mkdocs-monorepo-plugin to install. 'none' will skip installation."
-        },
-        "mkdocsPdfExportPlugin": {
-            "type": "string",
-            "proposals": [
-                "latest",
-                "none"
-            ],
-            "default": "none",
-            "description": "Select the version of mkdocs-pdf-export-plugin to install. 'none' will skip installation."
-        },
-        "mkdocsAwesomePagesPlugin": {
-            "type": "string",
-            "proposals": [
-                "latest",
-                "none"
-            ],
-            "default": "none",
-            "description": "Select the version of mkdocs-awesome-pages-plugin to install. 'none' will skip installation."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ]
 }

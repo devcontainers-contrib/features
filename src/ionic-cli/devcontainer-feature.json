@@ -1,21 +1,20 @@
 {
-    "name": "Ionic CLI (via npm)",
     "id": "ionic-cli",
-    "version": "1.2.1",
-    "description": "The Ionic command-line interface (CLI) is the go-to tool for developing Ionic apps.",
+    "version": "2.0.0",
+    "name": "Ionic CLI (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ionic-cli",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "The Ionic command-line interface (CLI) is the go-to tool for developing Ionic apps.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Ionic CLI to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Ionic CLI to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package:1.0.1"
+    ]
 }

@@ -1,0 +1,31 @@
+{
+    "id": "elm-asdf",
+    "version": "2.0.0",
+    "name": "Elm (via asdf)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/elm-asdf",
+    "description": "Elm is a domain-specific programming language for declaratively creating web browser-based graphical user interfaces.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of Elm to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0",
+            "options": {
+                "plugin": "elm",
+                "version": "$options.version"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "elm --version"
+}

@@ -1,0 +1,30 @@
+{
+    "id": "youtube-dl",
+    "version": "2.0.0",
+    "name": "youtube-dl (via pipx)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/youtube-dl",
+    "description": "youtube-dl is a command-line program to download videos from YouTube.com and other video sites.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of youtube-dl to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1",
+            "options": {
+                "package": "youtube-dl"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "youtube-dl --version"
+}

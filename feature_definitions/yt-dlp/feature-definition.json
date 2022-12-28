@@ -1,0 +1,30 @@
+{
+    "id": "yt-dlp",
+    "version": "2.0.0",
+    "name": "yt-dlp (via pipx)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/yt-dlp",
+    "description": "yt-dlp is a youtube-dl fork with additional features and fixes.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of yt-dlp to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1",
+            "options": {
+                "package": "yt-dlp"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "yt-dlp --version"
+}

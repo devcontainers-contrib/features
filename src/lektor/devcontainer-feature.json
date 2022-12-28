@@ -1,21 +1,20 @@
 {
-    "name": "Lektor (via npm)",
     "id": "lektor",
-    "version": "1.2.1",
-    "description": "Lektor is a static website generator.",
+    "version": "2.0.0",
+    "name": "Lektor (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/lektor",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Lektor is a static website generator.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Lektor to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of lektor to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ]
 }

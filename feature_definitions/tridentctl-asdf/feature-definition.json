@@ -1,0 +1,31 @@
+{
+    "id": "tridentctl-asdf",
+    "version": "2.0.0",
+    "name": "tridentctl (via asdf)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tridentctl-asdf",
+    "description": "Installs tridentctl",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of tridentctl to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0",
+            "options": {
+                "plugin": "tridentctl",
+                "version": "$options.version"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "tridentctl --help"
+}

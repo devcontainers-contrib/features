@@ -1,0 +1,30 @@
+{
+    "id": "pyscaffold",
+    "version": "2.0.0",
+    "name": "PyScaffold (via pipx)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pyscaffold",
+    "description": "PyScaffold is a python project template generator with batteries included.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of PyScaffold to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1",
+            "options": {
+                "package": "pyscaffold[all]"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "putup --version"
+}

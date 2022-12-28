@@ -1,21 +1,20 @@
 {
-    "name": "yapf (via pipx)",
     "id": "yapf",
-    "version": "1.2.1",
-    "description": "yapf is a formatter for Python files.",
+    "version": "2.0.0",
+    "name": "yapf (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/yapf",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "yapf is a formatter for Python files.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of yapf to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of yapf to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ]
 }

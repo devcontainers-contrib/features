@@ -1,0 +1,31 @@
+{
+    "id": "boundary-asdf",
+    "version": "2.0.0",
+    "name": "boundary (via asdf)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/boundary-asdf",
+    "description": "Installs boundary",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of boundary to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0",
+            "options": {
+                "plugin": "boundary",
+                "version": "$options.version"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "boundary version"
+}

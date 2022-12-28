@@ -1,0 +1,31 @@
+{
+    "id": "grpcurl-asdf",
+    "version": "2.0.0",
+    "name": "gRPCurl (via asdf)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/grpcurl-asdf",
+    "description": "gRPCurl is a command-line tool that lets you interact with gRPC servers.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of gRPCurl to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0",
+            "options": {
+                "plugin": "grpcurl",
+                "version": "$options.version"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "grpcurl --version"
+}

@@ -1,21 +1,20 @@
 {
-    "name": "Pipenv (via pipx)",
     "id": "pipenv",
-    "version": "1.2.1",
-    "description": "Pipenv automatically creates and manages a virtualenv for your projects.",
+    "version": "2.0.0",
+    "name": "Pipenv (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pipenv",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Pipenv automatically creates and manages a virtualenv for your projects.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Pipenv to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Pipenv to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ]
 }

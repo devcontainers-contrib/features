@@ -1,0 +1,30 @@
+{
+    "id": "pyinfra",
+    "version": "2.0.0",
+    "name": "pyinfra (via pipx)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pyinfra",
+    "description": "pyinfra is a Python alternative to Ansible where you don't write your deployment in YAML file, but in Python.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of pyinfra to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1",
+            "options": {
+                "package": "pyinfra"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "pyinfra --version"
+}

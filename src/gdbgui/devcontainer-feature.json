@@ -1,21 +1,20 @@
 {
-    "name": "gdbgui (via pipx)",
     "id": "gdbgui",
-    "version": "1.2.1",
-    "description": "gdbgui is a browser-based frontend to gdb (gnu debugger).",
+    "version": "2.0.0",
+    "name": "gdbgui (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/gdbgui",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "gdbgui is a browser-based frontend to gdb (gnu debugger).",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of gdbgui to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of gdbgui to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ]
 }

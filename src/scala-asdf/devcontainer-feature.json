@@ -1,21 +1,21 @@
 {
-    "name": "scala (via asdf)",
     "id": "scala-asdf",
-    "version": "1.2.1",
-    "description": "Scala combines object-oriented and functional programming in one concise, high-level language",
+    "version": "2.0.0",
+    "name": "scala (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/scala-asdf",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Scala combines object-oriented and functional programming in one concise, high-level language",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of scala to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Scala to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0",
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0"
+    ]
 }

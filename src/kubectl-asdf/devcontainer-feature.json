@@ -1,21 +1,20 @@
 {
-    "name": "Kubectl (via asdf)",
     "id": "kubectl-asdf",
-    "version": "1.2.1",
-    "description": "Installs Kubectl",
+    "version": "2.0.0",
+    "name": "Kubectl (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/kubectl-asdf",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Installs Kubectl",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Kubectl to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Kubectl to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+    ]
 }

@@ -1,21 +1,20 @@
 {
-    "name": "Datasette (via pipx)",
     "id": "datasette",
-    "version": "1.2.1",
-    "description": "Datasette is a tool for exploring and publishing data and is aimed at data journalists, museum curators, archivists, local governments, scientists and researchers.",
+    "version": "2.0.0",
+    "name": "Datasette (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/datasette",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Datasette is a tool for exploring and publishing data and is aimed at data journalists, museum curators, archivists, local governments, scientists and researchers.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Datasette to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of datasette to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ]
 }

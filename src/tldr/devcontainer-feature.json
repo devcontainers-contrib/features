@@ -1,21 +1,20 @@
 {
-    "name": "tldr (via npm)",
     "id": "tldr",
-    "version": "1.2.1",
-    "description": "The tldr pages are a community effort to simplify the beloved man pages with practical examples.",
+    "version": "2.0.0",
+    "name": "tldr (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tldr",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "The tldr pages are a community effort to simplify the beloved man pages with practical examples.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of tldr to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of tldr to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package:1.0.1"
+    ]
 }

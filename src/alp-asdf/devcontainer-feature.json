@@ -1,21 +1,20 @@
 {
-    "name": "alp (via asdf)",
     "id": "alp-asdf",
-    "version": "1.2.1",
-    "description": "Installs alp",
+    "version": "2.0.0",
+    "name": "alp (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/alp-asdf",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Installs alp",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of alp to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of alp to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+    ]
 }

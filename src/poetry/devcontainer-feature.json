@@ -1,21 +1,20 @@
 {
-    "name": "Poetry (via pipx)",
     "id": "poetry",
-    "version": "1.2.1",
-    "description": "Poetry is a tool for dependency management and packaging in Python.",
+    "version": "2.0.0",
+    "name": "Poetry (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/poetry",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Poetry is a tool for dependency management and packaging in Python.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Poetry to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Poetry to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ]
 }

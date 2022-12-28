@@ -1,0 +1,40 @@
+{
+    "id": "flake8",
+    "version": "2.0.0",
+    "name": "Flake8 (via pipx)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/flake8",
+    "description": "Flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of Flake8 to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        },
+        "plugins": {
+            "default": "",
+            "description": "A space delimitered list of flake8 plugins (will be injected into the flake8 pipx env). see proposals for examples",
+            "proposals": [
+                "flake8-black",
+                "flake8-black flake8-isort flake8-print flake8-bandit flake8-pylint flake8-builtins flake8-spellcheck flake8-pytest-style flake8-django flake8-fastapi"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1",
+            "options": {
+                "package": "flake8",
+                "injections": "$options.plugins"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "flake8 --version"
+}

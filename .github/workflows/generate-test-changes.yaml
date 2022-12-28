@@ -1,7 +1,7 @@
 name: "Generate and test features - (changes only)"
 on:
   workflow_dispatch:
-  pull_request:
+  # pull_request:
 
 jobs:
   find-feature:

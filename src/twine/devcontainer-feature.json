@@ -1,21 +1,20 @@
 {
-    "name": "Twine (via pipx)",
     "id": "twine",
-    "version": "1.2.1",
-    "description": "Twine is a utility for publishing Python packages on PyPI.",
+    "version": "2.0.0",
+    "name": "Twine (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/twine",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Twine is a utility for publishing Python packages on PyPI.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Twine to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of twine to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ]
 }

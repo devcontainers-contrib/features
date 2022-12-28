@@ -1,21 +1,20 @@
 {
-    "name": "Gulp CLI (via npm)",
     "id": "gulp-cli",
-    "version": "1.2.1",
-    "description": "Gulp CLI is Command Line Utility for Gulp",
+    "version": "2.0.0",
+    "name": "Gulp CLI (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/gulp-cli",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Gulp CLI is Command Line Utility for Gulp",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Gulp CLI to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Gulp CLI to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package:1.0.1"
+    ]
 }

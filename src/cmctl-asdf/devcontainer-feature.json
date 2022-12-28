@@ -1,21 +1,20 @@
 {
-    "name": "cmctl (via asdf)",
     "id": "cmctl-asdf",
-    "version": "1.2.1",
-    "description": "cmctl is a command line tool that can help you manage cert-manager and its resources inside your cluster.",
+    "version": "2.0.0",
+    "name": "cmctl (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/cmctl-asdf",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "cmctl is a command line tool that can help you manage cert-manager and its resources inside your cluster.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of cmctl to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of cmctl to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+    ]
 }

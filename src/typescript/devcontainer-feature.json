@@ -1,21 +1,20 @@
 {
-    "name": "TypeScript (via npm)",
     "id": "typescript",
-    "version": "1.2.1",
-    "description": "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.",
+    "version": "2.0.0",
+    "name": "TypeScript (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/typescript",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of TypeScript to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of TypeScript to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package:1.0.1"
+    ]
 }

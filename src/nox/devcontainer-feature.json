@@ -1,21 +1,20 @@
 {
-    "name": "nox (via pipx)",
     "id": "nox",
-    "version": "1.2.1",
-    "description": "nox is a command-line tool that automates testing in multiple Python environments.",
+    "version": "2.0.0",
+    "name": "nox (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/nox",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "nox is a command-line tool that automates testing in multiple Python environments.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of nox to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of nox to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ]
 }

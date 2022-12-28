@@ -1,21 +1,20 @@
 {
-    "name": "Renovate CLI (via npm)",
     "id": "renovate-cli",
-    "version": "1.2.1",
-    "description": "Renovate is a universal dependency update tool. Multi-platform and multi-language.",
+    "version": "2.0.0",
+    "name": "Renovate CLI (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/renovate-cli",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Renovate is a universal dependency update tool. Multi-platform and multi-language.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Renovate CLI to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Renovate CLI to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package:1.0.1"
+    ]
 }

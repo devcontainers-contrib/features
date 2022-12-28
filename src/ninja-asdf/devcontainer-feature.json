@@ -1,21 +1,20 @@
 {
-    "name": "Ninja (via asdf)",
     "id": "ninja-asdf",
-    "version": "1.2.1",
-    "description": "Ninja is a small build system with a focus on speed.",
+    "version": "2.0.0",
+    "name": "Ninja (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ninja-asdf",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Ninja is a small build system with a focus on speed.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Ninja to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Ninja to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+    ]
 }

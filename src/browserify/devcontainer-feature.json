@@ -1,21 +1,20 @@
 {
-    "name": "Browserify (via npm)",
     "id": "browserify",
-    "version": "1.2.1",
-    "description": "Browserify lets you require('modules') in the browser by bundling up all of your dependencies.",
+    "version": "2.0.0",
+    "name": "Browserify (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/browserify",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Browserify lets you require('modules') in the browser by bundling up all of your dependencies.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Browserify to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Browserify to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package:1.0.1"
+    ]
 }

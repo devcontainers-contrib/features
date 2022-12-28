@@ -1,21 +1,20 @@
 {
-    "name": "fkill (via npm)",
     "id": "fkill",
-    "version": "1.2.1",
-    "description": "fkill fabulously kill processes. Cross-platform.",
+    "version": "2.0.0",
+    "name": "fkill (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/fkill",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "fkill fabulously kill processes. Cross-platform.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of fkill to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of fkill to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package:1.0.1"
+    ]
 }

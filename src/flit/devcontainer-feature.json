@@ -1,21 +1,20 @@
 {
-    "name": "Flit (via pipx)",
     "id": "flit",
-    "version": "1.2.1",
-    "description": "Flit is a simple way to put Python packages and modules on PyPI.",
+    "version": "2.0.0",
+    "name": "Flit (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/flit",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Flit is a simple way to put Python packages and modules on PyPI.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Flit to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Flit to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ]
 }

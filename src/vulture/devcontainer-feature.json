@@ -1,21 +1,20 @@
 {
-    "name": "Vulture (via pipx)",
     "id": "vulture",
-    "version": "1.2.1",
-    "description": "Vulture finds unused code in Python programs.",
+    "version": "2.0.0",
+    "name": "Vulture (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/vulture",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Vulture finds unused code in Python programs.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Vulture to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Vulture to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ]
 }

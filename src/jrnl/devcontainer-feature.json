@@ -1,21 +1,20 @@
 {
-    "name": "jrnl (via pipx)",
     "id": "jrnl",
-    "version": "1.2.1",
-    "description": "jrnl is a simple journal application for the command line.",
+    "version": "2.0.0",
+    "name": "jrnl (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jrnl",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "jrnl is a simple journal application for the command line.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of jrnl to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of jrnl to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ]
 }

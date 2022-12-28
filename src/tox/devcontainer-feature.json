@@ -1,21 +1,20 @@
 {
-    "name": "tox (via pipx)",
     "id": "tox",
-    "version": "1.2.1",
-    "description": "tox is a generic virtual environment management and test command line tool.",
+    "version": "2.0.0",
+    "name": "tox (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tox",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "tox is a generic virtual environment management and test command line tool.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of tox to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of tox to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ]
 }

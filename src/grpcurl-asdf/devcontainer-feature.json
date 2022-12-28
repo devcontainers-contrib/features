@@ -1,21 +1,20 @@
 {
-    "name": "gRPCurl (via asdf)",
     "id": "grpcurl-asdf",
-    "version": "1.2.1",
-    "description": "gRPCurl is a command-line tool that lets you interact with gRPC servers.",
+    "version": "2.0.0",
+    "name": "gRPCurl (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/grpcurl-asdf",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "gRPCurl is a command-line tool that lets you interact with gRPC servers.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of gRPCurl to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of grpcurl to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+    ]
 }

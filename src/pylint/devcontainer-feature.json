@@ -1,21 +1,20 @@
 {
-    "name": "Pylint (via pipx)",
     "id": "pylint",
-    "version": "1.2.1",
-    "description": "Pylint is a static code analyser for Python 2 or 3.",
+    "version": "2.0.0",
+    "name": "Pylint (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pylint",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Pylint is a static code analyser for Python 2 or 3.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Pylint to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Pylint to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ]
 }

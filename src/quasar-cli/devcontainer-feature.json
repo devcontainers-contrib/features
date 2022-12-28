@@ -1,21 +1,20 @@
 {
-    "name": "Quasar CLI (via npm)",
     "id": "quasar-cli",
-    "version": "1.2.1",
-    "description": "Quasar is an MIT licensed open-source Vue.js based framework, which allows you as a web developer to quickly create responsive websites/apps in many flavours.",
+    "version": "2.0.0",
+    "name": "Quasar CLI (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/quasar-cli",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Quasar is an MIT licensed open-source Vue.js based framework, which allows you as a web developer to quickly create responsive websites/apps in many flavours.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Quasar CLI to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Quasar CLI to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package:1.0.1"
+    ]
 }

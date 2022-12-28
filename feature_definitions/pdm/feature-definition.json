@@ -1,0 +1,30 @@
+{
+    "id": "pdm",
+    "version": "2.0.0",
+    "name": "PDM (via pipx)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pdm",
+    "description": "PDM is a modern Python package and dependency manager supporting the latest PEP standards.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of PDM to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1",
+            "options": {
+                "package": "pdm"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "pdm --version"
+}

@@ -1,21 +1,20 @@
 {
-    "name": "Mypy (via pipx)",
     "id": "mypy",
-    "version": "1.2.1",
-    "description": "Mypy is a static type checker for Python.",
+    "version": "2.0.0",
+    "name": "Mypy (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mypy",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest",
-        "ghcr.io/devcontainers/features/node:latest"
-    ],
+    "description": "Mypy is a static type checker for Python.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Mypy to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Mypy to install."
+            "type": "string"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+    ]
 }

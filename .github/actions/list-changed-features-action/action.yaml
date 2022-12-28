@@ -32,10 +32,6 @@ runs:
             - src/**/*.sh
           test: 
             - test/**/*.sh
-          feature_specs: 
-            - feature_specs/**
-          generator:
-            -/pkgs/**
 
     - id: feature-finder
       shell: bash
@@ -44,35 +40,19 @@ runs:
 
         cd ${{ inputs.path }}
 
-        sudo tree -J  ./feature_specs | sudo jq -c '.[0].contents | map(.name) | map(sub(".yaml"; ""))' > all_generated_features.json
         sudo tree -J -d  ./src | sudo jq -c '.[0].contents | map(.name)' > all_src_features.json
-        all_features=$(jq -sc '.[0] + .[1] | unique'  all_generated_features.json all_src_features.json)
-        all_generated_features=$(cat all_generated_features.json)
-
 
         echo '${{ steps.filter.outputs.src_files }}' > src_files.json
-        cat src_files.json
         echo '${{ steps.filter.outputs.test_files }}' > test_files.json
-        cat test_files.json
-        echo '${{ steps.filter.outputs.feature_specs_files }}' > feature_specs_files.json
-        cat feature_specs_files.json
 
         cat src_files.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))' > changed_src_features.json
         cat test_files.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))' > changed_test_features.json
-        cat feature_specs_files.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))' > changed_feature_specs_features.json
+        cat all_src_features.json |  jq --raw-output | awk -F'/' '{print $2}' | jq -R -s -c 'split("\n")' | jq -c 'map(select(length > 0))' > all_features.json
 
-
-        jq -sc '.[0] + .[1] + .[2] | unique'  src_files.json test_files.json feature_specs_files.json > changed_features.json
-
-
-        if ${{ steps.filter.outputs.generator }} ; then
-          echo '${{ steps.filter.outputs.generator_files }}'
-          jq -sc '.[0] + .[1] | unique'  changed_features.json all_generated_features.json > changed_features.json
-        fi
+        jq -sc '.[0] + .[1] | unique'  changed_src_features.json changed_test_features.json > changed_features.json
 
         changed_features=$(cat changed_features.json)
+        all_features=$(cat all_features.json)
 
-        echo $changed_features
         echo "changed_features=$changed_features" >> $GITHUB_OUTPUT
         echo "all_features=$all_features" >> $GITHUB_OUTPUT
-        echo "all_generated_features=$all_generated_features" >> $GITHUB_OUTPUT

@@ -1,11 +1,12 @@
 import ray
+import os
 import pytest
 import json
 import time
 from more_itertools import chunked
 from tqdm import tqdm
 
-CHUNK_SIZE= 10
+CHUNK_SIZE= os.cpu_count() * 3
 
 
 @pytest.fixture(scope="session")
@@ -39,7 +40,7 @@ def test_assert_good_exitcode(shell, base_dir: str, image: str, feature_ids: lis
     ```
     ray start --head --disable-usage-stats --port=6379
 
-    python3 -u -m pytest test_all_features.py -s --base_dir $GITHUB_WORKSPACE --image "mcr.microsoft.com/devcontainers/base:debian" --feature_ids $(sudo tree -J -d  ./src | sudo jq -c '.[0].contents | map(.name)')
+    python3 -u -m pytest test_all_features.py -s --base_dir $CODESPACE_VSCODE_FOLDER --image "mcr.microsoft.com/devcontainers/base:debian" --feature_ids $(sudo tree -J -d  ../src | sudo jq -c '.[0].contents | map(.name)')
 
     ray stop  
     ```
@@ -59,7 +60,8 @@ def test_assert_good_exitcode(shell, base_dir: str, image: str, feature_ids: lis
 
     bad_rets = []
     for feature_ids_chunk in feature_ids_chunks:
-            
+        print(shell.run(f"docker pull {image}", shell=True).stdout)
+
         futures = [remote_ray_task.remote(shell, get_devcontainer_shell_args(base_dir,feature_id, image)) for feature_id in feature_ids_chunk]
 
         rets = tqdm(ray_get_iterator(futures, verbose=True), total=len(futures))
