@@ -41,7 +41,7 @@ Get the devcontainer-contrib cli
 pip install devcontainer-contrib
 ```
 
-Add a new `devcontainer-definition.json` file to the [feature_definition dir](feature_definitions/) (look in it for some examples 😀)
+Add a new [`devcontainer-definition.json`](https://github.com/devcontainers-contrib/cli#readme) file to the [feature_definition dir](feature_definitions/) 
 
 While under the root folder of this repo, generate it using the command:
 ```shell
