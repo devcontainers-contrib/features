@@ -1,6 +1,9 @@
 # Community devcontainer features
 
-[![Gitter](https://img.shields.io/gitter/room/devcontainers-contrib/community)](https://gitter.im/devcontainers-contrib/community)
+[![Gitter](https://img.shields.io/gitter/room/devcontainers-contrib/community?style=for-the-badge&logo=appveyor)](https://gitter.im/devcontainers-contrib/community)
+![Codespaces](https://img.shields.io/static/v1?style=for-the-badge&message=Codespaces&color=181717&logo=GitHub&logoColor=FFFFFF&label=)
+![Devcontainers](https://img.shields.io/static/v1?style=for-the-badge&message=Devcontainers&color=2496ED&logo=Docker&logoColor=FFFFFF&label=)
+![Python](https://img.shields.io/static/v1?style=for-the-badge&message=Python&color=3776AB&logo=Python&logoColor=FFFFFF&label=)
 
 🐳 Extra add-in features for
 [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) and
@@ -20,16 +23,36 @@
 💻 Works with
 [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) \
 ☁️ Works with [GitHub Codespaces](https://github.com/features/codespaces) \
-👨‍🍳 Based on the official
-[devcontainers/template-starter](https://github.com/devcontainers/template-starter#readme)
-project
 
 📢 [We are actively seeking contributions!](CONTRIBUTING.md)
 
+
+## Contributing guide😊
+
+## A Handcrafeted Feature
+
+- Add a feature-id named directory to the [src folder](src/) containing  your `devcontainer-feature.json` and `install.sh` scripts
+- Add the corresponsing test.sh to the [test folder](tests/)
+
+## An Easly Generated Feature
+
+Get the devcontainer-contrib cli 
+```shell 
+pip install devcontainer-contrib
+```
+
+Add a new `devcontainer-definition.json` file to the [feature_definition dir](feature_definitions/) (look in it for some examples 😀)
+
+While under the root folder of this repo, generate it using the command:
+```shell
+devcontainer-contrib features generate "./feature_definition/your-feature-id/feature-definition.json" "." --output-type=feature_dir
+```
+
+[Additional information and docs about the CLI and devcontainer-definition.json file](https://github.com/devcontainers-contrib/cli#readme)
+
+
 ## Usage
 
-![Codespaces](https://img.shields.io/static/v1?style=for-the-badge&message=Codespaces&color=181717&logo=GitHub&logoColor=FFFFFF&label=)
-![Devcontainers](https://img.shields.io/static/v1?style=for-the-badge&message=Devcontainers&color=2496ED&logo=Docker&logoColor=FFFFFF&label=)
 
 📄 [View the full list of features](src/)
 
@@ -46,34 +69,9 @@ addition of an `options` object.
   "features": {
     "ghcr.io/devcontainers-contrib/features/deno:latest": {},
     "ghcr.io/devcontainers-contrib/features/mkdocs:latest": {},
-    "ghcr.io/devcontainers-contrib/features/conan:latest": {},
     "ghcr.io/devcontainers-contrib/features/bikeshed:latest": {}
   }
 }
 ```
 
-**💡 Pro tip:** You can use a string instead of an object as a shortcut to
-`{ "version": "<your string>" }`!
-
-```json
-{
-  "features": {
-    "ghcr.io/devcontainers-contrib/features/deno:latest": "1.24.0",
-    "ghcr.io/devcontainers-contrib/features/pulumi:latest": "3.48.0"
-  }
-}
-```
-
-## Development
-
-![Codespaces](https://img.shields.io/static/v1?style=for-the-badge&message=Codespaces&color=181717&logo=GitHub&logoColor=FFFFFF&label=)
-![Devcontainers](https://img.shields.io/static/v1?style=for-the-badge&message=Devcontainers&color=2496ED&logo=Docker&logoColor=FFFFFF&label=)
-![Python](https://img.shields.io/static/v1?style=for-the-badge&message=Python&color=3776AB&logo=Python&logoColor=FFFFFF&label=)
-![Cookiecutter](https://img.shields.io/static/v1?style=for-the-badge&message=Cookiecutter&color=222222&logo=Cookiecutter&logoColor=D4AA00&label=)
-
-📢 [We are actively seeking contributions!](CONTRIBUTING.md)
-
-This repository is heavily based on the
-[devcontainers/template-starter](https://github.com/devcontainers/template-starter#readme)
-project. You can find more developer-specific docs on
-[the Wiki](https://github.com/devcontainers-contrib/features/wiki)
+## You can find more developer-specific docs on the [Wiki!](https://github.com/devcontainers-contrib/features/wiki) (thank you [@jcbhmr](https://github.com/jcbhmr)!)
