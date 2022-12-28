@@ -7,7 +7,7 @@ Terraform is an open-source infrastructure as code software tool that enables yo
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/terraform-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/terraform-asdf:2": {}
 }
 ```
 

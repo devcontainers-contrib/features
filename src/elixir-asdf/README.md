@@ -7,7 +7,7 @@ Elixir is a functional, concurrent, general-purpose programming language that ru
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/elixir-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/elixir-asdf:2": {}
 }
 ```
 

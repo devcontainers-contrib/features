@@ -7,7 +7,7 @@ Pylint is a static code analyser for Python 2 or 3.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/pylint:1": {}
+    "ghcr.io/devcontainers-contrib/features/pylint:2": {}
 }
 ```
 

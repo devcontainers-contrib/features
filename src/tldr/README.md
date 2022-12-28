@@ -7,7 +7,7 @@ The tldr pages are a community effort to simplify the beloved man pages with pra
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/tldr:1": {}
+    "ghcr.io/devcontainers-contrib/features/tldr:2": {}
 }
 ```
 

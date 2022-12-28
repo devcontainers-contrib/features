@@ -7,7 +7,7 @@ Installs boundary
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/boundary-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/boundary-asdf:2": {}
 }
 ```
 

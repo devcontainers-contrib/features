@@ -7,7 +7,7 @@ Serverless Framework is a widely used open-source IaC tool that allows you to bu
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/serverless:1": {}
+    "ghcr.io/devcontainers-contrib/features/serverless:2": {}
 }
 ```
 

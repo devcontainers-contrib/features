@@ -7,7 +7,7 @@ Perl is a general-purpose, interpreted, dynamic programming language.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/perl-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/perl-asdf:2": {}
 }
 ```
 

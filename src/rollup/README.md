@@ -7,7 +7,7 @@ Rollup is a module bundler for JavaScript which compiles small pieces of code in
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/rollup:1": {}
+    "ghcr.io/devcontainers-contrib/features/rollup:2": {}
 }
 ```
 
@@ -15,7 +15,7 @@ Rollup is a module bundler for JavaScript which compiles small pieces of code in
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of rollup to install. | string | latest |
+| version | Select the version of rollup.js to install. | string | latest |
 
 
 

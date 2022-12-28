@@ -7,7 +7,7 @@ PyScaffold is a python project template generator with batteries included.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/pyscaffold:1": {}
+    "ghcr.io/devcontainers-contrib/features/pyscaffold:2": {}
 }
 ```
 

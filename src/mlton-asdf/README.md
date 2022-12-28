@@ -7,7 +7,7 @@ MLton is a whole-program optimizing compiler for the Standard ML programming lan
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/mlton-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/mlton-asdf:2": {}
 }
 ```
 

@@ -7,7 +7,7 @@ Act is an open source project that allows you to run your github flow locally.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/act-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/act-asdf:2": {}
 }
 ```
 

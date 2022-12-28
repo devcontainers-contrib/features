@@ -7,7 +7,7 @@ Clojure is a dialect of Lisp, and shares with Lisp the code-as-data philosophy a
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/clojure-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/clojure-asdf:2": {}
 }
 ```
 

@@ -7,7 +7,7 @@ Vue CLI is a full system for rapid Vue.js development.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/vue-cli:1": {}
+    "ghcr.io/devcontainers-contrib/features/vue-cli:2": {}
 }
 ```
 

@@ -7,7 +7,7 @@ yapf is a formatter for Python files.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/yapf:1": {}
+    "ghcr.io/devcontainers-contrib/features/yapf:2": {}
 }
 ```
 

@@ -7,7 +7,7 @@ Packer is a free and open source tool for creating golden images for multiple pl
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/packer-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/packer-asdf:2": {}
 }
 ```
 

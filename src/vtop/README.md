@@ -7,7 +7,7 @@ vtop is a graphical activity monitor for the command line.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/vtop:1": {}
+    "ghcr.io/devcontainers-contrib/features/vtop:2": {}
 }
 ```
 

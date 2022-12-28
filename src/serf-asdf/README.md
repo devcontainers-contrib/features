@@ -7,7 +7,7 @@ Serf is a decentralized solution for cluster membership, failure detection, and 
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/serf-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/serf-asdf:2": {}
 }
 ```
 

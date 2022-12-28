@@ -7,7 +7,7 @@ PowerBI Visual Tools Contains tools for building/packaging Power BI visuals
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/powerbi-visuals-tools:1": {}
+    "ghcr.io/devcontainers-contrib/features/powerbi-visuals-tools:2": {}
 }
 ```
 
@@ -15,7 +15,7 @@ PowerBI Visual Tools Contains tools for building/packaging Power BI visuals
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of PowerBI Visual Tools to install. | string | latest |
+| version | Select the version of PowerBI Visual Tools (pbiviz) to install. | string | latest |
 
 
 

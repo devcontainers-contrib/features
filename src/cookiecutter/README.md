@@ -7,7 +7,7 @@ Cookiecutter creates projects from project templates.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/cookiecutter:1": {}
+    "ghcr.io/devcontainers-contrib/features/cookiecutter:2": {}
 }
 ```
 

@@ -7,7 +7,7 @@ Ninja is a small build system with a focus on speed.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/ninja-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/ninja-asdf:2": {}
 }
 ```
 

@@ -7,7 +7,7 @@ svu is a tool to manage semantic versions at ease.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/svu-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/svu-asdf:2": {}
 }
 ```
 

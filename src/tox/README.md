@@ -7,7 +7,7 @@ tox is a generic virtual environment management and test command line tool.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/tox:1": {}
+    "ghcr.io/devcontainers-contrib/features/tox:2": {}
 }
 ```
 

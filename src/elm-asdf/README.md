@@ -7,7 +7,7 @@ Elm is a domain-specific programming language for declaratively creating web bro
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/elm-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/elm-asdf:2": {}
 }
 ```
 

@@ -7,7 +7,7 @@ Renovate is a universal dependency update tool. Multi-platform and multi-languag
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/renovate-cli:1": {}
+    "ghcr.io/devcontainers-contrib/features/renovate-cli:2": {}
 }
 ```
 

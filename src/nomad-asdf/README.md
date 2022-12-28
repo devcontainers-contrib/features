@@ -7,7 +7,7 @@ Nomad is an easy-to-use, flexible, and performant workload orchestrator that can
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/nomad-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/nomad-asdf:2": {}
 }
 ```
 

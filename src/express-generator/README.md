@@ -7,7 +7,7 @@ Express Application Generator is a handy tool for creating skeleton Express web 
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/express-generator:1": {}
+    "ghcr.io/devcontainers-contrib/features/express-generator:2": {}
 }
 ```
 
@@ -15,7 +15,7 @@ Express Application Generator is a handy tool for creating skeleton Express web 
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Express application generator to install. | string | latest |
+| version | Select the version of Express Application Generator to install. | string | latest |
 
 
 

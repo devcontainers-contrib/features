@@ -7,7 +7,7 @@ Pre-Commit is a framework for managing and maintaining multi-language pre-commit
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/pre-commit:1": {}
+    "ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
 }
 ```
 

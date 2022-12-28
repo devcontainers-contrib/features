@@ -7,7 +7,7 @@ Installs tfc-agent
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/tfc-agent-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/tfc-agent-asdf:2": {}
 }
 ```
 

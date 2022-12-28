@@ -7,7 +7,7 @@ Jest is a delightful JavaScript Testing Framework with a focus on simplicity
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/jest:1": {}
+    "ghcr.io/devcontainers-contrib/features/jest:2": {}
 }
 ```
 

@@ -7,7 +7,7 @@ pyinfra is a Python alternative to Ansible where you don't write your deployment
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/pyinfra:1": {}
+    "ghcr.io/devcontainers-contrib/features/pyinfra:2": {}
 }
 ```
 

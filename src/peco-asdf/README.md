@@ -7,7 +7,7 @@ peco is simplistic interactive filtering tool.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/peco-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/peco-asdf:2": {}
 }
 ```
 

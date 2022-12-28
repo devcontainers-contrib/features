@@ -7,7 +7,7 @@ yamllint is a Python utility / library to sort imports alphabetically, and autom
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/yamllint:1": {}
+    "ghcr.io/devcontainers-contrib/features/yamllint:2": {}
 }
 ```
 

@@ -7,7 +7,7 @@ Installs Kubectl
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/kubectl-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/kubectl-asdf:2": {}
 }
 ```
 

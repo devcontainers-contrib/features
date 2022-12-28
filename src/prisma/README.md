@@ -7,7 +7,7 @@ Prisma is a next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, Ma
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/prisma:1": {}
+    "ghcr.io/devcontainers-contrib/features/prisma:2": {}
 }
 ```
 

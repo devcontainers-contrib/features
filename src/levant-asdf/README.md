@@ -7,7 +7,7 @@ Levant is an open source templating and deployment tool for HashiCorp Nomad jobs
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/levant-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/levant-asdf:2": {}
 }
 ```
 

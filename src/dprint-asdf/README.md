@@ -7,7 +7,7 @@ dprint is a pluggable and configurable code formatting platform written in Rust.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/dprint-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/dprint-asdf:2": {}
 }
 ```
 

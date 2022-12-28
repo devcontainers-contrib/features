@@ -7,7 +7,7 @@ gRPCurl is a command-line tool that lets you interact with gRPC servers.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/grpcurl-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/grpcurl-asdf:2": {}
 }
 ```
 
@@ -15,7 +15,7 @@ gRPCurl is a command-line tool that lets you interact with gRPC servers.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of grpcurl to install. | string | latest |
+| version | Select the version of gRPCurl to install. | string | latest |
 
 
 

@@ -7,7 +7,7 @@ fkill fabulously kill processes. Cross-platform.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/fkill:1": {}
+    "ghcr.io/devcontainers-contrib/features/fkill:2": {}
 }
 ```
 

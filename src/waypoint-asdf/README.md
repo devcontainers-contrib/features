@@ -7,7 +7,7 @@ Waypoint is an open source solution that provides a modern workflow for build, d
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/waypoint-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/waypoint-asdf:2": {}
 }
 ```
 

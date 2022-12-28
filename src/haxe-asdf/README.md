@@ -7,7 +7,7 @@ Haxe is an open source high-level cross-platform programming language and compil
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/haxe-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/haxe-asdf:2": {}
 }
 ```
 

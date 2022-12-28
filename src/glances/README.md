@@ -7,7 +7,7 @@ Glances is a cross-platform monitoring tool which aims to present a large amount
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/glances:1": {}
+    "ghcr.io/devcontainers-contrib/features/glances:2": {}
 }
 ```
 

@@ -7,7 +7,7 @@ Scala combines object-oriented and functional programming in one concise, high-l
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/scala-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/scala-asdf:2": {}
 }
 ```
 
@@ -15,7 +15,7 @@ Scala combines object-oriented and functional programming in one concise, high-l
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Scala to install. | string | latest |
+| version | Select the version of scala to install. | string | latest |
 
 
 

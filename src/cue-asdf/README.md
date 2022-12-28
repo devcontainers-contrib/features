@@ -7,7 +7,7 @@ CUE is an open source data constraint language which aims to simplify tasks invo
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/cue-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/cue-asdf:2": {}
 }
 ```
 

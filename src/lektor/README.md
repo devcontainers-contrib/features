@@ -7,7 +7,7 @@ Lektor is a static website generator.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/lektor:1": {}
+    "ghcr.io/devcontainers-contrib/features/lektor:2": {}
 }
 ```
 
@@ -15,7 +15,7 @@ Lektor is a static website generator.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of lektor to install. | string | latest |
+| version | Select the version of Lektor to install. | string | latest |
 
 
 

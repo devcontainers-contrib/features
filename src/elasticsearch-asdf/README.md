@@ -7,7 +7,7 @@ Elasticsearch is a search engine based on the Lucene library.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/elasticsearch-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/elasticsearch-asdf:2": {}
 }
 ```
 

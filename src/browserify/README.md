@@ -7,7 +7,7 @@ Browserify lets you require('modules') in the browser by bundling up all of your
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/browserify:1": {}
+    "ghcr.io/devcontainers-contrib/features/browserify:2": {}
 }
 ```
 

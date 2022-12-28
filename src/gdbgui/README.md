@@ -7,7 +7,7 @@ gdbgui is a browser-based frontend to gdb (gnu debugger).
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/gdbgui:1": {}
+    "ghcr.io/devcontainers-contrib/features/gdbgui:2": {}
 }
 ```
 

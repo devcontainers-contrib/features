@@ -7,7 +7,7 @@ Meson is an open source build system meant to be both extremely fast, and, even 
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/meson-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/meson-asdf:2": {}
 }
 ```
 

@@ -7,7 +7,7 @@ opam is a source-based package manager for OCaml.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/opam-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/opam-asdf:2": {}
 }
 ```
 

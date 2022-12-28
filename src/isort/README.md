@@ -7,7 +7,7 @@ isort is a Python utility / library to sort imports alphabetically, and automati
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/isort:1": {}
+    "ghcr.io/devcontainers-contrib/features/isort:2": {}
 }
 ```
 

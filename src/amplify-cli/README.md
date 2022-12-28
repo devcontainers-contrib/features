@@ -7,7 +7,7 @@ The Amplify Command Line Interface (CLI) is a unified toolchain to create AWS cl
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/amplify-cli:1": {}
+    "ghcr.io/devcontainers-contrib/features/amplify-cli:2": {}
 }
 ```
 

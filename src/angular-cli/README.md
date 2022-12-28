@@ -7,7 +7,7 @@ Angular CLI is a command-line interface tool that you use to initialize, develop
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/angular-cli:1": {}
+    "ghcr.io/devcontainers-contrib/features/angular-cli:2": {}
 }
 ```
 

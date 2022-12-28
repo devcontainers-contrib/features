@@ -7,7 +7,7 @@ yt-dlp is a youtube-dl fork with additional features and fixes.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/yt-dlp:1": {}
+    "ghcr.io/devcontainers-contrib/features/yt-dlp:2": {}
 }
 ```
 

@@ -7,7 +7,7 @@ AWS CDK is an open-source software development framework to define cloud infrast
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/aws-cdk:1": {}
+    "ghcr.io/devcontainers-contrib/features/aws-cdk:2": {}
 }
 ```
 
@@ -15,7 +15,7 @@ AWS CDK is an open-source software development framework to define cloud infrast
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of AWS-CDK to install. | string | latest |
+| version | Select the version of AWS Cloud Development Kit (AWS CDK) to install. | string | latest |
 
 
 

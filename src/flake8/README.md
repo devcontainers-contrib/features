@@ -7,7 +7,7 @@ Flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and t
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/flake8:1": {}
+    "ghcr.io/devcontainers-contrib/features/flake8:2": {}
 }
 ```
 
@@ -16,16 +16,7 @@ Flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and t
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select the version of Flake8 to install. | string | latest |
-| flake8Black | Select the version of flake8-black to install. 'none' will skip installation. | string | none |
-| flake8Isort | Select the version of flake8-isort to install. 'none' will skip installation. | string | none |
-| flake8Print | Select the version of flake8-print to install. 'none' will skip installation. | string | none |
-| flake8Bandit | Select the version of flake8-bandit to install. 'none' will skip installation. | string | none |
-| flake8Pylint | Select the version of flake8-pylint to install. 'none' will skip installation. | string | none |
-| flake8Builtins | Select the version of flake8-builtins to install. 'none' will skip installation. | string | none |
-| flake8Spellcheck | Select the version of flake8-spellcheck to install. 'none' will skip installation. | string | none |
-| flake8PytestStyle | Select the version of flake8-pytest-style to install. 'none' will skip installation. | string | none |
-| flake8Django | Select the version of flake8-django to install. 'none' will skip installation. | string | none |
-| flake8Fastapi | Select the version of flake8-fastapi to install. 'none' will skip installation. | string | none |
+| plugins | A space delimitered list of flake8 plugins (will be injected into the flake8 pipx env). see proposals for examples | string | - |
 
 
 

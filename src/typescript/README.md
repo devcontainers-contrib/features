@@ -7,7 +7,7 @@ TypeScript is a strongly typed programming language that builds on JavaScript, g
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/typescript:1": {}
+    "ghcr.io/devcontainers-contrib/features/typescript:2": {}
 }
 ```
 

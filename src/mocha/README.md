@@ -7,7 +7,7 @@ Mocha is a feature-rich JavaScript test framework running on Node.js and in the 
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/mocha:1": {}
+    "ghcr.io/devcontainers-contrib/features/mocha:2": {}
 }
 ```
 

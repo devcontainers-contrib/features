@@ -7,7 +7,7 @@ Dasel (short for data-selector) allows you to query and modify data structures u
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/dasel-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/dasel-asdf:2": {}
 }
 ```
 

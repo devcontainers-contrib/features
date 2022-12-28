@@ -7,7 +7,7 @@ GraalVM is a high-performance JDK designed to accelerate Java application perfor
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/graalvm-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/graalvm-asdf:2": {}
 }
 ```
 

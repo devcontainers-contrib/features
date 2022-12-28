@@ -7,7 +7,7 @@ The official Terraform language server (terraform-ls) maintained by HashiCorp pr
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/terraform-ls-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/terraform-ls-asdf:2": {}
 }
 ```
 
@@ -15,7 +15,7 @@ The official Terraform language server (terraform-ls) maintained by HashiCorp pr
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of terraform-ls to install. | string | latest |
+| version | Select the version of Terraform Language Server (terraform-ls) to install. | string | latest |
 
 
 

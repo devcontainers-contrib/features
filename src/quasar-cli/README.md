@@ -7,7 +7,7 @@ Quasar is an MIT licensed open-source Vue.js based framework, which allows you a
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/quasar-cli:1": {}
+    "ghcr.io/devcontainers-contrib/features/quasar-cli:2": {}
 }
 ```
 

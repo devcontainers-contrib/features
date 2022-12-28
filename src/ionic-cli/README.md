@@ -7,7 +7,7 @@ The Ionic command-line interface (CLI) is the go-to tool for developing Ionic ap
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/ionic-cli:1": {}
+    "ghcr.io/devcontainers-contrib/features/ionic-cli:2": {}
 }
 ```
 

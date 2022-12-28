@@ -7,7 +7,7 @@ Gulp CLI is Command Line Utility for Gulp
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/gulp-cli:1": {}
+    "ghcr.io/devcontainers-contrib/features/gulp-cli:2": {}
 }
 ```
 

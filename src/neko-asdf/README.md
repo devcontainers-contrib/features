@@ -7,7 +7,7 @@ Installs Neko Virtual Machine
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/neko-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/neko-asdf:2": {}
 }
 ```
 

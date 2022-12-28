@@ -7,7 +7,7 @@ Poetry is a tool for dependency management and packaging in Python.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/poetry:1": {}
+    "ghcr.io/devcontainers-contrib/features/poetry:2": {}
 }
 ```
 

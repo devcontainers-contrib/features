@@ -7,7 +7,7 @@ cmctl is a command line tool that can help you manage cert-manager and its resou
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/cmctl-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/cmctl-asdf:2": {}
 }
 ```
 

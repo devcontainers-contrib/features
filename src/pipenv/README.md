@@ -7,7 +7,7 @@ Pipenv automatically creates and manages a virtualenv for your projects.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/pipenv:1": {}
+    "ghcr.io/devcontainers-contrib/features/pipenv:2": {}
 }
 ```
 

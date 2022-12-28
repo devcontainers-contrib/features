@@ -7,7 +7,7 @@ nox is a command-line tool that automates testing in multiple Python environment
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/nox:1": {}
+    "ghcr.io/devcontainers-contrib/features/nox:2": {}
 }
 ```
 

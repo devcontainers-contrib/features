@@ -7,7 +7,7 @@ Mypy is a static type checker for Python.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/mypy:1": {}
+    "ghcr.io/devcontainers-contrib/features/mypy:2": {}
 }
 ```
 

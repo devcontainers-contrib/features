@@ -7,7 +7,7 @@ Crystal is a general-purpose, object-oriented programming language
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/crystal-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/crystal-asdf:2": {}
 }
 ```
 

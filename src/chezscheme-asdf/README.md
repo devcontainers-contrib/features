@@ -7,7 +7,7 @@ Chez Scheme is both a programming language and an implementation of that languag
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/chezscheme-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/chezscheme-asdf:2": {}
 }
 ```
 

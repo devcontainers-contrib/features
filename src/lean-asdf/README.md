@@ -7,7 +7,7 @@ Lean is a functional programming language that makes it easy to write correct an
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/lean-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/lean-asdf:2": {}
 }
 ```
 

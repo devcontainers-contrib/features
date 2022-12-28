@@ -7,7 +7,7 @@ Black is an uncompromising Python code formatter.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/black:1": {}
+    "ghcr.io/devcontainers-contrib/features/black:2": {}
 }
 ```
 

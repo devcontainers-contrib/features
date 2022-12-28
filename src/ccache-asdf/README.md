@@ -7,7 +7,7 @@ Ccache is a compiler cache. It speeds up recompilation by caching previous compi
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/ccache-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/ccache-asdf:2": {}
 }
 ```
 
@@ -15,7 +15,7 @@ Ccache is a compiler cache. It speeds up recompilation by caching previous compi
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of ccache to install. | string | latest |
+| version | Select the version of Ccache to install. | string | latest |
 
 
 

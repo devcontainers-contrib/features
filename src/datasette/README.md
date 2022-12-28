@@ -7,7 +7,7 @@ Datasette is a tool for exploring and publishing data and is aimed at data journ
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/datasette:1": {}
+    "ghcr.io/devcontainers-contrib/features/datasette:2": {}
 }
 ```
 
@@ -15,7 +15,7 @@ Datasette is a tool for exploring and publishing data and is aimed at data journ
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of datasette to install. | string | latest |
+| version | Select the version of Datasette to install. | string | latest |
 
 
 

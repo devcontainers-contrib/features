@@ -7,7 +7,7 @@ Deno is a simple, modern runtime for JavaScript and TypeScript that uses V8 and 
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/deno-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/deno-asdf:2": {}
 }
 ```
 

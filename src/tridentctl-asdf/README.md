@@ -7,7 +7,7 @@ Installs tridentctl
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/tridentctl-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/tridentctl-asdf:2": {}
 }
 ```
 

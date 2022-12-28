@@ -7,7 +7,7 @@ Vulture finds unused code in Python programs.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/vulture:1": {}
+    "ghcr.io/devcontainers-contrib/features/vulture:2": {}
 }
 ```
 

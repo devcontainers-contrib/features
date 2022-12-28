@@ -7,7 +7,7 @@ Less is a backwards-compatible language extension for CSS
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/less:1": {}
+    "ghcr.io/devcontainers-contrib/features/less:2": {}
 }
 ```
 

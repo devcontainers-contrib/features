@@ -7,7 +7,7 @@ AssemblyScript compiles a variant of TypeScript to WebAssembly using Binaryen.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/assemblyscript:1": {}
+    "ghcr.io/devcontainers-contrib/features/assemblyscript:2": {}
 }
 ```
 
@@ -15,7 +15,7 @@ AssemblyScript compiles a variant of TypeScript to WebAssembly using Binaryen.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of assemblyscript to install. | string | latest |
+| version | Select the version of AssemblyScript to install. | string | latest |
 
 
 

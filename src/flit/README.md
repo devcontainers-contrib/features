@@ -7,7 +7,7 @@ Flit is a simple way to put Python packages and modules on PyPI.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/flit:1": {}
+    "ghcr.io/devcontainers-contrib/features/flit:2": {}
 }
 ```
 

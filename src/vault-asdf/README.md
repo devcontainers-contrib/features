@@ -7,7 +7,7 @@ Vault secures, stores, and tightly controls access to tokens, passwords, certifi
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/vault-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/vault-asdf:2": {}
 }
 ```
 

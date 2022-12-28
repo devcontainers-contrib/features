@@ -7,7 +7,7 @@ Erlang is a general-purpose, concurrent, functional programming language, and a 
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/erlang-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/erlang-asdf:2": {}
 }
 ```
 
@@ -15,7 +15,7 @@ Erlang is a general-purpose, concurrent, functional programming language, and a 
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| erlangVersion | Select the version of Erlang to install. | string | latest |
+| version | Select the version of Erlang to install. | string | latest |
 
 
 

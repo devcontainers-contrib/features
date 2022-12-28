@@ -7,7 +7,7 @@ Nim is a statically typed compiled systems programming language. It combines suc
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/nim-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/nim-asdf:2": {}
 }
 ```
 

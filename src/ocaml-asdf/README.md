@@ -7,7 +7,7 @@ OCaml is a general-purpose, industrial-strength programming language with an emp
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/ocaml-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/ocaml-asdf:2": {}
 }
 ```
 

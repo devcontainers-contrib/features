@@ -7,7 +7,7 @@ Consul is a service networking solution to automate network configurations, disc
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/consul-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/consul-asdf:2": {}
 }
 ```
 

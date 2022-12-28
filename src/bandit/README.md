@@ -7,7 +7,7 @@ Bandit is a tool designed to find common security issues in Python code.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/bandit:1": {}
+    "ghcr.io/devcontainers-contrib/features/bandit:2": {}
 }
 ```
 

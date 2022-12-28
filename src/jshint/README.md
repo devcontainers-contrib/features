@@ -7,7 +7,7 @@ JSHint is a tool that helps to detect errors and potential problems in your Java
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/jshint:1": {}
+    "ghcr.io/devcontainers-contrib/features/jshint:2": {}
 }
 ```
 

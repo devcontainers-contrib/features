@@ -7,7 +7,7 @@ youtube-dl is a command-line program to download videos from YouTube.com and oth
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/youtube-dl:1": {}
+    "ghcr.io/devcontainers-contrib/features/youtube-dl:2": {}
 }
 ```
 

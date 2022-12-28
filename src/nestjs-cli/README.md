@@ -7,7 +7,7 @@ Nestjs is a progressive Node.js framework for building efficient, reliable and s
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/nestjs-cli:1": {}
+    "ghcr.io/devcontainers-contrib/features/nestjs-cli:2": {}
 }
 ```
 

@@ -7,7 +7,7 @@ Installs alp
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/alp-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/alp-asdf:2": {}
 }
 ```
 

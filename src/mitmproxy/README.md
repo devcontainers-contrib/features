@@ -7,7 +7,7 @@ mitmproxy is an interactive TLS-capable intercepting HTTP proxy for penetration 
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/mitmproxy:1": {}
+    "ghcr.io/devcontainers-contrib/features/mitmproxy:2": {}
 }
 ```
 

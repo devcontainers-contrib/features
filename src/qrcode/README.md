@@ -7,7 +7,7 @@ qrcode is a command line QR-Code generator.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/qrcode:1": {}
+    "ghcr.io/devcontainers-contrib/features/qrcode:2": {}
 }
 ```
 

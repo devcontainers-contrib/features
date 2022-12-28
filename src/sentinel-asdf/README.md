@@ -7,7 +7,7 @@ Sentinel is an embeddable policy as code framework to enable fine-grained, logic
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/sentinel-asdf:1": {}
+    "ghcr.io/devcontainers-contrib/features/sentinel-asdf:2": {}
 }
 ```
 

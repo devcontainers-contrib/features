@@ -7,7 +7,7 @@ Hatch is a modern, extensible Python project manager.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/hatch:1": {}
+    "ghcr.io/devcontainers-contrib/features/hatch:2": {}
 }
 ```
 
