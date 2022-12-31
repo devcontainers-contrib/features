@@ -35,11 +35,11 @@ install_via_pipx() {
 	INJECTIONS=$3
 
 	# if no python - install it
-	if ! dpkg -s python3-minimal python3-pip libffi-dev python3-venv >/dev/null 2>&1; then
+    if ! type python3 >/dev/null 2>&1; then
 		apt-get update -y
 		apt-get -y install python3-minimal python3-pip libffi-dev python3-venv
 	fi
-
+	
 	export PYTHONUSERBASE=/tmp/pip-tmp
 	export PIP_CACHE_DIR=/tmp/pip-tmp/cache
 
