@@ -1,6 +1,6 @@
 {
     "id": "glances",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "name": "Glances (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/glances",
     "description": "Glances is a cross-platform monitoring tool which aims to present a large amount of monitoring information through a curses or Web based interface.",
@@ -15,11 +15,12 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1",
+        "ghcr.io/devcontainers/features/python:1.0.18"
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1",
+            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1",
             "options": {
                 "package": "glances[action,browser,cloud,cpuinfo,docker,export,folders,gpu,graph,ip,raid,snmp,web,wifi]"
             }

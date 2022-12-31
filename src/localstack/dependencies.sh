@@ -37,6 +37,6 @@ ensure_featmake
 PACKAGES="libsasl2-dev g++" featmake "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0"
 
 
-# installing ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1
-PACKAGE="localstack[full]" featmake "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+# installing ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1
+PACKAGE="localstack[full]" featmake "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1"
 

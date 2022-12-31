@@ -1,6 +1,6 @@
 {
     "id": "pre-commit",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "name": "Pre-Commit (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pre-commit",
     "description": "Pre-Commit is a framework for managing and maintaining multi-language pre-commit hooks.",
@@ -15,6 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1",
+        "ghcr.io/devcontainers/features/python:1.0.18"
     ]
 }

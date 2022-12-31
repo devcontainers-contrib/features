@@ -1,6 +1,6 @@
 {
     "id": "bikeshed",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "name": "Bikeshed (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/bikeshed",
     "description": "A preprocessor for anyone writing specifications that converts source files into actual specs.",
@@ -15,6 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1",
+        "ghcr.io/devcontainers/features/python:1.0.18"
     ]
 }

@@ -1,6 +1,6 @@
 {
     "id": "localstack",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "name": "Localstack (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/localstack",
     "description": "Localstack is a fully functional local AWS cloud stack.",
@@ -15,8 +15,9 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1",
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0"
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0",
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1",
+        "ghcr.io/devcontainers/features/python:1.0.18"
     ],
     "dependencies": [
         {
@@ -26,7 +27,7 @@
             }
         },
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1",
+            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1",
             "options": {
                 "package": "localstack[full]"
             }

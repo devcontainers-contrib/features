@@ -41,6 +41,6 @@ INSTALLTOOLS="False" VERSION="os-provided" featmake "ghcr.io/devcontainers/featu
 COMMAND="pip3 install packaging==21.3" featmake "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0"
 
 
-# installing ghcr.io/devcontainers-contrib/features/pipx-package:1.1.0
-PACKAGE="eth-brownie" featmake "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.0"
+# installing ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1
+PACKAGE="eth-brownie" featmake "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1"
 

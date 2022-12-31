@@ -33,6 +33,6 @@ ensure_curl
 
 ensure_featmake
 
-# installing ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1
-PACKAGE="yamllint" featmake "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+# installing ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1
+PACKAGE="yamllint" featmake "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1"
 

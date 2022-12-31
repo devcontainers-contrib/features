@@ -1,25 +1,26 @@
 {
-    "name": "Bikeshed (via pipx)",
     "id": "bikeshed",
-    "version": "2.0.0",
-    "description": "A preprocessor for anyone writing specifications that converts source files into actual specs.",
+    "version": "2.0.1",
+    "name": "Bikeshed (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/bikeshed",
+    "description": "A preprocessor for anyone writing specifications that converts source files into actual specs.",
     "options": {
         "version": {
-            "type": "string",
+            "default": "latest",
+            "description": "Select the version of Bikeshed to install.",
             "proposals": [
                 "latest"
             ],
-            "default": "latest",
-            "description": "Select the version of Bikeshed to install."
+            "type": "string"
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1",
+        "ghcr.io/devcontainers/features/python:1.0.18"
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1",
+            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1",
             "options": {
                 "package": "bikeshed"
             }
@@ -28,4 +29,3 @@
     "install_command": "echo 'Done!'",
     "test_command": "bikeshed --version"
 }
-

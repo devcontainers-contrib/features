@@ -23,7 +23,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1"
     ],
     "dependencies": [
         {
@@ -40,7 +40,7 @@
             }
         },
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.0",
+            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1",
             "options": {
                 "package": "eth-brownie"
             }
