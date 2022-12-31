@@ -1,0 +1,44 @@
+{
+    "id": "schemacrawler-sdkman",
+    "version": "2.0.0",
+    "name": "SchemaCrawler (via SDKMAN)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/schemacrawler-sdkman",
+    "description": "SchemaCrawler is a free database schema discovery and comprehension tool.\nSchemaCrawler has a good mix of useful features for data governance. You can\nsearch for database schema objects using regular expressions, and output the\nschema and data in a readable text format. The output serves for database\ndocumentation, and is designed to be diff-ed against other database schemas.\nSchemaCrawler also generates schema diagrams. You can execute scripts in any\nstandard scripting language against your database. You can find potential schema\ndesign issues with lint.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of SchemaCrawler to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        },
+        "jdkVersion": {
+            "default": "latest",
+            "description": "Select or enter a JDK version to install.",
+            "proposals": [
+                "latest",
+                "none",
+                "17",
+                "11",
+                "8"
+            ],
+            "type": "string"
+        },
+        "jdkDistro": {
+            "default": "ms",
+            "description": "Select or enter a JDK distribution to install",
+            "proposals": [
+                "ms",
+                "open",
+                "oracle",
+                "tem"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
+        "ghcr.io/devcontainers/features/java:1.1.1"
+    ]
+}

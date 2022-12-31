@@ -1,0 +1,44 @@
+{
+    "id": "pomchecker-sdkman",
+    "version": "2.0.0",
+    "name": "Pomchecker (via SDKMAN)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pomchecker-sdkman",
+    "description": "Pomchecker - Checks that POM files comply with the minimum rules required for\npublication to Maven Central. It can also check if a POM is a valid BOM file.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of Pomchecker to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        },
+        "jdkVersion": {
+            "default": "latest",
+            "description": "Select or enter a JDK version to install.",
+            "proposals": [
+                "latest",
+                "none",
+                "17",
+                "11",
+                "8"
+            ],
+            "type": "string"
+        },
+        "jdkDistro": {
+            "default": "ms",
+            "description": "Select or enter a JDK distribution to install",
+            "proposals": [
+                "ms",
+                "open",
+                "oracle",
+                "tem"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
+        "ghcr.io/devcontainers/features/java:1.1.1"
+    ]
+}

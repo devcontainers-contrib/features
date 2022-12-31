@@ -1,0 +1,62 @@
+{
+    "id": "hadoop-sdkman",
+    "version": "2.0.0",
+    "name": "hadoop (via SDKMAN)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/hadoop-sdkman",
+    "description": "Apache\u2122 Hadoop\u00ae project develops open-source software for reliable, scalable,\ndistributed computing.It's a framework that allows for the distributed\nprocessing of large data sets across clusters of computersusing simple\nprogramming models.It is designed to scale up from single servers to thousands\nof machines, each offering local computation and storage.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of hadoop to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        },
+        "jdkVersion": {
+            "default": "latest",
+            "description": "Select or enter a JDK version to install.",
+            "proposals": [
+                "latest",
+                "none",
+                "17",
+                "11",
+                "8"
+            ],
+            "type": "string"
+        },
+        "jdkDistro": {
+            "default": "ms",
+            "description": "Select or enter a JDK distribution to install",
+            "proposals": [
+                "ms",
+                "open",
+                "oracle",
+                "tem"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
+        "ghcr.io/devcontainers/features/java:1.1.1"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers/features/java:1.1.1",
+            "options": {
+                "jdkDistro": "$options.jdkDistro",
+                "version": "$options.jdkVersion"
+            }
+        },
+        {
+            "feature": "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
+            "options": {
+                "candidate": "hadoop",
+                "version": "$options.version"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "hadoop version"
+}

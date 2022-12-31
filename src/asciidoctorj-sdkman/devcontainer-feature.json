@@ -1,0 +1,44 @@
+{
+    "id": "asciidoctorj-sdkman",
+    "version": "2.0.0",
+    "name": "AsciidoctorJ (via SDKMAN)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/asciidoctorj-sdkman",
+    "description": "AsciidoctorJ is the official library for running Asciidoctor on the JVM. Using\nAsciidoctorJ, you can convert AsciiDoc content or analyze the structure of a\nparsed AsciiDoc document from Java and other JVM languages.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of AsciidoctorJ to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        },
+        "jdkVersion": {
+            "default": "latest",
+            "description": "Select or enter a JDK version to install.",
+            "proposals": [
+                "latest",
+                "none",
+                "17",
+                "11",
+                "8"
+            ],
+            "type": "string"
+        },
+        "jdkDistro": {
+            "default": "ms",
+            "description": "Select or enter a JDK distribution to install",
+            "proposals": [
+                "ms",
+                "open",
+                "oracle",
+                "tem"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
+        "ghcr.io/devcontainers/features/java:1.1.1"
+    ]
+}

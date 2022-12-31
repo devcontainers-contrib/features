@@ -1,0 +1,44 @@
+{
+    "id": "jbang-sdkman",
+    "version": "2.0.0",
+    "name": "JBang (via SDKMAN)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jbang-sdkman",
+    "description": "JBang makes it easy to use Java for scripting. It lets you use a single file for\ncode and dependency management and allows you to run it directly.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of JBang to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        },
+        "jdkVersion": {
+            "default": "latest",
+            "description": "Select or enter a JDK version to install.",
+            "proposals": [
+                "latest",
+                "none",
+                "17",
+                "11",
+                "8"
+            ],
+            "type": "string"
+        },
+        "jdkDistro": {
+            "default": "ms",
+            "description": "Select or enter a JDK distribution to install",
+            "proposals": [
+                "ms",
+                "open",
+                "oracle",
+                "tem"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
+        "ghcr.io/devcontainers/features/java:1.1.1"
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "id": "neo4jmigrations-sdkman",
+    "version": "2.0.0",
+    "name": "Neo4j-Migrations (via SDKMAN)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/neo4jmigrations-sdkman",
+    "description": "Neo4j-Migrations is a database migration and refactoring tool that allows\nrunning Cypher scripts and programmatic refactorings in a controlled and\nrepeatable fashion against one or more Neo4j database.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of Neo4j-Migrations to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        },
+        "jdkVersion": {
+            "default": "latest",
+            "description": "Select or enter a JDK version to install.",
+            "proposals": [
+                "latest",
+                "none",
+                "17",
+                "11",
+                "8"
+            ],
+            "type": "string"
+        },
+        "jdkDistro": {
+            "default": "ms",
+            "description": "Select or enter a JDK distribution to install",
+            "proposals": [
+                "ms",
+                "open",
+                "oracle",
+                "tem"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
+        "ghcr.io/devcontainers/features/java:1.1.1"
+    ]
+}
