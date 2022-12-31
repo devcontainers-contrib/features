@@ -7,5 +7,15 @@
                 "plugin": "act"
             }
         }
+    },
+    "install_act_with_repo": {
+        "image": "debian:bullseye",
+        "features": {
+            "asdf-package": {
+                "version": "latest",
+                "plugin": "act",
+                "pluginRepo": "https://github.com/grimoh/asdf-act.git"
+            }
+        }
     }
 }
