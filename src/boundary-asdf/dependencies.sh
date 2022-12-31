@@ -33,6 +33,6 @@ ensure_curl
 
 ensure_featmake
 
-# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0
-PLUGIN="boundary" VERSION="$VERSION" featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1
+PLUGIN="boundary" VERSION="$VERSION" featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1"
 

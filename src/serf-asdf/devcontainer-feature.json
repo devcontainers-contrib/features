@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1"
     ]
 }

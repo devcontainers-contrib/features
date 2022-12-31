@@ -37,6 +37,6 @@ ensure_featmake
 PACKAGES="build-essential uuid-dev libncurses5-dev libx11-dev" featmake "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0"
 
 
-# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0
-PLUGIN="chezscheme" VERSION="$VERSION" featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1
+PLUGIN="chezscheme" VERSION="$VERSION" featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1"
 

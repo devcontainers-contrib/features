@@ -37,6 +37,6 @@ ensure_featmake
 PACKAGES="build-essential cmake" featmake "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0"
 
 
-# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0
-PLUGIN="ccache" VERSION="$VERSION" featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1
+PLUGIN="ccache" VERSION="$VERSION" featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1"
 

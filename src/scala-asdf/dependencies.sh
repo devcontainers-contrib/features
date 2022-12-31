@@ -37,6 +37,6 @@ ensure_featmake
 PACKAGES="openjdk-11-jdk" featmake "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0"
 
 
-# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0
-PLUGIN="scala" VERSION="$VERSION" featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1
+PLUGIN="scala" VERSION="$VERSION" featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1"
 

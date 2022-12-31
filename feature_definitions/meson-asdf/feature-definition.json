@@ -15,11 +15,11 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1"
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0",
+            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1",
             "options": {
                 "plugin": "meson",
                 "version": "$options.version"
