@@ -17,6 +17,7 @@ Installs an asdf package.
 |-----|-----|-----|-----|
 | plugin | Select the asdf plugin to install. | string | - |
 | version | Select the version of the asdf plugin to install. | string | latest |
+| pluginRepo | Select the asdf plugin repo to install (can remain empty in order to use the plugin short-name index https://github.com/asdf-vm/asdf-plugins) | string | - |
 
 
 
