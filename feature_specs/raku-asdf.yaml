@@ -1,0 +1,14 @@
+default_context:
+  description: "Raku is a general-purpose, interpreted, dynamic programming language."
+  feature_name: "Raku (via asdf)"
+  feature_id: "raku-asdf"
+  test_command: "raku --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "raku"
+      display_name: "Raku"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
