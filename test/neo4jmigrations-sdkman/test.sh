@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "sdk current | grep "neo4jmigrations"" sdk current | grep "neo4jmigrations"
+check "neo4j-migrations --help" neo4j-migrations --help
 
 reportResults

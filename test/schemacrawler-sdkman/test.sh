@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "sdk current | grep "schemacrawler"" sdk current | grep "schemacrawler"
+check "type schemacrawler.sh" type schemacrawler.sh
 
 reportResults

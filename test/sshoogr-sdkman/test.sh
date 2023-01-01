@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "sdk current | grep "sshoogr"" sdk current | grep "sshoogr"
+check "type sshoogr" type sshoogr
 
 reportResults

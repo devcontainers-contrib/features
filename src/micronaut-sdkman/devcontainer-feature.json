@@ -1,6 +1,6 @@
 {
     "id": "micronaut-sdkman",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "name": "Micronaut (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/micronaut-sdkman",
     "description": "Micronaut is an open source microservice framework for the JVM",
@@ -39,6 +39,7 @@
     },
     "installsAfter": [
         "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/devcontainers/features/java:1.1.1",
+        "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0"
     ]
 }

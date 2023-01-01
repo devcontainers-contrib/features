@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "sdk current | grep "pomchecker"" sdk current | grep "pomchecker"
+check "pomchecker --version" pomchecker --version
 
 reportResults

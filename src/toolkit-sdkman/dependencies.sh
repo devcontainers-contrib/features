@@ -33,6 +33,10 @@ ensure_curl
 
 ensure_featmake
 
+# installing ghcr.io/devcontainers-contrib/features/bash-command:1.0.0
+COMMAND="[[ \"$(ldd --version | grep -Eoh '2\.[0-9]+$'  | sed 's/2.//')\" > \"33\" ]] && echo \"gclib version is compatible\" && exit 0 || echo \"glibc version is lower than the minimum required (2.34). exiting\" && exit 1" featmake "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0"
+
+
 # installing ghcr.io/devcontainers/features/java:1.1.1
 JDKDISTRO="$JDKDISTRO" VERSION="$JDKVERSION" featmake "ghcr.io/devcontainers/features/java:1.1.1"
 

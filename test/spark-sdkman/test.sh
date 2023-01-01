@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "sdk current | grep "spark"" sdk current | grep "spark"
+check "spark-class --version" spark-class --version
 
 reportResults

@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "sdk current | grep "pierrot"" sdk current | grep "pierrot"
+check "pierrot --version" pierrot --version
 
 reportResults

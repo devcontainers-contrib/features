@@ -1,6 +1,6 @@
 {
     "id": "sshoogr-sdkman",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "name": "Sshoogr (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/sshoogr-sdkman",
     "description": "Sshoogr is a Groovy based DSL and command line tool for working with remote\nservers through SSH.",
@@ -58,5 +58,5 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "sdk current | grep \"sshoogr\""
+    "test_command": "type sshoogr"
 }

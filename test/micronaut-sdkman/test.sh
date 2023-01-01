@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "sdk current | grep "micronaut"" sdk current | grep "micronaut"
+check "mn --help" mn --help
 
 reportResults

@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "sdk current | grep "quarkus"" sdk current | grep "quarkus"
+check "quarkus --version" quarkus --version
 
 reportResults

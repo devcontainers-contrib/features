@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "sdk current | grep "mvnd"" sdk current | grep "mvnd"
+check "mvnd --version" mvnd --version
 
 reportResults

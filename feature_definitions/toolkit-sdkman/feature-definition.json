@@ -1,6 +1,6 @@
 {
     "id": "toolkit-sdkman",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "name": "ToolKit (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/toolkit-sdkman",
     "description": "Toolkit is a client command line tool that supports multiple IoT protocols like\nMQTT and COAP. It provides a command line client tool for IoT development.",
@@ -38,10 +38,17 @@
         }
     },
     "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0",
         "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
         "ghcr.io/devcontainers/features/java:1.1.1"
     ],
     "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0",
+            "options": {
+                "command": "[[ \"$(ldd --version | grep -Eoh '2\\.[0-9]+$'  | sed 's/2.//')\" > \"33\" ]] && echo \"gclib version is compatible\" && exit 0 || echo \"glibc version is lower than the minimum required (2.34). exiting\" && exit 1"
+            }
+        },
         {
             "feature": "ghcr.io/devcontainers/features/java:1.1.1",
             "options": {
@@ -58,5 +65,5 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "sdk current | grep \"toolkit\""
+    "test_command": "toolkit --help"
 }

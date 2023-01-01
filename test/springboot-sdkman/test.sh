@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "sdk current | grep "springboot"" sdk current | grep "springboot"
+check "sptring --version" sptring --version
 
 reportResults

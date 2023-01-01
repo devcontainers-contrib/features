@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "sdk current | grep "toolkit"" sdk current | grep "toolkit"
+check "toolkit --help" toolkit --help
 
 reportResults

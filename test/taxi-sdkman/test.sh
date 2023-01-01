@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "sdk current | grep "taxi"" sdk current | grep "taxi"
+check "taxi --help" taxi --help
 
 reportResults

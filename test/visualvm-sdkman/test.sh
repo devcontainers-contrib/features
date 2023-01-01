@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "sdk current | grep "visualvm"" sdk current | grep "visualvm"
+check "visualvm --version" visualvm --version
 
 reportResults

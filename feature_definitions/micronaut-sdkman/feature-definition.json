@@ -1,6 +1,6 @@
 {
     "id": "micronaut-sdkman",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "name": "Micronaut (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/micronaut-sdkman",
     "description": "Micronaut is an open source microservice framework for the JVM",
@@ -39,9 +39,16 @@
     },
     "installsAfter": [
         "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/devcontainers/features/java:1.1.1",
+        "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0"
     ],
     "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0",
+            "options": {
+                "command": "[[ \"$(ldd --version | grep -Eoh '2\\.[0-9]+$'  | sed 's/2.//')\" > \"33\" ]] && echo \"gclib version is compatible\" && exit 0 || echo \"glibc version is lower than the minimum required (2.34). exiting\" && exit 1"
+            }
+        },
         {
             "feature": "ghcr.io/devcontainers/features/java:1.1.1",
             "options": {
@@ -49,6 +56,7 @@
                 "version": "$options.jdkVersion"
             }
         },
+        
         {
             "feature": "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
             "options": {
@@ -58,5 +66,5 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "sdk current | grep \"micronaut\""
+    "test_command": "mn --help"
 }

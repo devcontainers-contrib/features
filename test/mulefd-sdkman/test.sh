@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "sdk current | grep "mulefd"" sdk current | grep "mulefd"
+check "mulefd --version" mulefd --version
 
 reportResults
