@@ -1,4 +1,5 @@
 
+
 # Layrry (via SDKMAN) (layrry-sdkman)
 
 Layrry - A Launcher and API for Modularized Java Applications. It allows to

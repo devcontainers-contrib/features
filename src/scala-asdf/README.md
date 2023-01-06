@@ -1,4 +1,5 @@
 
+
 # scala (via asdf) (scala-asdf)
 
 Scala combines object-oriented and functional programming in one concise, high-level language

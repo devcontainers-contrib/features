@@ -1,4 +1,5 @@
 
+
 # jrnl (via pipx) (jrnl)
 
 jrnl is a simple journal application for the command line.

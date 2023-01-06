@@ -1,4 +1,5 @@
 
+
 # Grails (via SDKMAN) (grails-sdkman)
 
 Grails is a powerful web framework, for the Java platform aimed at multiplying

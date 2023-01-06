@@ -1,4 +1,5 @@
 
+
 # Scala CLI (via SDKMAN) (scalacli-sdkman)
 
 Scala CLI is a command-line tool to interact with the Scala language. It lets

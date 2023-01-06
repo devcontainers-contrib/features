@@ -1,4 +1,5 @@
 
+
 # Haskell (via ghcup) (haskell)
 
 Installs Haskell. An advanced, purely functional programming language

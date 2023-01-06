@@ -1,4 +1,5 @@
 
+
 # Karaf (via SDKMAN) (karaf-sdkman)
 
 Apache Karaf is a polymorphic, lightweight, powerful, and enterprise ready

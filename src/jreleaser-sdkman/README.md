@@ -1,4 +1,5 @@
 
+
 # JReleaser (via SDKMAN) (jreleaser-sdkman)
 
 JReleaser is a release automation tool for Java projects. Its goal is to

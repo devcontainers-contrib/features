@@ -1,4 +1,5 @@
 
+
 # hadoop (via SDKMAN) (hadoop-sdkman)
 
 Apache™ Hadoop® project develops open-source software for reliable, scalable,
