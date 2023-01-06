@@ -7,5 +7,14 @@
         "omzPlugins": "https://github.com/txstc55/dogesay"
       }
     }
+  },
+  "multiple-omz-plugins": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "zsh-plugins": {
+        "plugins": "npm git node F-Sy-H zsh-autocomplete",
+        "omzPlugins": "https://github.com/z-shell/F-Sy-H https://github.com/marlonrichert/zsh-autocomplete"
+      }
+    }
   }
 }

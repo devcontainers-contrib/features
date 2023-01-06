@@ -18,7 +18,7 @@ currdir=$(pwd)
 mkdir -p "$OMZSH_PLUGINS_LOCATION"
 cd "$OMZSH_PLUGINS_LOCATION" || exit
 
-plugins=( "${OMZSH_PLUGINS}" )
+IFS=' ' read -ra plugins <<< "${OMZSH_PLUGINS}"
 
 for plugin in "${plugins[@]}"
 do
