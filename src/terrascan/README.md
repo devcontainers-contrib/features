@@ -2,7 +2,7 @@
 
 # Terrascan (via Github Releases) (terrascan)
 
-terrascan is a tool to switch between contexts (clusters) on kubectl faster.
+Terrascan is a static code analyzer for Infrastructure as Code.
 
 ## Example Usage
 
