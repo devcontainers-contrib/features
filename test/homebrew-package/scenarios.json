@@ -1,0 +1,29 @@
+{
+    "test_latest": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "homebrew-package": {
+                "version": "latest",
+                "package": "grpcurl"
+            }
+        }
+    },
+    "test_specific_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "homebrew-package": {
+                "version": "14",
+                "package": "node"
+            }
+        }
+    },
+    "test_git_based_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "homebrew-package": {
+                "version": "7.80.0",
+                "package": "curl"
+            }
+        }
+    }
+}

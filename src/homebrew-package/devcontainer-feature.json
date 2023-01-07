@@ -1,0 +1,38 @@
+{
+    "name": "Homebrew Package",
+    "id": "homebrew-package",
+    "version": "1.0.0",
+    "description": "Installs a Homebrew package.",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/homebrew-package",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/homebrew:latest"
+    ],
+    "options": {
+        "package": {
+            "type": "string",
+            "proposals": [
+                "typescript",
+                "vtop",
+                "fkill-cli"
+            ],
+            "default": "",
+            "description": "Select the Homebrew package to install."
+        },
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of the Homebrew package to install."
+        },
+        "installation_flags": {
+            "type": "string",
+            "proposals": [
+                "--ignore-dependencies"
+            ],
+            "default": "",
+            "description": "Additional installation flags. These would be used as extra arguments to the brew command (`brew install <installation_flags> <package>@<version>`)"
+        }
+    }
+}
