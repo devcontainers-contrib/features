@@ -1,0 +1,20 @@
+{
+    "id": "mysql-homebrew",
+    "version": "1.0.0",
+    "name": "MySQL (via Homebrew)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mysql-homebrew",
+    "description": "MySQL is an open-source relational database management system (RDBMS)",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of MySQL to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.0"
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "id": "nmap-homebrew",
+    "version": "1.0.0",
+    "name": "Nmap (via Homebrew)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/nmap-homebrew",
+    "description": "Nmap (Network Mapper) is a free and open source utility for network discovery and security auditing.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of Nmap to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.0"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.0",
+            "options": {
+                "package": "nmap",
+                "version": "$options.version"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "nmap --version"
+}

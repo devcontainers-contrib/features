@@ -1,0 +1,31 @@
+{
+    "id": "wget-homebrew",
+    "version": "1.0.0",
+    "name": "Wget (via Homebrew)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/wget-homebrew",
+    "description": "Wget is a free software package for retrieving files using HTTP, HTTPS, FTP and FTPS, the most widely used Internet protocols.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of Wget to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.0"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.0",
+            "options": {
+                "package": "wget",
+                "version": "$options.version"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "wget --version"
+}

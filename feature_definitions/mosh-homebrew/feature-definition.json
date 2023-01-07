@@ -1,0 +1,31 @@
+{
+    "id": "mosh-homebrew",
+    "version": "1.0.0",
+    "name": "Mosh (via Homebrew)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mosh-homebrew",
+    "description": "Mosh is a remote terminal application that allows roaming, supports intermittent connectivity, and provides intelligent local echo and line editing of user keystrokes.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of Mosh to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.0"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.0",
+            "options": {
+                "package": "mosh",
+                "version": "$options.version"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "mosh --version"
+}

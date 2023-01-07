@@ -1,0 +1,20 @@
+{
+    "id": "starship-homebrew",
+    "version": "1.0.0",
+    "name": "Starship (via Homebrew)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/starship-homebrew",
+    "description": "Starship is fast and highly customizable cross-shell prompt that can display contextual information.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of Starship to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.0"
+    ]
+}

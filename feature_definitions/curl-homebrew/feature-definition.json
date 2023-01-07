@@ -1,0 +1,31 @@
+{
+    "id": "curl-homebrew",
+    "version": "1.0.0",
+    "name": "cURL (via Homebrew)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/curl-homebrew",
+    "description": "cURL is a computer software project providing a library and command-line tool for transferring data using various network protocols.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of cURL to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.0"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.0",
+            "options": {
+                "package": "curl",
+                "version": "$options.version"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "curl --version"
+}
