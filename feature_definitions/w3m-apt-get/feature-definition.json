@@ -1,0 +1,21 @@
+{
+    "id": "w3m-apt-get",
+    "version": "1.0.0",
+    "name": "w3m (via apt-get)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/w3m-apt-get",
+    "description": "w3m is a free software/open source text-based web browser and terminal pager.",
+    "options": {},
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0",
+            "options": {
+                "packages": "w3m"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "w3m -version"
+}
