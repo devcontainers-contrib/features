@@ -1,0 +1,21 @@
+{
+    "id": "checkov",
+    "version": "1.0",
+    "name": "checkov (via pipx)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/checkov",
+    "description": "checkov is a python project template generator with batteries included.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of checkov to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1",
+        "ghcr.io/devcontainers/features/python:1.0.18"
+    ]
+}
