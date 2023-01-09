@@ -26,6 +26,6 @@
             }
         }
     ],
-    "install_command": "echo 'Done!'",
+    "install_command": "",
     "test_command": "checkov -v"
 }

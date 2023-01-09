@@ -1,6 +1,6 @@
 {
     "id": "checkov",
-    "version": "1.0",
+    "version": "1.0.0",
     "name": "checkov (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/checkov",
     "description": "checkov is a python project template generator with batteries included.",
