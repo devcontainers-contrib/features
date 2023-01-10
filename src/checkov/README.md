@@ -1,8 +1,8 @@
 
 
-# Checkov (via pipx) (checkov)
+# checkov (via pipx) (checkov)
 
-Checkov is a static code analysis tool for infrastructure as code (IaC) and also a software composition analysis (SCA) tool for images and open source packages.
+checkov is a python project template generator with batteries included.
 
 ## Example Usage
 
@@ -16,10 +16,10 @@ Checkov is a static code analysis tool for infrastructure as code (IaC) and also
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of PyScaffold to install. | string | latest |
+| version | Select the version of checkov to install. | string | latest |
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/pyscaffold/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/checkov/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
