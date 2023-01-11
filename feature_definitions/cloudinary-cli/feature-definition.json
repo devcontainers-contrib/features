@@ -1,0 +1,32 @@
+{
+    "id": "cloudinary-cli",
+    "version": "1.0.0",
+    "name": "cloudinary-cli (via pipx)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/cloudinary-cli",
+    "description": "Cloudinary CLI.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of cloudinary-cli to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1",
+        "ghcr.io/devcontainers/features/python:1.0.18"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1",
+            "options": {
+                "package": "cloudinary-cli",
+                "version": "$options.version"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "cld --version"
+}
