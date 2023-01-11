@@ -1,5 +1,4 @@
 
-
 # Neo4j-Migrations (via SDKMAN) (neo4jmigrations-sdkman)
 
 Neo4j-Migrations is a database migration and refactoring tool that allows

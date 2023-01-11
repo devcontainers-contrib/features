@@ -1,5 +1,4 @@
 
-
 # MongoDB Shell (via Homebrew) (mongosh-homebrew)
 
 MongoDB Shell to connect, configure, query, and work with your MongoDB database.

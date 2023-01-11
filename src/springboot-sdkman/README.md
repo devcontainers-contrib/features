@@ -1,5 +1,4 @@
 
-
 # Spring Boot (via SDKMAN) (springboot-sdkman)
 
 Spring Boot takes an opinionated view of building production-ready Spring

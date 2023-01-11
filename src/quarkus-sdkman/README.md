@@ -1,5 +1,4 @@
 
-
 # Quarkus CLI (via SDKMAN) (quarkus-sdkman)
 
 Quarkus is a Kubernetes Native Java framework tailored for OpenJDK HotSpot and

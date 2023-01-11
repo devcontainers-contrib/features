@@ -1,5 +1,4 @@
 
-
 # Neovim (via Homebrew) (neovim-homebrew)
 
 Neovim is a fork of Vim focused on modern code and features, rather than running in legacy environments.

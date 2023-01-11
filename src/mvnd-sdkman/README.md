@@ -1,5 +1,4 @@
 
-
 # Maven Daemon (via SDKMAN) (mvnd-sdkman)
 
 The mvnd project aims to provide a daemon infrastructure for maven based builds.

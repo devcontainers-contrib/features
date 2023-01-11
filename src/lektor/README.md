@@ -1,5 +1,4 @@
 
-
 # Lektor (via npm) (lektor)
 
 Lektor is a static website generator.

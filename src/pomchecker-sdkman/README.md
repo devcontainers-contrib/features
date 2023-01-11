@@ -1,5 +1,4 @@
 
-
 # Pomchecker (via SDKMAN) (pomchecker-sdkman)
 
 Pomchecker - Checks that POM files comply with the minimum rules required for

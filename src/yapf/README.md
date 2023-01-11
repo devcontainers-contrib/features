@@ -1,5 +1,4 @@
 
-
 # yapf (via pipx) (yapf)
 
 yapf is a formatter for Python files.

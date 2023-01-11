@@ -1,5 +1,4 @@
 
-
 # Vert.x (via SDKMAN) (vertx-sdkman)
 
 Vert.x is a tool-kit for building reactive applications on the JVM.

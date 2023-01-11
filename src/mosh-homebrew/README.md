@@ -1,5 +1,4 @@
 
-
 # Mosh (via Homebrew) (mosh-homebrew)
 
 Mosh is a remote terminal application that allows roaming, supports intermittent connectivity, and provides intelligent local echo and line editing of user keystrokes.

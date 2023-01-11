@@ -1,5 +1,4 @@
 
-
 # Bpipe (via SDKMAN) (bpipe-sdkman)
 
 Bpipe is a framework for running computational pipelines and workflows

@@ -1,5 +1,4 @@
 
-
 # MyBatis Migrations (via SDKMAN) (mybatis-sdkman)
 
 The MyBatis Schema Migration System (or MyBatis Migrations for short) seeks to

@@ -1,5 +1,4 @@
 
-
 # Starship (via Homebrew) (starship-homebrew)
 
 Starship is fast and highly customizable cross-shell prompt that can display contextual information.

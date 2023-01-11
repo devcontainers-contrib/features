@@ -1,5 +1,4 @@
 
-
 # btop (via Homebrew) (btop-homebrew)
 
 btop is a resource monitor that shows usage and stats for processor, memory, disks, network and processes.

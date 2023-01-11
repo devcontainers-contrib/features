@@ -1,5 +1,4 @@
 
-
 # ddgr (via Homebrew) (ddgr-homebrew)
 
 ddgr is a cmdline utility to search DuckDuckGo from the terminal.

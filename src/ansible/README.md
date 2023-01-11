@@ -1,5 +1,4 @@
 
-
 # Ansible (via pipx) (ansible)
 
 Ansible is a suite of software tools that enables infrastructure as code.

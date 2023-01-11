@@ -1,5 +1,4 @@
 
-
 # w3m (via Homebrew) (w3m-homebrew)
 
 w3m is a free software/open source text-based web browser and terminal pager.

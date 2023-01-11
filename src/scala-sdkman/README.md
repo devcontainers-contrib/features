@@ -1,5 +1,4 @@
 
-
 # Scala (via SDKMAN) (scala-sdkman)
 
 Scala is a programming language for general software applications. Scala has

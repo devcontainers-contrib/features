@@ -1,5 +1,4 @@
 
-
 # Kobweb (via SDKMAN) (kobweb-sdkman)
 
 Kobweb is an opinionated Kotlin web framework built on top of Compose for Web.

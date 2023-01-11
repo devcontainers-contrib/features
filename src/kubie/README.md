@@ -1,5 +1,4 @@
 
-
 # Kubie (via Github Releases) (kubie)
 
 Kubie offers kubernetes context switching, namespace switching and prompt modification in a way that makes each shell independent from others

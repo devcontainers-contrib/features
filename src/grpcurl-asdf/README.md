@@ -1,5 +1,4 @@
 
-
 # gRPCurl (via asdf) (grpcurl-asdf)
 
 gRPCurl is a command-line tool that lets you interact with gRPC servers.

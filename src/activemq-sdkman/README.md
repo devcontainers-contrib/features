@@ -1,5 +1,4 @@
 
-
 # Apache ActiveMQ (Classic) (via SDKMAN) (activemq-sdkman)
 
 Apache ActiveMQ® is a popular open source, multi-protocol, Java-based message

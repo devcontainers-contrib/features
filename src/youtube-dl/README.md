@@ -1,5 +1,4 @@
 
-
 # youtube-dl (via pipx) (youtube-dl)
 
 youtube-dl is a command-line program to download videos from YouTube.com and other video sites.
