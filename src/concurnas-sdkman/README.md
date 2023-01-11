@@ -1,5 +1,4 @@
 
-
 # Concurnas (via SDKMAN) (concurnas-sdkman)
 
 Concurnas is an open source JVM programming language designed for building

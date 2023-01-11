@@ -1,5 +1,4 @@
 
-
 # MySQL (via Homebrew) (mysql-homebrew)
 
 MySQL is an open-source relational database management system (RDBMS)

@@ -1,5 +1,4 @@
 
-
 # Waypoint (via asdf) (waypoint-asdf)
 
 Waypoint is an open source solution that provides a modern workflow for build, deploy, and release across platforms.

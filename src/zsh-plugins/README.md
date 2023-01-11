@@ -1,5 +1,4 @@
 
-
 # ZSH Plugins (zsh-plugins)
 
 Install (Oh-My-)ZSH plugins

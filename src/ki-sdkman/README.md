@@ -1,5 +1,4 @@
 
-
 # ki (via SDKMAN) (ki-sdkman)
 
 An extensible implementation of the Kotlin REPL with a rich set of features

@@ -1,5 +1,4 @@
 
-
 # Gradle profiler (via SDKMAN) (gradleprofiler-sdkman)
 
 A tool for gathering profiling and benchmarking information for Gradle builds

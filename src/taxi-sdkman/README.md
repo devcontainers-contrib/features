@@ -1,5 +1,4 @@
 
-
 # Taxi (via SDKMAN) (taxi-sdkman)
 
 Taxi is a language for documenting data - such as data models - and the

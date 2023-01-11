@@ -1,5 +1,4 @@
 
-
 # GraalVM (via asdf) (graalvm-asdf)
 
 GraalVM is a high-performance JDK designed to accelerate Java application performance while consuming fewer resources.

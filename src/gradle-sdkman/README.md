@@ -1,5 +1,4 @@
 
-
 # Gradle (via SDKMAN) (gradle-sdkman)
 
 Gradle is a build automation tool that builds upon the concepts of Apache Ant

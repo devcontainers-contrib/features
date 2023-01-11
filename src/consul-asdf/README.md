@@ -1,5 +1,4 @@
 
-
 # consul (via asdf) (consul-asdf)
 
 Consul is a service networking solution to automate network configurations, discover services, and enable secure connectivity across any cloud or runtime.

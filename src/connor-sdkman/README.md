@@ -1,5 +1,4 @@
 
-
 # ConnOR (via SDKMAN) (connor-sdkman)
 
 ConnOR, short for ConnectOffsetReset, is a commandline tool for resetting Kafka

@@ -1,5 +1,4 @@
 
-
 # Pierrot (via SDKMAN) (pierrot-sdkman)
 
 Pierrot helps you to manage many GitHub repositories with a single command.

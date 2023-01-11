@@ -1,5 +1,4 @@
 
-
 # Apache JMeter (via SDKMAN) (jmeter-sdkman)
 
 The Apache JMeter™ application is open source software, a 100% pure Java

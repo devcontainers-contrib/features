@@ -1,5 +1,4 @@
 
-
 # cmctl (via asdf) (cmctl-asdf)
 
 cmctl is a command line tool that can help you manage cert-manager and its resources inside your cluster.

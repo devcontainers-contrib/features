@@ -1,5 +1,4 @@
 
-
 # Apache Tomcat (via SDKMAN) (tomcat-sdkman)
 
 The Apache Tomcat software is an open source implementation of the Java

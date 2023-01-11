@@ -1,5 +1,4 @@
 
-
 # checkov (via pipx) (checkov)
 
 checkov is a python project template generator with batteries included.

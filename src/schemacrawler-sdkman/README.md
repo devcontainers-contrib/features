@@ -1,5 +1,4 @@
 
-
 # SchemaCrawler (via SDKMAN) (schemacrawler-sdkman)
 
 SchemaCrawler is a free database schema discovery and comprehension tool.

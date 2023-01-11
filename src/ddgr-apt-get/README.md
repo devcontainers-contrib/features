@@ -1,5 +1,4 @@
 
-
 # ddgr (via apt-get) (ddgr-apt-get)
 
 ddgr is a cmdline utility to search DuckDuckGo from the terminal.

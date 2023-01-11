@@ -1,5 +1,4 @@
 
-
 # Localstack (via pipx) (localstack)
 
 Localstack is a fully functional local AWS cloud stack.

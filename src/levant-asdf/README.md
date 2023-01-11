@@ -1,5 +1,4 @@
 
-
 # levant (via asdf) (levant-asdf)
 
 Levant is an open source templating and deployment tool for HashiCorp Nomad jobs

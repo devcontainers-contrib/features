@@ -1,5 +1,4 @@
 
-
 # AsciidoctorJ (via SDKMAN) (asciidoctorj-sdkman)
 
 AsciidoctorJ is the official library for running Asciidoctor on the JVM. Using
