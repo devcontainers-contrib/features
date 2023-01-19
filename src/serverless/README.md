@@ -1,5 +1,4 @@
 
-
 # Serverless Framework (via npm) (serverless)
 
 Serverless Framework is a widely used open-source IaC tool that allows you to build, and deploy serverless applications on multiple cloud providers.

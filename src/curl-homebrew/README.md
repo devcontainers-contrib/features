@@ -1,5 +1,4 @@
 
-
 # cURL (via Homebrew) (curl-homebrew)
 
 cURL is a computer software project providing a library and command-line tool for transferring data using various network protocols.

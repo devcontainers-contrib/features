@@ -1,5 +1,4 @@
 
-
 # Kubectx and Kubens (via Github Releases) (kubectx-kubens)
 
 kubectx is a tool to switch between contexts (clusters) on kubectl faster. kubens is a tool to switch between Kubernetes namespaces (and configure them for kubectl) easily.

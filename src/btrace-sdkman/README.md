@@ -1,5 +1,4 @@
 
-
 # BTrace (via SDKMAN) (btrace-sdkman)
 
 BTrace is a safe, dynamic tracing tool for the Java platform. BTrace can be used

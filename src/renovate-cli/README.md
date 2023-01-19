@@ -1,5 +1,4 @@
 
-
 # Renovate CLI (via npm) (renovate-cli)
 
 Renovate is a universal dependency update tool. Multi-platform and multi-language.

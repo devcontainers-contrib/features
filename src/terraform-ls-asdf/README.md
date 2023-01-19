@@ -1,5 +1,4 @@
 
-
 # Terraform Language Server (terraform-ls) (via asdf) (terraform-ls-asdf)
 
 The official Terraform language server (terraform-ls) maintained by HashiCorp provides IDE features to any LSP-compatible editor.

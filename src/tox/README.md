@@ -1,5 +1,4 @@
 
-
 # tox (via pipx) (tox)
 
 tox is a generic virtual environment management and test command line tool.

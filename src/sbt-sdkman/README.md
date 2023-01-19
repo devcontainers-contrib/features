@@ -1,5 +1,4 @@
 
-
 # sbt (via SDKMAN) (sbt-sdkman)
 
 SBT is an open source build tool for Scala and Java projects, similar to Java's

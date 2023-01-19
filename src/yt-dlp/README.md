@@ -1,5 +1,4 @@
 
-
 # yt-dlp (via pipx) (yt-dlp)
 
 yt-dlp is a youtube-dl fork with additional features and fixes.

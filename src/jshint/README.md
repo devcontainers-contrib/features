@@ -1,5 +1,4 @@
 
-
 # JSHint (via npm) (jshint)
 
 JSHint is a tool that helps to detect errors and potential problems in your JavaScript code.

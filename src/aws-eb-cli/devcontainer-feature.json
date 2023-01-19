@@ -1,0 +1,21 @@
+{
+    "id": "aws-eb-cli",
+    "version": "1.0.0",
+    "name": "aws-eb-cli (via pipx)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/aws-eb-cli",
+    "description": "AWS Elastic Beanstalk CLI.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of aws-eb-cli to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1",
+        "ghcr.io/devcontainers/features/python:1.0.18"
+    ]
+}

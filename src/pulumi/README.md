@@ -1,5 +1,4 @@
 
-
 # Pulumi (via get.pulumi.com) (pulumi)
 
 Pulumi is a modern infrastructure as code platform

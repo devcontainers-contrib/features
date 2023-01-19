@@ -1,5 +1,4 @@
 
-
 # Sshoogr (via SDKMAN) (sshoogr-sdkman)
 
 Sshoogr is a Groovy based DSL and command line tool for working with remote

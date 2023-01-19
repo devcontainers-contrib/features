@@ -1,5 +1,4 @@
 
-
 # Ionic CLI (via npm) (ionic-cli)
 
 The Ionic command-line interface (CLI) is the go-to tool for developing Ionic apps.

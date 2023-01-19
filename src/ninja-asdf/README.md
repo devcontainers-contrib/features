@@ -1,5 +1,4 @@
 
-
 # Ninja (via asdf) (ninja-asdf)
 
 Ninja is a small build system with a focus on speed.

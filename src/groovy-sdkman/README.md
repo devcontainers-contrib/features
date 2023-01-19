@@ -1,5 +1,4 @@
 
-
 # Groovy (via SDKMAN) (groovy-sdkman)
 
 Groovy is a powerful, optionally typed and dynamic language, with static-typing

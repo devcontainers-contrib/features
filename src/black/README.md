@@ -1,5 +1,4 @@
 
-
 # Black (via pipx) (black)
 
 Black is an uncompromising Python code formatter.

@@ -1,5 +1,4 @@
 
-
 # sentinel (via asdf) (sentinel-asdf)
 
 Sentinel is an embeddable policy as code framework to enable fine-grained, logic-based policy decisions that can be extended to source external information to make decisions.

@@ -1,5 +1,4 @@
 
-
 # Joern (via SDKMAN) (joern-sdkman)
 
 Joern is a platform for analyzing source code, bytecode, and binary executables.

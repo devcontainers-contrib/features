@@ -1,5 +1,4 @@
 
-
 # JBake (via SDKMAN) (jbake-sdkman)
 
 JBake is a Java based, open source, static site/blog generator for developers

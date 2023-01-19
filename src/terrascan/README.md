@@ -1,5 +1,4 @@
 
-
 # terrascan (via Github Releases) (terrascan)
 
 Terrascan is a static code analyzer for Infrastructure as Code.

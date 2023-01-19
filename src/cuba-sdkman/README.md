@@ -1,5 +1,4 @@
 
-
 # CUBA CLI (via SDKMAN) (cuba-sdkman)
 
 CUBA CLI is an open source command line utility that enables you to easily
