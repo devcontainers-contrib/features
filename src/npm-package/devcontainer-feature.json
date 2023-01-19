@@ -1,7 +1,7 @@
 {
     "name": "npm package",
     "id": "npm-package",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Installs an npm package.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/npm-package",
     "installsAfter": [

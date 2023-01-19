@@ -39,7 +39,7 @@ install_via_npm() {
 	if ! type npm >/dev/null 2>&1; then
 		echo "Installing node and npm..."
 		check_packages curl ca-certificates
-		curl -fsSL https://raw.githubusercontent.com/devcontainers/features/main/src/node/install.sh | bash
+		curl -fsSL https://raw.githubusercontent.com/devcontainers/features/main/src/node/install.sh | VERSION="lts" bash
 		export NVM_DIR=/usr/local/share/nvm
 		[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 		[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
