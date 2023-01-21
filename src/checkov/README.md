@@ -1,7 +1,7 @@
 
-# checkov (via pipx) (checkov)
+# Checkov (via pipx) (checkov)
 
-checkov is a python project template generator with batteries included.
+Checkov is a static code analysis tool for infrastructure as code (IaC) and also a software composition analysis (SCA) tool for images and open source packages.
 
 ## Example Usage
 
