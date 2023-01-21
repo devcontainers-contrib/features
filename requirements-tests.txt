@@ -3,4 +3,4 @@ pytest
 pytest-shell-utilities
 tqdm
 more_itertools
-devcontainer-contrib>=0.0.13
+devcontainer-contrib==0.0.15

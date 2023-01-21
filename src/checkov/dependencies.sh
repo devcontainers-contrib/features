@@ -6,10 +6,9 @@ set -e
 
 ensure_curl () {
     if ! type curl >/dev/null 2>&1; then
-        apt-get update -y && apt-get -y install --no-install-recommends curl 
+        apt-get update -y && apt-get -y install --no-install-recommends curl
     fi 
 }
-
 
 
 ensure_featmake () {
@@ -17,8 +16,8 @@ ensure_featmake () {
         temp_dir=/tmp/featmake-download
         mkdir -p $temp_dir
 
-        curl -sSL -o $temp_dir/featmake https://github.com/devcontainers-contrib/cli/releases/download/v0.0.9/featmake 
-        curl -sSL -o $temp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.0.9/checksums.txt
+        curl -sSL -o $temp_dir/featmake https://github.com/devcontainers-contrib/cli/releases/download/v0.0.14/featmake 
+        curl -sSL -o $temp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.0.14/checksums.txt
 
         (cd $temp_dir ; sha256sum --check --strict $temp_dir/checksums.txt)
 
@@ -33,6 +32,9 @@ ensure_curl
 
 ensure_featmake
 
+# refresh PATH 
+PS1='\s-\v\$' source /etc/profile
+
 # installing ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1
-PACKAGE="checkov" featmake "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1"
+featmake "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1" -PACKAGE "checkov" 
 

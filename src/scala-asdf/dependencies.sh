@@ -11,14 +11,13 @@ ensure_curl () {
 }
 
 
-
 ensure_featmake () {
     if ! type featmake > /dev/null 2>&1; then
         temp_dir=/tmp/featmake-download
         mkdir -p $temp_dir
 
-        curl -sSL -o $temp_dir/featmake https://github.com/devcontainers-contrib/cli/releases/download/v0.0.9/featmake 
-        curl -sSL -o $temp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.0.9/checksums.txt
+        curl -sSL -o $temp_dir/featmake https://github.com/devcontainers-contrib/cli/releases/download/v0.0.14/featmake 
+        curl -sSL -o $temp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.0.14/checksums.txt
 
         (cd $temp_dir ; sha256sum --check --strict $temp_dir/checksums.txt)
 
@@ -33,10 +32,14 @@ ensure_curl
 
 ensure_featmake
 
+# refresh PATH 
+PS1='\s-\v\$' source /etc/profile
+
 # installing ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0
-PACKAGES="openjdk-11-jdk" featmake "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0"
+featmake "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0" -PACKAGES "openjdk-11-jdk" 
 
-
+# refresh PATH
+PS1='\s-\v\$' source /etc/profile
 # installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1
-PLUGIN="scala" VERSION="$VERSION" featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1"
+featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1" -PLUGIN "scala" -VERSION "$VERSION" 
 

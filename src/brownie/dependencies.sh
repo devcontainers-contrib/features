@@ -11,14 +11,13 @@ ensure_curl () {
 }
 
 
-
 ensure_featmake () {
     if ! type featmake > /dev/null 2>&1; then
         temp_dir=/tmp/featmake-download
         mkdir -p $temp_dir
 
-        curl -sSL -o $temp_dir/featmake https://github.com/devcontainers-contrib/cli/releases/download/v0.0.9/featmake 
-        curl -sSL -o $temp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.0.9/checksums.txt
+        curl -sSL -o $temp_dir/featmake https://github.com/devcontainers-contrib/cli/releases/download/v0.0.14/featmake 
+        curl -sSL -o $temp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.0.14/checksums.txt
 
         (cd $temp_dir ; sha256sum --check --strict $temp_dir/checksums.txt)
 
@@ -33,14 +32,19 @@ ensure_curl
 
 ensure_featmake
 
+# refresh PATH 
+PS1='\s-\v\$' source /etc/profile
+
 # installing ghcr.io/devcontainers/features/python:1.0.18
-INSTALLTOOLS="False" VERSION="os-provided" featmake "ghcr.io/devcontainers/features/python:1.0.18"
+featmake "ghcr.io/devcontainers/features/python:1.0.18" -INSTALLTOOLS "False" -VERSION "os-provided" 
 
-
+# refresh PATH
+PS1='\s-\v\$' source /etc/profile
 # installing ghcr.io/devcontainers-contrib/features/bash-command:1.0.0
-COMMAND="pip3 install packaging==21.3" featmake "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0"
+featmake "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0" -COMMAND "pip3 install packaging==21.3" 
 
-
+# refresh PATH
+PS1='\s-\v\$' source /etc/profile
 # installing ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1
-PACKAGE="eth-brownie" featmake "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1"
+featmake "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1" -PACKAGE "eth-brownie" 
 

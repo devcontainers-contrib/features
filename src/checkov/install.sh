@@ -8,4 +8,3 @@ source ./dependencies.sh
 
 source ./install_command.sh
 
-pip3 install checkov

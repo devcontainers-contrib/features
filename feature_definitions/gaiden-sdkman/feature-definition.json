@@ -1,12 +1,9 @@
 {
     "id": "gaiden-sdkman",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "name": "Gaiden (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/gaiden-sdkman",
     "description": "Gaiden is a tool that makes it easy to create documentation with Markdown.",
-    "containerEnv": {
-        "JDK_JAVA_OPTIONS": "--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED"
-    },
     "options": {
         "version": {
             "default": "latest",
@@ -44,6 +41,9 @@
         "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
         "ghcr.io/devcontainers/features/java:1.1.1"
     ],
+    "containerEnv": {
+        "JDK_JAVA_OPTIONS": "--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED"
+    },
     "dependencies": [
         {
             "feature": "ghcr.io/devcontainers/features/java:1.1.1",

@@ -11,14 +11,13 @@ ensure_curl () {
 }
 
 
-
 ensure_featmake () {
     if ! type featmake > /dev/null 2>&1; then
         temp_dir=/tmp/featmake-download
         mkdir -p $temp_dir
 
-        curl -sSL -o $temp_dir/featmake https://github.com/devcontainers-contrib/cli/releases/download/v0.0.9/featmake 
-        curl -sSL -o $temp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.0.9/checksums.txt
+        curl -sSL -o $temp_dir/featmake https://github.com/devcontainers-contrib/cli/releases/download/v0.0.14/featmake 
+        curl -sSL -o $temp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.0.14/checksums.txt
 
         (cd $temp_dir ; sha256sum --check --strict $temp_dir/checksums.txt)
 
@@ -33,10 +32,14 @@ ensure_curl
 
 ensure_featmake
 
+# refresh PATH 
+PS1='\s-\v\$' source /etc/profile
+
 # installing ghcr.io/devcontainers/features/java:1.1.1
-JDKDISTRO="$JDKDISTRO" VERSION="$JDKVERSION" featmake "ghcr.io/devcontainers/features/java:1.1.1"
+featmake "ghcr.io/devcontainers/features/java:1.1.1" -JDKDISTRO "$JDKDISTRO" -VERSION "$JDKVERSION" 
 
-
+# refresh PATH
+PS1='\s-\v\$' source /etc/profile
 # installing ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0
-CANDIDATE="pomchecker" VERSION="$VERSION" featmake "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0"
+featmake "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0" -CANDIDATE "pomchecker" -VERSION "$VERSION" 
 
