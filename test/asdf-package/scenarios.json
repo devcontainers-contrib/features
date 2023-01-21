@@ -17,5 +17,14 @@
                 "pluginRepo": "https://github.com/grimoh/asdf-act.git"
             }
         }
+    },
+    "install_terraform_alpine": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine-3.17",
+        "features": {
+            "asdf-package": {
+                "version": "latest",
+                "plugin": "terraform"
+            }
+        }
     }
 }
