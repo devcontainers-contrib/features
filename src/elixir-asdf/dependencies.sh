@@ -40,11 +40,11 @@ featmake "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0" -PACKAG
 
 # refresh PATH
 PS1='\s-\v\$' source /etc/profile
-# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1
-featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1" -PLUGIN "elixir" -VERSION "$ELIXIRVERSION" 
+# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2
+featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2" -PLUGIN "elixir" -VERSION "$ELIXIRVERSION" 
 
 # refresh PATH
 PS1='\s-\v\$' source /etc/profile
-# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1
-featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1" -PLUGIN "erlang" -VERSION "$ERLANGVERSION" 
+# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2
+featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2" -PLUGIN "erlang" -VERSION "$ERLANGVERSION" 
 

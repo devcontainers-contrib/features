@@ -35,6 +35,6 @@ ensure_featmake
 # refresh PATH 
 PS1='\s-\v\$' source /etc/profile
 
-# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1
-featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1" -PLUGIN "terraform" -VERSION "$VERSION" 
+# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2
+featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2" -PLUGIN "terraform" -VERSION "$VERSION" 
 

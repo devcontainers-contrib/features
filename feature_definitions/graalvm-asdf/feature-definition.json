@@ -15,11 +15,11 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1"
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2"
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1",
+            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2",
             "options": {
                 "plugin": "graalvm",
                 "version": "$options.version"
