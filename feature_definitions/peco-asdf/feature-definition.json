@@ -1,6 +1,6 @@
 {
     "id": "peco-asdf",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "name": "peco (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/peco-asdf",
     "description": "peco is simplistic interactive filtering tool.",
@@ -15,11 +15,11 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1"
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2"
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1",
+            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2",
             "options": {
                 "plugin": "peco",
                 "version": "$options.version"

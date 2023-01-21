@@ -1,6 +1,6 @@
 {
     "id": "consul-asdf",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "name": "consul (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/consul-asdf",
     "description": "Consul is a service networking solution to automate network configurations, discover services, and enable secure connectivity across any cloud or runtime.",
@@ -15,11 +15,11 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1"
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2"
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.1",
+            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2",
             "options": {
                 "plugin": "consul",
                 "version": "$options.version"
