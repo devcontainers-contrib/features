@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# This is part of devcontainers-contrib script library
+# source: https://github.com/devcontainers-contrib/features
 set -e
 
 PLUGIN=${PLUGIN:-""}
@@ -19,9 +21,11 @@ if [ "$(id -u)" -ne 0 ]; then
 	exit 1
 fi
 
+check_alpine_packages() {
+    apk add -v --no-cache "$@"
+}
+
 check_packages() {
-	# This is part of devcontainers-contrib script library
-	# source: https://github.com/devcontainers-contrib/features/tree/v1.1.8/script-library
 	if ! dpkg -s "$@" >/dev/null 2>&1; then
 		if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
 			echo "Running apt-get update..."
@@ -32,26 +36,32 @@ check_packages() {
 }
 
 updaterc() {
-	# This is part of devcontainers-contrib script library
-	# source: https://github.com/devcontainers-contrib/features/tree/v1.1.8/script-library
-	echo "Updating /etc/bash.bashrc and /etc/zsh/zshrc..."
+	if cat /etc/os-release | grep  "ID_LIKE\|ID=.*alpine.*" ; then
+		echo "Updating /etc/profile"
+		echo -e "$1" >>/etc/profile
+	fi
 	if [[ "$(cat /etc/bash.bashrc)" != *"$1"* ]]; then
+		echo "Updating /etc/bash.bashrc"
 		echo -e "$1" >>/etc/bash.bashrc
 	fi
 	if [ -f "/etc/zsh/zshrc" ] && [[ "$(cat /etc/zsh/zshrc)" != *"$1"* ]]; then
+		echo "Updating /etc/zsh/zshrc"
 		echo -e "$1" >>/etc/zsh/zshrc
 	fi
 }
 
 install_via_asdf() {
-	# This is part of devcontainers-contrib script library
-	# source: https://github.com/devcontainers-contrib/features/tree/v1.1.8/script-library
 	PLUGIN=$1
 	VERSION=$2
 	REPO=$3
 
 	# install git and curl if does not exists
-	check_packages curl git ca-certificates
+	if cat /etc/os-release | grep  "ID_LIKE\|ID=.*alpine.*" ; then
+        check_alpine_packages curl git ca-certificates
+	elif cat /etc/os-release | grep  "ID_LIKE\|ID=.*debian.*"; then
+		check_packages curl git ca-certificates
+	fi
+
 	if ! type asdf >/dev/null 2>&1; then
 		su - "$_REMOTE_USER" <<EOF
             git clone --depth=1 \
@@ -72,12 +82,14 @@ install_via_asdf() {
 
             . $_REMOTE_USER_HOME/.asdf/asdf.sh
 
-            if asdf list "$PLUGIN"; then
+            if asdf list "$PLUGIN" >/dev/null 2>&1; then
                 echo "$PLUGIN  already exists - skipping installation"
                 exit 0
             fi
-
-            asdf plugin-add "$PLUGIN" "$REPO"
+			echo PLUGIN="$PLUGIN" 
+			echo REPO="$REPO"
+			sleep 10
+            asdf plugin add "$PLUGIN" "$REPO"
             asdf install "$PLUGIN" "$VERSION"
             asdf global "$PLUGIN" "$VERSION"
 EOF
@@ -86,5 +98,6 @@ EOF
 
 	fi
 }
+
 
 install_via_asdf "$PLUGIN" "$VERSION" "$PLUGINREPO"
