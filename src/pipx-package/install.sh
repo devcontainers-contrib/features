@@ -20,11 +20,16 @@ if [ "$(id -u)" -ne 0 ]; then
 fi
 
 updaterc() {
-	echo "Updating /etc/bash.bashrc and /etc/zsh/zshrc..."
+	if cat /etc/os-release | grep  "ID_LIKE\|ID=.*alpine.*" ; then
+		echo "Updating /etc/profile"
+		echo -e "$1" >>/etc/profile
+	fi
 	if [[ "$(cat /etc/bash.bashrc)" != *"$1"* ]]; then
+		echo "Updating /etc/bash.bashrc"
 		echo -e "$1" >>/etc/bash.bashrc
 	fi
 	if [ -f "/etc/zsh/zshrc" ] && [[ "$(cat /etc/zsh/zshrc)" != *"$1"* ]]; then
+		echo "Updating /etc/zsh/zshrc"
 		echo -e "$1" >>/etc/zsh/zshrc
 	fi
 }
