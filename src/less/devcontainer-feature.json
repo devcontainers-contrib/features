@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package:1.0.1"
+        "ghcr.io/devcontainers-contrib/features/npm-package:1.0.2"
     ]
 }
