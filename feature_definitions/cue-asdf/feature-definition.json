@@ -1,6 +1,6 @@
 {
     "id": "cue-asdf",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "name": "CUE (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/cue-asdf",
     "description": "CUE is an open source data constraint language which aims to simplify tasks involving defining and using data.",
@@ -15,11 +15,11 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2"
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.3"
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2",
+            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.3",
             "options": {
                 "plugin": "cue",
                 "version": "$options.version"

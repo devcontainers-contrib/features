@@ -16,8 +16,8 @@ ensure_featmake () {
         temp_dir=/tmp/featmake-download
         mkdir -p $temp_dir
 
-        curl -sSL -o $temp_dir/featmake https://github.com/devcontainers-contrib/cli/releases/download/v0.0.18/featmake 
-        curl -sSL -o $temp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.0.18/checksums.txt
+        curl -sSL -o $temp_dir/featmake https://github.com/devcontainers-contrib/cli/releases/download/v0.0.19/featmake 
+        curl -sSL -o $temp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.0.19/checksums.txt
 
         (cd $temp_dir ; sha256sum --check --strict $temp_dir/checksums.txt)
 
@@ -40,11 +40,11 @@ featmake "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0" -PACKAG
 
 # refresh PATH
 PS1='\s-\v\$' source /etc/profile
-# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2
-featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2" -PLUGIN "elixir" -VERSION "$ELIXIRVERSION" 
+# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.3
+featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.3" -PLUGIN "elixir" -VERSION "$ELIXIRVERSION" 
 
 # refresh PATH
 PS1='\s-\v\$' source /etc/profile
-# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2
-featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2" -PLUGIN "erlang" -VERSION "$ERLANGVERSION" 
+# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.3
+featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.3" -PLUGIN "erlang" -VERSION "$ERLANGVERSION" 
 

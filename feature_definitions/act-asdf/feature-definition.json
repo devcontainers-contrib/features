@@ -15,11 +15,11 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2"
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.3"
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.2",
+            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.3",
             "options": {
                 "plugin": "act",
                 "version": "$options.version"

@@ -1,6 +1,6 @@
 {
     "id": "meltano",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "Meltano ELT (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/meltano",
     "description": "Meltano lets you extract and load data with a software development-inspired approach that that delivers flexibility and limitless collaboration.",
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1",
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.3",
         "ghcr.io/devcontainers/features/python:1.0.18"
     ]
 }

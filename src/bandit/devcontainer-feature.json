@@ -1,6 +1,6 @@
 {
     "id": "bandit",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "Bandit (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/bandit",
     "description": "Bandit is a tool designed to find common security issues in Python code.",
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.1",
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.3",
         "ghcr.io/devcontainers/features/python:1.0.18"
     ]
 }
