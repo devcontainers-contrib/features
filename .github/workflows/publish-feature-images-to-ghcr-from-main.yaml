@@ -1,3 +1,5 @@
+# TODO: Rework the publishing of docs using #284
+
 name: Publish feature images to ghcr from main
 on:
   workflow_dispatch:
