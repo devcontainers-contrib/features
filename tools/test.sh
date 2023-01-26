@@ -1,9 +1,9 @@
 #!/bin/bash -e
 
-echo "Testing global scenarios"
-devcontainer features test --global-scenarios-only .
-
 if [[ -z $1 ]]; do
+  echo "Testing global scenarios"
+  devcontainer features test --global-scenarios-only .
+
   for id in test/*; do
     if [[ -f $id ]]; then
       continue
