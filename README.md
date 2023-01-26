@@ -57,7 +57,22 @@ compile things from source code and may take a while!
 
 ## Development
 
-TODO: Add development
+![Devcontainers](https://img.shields.io/static/v1?style=for-the-badge&message=Devcontainers&color=2496ED&logo=Docker&logoColor=FFFFFF&label=)
+![JSON](https://img.shields.io/static/v1?style=for-the-badge&message=JSON&color=000000&logo=JSON&logoColor=FFFFFF&label=)
+![Bash](https://img.shields.io/static/v1?style=for-the-badge&message=Bash&color=4EAA25&logo=GNU+Bash&logoColor=FFFFFF&label=)
+
+➕ Looking to add a new feature? Check out the [contributing guide]!
+
+This project uses a devcontainer config to outline the development environment.
+We also provide various VS Code customizations for your coding pleasure.
+
+To get started, create a GitHub Codespace on a copy of this repository. From
+there, the [dev wiki] provides information about adding features, layout,
+conventions, etc. When or if you want to contribute your changes back to this
+repository, you can follow the [contributing guide]. Happy coding! 👋
+
+🗺️ If you're looking for a more thorough outline of how this repo works, check
+out the [How it works] page on the dev wiki.
 
 <!-- prettier-ignore-start -->
 [@devcontainers]: https://github.com/devcontainers
@@ -65,4 +80,7 @@ TODO: Add development
 [complete feature list]: https://github.com/devcontainers-contrib/features/tree/main/src
 [debian]: https://hub.docker.com/_/debian
 [open it locally using vs code]: https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container
+[contributing guide]: CONTRIBUTING.md
+[how it works]: https://github.com/devcontainers-contrib/features/wiki/How-it-works
+[dev wiki]: https://github.com/devcontainers-contrib/features/wiki
 <!-- prettier-ignore-end -->
