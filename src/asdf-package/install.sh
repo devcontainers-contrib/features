@@ -16,7 +16,7 @@ if [ -z "$PLUGIN" ]; then
 fi
 
 if [ "$(id -u)" -ne 0 ]; then
-	echo -e 'Script must be run as 
+	echo -e 'Script must be run as
     root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
 	exit 1
 fi
@@ -36,7 +36,7 @@ check_packages() {
 }
 
 updaterc() {
-	if cat /etc/os-release | grep  "ID_LIKE\|ID=.*alpine.*" ; then
+	if cat /etc/os-release | grep "ID_LIKE=.*alpine.*\|ID=.*alpine.*" ; then
 		echo "Updating /etc/profile"
 		echo -e "$1" >>/etc/profile
 	fi
@@ -56,9 +56,9 @@ install_via_asdf() {
 	REPO=$3
 
 	# install git and curl if does not exists
-	if cat /etc/os-release | grep  "ID_LIKE\|ID=.*alpine.*" ; then
+	if cat /etc/os-release | grep "ID_LIKE=.*alpine.*\|ID=.*alpine.*" ; then
         check_alpine_packages curl git ca-certificates
-	elif cat /etc/os-release | grep  "ID_LIKE\|ID=.*debian.*"; then
+	elif cat /etc/os-release | grep  "ID_LIKE=.*debian.*\|ID=.*debian.*"; then
 		check_packages curl git ca-certificates
 	fi
 
@@ -86,7 +86,7 @@ install_via_asdf() {
                 echo "$PLUGIN  already exists - skipping installation"
                 exit 0
             fi
-			echo PLUGIN="$PLUGIN" 
+			echo PLUGIN="$PLUGIN"
 			echo REPO="$REPO"
 			sleep 10
             asdf plugin add "$PLUGIN" "$REPO"

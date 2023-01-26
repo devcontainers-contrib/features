@@ -14,13 +14,13 @@ if [ -z "$PACKAGE" ]; then
 fi
 
 if [ "$(id -u)" -ne 0 ]; then
-	echo -e 'Script must be run as 
+	echo -e 'Script must be run as
     root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
 	exit 1
 fi
 
 updaterc() {
-	if cat /etc/os-release | grep  "ID_LIKE\|ID=.*alpine.*" ; then
+	if cat /etc/os-release | grep "ID_LIKE=.*alpine.*\|ID=.*alpine.*" ; then
 		echo "Updating /etc/profile"
 		echo -e "$1" >>/etc/profile
 	fi
@@ -45,7 +45,7 @@ install_via_pipx() {
 		apt-get update -y
 		apt-get -y install python3-minimal
 	fi
-	
+
 	# if no pip - install it
 	if ! type pip3 >/dev/null 2>&1; then
 		echo "installing python3-pip"
