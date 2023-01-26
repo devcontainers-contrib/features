@@ -1,0 +1,21 @@
+name: ShellCheck on every PR and main
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/shellcheck-on-every-pr-and-main.yml
+      - "**.sh"
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/shellcheck-on-every-pr-and-main.yml
+      - "**.sh"
+jobs:
+  shellcheck-on-every-pr-and-main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: azohra/shell-linter@v0.6.0
+        with:
+          path: .
+          severity: error
