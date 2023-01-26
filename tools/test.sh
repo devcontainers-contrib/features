@@ -1,6 +1,9 @@
 #!/bin/bash -e
 
-if [[ -z $1 ]]; do
+if [[ -n $1 ]]; do
+  echo "Testing ONLY $1"
+  devcontainer features test -f "$1" .
+else
   echo "Testing global scenarios"
   devcontainer features test --global-scenarios-only .
 
@@ -15,7 +18,4 @@ if [[ -z $1 ]]; do
     devcontainer features test -f "$id" .
     echo "Done! Passed! $id"
   done
-else
-  echo "Testing ONLY $1"
-  devcontainer features test -f "$1" .
 fi
