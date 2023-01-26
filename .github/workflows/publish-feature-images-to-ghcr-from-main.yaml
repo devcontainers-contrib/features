@@ -1,29 +1,26 @@
-name: "Release dev container features & Generate Documentation"
+name: Publish feature images to ghcr from main
 on:
   workflow_dispatch:
-
+  # push:
+  #   branches: [main]
+  #   paths:
+  #     - src/**
+  #   paths-ignore:
+  #     - src/*/README.md
 jobs:
-  deploy:
+  publish-feature-images-to-ghcr-from-main:
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      - name: "Publish Features"
-        uses: devcontainers/action@v1
+      - uses: devcontainers/action@v1
         with:
-          publish-features: "true"
-          base-path-to-features: "./src"
-          generate-docs: "true"
-          
+          publish-features: true
+          base-path-to-features: src
+          generate-docs: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Create PR for Documentation
-        id: push_image_info
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
+      - run: |
           set -e
           echo "Start."
           # Configure git and Push updates
@@ -41,3 +38,5 @@ jobs:
               git push origin "$branch"
               gh pr create --title "$message" --body "$message"
           fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
