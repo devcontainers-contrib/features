@@ -6,8 +6,8 @@ on:
       - src/**
       - test/**
       - tools/test.sh
-    paths-ignore:
-      - src/*/README.md
+      - .github/test-all-features-on-main.yml
+    paths-ignore: [src/*/README.md]
 jobs:
   test-all-features-on-main:
     runs-on: ubuntu-latest
