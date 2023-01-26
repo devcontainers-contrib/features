@@ -2,14 +2,10 @@ name: ShellCheck on every PR and main
 on:
   push:
     branches: [main]
-    paths:
-      - .github/workflows/shellcheck-on-every-pr-and-main.yml
-      - "**.sh"
+    paths: ["**.sh", .github/workflows/shellcheck-on-every-pr-and-main.yml]
   pull_request:
     branches: [main]
-    paths:
-      - .github/workflows/shellcheck-on-every-pr-and-main.yml
-      - "**.sh"
+    paths: ["**.sh", .github/workflows/shellcheck-on-every-pr-and-main.yml]
 jobs:
   shellcheck-on-every-pr-and-main:
     runs-on: ubuntu-latest
