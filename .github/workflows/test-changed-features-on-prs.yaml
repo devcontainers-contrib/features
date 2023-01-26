@@ -37,12 +37,8 @@ jobs:
         env:
           CHANGED_FILES: ${{ steps.changed-folders.outputs.all_changed_files }}
       - run: |
-          echo "-- Testing global --"
-          devcontainer features test --global-scenarios-only .
-
           for id in "$CHANGED_FEATURES"; do
-            echo "--- Testing $id ---"
-            devcontainer features test -f "$id" .
+            tools/test.sh "$id"
           done
         env:
           CHANGED_FEATURES: ${{ steps.changed-features.outputs.space_list }}
