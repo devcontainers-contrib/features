@@ -1,0 +1,16 @@
+name: Test all features on main
+on:
+  push:
+    branches: [main]
+    paths:
+      - src/**
+      - test/**
+      - tools/test.sh
+    paths-ignore:
+      - src/*/README.md
+jobs:
+  test-all-features-on-main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: tools/test.sh
