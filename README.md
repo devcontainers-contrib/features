@@ -84,4 +84,6 @@ out the [How it works] page on the dev wiki.
 [contributing guide]: CONTRIBUTING.md
 [how it works]: https://github.com/devcontainers-contrib/features/wiki/How-it-works
 [dev wiki]: https://github.com/devcontainers-contrib/features/wiki
+[devcontainers]: https://containers.dev/
+[github codespaces]: https://github.com/features/codespaces
 <!-- prettier-ignore-end -->
