@@ -17,7 +17,8 @@
     "ghcr.io/devcontainers-contrib/features/cookiecutter:1": {},
     "ghcr.io/devcontainers/features/common-utils:1": {},
     "ghcr.io/lukewiwa/features/shellcheck:0": {},
-    "ghcr.io/devcontainers/features/php": {}
+    "ghcr.io/devcontainers/features/php": {},
+    "./features/httrack": {}
   },
   "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh > postCreateCommand.log"
 }
