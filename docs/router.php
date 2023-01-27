@@ -13,9 +13,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $pathname = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 if ($pathname === '/') {
   require realpath("{$_SERVER['DOCUMENT_ROOT']}/index.php");
-} else if (preg_match('/^\/([\w-]+)\/$/', $pathname, $match)) {
+} else if (preg_match('/^\/([\w-]+)$/', $pathname, $match)) {
   $id = $match[1];
-  require realpath("{$_SERVER['DOCUMENT_ROOT']}/[id]/index.php");
+  require realpath("{$_SERVER['DOCUMENT_ROOT']}/[id].php");
 } else {
   http_response_code(404);
   echo '404 Not Found';
