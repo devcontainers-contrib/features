@@ -2,8 +2,10 @@ name: Publish features to GHCR
 on:
   push:
     branches: [main]
-    paths: [src/**, .github/workflows/publish-features-to-ghcr.yml]
-    paths-ignore: [src/*/README.md]
+    paths:
+      - src/**
+      - "!src/*/README.md"
+      - .github/workflows/publish-features-to-ghcr.yml
 concurrency:
   group: publish-features-to-ghcr
   cancel-in-progress: true

@@ -2,8 +2,11 @@ name: Test changed features on PRs
 on:
   pull_request:
     branches: [main]
-    paths: [src/**, test/**, .github/workflows/test-changed-features-on-prs.yml]
-    paths-ignore: [src/*/README.md]
+    paths:
+      - src/**
+      - "!src/*/README.md"
+      - test/**
+      - .github/workflows/test-changed-features-on-prs.yml
 jobs:
   test-changed-features-on-prs:
     runs-on: ubuntu-latest
