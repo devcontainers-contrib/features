@@ -1,0 +1,15 @@
+{
+  "name": "Act",
+  "id": "act",
+  "version": "1.0.0",
+  "description": "Installs act from GitHub Releases",
+  "documentationURL": "https://devcontainers-contrib.github.io/features/act/",
+  "options": {
+    "version": {
+      "type": "string",
+      "proposals": ["latest"],
+      "default": "latest",
+      "description": "Install a specific version ('N.N.N' or 'latest')"
+    }
+  }
+}
