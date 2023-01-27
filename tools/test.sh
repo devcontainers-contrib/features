@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+tools/prebuild.sh
+
 if [[ -n $1 ]]; then
   echo "Testing ONLY $1"
   devcontainer features test -f "$1" .
