@@ -1,4 +1,4 @@
-name: Publish features to ghcr
+name: Test and publish features to ghcr
 on:
   push:
     branches: [main]
@@ -7,13 +7,20 @@ on:
     paths-ignore:
       - src/*/README.md
 concurrency:
-  group: publish-features-to-ghcr
+  group: test-and-publish-features-to-ghcr
   cancel-in-progress: true
 jobs:
-  publish-features-to-ghcr:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - run: tools/test.sh
+  publish-features-to-ghcr:
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: tools/prebuild.sh
       - uses: devcontainers/action@v1
         with:
           publish-features: true
