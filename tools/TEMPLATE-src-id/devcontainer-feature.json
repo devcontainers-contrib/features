@@ -1,0 +1,15 @@
+{
+  "name": "${templateOption:name}",
+  "id": "${templateOption:id}",
+  "version": "1.0.0",
+  "description": "${templateOption:description}",
+  "documentationURL": "https://devcontainers-contrib.github.io/features/${templateOption:id}/",
+  "options": {
+    "version": {
+      "type": "string",
+      "proposals": ["latest"],
+      "default": "latest",
+      "description": "Install a specific version ('N.N.N' or 'latest')"
+    }
+  }
+}

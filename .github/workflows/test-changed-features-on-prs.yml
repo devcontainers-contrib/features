@@ -1,44 +1,25 @@
 name: Test changed features on PRs
 on:
+  push:
+    branches: [main]
+    paths:
+      - src/**
+      - "!src/*/README.md"
+      - test/**
+      - .github/workflows/test-all-features.yml
   pull_request:
     branches: [main]
     paths:
       - src/**
       - "!src/*/README.md"
       - test/**
-      - .github/workflows/test-changed-features-on-prs.yml
+      - .github/workflows/test-all-features.yml
+  schedule:
+    # https://crontab.guru/once-a-week
+    - cron: 0 0 * * 0
 jobs:
-  test-changed-features-on-prs:
+  test-all-features:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      - id: changed-files
-        uses: tj-actions/changed-files@v35
-        with:
-          json: true
-          files: src
-          files_ignore: src/*/README.md
-      - id: changed-features
-        shell: python
-        run: |
-          import os
-          import json
-
-          changed_files = json.loads(os.getenv("CHANGED_FILES"))
-          changed_folders = list(set(map(os.path.dirname, changed_files)))
-          changed_features = list(map(os.path.basename, changed_folders))
-          print(changed_features)
-
-          space_list = " ".join(changed_features)
-          with open(os.getenv("GITHUB_OUTPUT"), "w") as f:
-            f.write(f"space_list={space_list}")
-        env:
-          CHANGED_FILES: ${{ steps.changed-folders.outputs.all_changed_files }}
-      - run: |
-          for id in "$CHANGED_FEATURES"; do
-            tools/test.sh "$id"
-          done
-        env:
-          CHANGED_FEATURES: ${{ steps.changed-features.outputs.space_list }}
+      - run: tools/test.sh
