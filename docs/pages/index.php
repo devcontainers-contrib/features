@@ -27,7 +27,7 @@ $ids = array_diff(scandir($srcDir), ['.', '..']);
   <ul>
     <?php foreach ($ids as $id): ?>
       <li>
-        <?="<a href='$id'>$id</a>" ?>
+        <?="<a href='$id/'>$id</a>" ?>
       </li>
     <?php endforeach; ?>
   </ul>
