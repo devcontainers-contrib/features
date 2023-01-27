@@ -8,5 +8,6 @@ for id in src/*; do
 
   id="$(basename "$id")"
 
-  rsync -av bash_modules/ "src/$id/bash_modules/"
+  rm -rf "src/$id/bash_modules"
+  cp -r bash_modules "src/$id/bash_modules"
 done
