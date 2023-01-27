@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-if [[ -n $1 ]]; do
+if [[ -n $1 ]]; then
   echo "Testing ONLY $1"
   devcontainer features test -f "$1" .
 else
