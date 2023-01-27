@@ -1,4 +1,4 @@
-name: Test changed features on PRs
+name: Test all features
 on:
   push:
     branches: [main]
