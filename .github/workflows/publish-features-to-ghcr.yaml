@@ -1,0 +1,21 @@
+name: Publish features to GHCR
+on:
+  push:
+    branches: [main]
+    paths: [src/**, .github/workflows/publish-features-to-ghcr.yml]
+    paths-ignore: [src/*/README.md]
+concurrency:
+  group: publish-features-to-ghcr
+  cancel-in-progress: true
+jobs:
+  publish-features-to-ghcr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: tools/prebuild.sh
+      - uses: devcontainers/action@v1
+        with:
+          publish-features: true
+          base-path-to-features: src
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
