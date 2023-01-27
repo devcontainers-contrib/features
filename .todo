@@ -1,0 +1,19 @@
+- Use ChatGPT or GitHub Copilot to add a description header to each of the
+    Actions in the .github/workflows directory
+
+Actions working states:
+
+✅ deploy-docs-to-github-pages.yml
+❓ publish-features-to-ghcr.yml
+✅ publish-wiki-to-github-wiki.yml
+✅ run-shellcheck-on-any-sh-files.yml
+❓ test-changed-features-on-prs.yml
+❓ test-main-every-week.yml
+
+Questions to answer on the wiki:
+
+1. How do I create a feature?
+2. What's the bash_modules/ directory for?
+3. What are acceptable features?
+4. How do I test my feature?
+5. What's a good way to install $X?
