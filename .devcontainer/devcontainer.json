@@ -1,22 +1,19 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:linux",
+  "image": "mcr.microsoft.com/devcontainers/universal",
+  "features": {
+    // 🛑 Uncomment this before merging!
+    // "ghcr.io/devcontainers-contrib/features/bash-utils": {}
+  },
+  "postCreateCommand": "npm install -g @devcontainers/cli prettier",
   "customizations": {
     "vscode": {
       "extensions": [
-		"mads-hartmann.bash-ide-vscode",
-		"samuelcolvin.jinjahtml",
-		"ms-python.python",
-		"ms-python.vscode-pylance",
-		"DavidAnson.vscode-markdownlint",
-		"ms-python.black-formatter"
-	]
+        // 🛑 Remove this Bash extension pack before merging. It's provided by
+        // the bash-utils feature.
+        "lizebang.bash-extension-pack",
+        "xdebug.php-pack",
+        "esbenp.prettier-vscode"
+      ]
     }
-  },
-  "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-    "ghcr.io/devcontainers-contrib/features/cookiecutter:1": {},
-    "ghcr.io/devcontainers/features/common-utils:1": {},
-    "ghcr.io/lukewiwa/features/shellcheck:0": {}
-  },
-  "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh > postCreateCommand.log"
+  }
 }
