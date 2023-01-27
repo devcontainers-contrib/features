@@ -3,6 +3,7 @@
   "features": {
     // 🛑 Uncomment this before merging!
     // "ghcr.io/devcontainers-contrib/features/bash-utils": {}
+    // "ghcr.io/devcontainers-contrib/features/httrack": {}
   },
   "postCreateCommand": "npm install -g @devcontainers/cli prettier",
   "customizations": {
