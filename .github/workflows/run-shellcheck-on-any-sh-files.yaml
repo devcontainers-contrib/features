@@ -1,0 +1,20 @@
+name: Run ShellCheck on any *.sh files
+on:
+  push:
+    branches: [main]
+    paths: ["**.sh", .github/workflows/run-shellcheck-on-any-sh-files.yml]
+  pull_request:
+    branches: [main]
+    paths: ["**.sh", .github/workflows/run-shellcheck-on-any-sh-files.yml]
+concurrency:
+  group: run-shellcheck-on-any-sh-files-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  run-shellcheck-on-any-sh-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: azohra/shell-linter@v0.6.0
+        with:
+          path: .
+          severity: error
