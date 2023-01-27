@@ -1,3 +1,12 @@
-* text=auto eol=lf
-*.{cmd,[cC][mM][dD]} text eol=crlf
-*.{bat,[bB][aA][tT]} text eol=crlf
+# On Windows, we want Bash scripts to have the right line endings so that the
+# hashbang headers work right when executing a Windows-realm *.sh file from
+# a WSL terminal.
+*.sh text eol=lf
+
+# On Linux, we want any Windows scripts to stay in Windows CRLF mode. If they
+# become LF, then they might not work on Windows when checked out if the client
+# doesn't have their checkout set to "checkout CRLF, commit LF". This avoids all
+# that mess.
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
