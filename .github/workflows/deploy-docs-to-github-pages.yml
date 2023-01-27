@@ -1,19 +1,19 @@
-name: Deploy PHP SSG site to GitHub Pages
+name: Deploy docs to GitHub Pages
 on:
   push:
     branches: [main]
     paths:
-      - .github/workflows/deploy-php-ssg-site-to-github-pages.yml
+      - .github/workflows/deploy-docs-to-github-pages.yml
       - docs/pages/**
       - docs/src/**
       - docs/*.json
       - docs/*.php
       - docs/tools/build.sh
 concurrency:
-  group: deploy-php-ssg-site-to-github-pages
+  group: deploy-docs-to-github-pages
   cancel-in-progress: true
 jobs:
-  deploy-php-ssg-site-to-github-pages:
+  deploy-docs-to-github-pages:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
