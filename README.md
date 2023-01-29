@@ -27,14 +27,14 @@
 📢 [We are actively seeking contributions!](CONTRIBUTING.md)
 
 
-## Contributing guide😊
+## Contributing guide 😊
 
-## A Handcrafeted Feature
+## A Handcrafted Feature
 
 - Add a feature-id named directory to the [src folder](src/) containing  your `devcontainer-feature.json` and `install.sh` scripts
 - Add the corresponsing test.sh to the [test folder](tests/)
 
-## An Easly Generated Feature
+## An Easily Generated Feature
 
 Get the devcontainer-contrib cli 
 ```shell 
