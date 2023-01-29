@@ -1,0 +1,31 @@
+{
+    "id": "copier",
+    "version": "7.0.1",
+    "name": "copier (via pipx)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/copier",
+    "description": "copier creates projects from project templates.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of copier to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.3",
+        "ghcr.io/devcontainers/features/python:1.0.18"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.3",
+            "options": {
+                "package": "copier"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_command": "copier --version"
+}
