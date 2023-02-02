@@ -1,6 +1,6 @@
 {
     "id": "flink-sdkman",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "Flink (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/flink-sdkman",
     "description": "Apache Flink is an open-source, unified stream-processing and batch-processing\nframework.It's a distributed processing engine for stateful computations over\nunbounded and bounded data streams.It has been designed to run in all common\ncluster environments, perform computations at in-memory speed and at any scale.",
@@ -38,8 +38,8 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman",
+        "ghcr.io/devcontainers/features/java"
     ],
     "dependencies": [
         {
@@ -58,5 +58,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "flink --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "flink --version"
+            ],
+            "options": {}
+        }
+    ]
 }

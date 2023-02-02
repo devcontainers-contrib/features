@@ -1,6 +1,6 @@
 {
     "id": "mulefd-sdkman",
-    "version": "2.0.5",
+    "version": "2.0.6",
     "name": "Mule Flow Diagrams (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mulefd-sdkman",
     "description": "Mule Flow Diagrams is an open source tool that lets you generate flow dependency\ngraph and diagrams for your Mule configurations.",
@@ -38,7 +38,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman",
+        "ghcr.io/devcontainers/features/java"
     ]
 }

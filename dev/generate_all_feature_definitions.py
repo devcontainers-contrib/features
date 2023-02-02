@@ -1,5 +1,5 @@
 import os
-from devcontainer_contrib.cli.features import generate, OutputType
+from devcontainer_contrib.cli.features import generate
 from pathlib import Path
 
 import typer
@@ -16,7 +16,6 @@ def generate_all_Feature_definitions(
                 )
             ),
             output_dir=Path(output_dir),
-            output_type=OutputType.feature_dir,
         )
 
 

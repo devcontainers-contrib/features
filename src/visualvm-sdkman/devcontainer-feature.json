@@ -1,6 +1,6 @@
 {
     "id": "visualvm-sdkman",
-    "version": "2.0.5",
+    "version": "2.0.6",
     "name": "VisualVM (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/visualvm-sdkman",
     "description": "VisualVM is a tool that provides a visual interface for viewing detailed\ninformation about Java applications while they are running on a Java Virtual\nMachine.",
@@ -38,7 +38,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman",
+        "ghcr.io/devcontainers/features/java"
     ]
 }

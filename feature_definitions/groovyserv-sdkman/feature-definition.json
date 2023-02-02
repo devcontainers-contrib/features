@@ -1,6 +1,6 @@
 {
     "id": "groovyserv-sdkman",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "GroovyServ (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/groovyserv-sdkman",
     "description": "GroovyServ reduces startup time of the JVM for runnning Groovy significantly. It\ndepends on your environments, but in most cases, it\u2019s 10 to 20 times faster than\nregular Groovy.",
@@ -38,8 +38,8 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman",
+        "ghcr.io/devcontainers/features/java"
     ],
     "dependencies": [
         {
@@ -58,5 +58,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "type groovyclient"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "type groovyclient"
+            ],
+            "options": {}
+        }
+    ]
 }

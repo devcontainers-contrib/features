@@ -1,6 +1,6 @@
 {
     "id": "kscript-sdkman",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "kscript (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/kscript-sdkman",
     "description": "Enhanced scripting support for Kotlin on *nix-based systems. kscript provides an\neasy-to-use, very flexible, and almost zero-overhead solution to write\nself-contained mini-applications with Kotlin.",
@@ -46,8 +46,8 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman",
+        "ghcr.io/devcontainers/features/java"
     ],
     "dependencies": [
         {
@@ -73,5 +73,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "kscript --help"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "kscript --help"
+            ],
+            "options": {}
+        }
+    ]
 }

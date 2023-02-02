@@ -1,6 +1,6 @@
 {
     "id": "less",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "Less (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/less",
     "description": "Less is a backwards-compatible language extension for CSS",
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package:1.0.2"
+        "ghcr.io/devcontainers-contrib/features/npm-package"
     ],
     "dependencies": [
         {
@@ -27,5 +27,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "less --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "less --version"
+            ],
+            "options": {}
+        }
+    ]
 }

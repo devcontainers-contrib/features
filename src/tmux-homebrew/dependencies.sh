@@ -35,6 +35,6 @@ ensure_featmake
 # refresh PATH 
 PS1='\s-\v\$' source /etc/profile
 
-# installing ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.0
-featmake "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.0" -PACKAGE "tmux" -VERSION "$VERSION" 
+# installing ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.1
+featmake "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.1" -PACKAGE "tmux" -VERSION "$VERSION" 
 

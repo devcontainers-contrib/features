@@ -1,6 +1,6 @@
 {
     "id": "groovy-sdkman",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "Groovy (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/groovy-sdkman",
     "description": "Groovy is a powerful, optionally typed and dynamic language, with static-typing\nand static compilation capabilities, for the Java platform aimed at multiplying\ndevelopers' productivity thanks to a concise, familiar and easy to learn syntax.\nIt integrates smoothly with any Java program, and immediately delivers to your\napplication powerful features, including scripting capabilities, Domain-Specific\nLanguage authoring, runtime and compile-time meta-programming and functional\nprogramming.",
@@ -38,8 +38,8 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman",
+        "ghcr.io/devcontainers/features/java"
     ],
     "dependencies": [
         {
@@ -58,5 +58,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "groovy --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "groovy --version"
+            ],
+            "options": {}
+        }
+    ]
 }

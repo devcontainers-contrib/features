@@ -1,6 +1,6 @@
 {
     "id": "typescript",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "TypeScript (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/typescript",
     "description": "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.",
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package:1.0.2"
+        "ghcr.io/devcontainers-contrib/features/npm-package"
     ],
     "dependencies": [
         {
@@ -27,5 +27,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "tsc --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "tsc --version"
+            ],
+            "options": {}
+        }
+    ]
 }

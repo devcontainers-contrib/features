@@ -1,6 +1,6 @@
 {
     "id": "act-asdf",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "name": "act (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/act-asdf",
     "description": "Act is an open source project that allows you to run your github flow locally.",
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.3"
+        "ghcr.io/devcontainers-contrib/features/asdf-package"
     ],
     "dependencies": [
         {
@@ -27,5 +27,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "act --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "act --version"
+            ],
+            "options": {}
+        }
+    ]
 }

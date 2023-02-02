@@ -1,6 +1,6 @@
 {
     "id": "connor-sdkman",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "ConnOR (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/connor-sdkman",
     "description": "ConnOR, short for ConnectOffsetReset, is a commandline tool for resetting Kafka\nConnect source connector offsets.",
@@ -38,8 +38,8 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman",
+        "ghcr.io/devcontainers/features/java"
     ],
     "dependencies": [
         {
@@ -58,5 +58,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "connor --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "connor --version"
+            ],
+            "options": {}
+        }
+    ]
 }

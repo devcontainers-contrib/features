@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "pre-commit --version" pre-commit --version
+check "echo 'see scenarios.sh for detailed test suite'" echo 'see scenarios.sh for detailed test suite'
 
 reportResults

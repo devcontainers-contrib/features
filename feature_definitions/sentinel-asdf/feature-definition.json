@@ -1,6 +1,6 @@
 {
     "id": "sentinel-asdf",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "sentinel (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/sentinel-asdf",
     "description": "Sentinel is an embeddable policy as code framework to enable fine-grained, logic-based policy decisions that can be extended to source external information to make decisions.",
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.3"
+        "ghcr.io/devcontainers-contrib/features/asdf-package"
     ],
     "dependencies": [
         {
@@ -27,5 +27,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "sentinel --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "sentinel --version"
+            ],
+            "options": {}
+        }
+    ]
 }

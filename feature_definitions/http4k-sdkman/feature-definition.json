@@ -1,6 +1,6 @@
 {
     "id": "http4k-sdkman",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "http4k (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/http4k-sdkman",
     "description": "http4k is the Functional toolkit for building HTTP applications in Kotlin",
@@ -38,8 +38,8 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman",
+        "ghcr.io/devcontainers/features/java"
     ],
     "dependencies": [
         {
@@ -58,5 +58,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "http4k --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "http4k --version"
+            ],
+            "options": {}
+        }
+    ]
 }

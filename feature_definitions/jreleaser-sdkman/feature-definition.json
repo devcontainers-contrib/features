@@ -1,6 +1,6 @@
 {
     "id": "jreleaser-sdkman",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "JReleaser (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jreleaser-sdkman",
     "description": "JReleaser is a release automation tool for Java projects. Its goal is to\nsimplify creating releases and publishing artifacts to multiple package managers\nwhile providing customizable options.",
@@ -38,8 +38,8 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman",
+        "ghcr.io/devcontainers/features/java"
     ],
     "dependencies": [
         {
@@ -58,5 +58,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "jreleaser --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "jreleaser --version"
+            ],
+            "options": {}
+        }
+    ]
 }

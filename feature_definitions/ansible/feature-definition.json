@@ -1,6 +1,6 @@
 {
     "id": "ansible",
-    "version": "2.0.5",
+    "version": "2.0.6",
     "name": "Ansible (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ansible",
     "description": "Ansible is a suite of software tools that enables infrastructure as code.",
@@ -15,8 +15,8 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/pipx-package",
-        "ghcr.io/devcontainers/features/python"
+        "",
+        ""
     ],
     "dependencies": [
         {
@@ -28,5 +28,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "ansible --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "ansible --version"
+            ],
+            "options": {}
+        }
+    ]
 }

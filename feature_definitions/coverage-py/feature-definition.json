@@ -1,6 +1,6 @@
 {
     "id": "coverage-py",
-    "version": "2.0.5",
+    "version": "2.0.6",
     "name": "Coverage.py (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/coverage-py",
     "description": "Coverage.py is a tool for measuring code coverage of Python programs.",
@@ -15,8 +15,8 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.3",
-        "ghcr.io/devcontainers/features/python:1.0.18"
+        "ghcr.io/devcontainers-contrib/features/pipx-package",
+        "ghcr.io/devcontainers/features/python"
     ],
     "dependencies": [
         {
@@ -27,5 +27,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "coverage --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "coverage --version"
+            ],
+            "options": {}
+        }
+    ]
 }

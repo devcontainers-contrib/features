@@ -1,6 +1,6 @@
 {
     "id": "mongosh-homebrew",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "name": "MongoDB Shell (via Homebrew)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mongosh-homebrew",
     "description": "MongoDB Shell to connect, configure, query, and work with your MongoDB database.",
@@ -15,11 +15,11 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.0"
+        "ghcr.io/devcontainers-contrib/features/homebrew-package"
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.0",
+            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.1",
             "options": {
                 "package": "mongosh",
                 "version": "$options.version"
@@ -27,5 +27,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "mongosh --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "mongosh --version"
+            ],
+            "options": {}
+        }
+    ]
 }

@@ -24,5 +24,18 @@
                 "${workspaceFolder}"
             ]
         }
+        ,
+        {
+            "name": "bump feature definitions version",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/dev/bump_version_feature_definitions.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "${workspaceFolder}/feature_definitions",
+                "patch",
+            ]
+        }
     ]
 }

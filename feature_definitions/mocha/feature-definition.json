@@ -1,6 +1,6 @@
 {
     "id": "mocha",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "Mocha (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mocha",
     "description": "Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun.",
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package:1.0.2"
+        "ghcr.io/devcontainers-contrib/features/npm-package"
     ],
     "dependencies": [
         {
@@ -27,5 +27,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "mocha --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "mocha --version"
+            ],
+            "options": {}
+        }
+    ]
 }

@@ -1,6 +1,6 @@
 {
     "id": "kobweb-sdkman",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "Kobweb (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/kobweb-sdkman",
     "description": "Kobweb is an opinionated Kotlin web framework built on top of Compose for Web.\nThe CLI provides commands to help setup and manage your project.",
@@ -38,8 +38,8 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman",
+        "ghcr.io/devcontainers/features/java"
     ],
     "dependencies": [
         {
@@ -58,5 +58,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "kobweb --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "kobweb --version"
+            ],
+            "options": {}
+        }
+    ]
 }

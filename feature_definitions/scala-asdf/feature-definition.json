@@ -1,6 +1,6 @@
 {
     "id": "scala-asdf",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "scala (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/scala-asdf",
     "description": "Scala combines object-oriented and functional programming in one concise, high-level language",
@@ -15,8 +15,8 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.3",
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0"
+        "ghcr.io/devcontainers-contrib/features/asdf-package",
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
     ],
     "dependencies": [
         {
@@ -34,5 +34,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "scala --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "scala --version"
+            ],
+            "options": {}
+        }
+    ]
 }

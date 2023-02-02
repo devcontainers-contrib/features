@@ -1,6 +1,6 @@
 {
     "id": "terraform-ls-asdf",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "Terraform Language Server (terraform-ls) (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/terraform-ls-asdf",
     "description": "The official Terraform language server (terraform-ls) maintained by HashiCorp provides IDE features to any LSP-compatible editor.",
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.3"
+        "ghcr.io/devcontainers-contrib/features/asdf-package"
     ],
     "dependencies": [
         {
@@ -27,5 +27,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "terraform-ls --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "terraform-ls --version"
+            ],
+            "options": {}
+        }
+    ]
 }

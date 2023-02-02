@@ -1,6 +1,6 @@
 {
     "id": "ninja-asdf",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "Ninja (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ninja-asdf",
     "description": "Ninja is a small build system with a focus on speed.",
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.3"
+        "ghcr.io/devcontainers-contrib/features/asdf-package"
     ],
     "dependencies": [
         {
@@ -27,5 +27,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "ninja --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "ninja --version"
+            ],
+            "options": {}
+        }
+    ]
 }

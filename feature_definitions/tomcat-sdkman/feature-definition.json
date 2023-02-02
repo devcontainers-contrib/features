@@ -1,6 +1,6 @@
 {
     "id": "tomcat-sdkman",
-    "version": "2.0.5",
+    "version": "2.0.6",
     "name": "Apache Tomcat (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tomcat-sdkman",
     "description": "The Apache Tomcat software is an open source implementation of the Java\nServlet, JavaServer Pages, Java Expression Language and Java WebSocket\ntechnologies.",
@@ -38,8 +38,8 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman",
+        "ghcr.io/devcontainers/features/java"
     ],
     "dependencies": [
         {
@@ -58,5 +58,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "type tomcat-native.tar.gz"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "type tomcat-native.tar.gz"
+            ],
+            "options": {}
+        }
+    ]
 }

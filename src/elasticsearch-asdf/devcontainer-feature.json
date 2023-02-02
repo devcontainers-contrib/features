@@ -1,6 +1,6 @@
 {
     "id": "elasticsearch-asdf",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "Elasticsearch (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/elasticsearch-asdf",
     "description": "Elasticsearch is a search engine based on the Lucene library.",
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.3"
+        "ghcr.io/devcontainers-contrib/features/asdf-package"
     ]
 }

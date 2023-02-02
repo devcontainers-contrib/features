@@ -1,6 +1,6 @@
 {
     "id": "erlang-asdf",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "Erlang (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/erlang-asdf",
     "description": "Erlang is a general-purpose, concurrent, functional programming language, and a garbage-collected runtime system.",
@@ -15,8 +15,8 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.3",
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0"
+        "ghcr.io/devcontainers-contrib/features/asdf-package",
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
     ],
     "dependencies": [
         {
@@ -34,5 +34,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "erl -eval '{ok, Version} = file:read_file(filename:join([code:root_dir(), \"releases\", erlang:system_info(otp_release), \"OTP_VERSION\"])), io:fwrite(Version), halt().' -noshell"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "erl -eval '{ok, Version} = file:read_file(filename:join([code:root_dir(), \"releases\", erlang:system_info(otp_release), \"OTP_VERSION\"])), io:fwrite(Version), halt().' -noshell"
+            ],
+            "options": {}
+        }
+    ]
 }

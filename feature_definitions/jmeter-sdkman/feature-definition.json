@@ -1,6 +1,6 @@
 {
     "id": "jmeter-sdkman",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "Apache JMeter (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jmeter-sdkman",
     "description": "The Apache JMeter\u2122 application is open source software, a 100% pure Java\napplication designed to load test functional behavior and measure performance.\nIt was originally designed for testing Web Applications but has since expanded\nto other test functions.",
@@ -38,8 +38,8 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman",
+        "ghcr.io/devcontainers/features/java"
     ],
     "dependencies": [
         {
@@ -58,5 +58,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "jmeter --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "jmeter --version"
+            ],
+            "options": {}
+        }
+    ]
 }

@@ -1,6 +1,6 @@
 {
     "id": "ccache-asdf",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "Ccache (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ccache-asdf",
     "description": "Ccache is a compiler cache. It speeds up recompilation by caching previous compilations and detecting when the same compilation is being done again.",
@@ -15,8 +15,8 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.3",
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0"
+        "ghcr.io/devcontainers-contrib/features/asdf-package",
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
     ],
     "dependencies": [
         {
@@ -34,5 +34,14 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "ccache --version"
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "ccache --version"
+            ],
+            "options": {}
+        }
+    ]
 }
