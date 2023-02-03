@@ -1,0 +1,40 @@
+{
+    "id": "lerna-npm",
+    "version": "1.0.0",
+    "name": "Lerna (via npm)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/lerna-npm",
+    "description": "Lerna is a fast modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of lerna to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/npm-package:1.0.2",
+            "options": {
+                "package": "lerna",
+                "version": "$options.version"
+            }
+        }
+    ],
+    "install_command": "echo 'Done!'",
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "lerna --version"
+            ],
+            "options": {}
+        }
+    ]
+}

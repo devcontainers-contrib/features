@@ -1,0 +1,31 @@
+{
+    "id": "tfswitch",
+    "version": "1.0.0",
+    "name": "Terraform Switcher (tfswitch) (via warrensbox/terraform-switcher)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tfswitch",
+    "description": "The tfswitch command line tool lets you switch between different versions of terraform.",
+    "options": {
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/curl-apt-get"
+    ],
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/curl-apt-get:1.0.5",
+            "options": {
+      
+            }
+        }
+    ],
+    "install_command": "curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh | bash",
+    "test_scenarios": [
+        {
+            "name": "test_defaults",
+            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "test_commands": [
+                "tfswitch --version"
+            ],
+            "options": {}
+        }
+    ]
+}
