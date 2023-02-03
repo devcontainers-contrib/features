@@ -1,8 +1,8 @@
 {
     "id": "turborepo-npm",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "Turborepo (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/lerna-npm",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/turborepo-npm",
     "description": "Turborepo is a high-performance build system for JavaScript and TypeScript codebases.",
     "options": {
         "version": {
