@@ -11,15 +11,14 @@ def generate_all_Feature_definitions(
     
 
     for feature_name in os.listdir(feature_definitions_dir):
-        shutil.rmtree(os.path.join(
+        if os.path.exists(os.path.join(
                     "test", feature_name
-                )
-                )
+                ) ):
+            shutil.rmtree(os.path.join(
+                        "test", feature_name
+                    )
+                    )
 
-        shutil.rmtree(os.path.join(
-                    "src", feature_name
-                )
-                )
         generate(
             Path(
                 os.path.join(
