@@ -36,7 +36,7 @@
     "install_command": "echo 'Done!'",
     "test_scenarios": [
         {
-            "name": "test_defaults",
+            "name": "test",
             "image": "mcr.microsoft.com/devcontainers/base:debian",
             "test_commands": [
                 "erl -eval '{ok, Version} = file:read_file(filename:join([code:root_dir(), \"releases\", erlang:system_info(otp_release), \"OTP_VERSION\"])), io:fwrite(Version), halt().' -noshell"

@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "echo 'see scenarios.sh for detailed test suite'" echo 'see scenarios.sh for detailed test suite'
+check "http4k --version" http4k --version
 
 reportResults

@@ -29,7 +29,7 @@
     "install_command": "echo 'Done!'",
     "test_scenarios": [
         {
-            "name": "test_defaults",
+            "name": "test",
             "image": "mcr.microsoft.com/devcontainers/base:debian",
             "test_commands": [
                 "dprint --version"

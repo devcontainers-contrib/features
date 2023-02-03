@@ -63,7 +63,7 @@
     "install_command": "export JDK_JAVA_OPTIONS=\"--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED\"",
     "test_scenarios": [
         {
-            "name": "test_defaults",
+            "name": "test",
             "image": "mcr.microsoft.com/devcontainers/base:debian",
             "test_commands": [
                 "gaiden --version"

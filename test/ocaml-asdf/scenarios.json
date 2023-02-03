@@ -1,5 +1,5 @@
 {
-    "test_defaults": {
+    "test": {
         "image": "mcr.microsoft.com/devcontainers/base:debian",
         "features": {
             "ocaml-asdf": {}
