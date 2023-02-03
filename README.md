@@ -1,77 +1,89 @@
 # Community devcontainer features
 
-[![Gitter](https://img.shields.io/gitter/room/devcontainers-contrib/community?style=for-the-badge&logo=appveyor)](https://gitter.im/devcontainers-contrib/community)
-![Codespaces](https://img.shields.io/static/v1?style=for-the-badge&message=Codespaces&color=181717&logo=GitHub&logoColor=FFFFFF&label=)
-![Devcontainers](https://img.shields.io/static/v1?style=for-the-badge&message=Devcontainers&color=2496ED&logo=Docker&logoColor=FFFFFF&label=)
-![Python](https://img.shields.io/static/v1?style=for-the-badge&message=Python&color=3776AB&logo=Python&logoColor=FFFFFF&label=)
-
-🐳 Extra add-in features for
-[devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) and
-[GitHub Codespaces](https://github.com/features/codespaces)
+🧰 Feature addons for [@devcontainers]
 
 <div align="center">
 
-![](https://i.imgur.com/W7t3YsC.png)
+![](https://i.imgur.com/VgiY81S.png)
 
-**[Overview](https://github.com/devcontainers-contrib/features#readme)** |
-[User docs](https://github.com/devcontainers-contrib/features#usage) |
-[Contributing](https://github.com/devcontainers-contrib/features/blob/main/CONTRIBUTING.md)
-| [Developer wiki](https://github.com/devcontainers-contrib/features/wiki)
+<!-- prettier-ignore -->
+[How to use a feature](https://code.visualstudio.com/blogs/2022/09/15/dev-container-features#_adding-features-to-your-dev-container)
+| [List of features](https://github.com/devcontainers-contrib/features/tree/main/src) <!-- CHANGE THIS TO GITHUB PAGES WHEN #284 IS MERGED! -->
+| [Contributing](https://github.com/devcontainers-contrib/features/blob/main/CONTRIBUTING.md)
+| [Dev wiki](https://github.com/devcontainers-contrib/features/wiki)
+| [Chat](https://gitter.im/devcontainers-contrib/community)
 
 </div>
 
-💻 Works with
-[devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) \
-☁️ Works with [GitHub Codespaces](https://github.com/features/codespaces) \
+💻 Works with [devcontainers] \
+☁️ Works with [GitHub Codespaces] \
+⚠️ We only officially support [debian]-based images
 
-📢 [We are actively seeking contributions!](CONTRIBUTING.md)
-
-
-## Contributing guide 😊
-
-## A Handcrafted Feature
-
-- Add a feature-id named directory to the [src folder](src/) containing  your `devcontainer-feature.json` and `install.sh` scripts
-- Add the corresponsing test.sh to the [test folder](tests/)
-
-## An Easily Generated Feature
-
-Get the devcontainer-contrib cli 
-```shell 
-pip install devcontainer-contrib
-```
-
-Add a new [`devcontainer-definition.json`](https://github.com/devcontainers-contrib/cli#readme) file to the [feature_definition dir](feature_definitions/) 
-
-While under the root folder of this repo, generate it using the command:
-```shell
-devcontainer-contrib features generate "./feature_definition/your-feature-id/feature-definition.json" "." --output-type=feature_dir
-```
-
-[Additional information and docs about the CLI and devcontainer-definition.json file](https://github.com/devcontainers-contrib/cli#readme)
-
+👀 Don't see your feature here? [Add it yourself] or [open an Issue]!
 
 ## Usage
 
+![VS Code](https://img.shields.io/static/v1?style=for-the-badge&message=VS+Code&color=007ACC&logo=Visual+Studio+Code&logoColor=FFFFFF&label=)
+![Codespaces](https://img.shields.io/static/v1?style=for-the-badge&message=Codespaces&color=181717&logo=GitHub&logoColor=FFFFFF&label=)
+![Devcontainers](https://img.shields.io/static/v1?style=for-the-badge&message=Devcontainers&color=2496ED&logo=Docker&logoColor=FFFFFF&label=)
 
-📄 [View the full list of features](src/)
+📄 [Complete feature list]
 
 Just add a `.devcontainer/devcontainer.json` file with a `features` key. It's
-very similar to NPM's `package.json` and `dependencies` object, just with the
-addition of an `options` object.
+very similar to `package.json`'s `dependencies` object, just with the addition
+of an `options` object.
 
-📚 Make sure to inspect each feature for feature-specific options \
-⚠️ We only officially support [debian](https://hub.docker.com/_/debian)-based images
+📚 Make sure to inspect each feature for feature-specific options!
 
 ```json
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:linux",
+  "image": "mcr.microsoft.com/devcontainers/universal",
   "features": {
-    "ghcr.io/devcontainers-contrib/features/deno:latest": {},
-    "ghcr.io/devcontainers-contrib/features/mkdocs:latest": {},
-    "ghcr.io/devcontainers-contrib/features/bikeshed:latest": {}
+    "ghcr.io/devcontainers-contrib/features/deno:": {},
+    "ghcr.io/devcontainers-contrib/features/neovim": {}
   }
 }
 ```
 
-## You can find more developer-specific docs on the [Wiki!](https://github.com/devcontainers-contrib/features/wiki) (thank you [@jcbhmr](https://github.com/jcbhmr)!)
+Then, after adding your devcontainer config file, you can open it in GitHub
+Codespaces, or [open it locally using VS Code]. Be warned some features will
+compile things from source code and may take a while!
+
+<div align="center">
+
+![](https://i.imgur.com/JMdowst.png)
+
+</div>
+
+## Development
+
+![Devcontainers](https://img.shields.io/static/v1?style=for-the-badge&message=Devcontainers&color=2496ED&logo=Docker&logoColor=FFFFFF&label=)
+![JSON](https://img.shields.io/static/v1?style=for-the-badge&message=JSON&color=000000&logo=JSON&logoColor=FFFFFF&label=)
+![Bash](https://img.shields.io/static/v1?style=for-the-badge&message=Bash&color=4EAA25&logo=GNU+Bash&logoColor=FFFFFF&label=)
+
+➕ Looking to add a new feature? Check out the [contributing guide]!
+
+This project uses a devcontainer config to outline the development environment.
+We also provide various VS Code customizations for your coding pleasure.
+
+To get started, create a GitHub Codespace on a copy of this repository. From
+there, the [dev wiki] provides information about adding features, layout,
+conventions, etc. When or if you want to contribute your changes back to this
+repository, you can follow the [contributing guide]. Happy coding! 👋
+
+🗺️ If you're looking for a more thorough outline of how this repo works, check
+out the [How it works] page on the dev wiki.
+
+<!-- prettier-ignore-start -->
+[@devcontainers]: https://github.com/devcontainers
+[add it yourself]: https://github.com/devcontainers-contrib/features/wiki/How-to-add-a-feature
+[open an issue]: https://github.com/devcontainers-contrib/features/issues/new
+[complete feature list]: https://github.com/devcontainers-contrib/features/tree/main/src
+[debian]: https://hub.docker.com/_/debian
+[open it locally using vs code]: https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container
+[contributing guide]: CONTRIBUTING.md
+[how it works]: https://github.com/devcontainers-contrib/features/wiki/How-it-works
+[dev wiki]: https://github.com/devcontainers-contrib/features/wiki
+[devcontainers]: https://containers.dev/
+[github codespaces]: https://github.com/features/codespaces
+<!-- prettier-ignore-end -->
