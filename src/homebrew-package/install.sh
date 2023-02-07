@@ -32,8 +32,8 @@ ensure_featmake () {
         temp_dir=/tmp/featmake-download
         mkdir -p $temp_dir
 		# download featmake and its checksums file
-        curl -sSL -o $temp_dir/featmake https://github.com/devcontainers-contrib/cli/releases/download/v0.0.9/featmake 
-        curl -sSL -o $temp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.0.9/checksums.txt
+        curl -sSL -o $temp_dir/featmake https://github.com/devcontainers-contrib/cli/releases/download/v0.0.19/featmake 
+        curl -sSL -o $temp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.0.19/checksums.txt
 		# perform checksum 
         (cd $temp_dir ; sha256sum --check --strict $temp_dir/checksums.txt)
 		# move to /usr/local/bin in order to include in PATH
@@ -55,10 +55,15 @@ install_via_homebrew() {
 		echo "Installing Homebrew..."
 		ensure_featmake
 		brew_prefix="/home/linuxbrew/.linuxbrew"
-		SHALLOW_CLONE="true" UPDATE_RC="true" BREW_PREFIX=$brew_prefix featmake "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2.0.1"
+		featmake "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2.0.1" -SHALLOW_CLONE "true" -UPDATE_RC "true" -BREW_PREFIX $brew_prefix 
 		if [[ "${PATH}" != "*${brew_prefix}/bin*" ]]; then export PATH="${brew_prefix}/bin:${PATH}"; fi
 		if [[ "${PATH}" != "*${brew_prefix}/sbin*" ]]; then export PATH="${brew_prefix}/sbin:${PATH}"; fi
 	fi
+	
+	# Solves CVE-2022-24767 mitigation in Git >2.35.2 
+	# For more information: https://github.blog/2022-04-12-git-security-vulnerability-announced/
+	git config --global --add safe.directory "$(brew --prefix)/Homebrew/Library/Taps/homebrew/homebrew-core"
+
 
 	if [ "$version" = "latest" ]; then
 		package_full="$package"
@@ -71,15 +76,16 @@ install_via_homebrew() {
 		brew install $installation_flags --overwrite "$package_full" 
 	else
 		# unshallow and extract as last resort
-		git config --global --add safe.directory "$(brew --prefix)/Homebrew/Library/Taps/homebrew/homebrew-core"
 		git -C "$(brew --prefix)/Homebrew/Library/Taps/homebrew/homebrew-core" fetch --unshallow
 		brew extract --force --version="$version" "$package" homebrew/cask
 		
 		# "--overwrite" in order to not fail when a similarly named binary is already linked
 		brew install $installation_flags --overwrite "$package_full"  
 		
-		# removing tapbin order to save disk space
+		# attempt to remove tap in order to save disk space
+		set +e
 		brew untap homebrew/cask --force
+		set -e
 	fi
 
     brew link --overwrite --force "$package_full" 

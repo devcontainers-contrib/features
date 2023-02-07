@@ -1,6 +1,6 @@
 {
     "id": "ki-sdkman",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "ki (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ki-sdkman",
     "description": "An extensible implementation of the Kotlin REPL with a rich set of features\nincluding autocomplete, syntax highlighting, type inference and maven\ndependencies.",
@@ -38,7 +38,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman",
+        "ghcr.io/devcontainers/features/java"
     ]
 }

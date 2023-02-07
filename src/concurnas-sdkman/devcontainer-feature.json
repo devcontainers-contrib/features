@@ -1,6 +1,6 @@
 {
     "id": "concurnas-sdkman",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "Concurnas (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/concurnas-sdkman",
     "description": "Concurnas is an open source JVM programming language designed for building\nreliable, scalable, high performance concurrent, distributed and parallel\nsystems.",
@@ -35,7 +35,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman",
+        "ghcr.io/devcontainers/features/java"
     ]
 }

@@ -1,6 +1,6 @@
 {
     "id": "karaf-sdkman",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "Karaf (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/karaf-sdkman",
     "description": "Apache Karaf is a polymorphic, lightweight, powerful, and enterprise ready\napplications runtime. It provides all the ecosystem and bootstrapping options\nyou need for your applications. It runs on premise or on cloud. By polymorphic,\nit means that Karaf can host any kind of applications: WAR, OSGi, Spring, and\nmuch more.",
@@ -35,7 +35,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman",
+        "ghcr.io/devcontainers/features/java"
     ]
 }

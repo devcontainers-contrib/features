@@ -1,7 +1,7 @@
 {
     "name": "Homebrew Package",
     "id": "homebrew-package",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Installs a Homebrew package.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/homebrew-package",
     "installsAfter": [

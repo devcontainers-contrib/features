@@ -1,6 +1,6 @@
 {
     "id": "btrace-sdkman",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "name": "BTrace (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/btrace-sdkman",
     "description": "BTrace is a safe, dynamic tracing tool for the Java platform. BTrace can be used\nto dynamically trace a running Java program (similar to DTrace for OpenSolaris\napplications and OS). BTrace dynamically instruments the classes of the target\napplication to inject bytecode tracing code.",
@@ -38,7 +38,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0",
-        "ghcr.io/devcontainers/features/java:1.1.1"
+        "ghcr.io/ebaskoro/devcontainer-features/sdkman",
+        "ghcr.io/devcontainers/features/java"
     ]
 }

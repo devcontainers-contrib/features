@@ -1,14 +1,24 @@
 import os
-from devcontainer_contrib.cli.features import generate, OutputType
+from devcontainer_contrib.cli.features import generate
 from pathlib import Path
 
 import typer
-
+import shutil
 
 def generate_all_Feature_definitions(
     feature_definitions_dir: str, output_dir: str
 ) -> None:
+    
+
     for feature_name in os.listdir(feature_definitions_dir):
+        if os.path.exists(os.path.join(
+                    "test", feature_name
+                ) ):
+            shutil.rmtree(os.path.join(
+                        "test", feature_name
+                    )
+                    )
+
         generate(
             Path(
                 os.path.join(
@@ -16,7 +26,6 @@ def generate_all_Feature_definitions(
                 )
             ),
             output_dir=Path(output_dir),
-            output_type=OutputType.feature_dir,
         )
 
 

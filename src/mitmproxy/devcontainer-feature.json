@@ -1,6 +1,6 @@
 {
     "id": "mitmproxy",
-    "version": "2.0.5",
+    "version": "2.0.6",
     "name": "mitmproxy (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mitmproxy",
     "description": "mitmproxy is an interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers",
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.3",
-        "ghcr.io/devcontainers/features/python:1.0.18"
+        "ghcr.io/devcontainers-contrib/features/pipx-package",
+        "ghcr.io/devcontainers/features/python"
     ]
 }
