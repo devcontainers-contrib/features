@@ -33,6 +33,11 @@ devcontainers.contrib+features.security@gmail.com.
 100% of the content, that you have the necessary rights to the content and that
 the content you contribute may be provided under the project license.
 
+Please note that this is a hobby project maintained by a single person with no
+current plans to add more collaborators. While contributions and suggestions are
+always welcome, response times may be slower and may not result in direct
+changes to the project. Thank you for understanding and for your support!
+
 <!-- prettier-ignore-start -->
 [how to add a feature]: https://github.com/devcontainers-contrib/features/wiki/How-to-add-a-feature
 <!-- prettier-ignore-end -->
