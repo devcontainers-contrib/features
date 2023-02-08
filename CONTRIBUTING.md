@@ -3,6 +3,11 @@
 All types of contributions are encouraged and valued, no matter if it's a bug
 report 🐛, a feature request 💡, or a Pull Request 🚀.
 
+Please note that this is a hobby project maintained by a single person with no
+current plans to add more collaborators. While contributions and suggestions are
+always welcome, response times may be slower and may not result in direct
+changes to the project. Thank you for understanding and for your support!
+
 <!-- prettier-ignore-start -->
 - **❓ I have a question:** [Open a Discussion](https://github.com/devcontainers-contrib/features/discussions/new?category=q-a)
 - **🐛 I found a bug:** [Open an Issue](https://github.com/devcontainers-contrib/features/issues/new)
@@ -32,11 +37,6 @@ devcontainers.contrib+features.security@gmail.com.
 👩‍⚖️ When contributing code to this project, you must agree that you have authored
 100% of the content, that you have the necessary rights to the content and that
 the content you contribute may be provided under the project license.
-
-Please note that this is a hobby project maintained by a single person with no
-current plans to add more collaborators. While contributions and suggestions are
-always welcome, response times may be slower and may not result in direct
-changes to the project. Thank you for understanding and for your support!
 
 <!-- prettier-ignore-start -->
 [how to add a feature]: https://github.com/devcontainers-contrib/features/wiki/How-to-add-a-feature
