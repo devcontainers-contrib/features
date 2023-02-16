@@ -1,6 +1,6 @@
 {
     "id": "tfswitch",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "Terraform Switcher (tfswitch) (via warrensbox/terraform-switcher)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tfswitch",
     "description": "The tfswitch command line tool lets you switch between different versions of terraform.",
@@ -10,7 +10,7 @@
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/curl-apt-get:1.0.5",
+            "feature": "ghcr.io/devcontainers-contrib/features/curl-apt-get:1.0.7",
             "options": {}
         }
     ],

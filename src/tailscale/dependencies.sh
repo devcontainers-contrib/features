@@ -35,6 +35,6 @@ ensure_featmake
 # refresh PATH 
 PS1='\s-\v\$' source /etc/profile
 
-# installing ghcr.io/devcontainers-contrib/features/curl-apt-get:1.0.5
-featmake "ghcr.io/devcontainers-contrib/features/curl-apt-get:1.0.5"  
+# installing ghcr.io/devcontainers-contrib/features/curl-apt-get:1.0.7
+featmake "ghcr.io/devcontainers-contrib/features/curl-apt-get:1.0.7"  
 
