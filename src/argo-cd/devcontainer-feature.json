@@ -1,7 +1,7 @@
 {
     "name": "ArgoCD CLI (via Github Releases)",
     "id": "argo-cd",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Declarative GitOps CD for Kubernetes",
     "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/argo-cd",
     "options": {

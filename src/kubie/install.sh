@@ -71,7 +71,7 @@ find_version_from_git_tags() {
 
 find_version_from_git_tags KUBIE_VERSION 'https://github.com/sbstp/kubie'
 
-check_packages curl
+check_packages ca-certificates curl
 
 KUBIE_FILENAME=kubie-linux-${architecture}
 curl -sSL https://github.com/sbstp/kubie/releases/download/v${KUBIE_VERSION}/${KUBIE_FILENAME} -o /usr/local/bin/kubie

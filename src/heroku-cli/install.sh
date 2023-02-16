@@ -39,7 +39,7 @@ check_packages() {
 }
 
 # make sure we have curl
-check_packages curl
+check_packages ca-certificates curl
 
 # make sure /usr/local/lib exists
 mkdir -p /usr/local/lib

@@ -1,20 +1,17 @@
 {
     "id": "netdata",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "Netdata  (via my-netdata.io)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/netdata",
     "description": "Netdata is a distributed, real-time, performance and health monitoring platform for systems, hardware, containers and applications, collecting thousands of useful metrics with zero configuration needed.",
-    "options": {
-    },
+    "options": {},
     "installsAfter": [
         "ghcr.io/devcontainers-contrib/features/curl-apt-get"
     ],
     "dependencies": [
         {
             "feature": "ghcr.io/devcontainers-contrib/features/curl-apt-get:1.0.5",
-            "options": {
-      
-            }
+            "options": {}
         }
     ],
     "install_command": "curl https://my-netdata.io/kickstart.sh > /tmp/netdata-kickstart.sh && sh /tmp/netdata-kickstart.sh --no-updates --stable-channel --disable-telemetry && rm /tmp/netdata-kickstart.sh",

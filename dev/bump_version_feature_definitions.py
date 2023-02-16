@@ -1,5 +1,4 @@
 import os
-from devcontainer_contrib.cli.features import generate, OutputType
 from pathlib import Path
 
 import typer

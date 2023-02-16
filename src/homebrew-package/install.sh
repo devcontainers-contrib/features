@@ -26,6 +26,11 @@ check_packages() {
 	fi
 }
 
+ensure_curl () {
+    if ! type curl >/dev/null 2>&1; then
+        apt-get update -y && apt-get -y install --no-install-recommends curl ca-certificates
+    fi 
+}
 
 ensure_featmake () {
     if ! type featmake > /dev/null 2>&1; then
@@ -53,7 +58,10 @@ install_via_homebrew() {
 	# install Homebrew if does not exists
 	if ! type brew >/dev/null 2>&1; then
 		echo "Installing Homebrew..."
+		
+		ensure_curl
 		ensure_featmake
+
 		brew_prefix="/home/linuxbrew/.linuxbrew"
 		featmake "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2.0.1" -SHALLOW_CLONE "true" -UPDATE_RC "true" -BREW_PREFIX $brew_prefix 
 		if [[ "${PATH}" != "*${brew_prefix}/bin*" ]]; then export PATH="${brew_prefix}/bin:${PATH}"; fi

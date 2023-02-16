@@ -59,7 +59,7 @@ find_version_from_git_tags() {
 
 find_version_from_git_tags KUBCTX_KUBENS_VERSION 'https://github.com/ahmetb/kubectx'
 
-check_packages curl
+check_packages ca-certificates curl
 
 curl -L -o /usr/local/bin/kubectx https://raw.githubusercontent.com/ahmetb/kubectx/v${KUBCTX_KUBENS_VERSION}/kubectx &&
 	curl -L -o /usr/local/bin/kubens https://raw.githubusercontent.com/ahmetb/kubectx/v${KUBCTX_KUBENS_VERSION}/kubens &&
