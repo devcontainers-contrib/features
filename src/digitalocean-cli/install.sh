@@ -70,7 +70,7 @@ find_version_from_git_tags() {
 }
 
 # make sure we have curl, tar
-check_packages curl tar
+check_packages ca-certificates curl tar
 
 # make sure version is available
 find_version_from_git_tags DIGITALOCEAN_CLI_VERSION 'https://github.com/digitalocean/doctl'

@@ -70,7 +70,7 @@ find_version_from_git_tags() {
 }
 
 # make sure we have curl and gzip
-check_packages curl gzip
+check_packages ca-certificates curl gzip
 
 # make sure version is available
 find_version_from_git_tags ARGO_WORKFLOWS_VERSION 'https://github.com/argoproj/argo-workflows'

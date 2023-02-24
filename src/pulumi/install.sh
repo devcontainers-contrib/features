@@ -25,7 +25,7 @@ check_packages() {
 }
 
 # making sure curl is there, you never know
-check_packages curl
+check_packages ca-certificates curl
 
 # We run as the non-root user so to fix https://github.com/devcontainers-contrib/features/issues/80
 # Note that we substitute SOME variables before evaluation, and some are

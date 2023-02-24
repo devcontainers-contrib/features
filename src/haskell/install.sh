@@ -29,7 +29,7 @@ check_packages() {
 	fi
 }
 
-check_packages curl build-essential libffi-dev libffi8ubuntu1 libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5
+check_packages ca-certificates curl build-essential libffi-dev libffi8ubuntu1 libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5
 
 # The installation script is designed to be run by the non-root user
 # The files need to be in the remote user's ~/ home directory

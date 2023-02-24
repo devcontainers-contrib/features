@@ -16,8 +16,8 @@ ensure_featmake () {
         temp_dir=/tmp/featmake-download
         mkdir -p $temp_dir
 
-        curl -sSL -o $temp_dir/featmake https://github.com/devcontainers-contrib/cli/releases/download/v0.0.18/featmake 
-        curl -sSL -o $temp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.0.18/checksums.txt
+        curl -sSL -o $temp_dir/featmake https://github.com/devcontainers-contrib/cli/releases/download/v0.0.19/featmake 
+        curl -sSL -o $temp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.0.19/checksums.txt
 
         (cd $temp_dir ; sha256sum --check --strict $temp_dir/checksums.txt)
 

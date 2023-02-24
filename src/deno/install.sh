@@ -38,7 +38,7 @@ check_packages() {
 }
 
 # make sure we have curl
-check_packages curl
+check_packages ca-certificates curl
 
 if [ "${DENO_VERSION}" == "latest" ]; then
 	deno_uri="https://github.com/denoland/deno/releases/latest/download/deno-${target}.zip"

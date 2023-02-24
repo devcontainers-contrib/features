@@ -6,7 +6,7 @@ set -e
 
 ensure_curl () {
     if ! type curl >/dev/null 2>&1; then
-        apt-get update -y && apt-get -y install --no-install-recommends curl
+        apt-get update -y && apt-get -y install --no-install-recommends curl ca-certificates
     fi 
 }
 
@@ -36,5 +36,5 @@ ensure_featmake
 PS1='\s-\v\$' source /etc/profile
 
 # installing ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0
-featmake "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0" -PACKAGES "curl" 
+featmake "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0" -PACKAGES "curl ca-certificates" 
 
