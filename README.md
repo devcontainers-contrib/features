@@ -1,4 +1,4 @@
-# Community devcontainer features
+# devcontainer features
 
 🧰 Feature addons for [@devcontainers]
 
