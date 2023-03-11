@@ -2,6 +2,7 @@
 # This is part of devcontainers-contrib script library
 # source: https://github.com/devcontainers-contrib/features
 set -e
+set -x
 
 PLUGIN=${PLUGIN:-""}
 VERSION=${VERSION:-"latest"}
@@ -62,42 +63,53 @@ install_via_asdf() {
 		check_packages curl git ca-certificates
 	fi
 
-	if ! type asdf >/dev/null 2>&1; then
-		su - "$_REMOTE_USER" <<EOF
-            git clone --depth=1 \
-            -c core.eol=lf \
-            -c core.autocrlf=false \
-            -c fsck.zeroPaddedFilemode=ignore \
-            -c fetch.fsck.zeroPaddedFilemode=ignore \
-            -c receive.fsck.zeroPaddedFilemode=ignore \
-            "https://github.com/asdf-vm/asdf.git" $_REMOTE_USER_HOME/.asdf 2>&1
-
-
-            if [ ! -f "\${HOME}/.bashrc" ] || [ ! -s "\${HOME}/.bashrc" ] ; then
-                cp  /etc/skel/.bashrc "\${HOME}/.bashrc"
-            fi
-            if  [ ! -f "\${HOME}/.profile" ] || [ ! -s "\${HOME}/.profile" ] ; then
-                cp  /etc/skel/.profile "\${HOME}/.profile"
-            fi
-
-            . $_REMOTE_USER_HOME/.asdf/asdf.sh
-
-            if asdf list "$PLUGIN" >/dev/null 2>&1; then
-                echo "$PLUGIN  already exists - skipping installation"
-                exit 0
-            fi
-			echo PLUGIN="$PLUGIN"
-			echo REPO="$REPO"
-			sleep 10
-            asdf plugin add "$PLUGIN" "$REPO"
-            asdf install "$PLUGIN" "$VERSION"
-            asdf global "$PLUGIN" "$VERSION"
+	# asdf may be installed somewhere on the machine, but we need it to be accessible to the remote user
+	# the code bellow will return 2 only when asdf is available, and 1 otherwise
+	set +e
+	su - "$_REMOTE_USER" <<EOF
+		if type asdf >/dev/null 2>&1; then
+			exit 2
+		fi
+		exit 1
 EOF
+	exit_code=$?
+	set -e
 
+	if [ "${exit_code}" -eq 2 ]; then
+		# asdf already available to remote user, use it
+		su - "$_REMOTE_USER" <<EOF
+
+			if asdf list "$PLUGIN" >/dev/null 2>&1; then
+				echo "$PLUGIN  already exists - skipping installation"
+				exit 0
+			fi
+			asdf plugin add "$PLUGIN" "$REPO"
+			asdf install "$PLUGIN" "$VERSION"
+			asdf global "$PLUGIN" "$VERSION"
+EOF
+	else
+		# asdf is not available to remote user, install it, then update rc files
+
+		su - "$_REMOTE_USER" <<EOF
+			git clone --depth=1 \
+				-c core.eol=lf \
+				-c core.autocrlf=false \
+				-c fsck.zeroPaddedFilemode=ignore \
+				-c fetch.fsck.zeroPaddedFilemode=ignore \
+				-c receive.fsck.zeroPaddedFilemode=ignore \
+				"https://github.com/asdf-vm/asdf.git" $_REMOTE_USER_HOME/.asdf 2>&1
+			
+			. $_REMOTE_USER_HOME/.asdf/asdf.sh
+			if asdf list "$PLUGIN" >/dev/null 2>&1; then
+				echo "$PLUGIN  already exists - skipping installation"
+				exit 0
+			fi
+			asdf plugin add "$PLUGIN" "$REPO"
+			asdf install "$PLUGIN" "$VERSION"
+			asdf global "$PLUGIN" "$VERSION"
+EOF
 		updaterc ". $_REMOTE_USER_HOME/.asdf/asdf.sh"
-
-	fi
+	fi 
 }
-
 
 install_via_asdf "$PLUGIN" "$VERSION" "$PLUGINREPO"
