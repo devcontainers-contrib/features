@@ -7,7 +7,7 @@
 ![](https://i.imgur.com/VgiY81S.png)
 
 <!-- prettier-ignore -->
-[How to use a feature](https://code.visualstudio.com/blogs/2022/09/15/dev-container-features#_adding-features-to-your-dev-container)
+[:fire:How to generate a feature:fire:](https://github.com/devcontainers-contrib/features/wiki/How-to-add-a-feature)
 | [List of features](https://github.com/devcontainers-contrib/features/tree/main/src) <!-- CHANGE THIS TO GITHUB PAGES WHEN #284 IS MERGED! -->
 | [Contributing](https://github.com/devcontainers-contrib/features/blob/main/CONTRIBUTING.md)
 | [Dev wiki](https://github.com/devcontainers-contrib/features/wiki)
