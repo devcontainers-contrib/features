@@ -1,6 +1,6 @@
 {
     "id": "podman-homebrew",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "name": "Podman (via Homebrew)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/podman-homebrew",
     "description": "Podman is a tool for managing containers and images, volumes mounted into those containers, and pods made from groups of containers.",
@@ -19,7 +19,7 @@
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.1",
+            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.3",
             "options": {
                 "package": "podman",
                 "version": "$options.version"

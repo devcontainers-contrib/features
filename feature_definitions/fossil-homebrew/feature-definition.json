@@ -1,6 +1,6 @@
 {
     "id": "fossil-homebrew",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "name": "Fossil (via Homebrew)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/fossil-homebrew",
     "description": "Fossil is a simple, high-reliability, distributed software configuration management system. It is capable of performing distributed version control, bug tracking, wiki services, and blogging.",
@@ -19,7 +19,7 @@
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.1",
+            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.3",
             "options": {
                 "package": "fossil",
                 "version": "$options.version"

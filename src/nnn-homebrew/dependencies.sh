@@ -35,6 +35,6 @@ ensure_featmake
 # refresh PATH 
 PS1='\s-\v\$' source /etc/profile
 
-# installing ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.1
-featmake "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.1" -PACKAGE "nnn" -VERSION "$VERSION" 
+# installing ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.3
+featmake "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.3" -PACKAGE "nnn" -VERSION "$VERSION" 
 

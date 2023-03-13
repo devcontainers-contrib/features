@@ -1,6 +1,6 @@
 {
     "id": "mosh-homebrew",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "name": "Mosh (via Homebrew)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mosh-homebrew",
     "description": "Mosh is a remote terminal application that allows roaming, supports intermittent connectivity, and provides intelligent local echo and line editing of user keystrokes.",
@@ -19,7 +19,7 @@
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.1",
+            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.3",
             "options": {
                 "package": "mosh",
                 "version": "$options.version"

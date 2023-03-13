@@ -1,6 +1,6 @@
 {
     "id": "redis-homebrew",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "name": "Redis (via Homebrew)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/redis-homebrew",
     "description": "Redis is an in-memory data structure store, used as a distributed, in-memory key-value database, cache and message broker, with optional durability.",
@@ -19,7 +19,7 @@
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.1",
+            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.3",
             "options": {
                 "package": "redis",
                 "version": "$options.version"
