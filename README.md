@@ -71,19 +71,13 @@ there, the [dev wiki] provides information about adding features, layout,
 conventions, etc. When or if you want to contribute your changes back to this
 repository, you can follow the [contributing guide]. Happy coding! 👋
 
-🗺️ If you're looking for a more thorough outline of how this repo works, check
-out the [How it works] page on the dev wiki.
-
 <!-- prettier-ignore-start -->
 [@devcontainers]: https://github.com/devcontainers
 [add it yourself]: https://github.com/devcontainers-contrib/features/wiki/How-to-add-a-feature
 [open an issue]: https://github.com/devcontainers-contrib/features/issues/new
 [complete feature list]: https://github.com/devcontainers-contrib/features/tree/main/src
-[debian]: https://hub.docker.com/_/debian
 [open it locally using vs code]: https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container
 [contributing guide]: CONTRIBUTING.md
-[how it works]: https://github.com/devcontainers-contrib/features/wiki/How-it-works
-[dev wiki]: https://github.com/devcontainers-contrib/features/wiki
 [devcontainers]: https://containers.dev/
 [github codespaces]: https://github.com/features/codespaces
 <!-- prettier-ignore-end -->
