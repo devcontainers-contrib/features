@@ -49,8 +49,10 @@ Hurray! Your feature is now fully generated🎉
 
 ### :test_tube: Test
 
-For testing your newly generated feature, use the official devcontainer cli
-The following will test the angular-cli feature
+For testing your newly generated feature, use the official devcontainer cli program!
+
+The following will test the angular-cli feature.
+
 Replace `angular-cli` with the id of your own feature definition
 
 ```sh
