@@ -1,12 +1,10 @@
 ### :rocket: Create / Copy an existing feature-definition.json file
 
-Input for feature generation is a [`feature-definition.json`](https://github.com/devcontainers-contrib/features/wiki/feature-definition) file
-
-📚 See [feature-definition folder](https://github.com/devcontainers-contrib/features/tree/main/feature_definitions) for examples. 
+Input for feature generation is a [`feature-definition.json`](https://github.com/devcontainers-contrib/features/wiki/feature-definition) file. See [feature-definition folder](https://github.com/devcontainers-contrib/features/tree/main/feature_definitions) for examples. 
 
 Although you can write one from scratch, usually its easier find an existing feature definition which is installed in a similar manner to your own, and copy it as a baseline to the same same [feature-definition folder](https://github.com/devcontainers-contrib/features/tree/main/feature_definitions) 
 
-👀Dont forget to edit the relevant portions (`id`, `description`, `name` etc).
+Dont forget to edit the relevant portions! (`id`, `description`, `name` etc)
 
 ### :arrow_down: Install the DContainer CLI tool
 
