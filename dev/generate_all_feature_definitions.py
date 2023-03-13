@@ -1,9 +1,10 @@
 import os
-from devcontainer_contrib.cli.features import generate
+from dcontainer.cli.generate.generate_feature import generate
 from pathlib import Path
 
 import typer
 import shutil
+
 
 def generate_all_Feature_definitions(
     feature_definitions_dir: str, output_dir: str
@@ -26,6 +27,7 @@ def generate_all_Feature_definitions(
                 )
             ),
             output_dir=Path(output_dir),
+            release_version="v0.2.1"
         )
 
 

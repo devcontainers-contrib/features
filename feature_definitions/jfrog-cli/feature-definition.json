@@ -1,19 +1,17 @@
 {
     "id": "jfrog-cli",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "JFrog CLI (via jfrog.io)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jfrog-cli",
     "description": "JFrog CLI is a compact and smart client that provides a simple interface that automates access to JFrog products simplifying your automation scripts making them more readable and easier to maintain.",
-    "options": {
-    },
+    "options": {},
     "installsAfter": [
         "ghcr.io/devcontainers-contrib/features/curl-apt-get"
     ],
     "dependencies": [
         {
             "feature": "ghcr.io/devcontainers-contrib/features/curl-apt-get:1.0.7",
-            "options": {
-            }
+            "options": {}
         }
     ],
     "install_command": "curl -fL https://install-cli.jfrog.io | sh && chown $_REMOTE_USER /usr/local/bin/jf && chmod a+x /usr/local/bin/jf",
