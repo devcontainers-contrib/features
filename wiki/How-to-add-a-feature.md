@@ -1,20 +1,20 @@
-# Generate a new feature using DContainer CLI
-
-## Create / Copy an existing feature-definition.json file
+### :rocket: Create / Copy an existing feature-definition.json file
 
 Input for feature generation is a [`feature-definition.json`](https://github.com/devcontainers-contrib/features/wiki/feature-definition) file
 
-See [feature-definition folder](https://github.com/devcontainers-contrib/features/tree/main/feature_definitions) for examples. You can find an existing feature defintions which is similar to your own and copy it as a baseline to the same same [feature-definition folder](https://github.com/devcontainers-contrib/features/tree/main/feature_definitions) (Dont forget to edit the relevant portions (`id`, `description`, `name` etc).
+📚 See [feature-definition folder](https://github.com/devcontainers-contrib/features/tree/main/feature_definitions) for examples. 
 
-## Generating the feature
+Although you can write one from scratch, usually its easier find an existing feature definition which is installed in a similar manner to your own, and copy it as a baseline to the same same [feature-definition folder](https://github.com/devcontainers-contrib/features/tree/main/feature_definitions) 
 
-### Install the DContainer CLI tool
+👀Dont forget to edit the relevant portions (`id`, `description`, `name` etc).
+
+### :arrow_down: Install the DContainer CLI tool
 
 ```sh
 pipx install dcontainer[generate]
 ```
 
-### Generate
+### :building_construction: Generate
 
 Use `dcontainer` in order to generate a feature src and test folders by using the `dcontainer feature generate` command
 
@@ -32,7 +32,7 @@ Options:
 ```
 
 
-### Usage example
+#### Usage example
 
 The following will generate the angular-cli feature 
 It assumes you have the dcontainer cli already installed
@@ -47,7 +47,9 @@ cd cli
 dcontainer feature generate "./feature_definitions/angular-cli/feature-definition.json" "."
 ```
 
-### Testing
+Hurray! Your feature is now fully generated🎉
+
+### :test_tube: Test
 
 For testing your newly generated feature, use the official devcontainer cli
 The following will test the angular-cli feature
