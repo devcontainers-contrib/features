@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "sptring --version" sptring --version
+check "spring --version" spring --version
 
 reportResults

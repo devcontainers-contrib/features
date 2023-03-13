@@ -63,7 +63,7 @@
             "name": "test",
             "image": "mcr.microsoft.com/devcontainers/base:debian",
             "test_commands": [
-                "sptring --version"
+                "spring --version"
             ],
             "options": {}
         }

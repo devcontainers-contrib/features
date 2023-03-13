@@ -1,6 +1,6 @@
 {
     "test": {
-        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
             "micronaut-sdkman": {}
         }

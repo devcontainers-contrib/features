@@ -68,7 +68,7 @@
     "test_scenarios": [
         {
             "name": "test",
-            "image": "mcr.microsoft.com/devcontainers/base:debian",
+            "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
             "test_commands": [
                 "toolkit --help"
             ],
