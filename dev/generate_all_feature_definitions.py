@@ -27,7 +27,7 @@ def generate_all_Feature_definitions(
                 )
             ),
             output_dir=Path(output_dir),
-            release_version="v0.2.1"
+            release_version="v0.2.3"
         )
 
 

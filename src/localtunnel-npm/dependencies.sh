@@ -3,8 +3,42 @@
 # For more information: https://github.com/devcontainers-contrib/cli 
 
 set -e
+ensure_jq() {
+    # Ensure JQ available
+    if ! type jq >/dev/null 2>&1; then
+        apt-get update -y && apt-get -y install --no-install-recommends jq
+    fi 
+}
 
 
+ensure_pipx() {
+    # Ensure the existance of minimal python3 and pipx
+    # If no python - install it
+	if ! type python3 >/dev/null 2>&1; then
+		echo "installing python3-minimal libffi-dev"
+		apt-get update -y
+		apt-get -y install python3-minimal
+	fi
+
+	# If no pip - install it
+	if ! type pip3 >/dev/null 2>&1; then
+		echo "installing python3-pip"
+		apt-get update -y
+		apt-get -y install libffi-dev python3-pip
+	fi
+
+    # If ensurepip fails - install python venv
+	if ! python3 -Im ensurepip --version >/dev/null 2>&1; then
+		echo "installing python3-venv"
+		apt-get update -y
+		apt-get -y install python3-venv
+	fi
+
+    # If no pipx - install it
+    if ! pipx >/dev/null 2>&1; then
+        pip3 install pipx
+    fi
+}
 
 ensure_curl() {
     # Ensure curl available
@@ -32,21 +66,28 @@ ensure_dcontainer() {
 
     # If not previuse installation found, download it temporarly and delete at the end of the script 
     if [[ -z "${dcontainer_location}" ]]; then
-        tmp_dir=$(mktemp -d -t dcontainer-XXXXXXXXXX)
 
-        clean_up () {
-            ARG=$?
-            rm -rf $tmp_dir
-            exit $ARG
-        }
+        if [ "$(uname -sm)" != "Linux x86_64" ]; then
+            # No binaries compiled for non linux x*^ yet, therefor we fallback to install through python
 
-        trap clean_up EXIT
+            ensure_pipx
+            ensure_jq
+            pipx install dcontainer==v0.2.3
+            dcontainer_location=$(pipx list --json | jq ".venvs.dcontainer.metadata.main_package.app_paths[0].__Path__" | tr -d '"')
 
-        curl -sSL -o $tmp_dir/dcontainer https://github.com/devcontainers-contrib/cli/releases/download/v0.2.1/dcontainer 
-        curl -sSL -o $tmp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.2.1/checksums.txt
-        (cd $tmp_dir ; sha256sum --check --strict --ignore-missing $tmp_dir/checksums.txt)
-        chmod a+x $tmp_dir/dcontainer
-        dcontainer_location=$tmp_dir/dcontainer
+        else
+            tmp_dir=$(mktemp -d -t dcontainer-XXXXXXXXXX)
+
+            clean_up () {
+                ARG=$?
+                rm -rf $tmp_dir
+                exit $ARG
+            }
+            trap clean_up EXIT
+            curl -sSL -o $tmp_dir/dcontainer https://github.com/devcontainers-contrib/cli/releases/download/v0.2.3/dcontainer-x86_64-unknown-linux-gnu 
+            chmod a+x $tmp_dir/dcontainer
+            dcontainer_location=$tmp_dir/dcontainer
+        fi
     fi
 
     # Expose outside the resolved location
