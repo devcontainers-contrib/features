@@ -4,5 +4,13 @@
         "features": {
             "ansible": {}
         }
+    },
+    "test_version_selection": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "ansible": {
+                "version": "2.13.0"
+            }
+        }
     }
 }
