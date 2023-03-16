@@ -102,6 +102,6 @@ ensure_dcontainer dcontainer_location
 $dcontainer_location \
     feature install \
     "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.3" \
-    --option package="glances[action,browser,cloud,cpuinfo,docker,export,folders,gpu,graph,ip,raid,snmp,web,wifi]"
+    --option package="glances[action,browser,cloud,cpuinfo,docker,export,folders,gpu,graph,ip,raid,snmp,web,wifi]" --option version="$VERSION"
 
 

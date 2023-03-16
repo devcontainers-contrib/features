@@ -102,6 +102,6 @@ ensure_dcontainer dcontainer_location
 $dcontainer_location \
     feature install \
     "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.3" \
-    --option package="hatch"
+    --option package="hatch" --option version="$VERSION"
 
 

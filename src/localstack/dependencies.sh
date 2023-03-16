@@ -108,6 +108,6 @@ $dcontainer_location \
 $dcontainer_location \
     feature install \
     "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.3" \
-    --option package="localstack[full]"
+    --option package="localstack[full]" --option version="$VERSION"
 
 
