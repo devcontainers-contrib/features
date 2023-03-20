@@ -1,8 +1,7 @@
-#!/usr/bin/env bash
+#!/bin/bash -i
 # This is part of devcontainers-contrib script library
 # source: https://github.com/devcontainers-contrib/features
 set -e
-set -x
 
 PLUGIN=${PLUGIN:-""}
 VERSION=${VERSION:-"latest"}
