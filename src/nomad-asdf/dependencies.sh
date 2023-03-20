@@ -101,7 +101,7 @@ ensure_dcontainer dcontainer_location
 
 $dcontainer_location \
     feature install \
-    "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.3" \
+    "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.5" \
     --option plugin="nomad" --option version="$VERSION"
 
 
