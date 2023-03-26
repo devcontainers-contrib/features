@@ -1,0 +1,22 @@
+{
+    "install_github_cli": {
+        "image": "debian:bullseye",
+        "features": {
+            "gh-release": {
+                "version": "latest",
+                "repo": "cli/cli",
+                "target": "gh"
+            }
+        }
+    },
+    "install_digital_ocean_cli": {
+        "image": "debian:bullseye",
+        "features": {
+            "gh-release": {
+                "version": "latest",
+                "repo": "digitalocean/doctl",
+                "target": "doctl"
+            }
+        }
+    }
+}
