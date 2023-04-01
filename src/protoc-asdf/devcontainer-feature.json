@@ -1,0 +1,20 @@
+{
+    "id": "protoc-asdf",
+    "version": "1.0.0",
+    "name": "protoc (via asdf)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/protoc-asdf",
+    "description": "protoc is the protocol buffer compiler",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version of protoc to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/asdf-package"
+    ]
+}
