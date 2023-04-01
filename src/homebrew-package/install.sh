@@ -56,13 +56,12 @@ install_via_homebrew() {
 	else
 		package_full="${package}@${version}"
 	fi
+	# Solves CVE-2022-24767 mitigation in Git >2.35.2 
+	# For more information: https://github.blog/2022-04-12-git-security-vulnerability-announced/
+	git config --system --add safe.directory "$(brew --prefix)/Homebrew/Library/Taps/homebrew/homebrew-core"		
 
 	su - "$_REMOTE_USER" <<EOF
 		set -e
-
-		# Solves CVE-2022-24767 mitigation in Git >2.35.2 
-		# For more information: https://github.blog/2022-04-12-git-security-vulnerability-announced/
-		git config --global --add safe.directory "$(brew --prefix)/Homebrew/Library/Taps/homebrew/homebrew-core"		
 
 		if brew desc --eval-all --formulae "$package_full"; then
 			# If a version is exists then install it the regular way
