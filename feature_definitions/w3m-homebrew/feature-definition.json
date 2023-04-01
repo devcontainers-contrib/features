@@ -1,6 +1,6 @@
 {
     "id": "w3m-homebrew",
-    "version": "1.0.11",
+    "version": "1.0.12",
     "name": "w3m (via Homebrew)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/w3m-homebrew",
     "description": "w3m is a free software/open source text-based web browser and terminal pager.",
@@ -19,7 +19,7 @@
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.3",
+            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.4",
             "options": {
                 "package": "w3m",
                 "version": "$options.version"

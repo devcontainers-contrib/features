@@ -1,6 +1,6 @@
 {
     "id": "ddgr-homebrew",
-    "version": "1.0.11",
+    "version": "1.0.12",
     "name": "ddgr (via Homebrew)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ddgr-homebrew",
     "description": "ddgr is a cmdline utility to search DuckDuckGo from the terminal.",
@@ -19,7 +19,7 @@
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.3",
+            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.4",
             "options": {
                 "package": "ddgr",
                 "version": "$options.version"
