@@ -1,0 +1,43 @@
+{
+    "id": "apt-get-packages",
+    "version": "1.0.2",
+    "name": "apt-get packages",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/apt-get-packages",
+    "description": "apt-get is a command line tool for interacting with the Advanced Package Tool (APT) library (a package management system for Linux distributions).",
+    "options": {
+        "packages": {
+            "default": "",
+            "description": "Comma separated list of packages.",
+            "proposals": [
+                "htop",
+                "build-essential",
+                "curl,ca-certificates"
+            ],
+            "type": "string"
+        },
+        "ppas": {
+            "default": "",
+            "description": "Comma separated list of required ppas (not recommended)",
+            "proposals": [
+                "ppa:deadsnakes/ppa"
+            ],
+            "type": "string"
+        },
+        "clean_ppas": {
+            "default": true,
+            "description": "If ppas used, remove them after usage in order to increase safety",
+            "type": "boolean"
+        },
+        "preserve_apt_list": {
+            "default": true,
+            "description": "Preserving the existing apt list (the result of apt-get update) will decrease container layer size (but will require a re-update of the packages database on next install)",
+            "type": "boolean"
+        },
+        "force_ppas_on_non_ubuntu": {
+            "default": false,
+            "description": "Installing ppas on a non-ubuntu distro (eg. debian) is discouraged",
+            "type": "boolean"
+        }
+    },
+    "installsAfter": []
+}

@@ -3,4 +3,5 @@ pytest
 pytest-shell-utilities
 tqdm
 more_itertools
-devcontainer-contrib==0.0.22
+semver
+dcontainer[generate]==1.0.0
