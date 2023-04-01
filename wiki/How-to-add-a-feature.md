@@ -37,12 +37,12 @@ It assumes you have the dcontainer cli already installed
 Replace `angular-cli` with the id of your own feature definition
 
 ```sh
-pipx install dcontainer[generate]
+pipx install dcontainer
 
 git clone https://github.com/devcontainers-contrib/features 
 cd features
 
-dcontainer feature generate "./feature_definitions/angular-cli/feature-definition.json" "."
+dcontainer generate devcontainer-feature "./feature_definitions/angular-cli/feature-definition.json" "."
 ```
 
 Hurray! Your feature is now fully generated🎉

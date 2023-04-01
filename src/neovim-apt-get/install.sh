@@ -15,8 +15,8 @@ ensure_nanolayer nanolayer_location
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0" \
-    --option packages="neovim"
+    "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.2" \
+    --option packages="neovim" --option ppas="ppa:neovim-ppa/stable" --option force_ppas_on_non_ubuntu="True"
 
 
 echo 'Done!'
