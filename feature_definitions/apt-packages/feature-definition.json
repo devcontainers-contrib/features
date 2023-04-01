@@ -1,9 +1,9 @@
 {
-    "id": "apt-get-packages",
-    "version": "1.0.2",
-    "name": "apt-get packages (for Debian/Ubuntu)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/apt-get-packages",
-    "description": "apt-get is a command line tool for interacting with the Advanced Package Tool (APT) library (a package management system for Linux distributions).",
+    "id": "apt-packages",
+    "version": "1.0.0",
+    "name": "apt packages (for Debian/Ubuntu)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/apt-packages",
+    "description": "Advanced package tool, or APT, is a free-software user interface that works with core libraries to handle the installation and removal of software on Debian and Debian-based Linux distributions.",
     "options": {
         "packages": {
             "default": "",
@@ -50,7 +50,7 @@
     },
     "installsAfter": [],
     "dependencies": [],
-    "install_command": "ppas_cmd=$(if ! [[ -z $PPAS ]]; then echo --ppas \"${PPAS}\" ; fi)\nforce_ppas_cmd=$(if [[ $FORCE_PPAS_ON_NON_UBUNTU == \"true\" ]]; then echo --force-ppas-on-non-ubuntu; else echo  --no-force-ppas-on-non-ubuntu ; fi)\nclean_ppas_cmd=$(if [[ $CLEAN_PPAS == \"true\" ]]; then echo --clean-ppas; else echo  --no-clean-ppas ; fi)\npreserve_apt_list_cmd=$(if [[ $PRESERVE_APT_LIST == \"true\" ]]; then echo --preserve-apt-list; else echo  --no-preserve-apt-list ; fi)\n\n$nanolayer_location install apt-get \"$PACKAGES\" \\\n   $ppas_cmd \\\n   $force_ppas_cmd \\\n   $clean_ppas_cmd \\\n   $preserve_apt_list_cmd \\\n   ",
+    "install_command": "ppas_cmd=$(if ! [[ -z $PPAS ]]; then echo --ppas \"${PPAS}\" ; fi)\nforce_ppas_cmd=$(if [[ $FORCE_PPAS_ON_NON_UBUNTU == \"true\" ]]; then echo --force-ppas-on-non-ubuntu; else echo  --no-force-ppas-on-non-ubuntu ; fi)\nclean_ppas_cmd=$(if [[ $CLEAN_PPAS == \"true\" ]]; then echo --clean-ppas; else echo  --no-clean-ppas ; fi)\npreserve_apt_list_cmd=$(if [[ $PRESERVE_APT_LIST == \"true\" ]]; then echo --preserve-apt-list; else echo  --no-preserve-apt-list ; fi)\n\n$nanolayer_location install apt \"$PACKAGES\" \\\n   $ppas_cmd \\\n   $force_ppas_cmd \\\n   $clean_ppas_cmd \\\n   $preserve_apt_list_cmd \\\n   ",
     "test_scenarios": [
         {
             "name": "test_neovim_ubuntu",
@@ -63,5 +63,6 @@
                 "ppas": "ppa:neovim-ppa/stable"
             }
         }
+        
     ]
 }
