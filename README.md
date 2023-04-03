@@ -7,19 +7,15 @@
 ![](https://i.imgur.com/VgiY81S.png)
 
 <!-- prettier-ignore -->
-[:fire:How to generate a feature:fire:](https://github.com/devcontainers-contrib/features/wiki/How-to-add-a-feature)
-| [List of features](https://github.com/devcontainers-contrib/features/tree/main/src) <!-- CHANGE THIS TO GITHUB PAGES WHEN #284 IS MERGED! -->
-| [Contributing](https://github.com/devcontainers-contrib/features/blob/main/CONTRIBUTING.md)
-| [Dev wiki](https://github.com/devcontainers-contrib/features/wiki)
-| [Chat](https://gitter.im/devcontainers-contrib/community)
+ [List of features](https://github.com/devcontainers-contrib/features/tree/main/src) 
 
 </div>
 
 💻 Works with [devcontainers] \
 ☁️ Works with [GitHub Codespaces] \
-⚠️ We only officially support [debian]-based images
 
-👀 Don't see your feature here? [Add it yourself] or [open an Issue]!
+
+👀 Don't see your feature here? [open an Issue]!
 
 ## Usage
 
@@ -73,11 +69,9 @@ repository, you can follow the [contributing guide]. Happy coding! 👋
 
 <!-- prettier-ignore-start -->
 [@devcontainers]: https://github.com/devcontainers
-[add it yourself]: https://github.com/devcontainers-contrib/features/wiki/How-to-add-a-feature
 [open an issue]: https://github.com/devcontainers-contrib/features/issues/new
 [complete feature list]: https://github.com/devcontainers-contrib/features/tree/main/src
 [open it locally using vs code]: https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container
-[contributing guide]: CONTRIBUTING.md
 [devcontainers]: https://containers.dev/
 [github codespaces]: https://github.com/features/codespaces
 <!-- prettier-ignore-end -->
