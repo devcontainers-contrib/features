@@ -1,21 +1,21 @@
 # devcontainer features
 
-🧰 Feature addons for [@devcontainers]
-
+🧰 Feature addons for [@devcontainers] \
+💻 Works with [devcontainers] \
+☁️ Works with [GitHub Codespaces] 
 <div align="center">
 
 ![](https://i.imgur.com/VgiY81S.png)
 
+
 <!-- prettier-ignore -->
- [List of features](https://github.com/devcontainers-contrib/features/tree/main/src) 
+ ## [List of features](https://github.com/devcontainers-contrib/features/tree/main/src) 
+
+👀 Don't see your feature here? 
+
+ ## [🔥Suggest a new Feature!🔥](https://github.com/danielbraun89/devcontainer-bug-replication/issues/new?template=suggest-feature.yaml) 
 
 </div>
-
-💻 Works with [devcontainers] \
-☁️ Works with [GitHub Codespaces] \
-
-
-👀 Don't see your feature here? [open an Issue]!
 
 ## Usage
 

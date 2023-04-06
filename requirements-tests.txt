@@ -1,7 +1,0 @@
-ray[default]
-pytest
-pytest-shell-utilities
-tqdm
-more_itertools
-semver
-dcontainer[generate]==1.0.0
