@@ -1,11 +1,9 @@
-#!/bin/bash
+#!/bin/bash -i
 
 set -e
 
 source dev-container-features-test-lib
 
-
-check "doctl version" doctl version
-
+check "gh --version" gh --version
 
 reportResults

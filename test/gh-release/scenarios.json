@@ -1,6 +1,6 @@
 {
-    "install_github_cli": {
-        "image": "debian:bullseye",
+    "test_defaults_debian": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
         "features": {
             "gh-release": {
                 "version": "latest",
@@ -9,13 +9,13 @@
             }
         }
     },
-    "install_digital_ocean_cli": {
-        "image": "debian:bullseye",
+    "test_defaults_alpine": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
         "features": {
             "gh-release": {
                 "version": "latest",
-                "repo": "digitalocean/doctl",
-                "target": "doctl"
+                "repo": "cli/cli",
+                "target": "gh"
             }
         }
     }
