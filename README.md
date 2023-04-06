@@ -30,7 +30,7 @@ of an `options` object.
 {
   "image": "mcr.microsoft.com/devcontainers/universal",
   "features": {
-    "ghcr.io/devcontainers-contrib/features/deno:": {},
+    "ghcr.io/devcontainers-contrib/features/deno": {},
     "ghcr.io/devcontainers-contrib/features/neovim": {}
   }
 }
@@ -48,4 +48,4 @@ compile things from source code and may take a while!
 
 ### Found a bug?
 
-[🐞Open an bug report!🐞](https://github.com/devcontainers-contrib/features/issues/new?template=bug-report.yaml)
+[🐞Open an bug report!🐞](https://github.com/devcontainers-contrib/features/issues/new?template=feature-bug-report.yaml)
