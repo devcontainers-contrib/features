@@ -1,0 +1,20 @@
+{
+    "id": "fzf",
+    "version": "1.0.0",
+    "name": "fzf (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/fzf",
+    "description": "fzf is a general-purpose command-line fuzzy finder.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}

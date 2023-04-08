@@ -5,7 +5,7 @@ VisualVM is a tool that provides a visual interface for viewing detailed
 information about Java applications while they are running on a Java Virtual
 Machine.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -22,7 +22,3 @@ Machine.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/visualvm-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

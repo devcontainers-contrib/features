@@ -3,7 +3,7 @@
 
 Podman is a tool for managing containers and images, volumes mounted into those containers, and pods made from groups of containers.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Podman is a tool for managing containers and images, volumes mounted into those 
 | version | Select the version of Podman to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/podman-homebrew/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

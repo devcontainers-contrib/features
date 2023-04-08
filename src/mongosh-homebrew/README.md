@@ -3,7 +3,7 @@
 
 MongoDB Shell to connect, configure, query, and work with your MongoDB database.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ MongoDB Shell to connect, configure, query, and work with your MongoDB database.
 | version | Select the version of MongoDB Shell to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/mongosh-homebrew/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

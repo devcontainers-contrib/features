@@ -3,7 +3,7 @@
 
 Bandit is a tool designed to find common security issues in Python code.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Bandit is a tool designed to find common security issues in Python code.
 | version | Select the version of Bandit to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/bandit/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

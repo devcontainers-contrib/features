@@ -10,7 +10,7 @@ messages between your web applications using STOMP over websockets. Manage your
 IoT devices using MQTT. Support your existing JMS infrastructure and beyond.
 ActiveMQ offers the power and flexibility to support any messaging use-case.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -27,7 +27,3 @@ ActiveMQ offers the power and flexibility to support any messaging use-case.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/activemq-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

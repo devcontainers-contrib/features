@@ -3,7 +3,7 @@
 
 Meson is an open source build system meant to be both extremely fast, and, even more importantly, as user friendly as possible.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Meson is an open source build system meant to be both extremely fast, and, even 
 | version | Select the version of Meson to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/meson-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -3,7 +3,7 @@
 
 MLton is a whole-program optimizing compiler for the Standard ML programming language.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ MLton is a whole-program optimizing compiler for the Standard ML programming lan
 | version | Select the version of mlton to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/mlton-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -5,7 +5,7 @@ The mvnd project aims to provide a daemon infrastructure for maven based builds.
 It borrows techniques from Gradle and Takari to provide a simple and efficient
 system.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -22,7 +22,3 @@ system.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/mvnd-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

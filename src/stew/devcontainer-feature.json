@@ -1,0 +1,20 @@
+{
+    "id": "stew",
+    "version": "1.0.0",
+    "name": "stew (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/stew",
+    "description": "stew is an independent package manager for compiled binaries.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}

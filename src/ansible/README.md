@@ -3,7 +3,7 @@
 
 Ansible is a suite of software tools that enables infrastructure as code.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Ansible is a suite of software tools that enables infrastructure as code.
 | version | Select the version of Ansible to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/ansible/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

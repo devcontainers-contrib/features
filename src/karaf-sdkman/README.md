@@ -7,7 +7,7 @@ you need for your applications. It runs on premise or on cloud. By polymorphic,
 it means that Karaf can host any kind of applications: WAR, OSGi, Spring, and
 much more.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -24,7 +24,3 @@ much more.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/karaf-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

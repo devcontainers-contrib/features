@@ -3,7 +3,7 @@
 
 The official Terraform language server (terraform-ls) maintained by HashiCorp provides IDE features to any LSP-compatible editor.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ The official Terraform language server (terraform-ls) maintained by HashiCorp pr
 | version | Select the version of Terraform Language Server (terraform-ls) to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/terraform-ls-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

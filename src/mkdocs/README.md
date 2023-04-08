@@ -3,7 +3,7 @@
 
 MkDocs is a fast, simple and downright gorgeous static site generator that's geared towards building project documentation.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -19,7 +19,3 @@ MkDocs is a fast, simple and downright gorgeous static site generator that's gea
 | plugins | A space delimitered list of mkdocs plugins (will be injected into the mkdocs pipx env). see proposals for example | string | mkdocs-material |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/mkdocs/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

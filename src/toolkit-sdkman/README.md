@@ -4,7 +4,7 @@
 Toolkit is a client command line tool that supports multiple IoT protocols like
 MQTT and COAP. It provides a command line client tool for IoT development.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -21,7 +21,3 @@ MQTT and COAP. It provides a command line client tool for IoT development.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/toolkit-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

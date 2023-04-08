@@ -7,7 +7,7 @@ processing of large data sets across clusters of computersusing simple
 programming models.It is designed to scale up from single servers to thousands
 of machines, each offering local computation and storage.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -24,7 +24,3 @@ of machines, each offering local computation and storage.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/hadoop-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

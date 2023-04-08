@@ -3,7 +3,7 @@
 
 Erlang is a general-purpose, concurrent, functional programming language, and a garbage-collected runtime system.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Erlang is a general-purpose, concurrent, functional programming language, and a 
 | version | Select the version of Erlang to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/erlang-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

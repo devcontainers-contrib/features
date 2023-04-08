@@ -3,7 +3,7 @@
 
 Netdata is a distributed, real-time, performance and health monitoring platform for systems, hardware, containers and applications, collecting thousands of useful metrics with zero configuration needed.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -11,14 +11,5 @@ Netdata is a distributed, real-time, performance and health monitoring platform 
 }
 ```
 
-## Options
-
-| Options Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
 
 
-
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/netdata/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -1,0 +1,20 @@
+{
+    "id": "age-keygen",
+    "version": "1.0.0",
+    "name": "age-keygen (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/age-keygen",
+    "description": "age-keygen generate a key pair for use with age.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}

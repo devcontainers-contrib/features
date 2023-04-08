@@ -3,7 +3,7 @@
 
 The Firebase CLI (GitHub) provides a variety of tools for managing, viewing, and deploying to Firebase projects.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ The Firebase CLI (GitHub) provides a variety of tools for managing, viewing, and
 | version | Select the version of Firebase CLI to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/firebase-cli/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

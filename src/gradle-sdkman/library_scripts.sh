@@ -136,7 +136,7 @@ ensure_nanolayer() {
             tar_filename=nanolayer-"$(uname -m)"-unknown-linux-$clib_type.tgz
 
             # clean download will minimize leftover in case a downloaderlike wget or curl need to be installed
-            clean_download https://github.com/devcontainers-contrib/cli/releases/download/v0.4.0/$tar_filename $tmp_dir/$tar_filename
+            clean_download https://github.com/devcontainers-contrib/cli/releases/download/v0.4.6/$tar_filename $tmp_dir/$tar_filename
             
             tar xfzv $tmp_dir/$tar_filename -C "$tmp_dir"
             chmod a+x $tmp_dir/nanolayer

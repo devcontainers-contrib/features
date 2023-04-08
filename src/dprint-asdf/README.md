@@ -3,7 +3,7 @@
 
 dprint is a pluggable and configurable code formatting platform written in Rust.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ dprint is a pluggable and configurable code formatting platform written in Rust.
 | version | Select the version of dprint to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/dprint-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

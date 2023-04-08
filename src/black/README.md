@@ -3,7 +3,7 @@
 
 Black is an uncompromising Python code formatter.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Black is an uncompromising Python code formatter.
 | version | Select the version of Black to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/black/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

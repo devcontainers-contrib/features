@@ -3,7 +3,7 @@
 
 opam is a source-based package manager for OCaml.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ opam is a source-based package manager for OCaml.
 | version | Select the version of Opam to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/opam-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -1,0 +1,20 @@
+{
+    "id": "hyperfine",
+    "version": "1.0.0",
+    "name": "hyperfine (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/hyperfine",
+    "description": "hyperfine is a command-line benchmarking tool.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}

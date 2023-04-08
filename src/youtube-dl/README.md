@@ -3,7 +3,7 @@
 
 youtube-dl is a command-line program to download videos from YouTube.com and other video sites.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ youtube-dl is a command-line program to download videos from YouTube.com and oth
 | version | Select the version of youtube-dl to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/youtube-dl/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

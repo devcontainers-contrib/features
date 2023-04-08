@@ -3,7 +3,7 @@
 
 The Atlas CLI is a command line interface built specifically for MongoDB Atlas.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ The Atlas CLI is a command line interface built specifically for MongoDB Atlas.
 | version | Select the version of MongoDB Atlas CLI to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/mongodb-atlas-cli-homebrew/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -1,0 +1,20 @@
+{
+    "id": "btm",
+    "version": "1.0.0",
+    "name": "bottom (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/btm",
+    "description": "bottom is a customizable cross-platform graphical process/system monitor for the terminal.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}

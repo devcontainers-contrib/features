@@ -5,7 +5,7 @@ Leiningen is the easiest way to use Clojure. With a focus on project automation
 and declarative configuration, it gets out of your way and lets you focus on
 your code.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -22,7 +22,3 @@ your code.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/leiningen-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

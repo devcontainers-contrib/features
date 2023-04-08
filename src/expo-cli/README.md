@@ -3,7 +3,7 @@
 
 The Expo CLI is a command-line tool that is the primary interface between a developer and other Expo tools.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ The Expo CLI is a command-line tool that is the primary interface between a deve
 | version | Select the version of Expo CLI to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/expo-cli/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

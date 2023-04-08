@@ -3,7 +3,7 @@
 
 Terraform is an open-source infrastructure as code software tool that enables you to safely and predictably create, change, and improve infrastructure.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Terraform is an open-source infrastructure as code software tool that enables yo
 | version | Select the version of Terraform to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/terraform-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

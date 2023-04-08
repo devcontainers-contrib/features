@@ -3,7 +3,7 @@
 
 Consul is a service networking solution to automate network configurations, discover services, and enable secure connectivity across any cloud or runtime.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Consul is a service networking solution to automate network configurations, disc
 | version | Select the version of consul to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/consul-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

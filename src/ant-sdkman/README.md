@@ -10,7 +10,7 @@ applications, for instance C or C++ applications. More generally, Ant can be
 used to pilot any type of process which can be described in terms of targets and
 tasks.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -27,7 +27,3 @@ tasks.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/ant-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

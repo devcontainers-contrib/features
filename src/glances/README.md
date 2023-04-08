@@ -3,7 +3,7 @@
 
 Glances is a cross-platform monitoring tool which aims to present a large amount of monitoring information through a curses or Web based interface.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Glances is a cross-platform monitoring tool which aims to present a large amount
 | version | Select the version of Glances to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/glances/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -3,7 +3,7 @@
 
 Bpipe is a framework for running computational pipelines and workflows
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -20,7 +20,3 @@ Bpipe is a framework for running computational pipelines and workflows
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/bpipe-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

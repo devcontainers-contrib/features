@@ -3,7 +3,7 @@
 
 Waypoint is an open source solution that provides a modern workflow for build, deploy, and release across platforms.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Waypoint is an open source solution that provides a modern workflow for build, d
 | version | Select the version of Waypoint to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/waypoint-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

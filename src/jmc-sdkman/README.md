@@ -9,7 +9,7 @@ data collected by Java Flight Recorder. The tool chain enables developers and
 administrators to collect and analyze data from Java applications running
 locally or deployed in production environments.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -26,7 +26,3 @@ locally or deployed in production environments.
 | jdkDistro | Select or enter a JDK distribution to install | string | oracle |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/jmc-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

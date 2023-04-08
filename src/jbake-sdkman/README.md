@@ -4,7 +4,7 @@
 JBake is a Java based, open source, static site/blog generator for developers
 and designers.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -21,7 +21,3 @@ and designers.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/jbake-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

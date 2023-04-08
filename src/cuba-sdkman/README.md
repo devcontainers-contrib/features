@@ -4,7 +4,7 @@
 CUBA CLI is an open source command line utility that enables you to easily
 create projects based on CUBA Platform
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -21,7 +21,3 @@ create projects based on CUBA Platform
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/cuba-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

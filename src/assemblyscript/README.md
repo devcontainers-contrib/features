@@ -3,7 +3,7 @@
 
 AssemblyScript compiles a variant of TypeScript to WebAssembly using Binaryen.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ AssemblyScript compiles a variant of TypeScript to WebAssembly using Binaryen.
 | version | Select the version of AssemblyScript to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/assemblyscript/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

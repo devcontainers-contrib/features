@@ -5,7 +5,7 @@ Concurnas is an open source JVM programming language designed for building
 reliable, scalable, high performance concurrent, distributed and parallel
 systems.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -22,7 +22,3 @@ systems.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/concurnas-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

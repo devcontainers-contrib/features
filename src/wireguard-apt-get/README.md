@@ -3,7 +3,7 @@
 
 WireGuard is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -11,14 +11,5 @@ WireGuard is an extremely simple yet fast and modern VPN that utilizes state-of-
 }
 ```
 
-## Options
-
-| Options Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
 
 
-
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/wireguard-apt-get/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

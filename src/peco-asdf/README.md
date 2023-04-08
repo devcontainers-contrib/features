@@ -3,7 +3,7 @@
 
 peco is simplistic interactive filtering tool.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ peco is simplistic interactive filtering tool.
 | version | Select the version of peco to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/peco-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

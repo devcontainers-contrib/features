@@ -3,7 +3,7 @@
 
 Levant is an open source templating and deployment tool for HashiCorp Nomad jobs
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Levant is an open source templating and deployment tool for HashiCorp Nomad jobs
 | version | Select the version of levant to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/levant-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

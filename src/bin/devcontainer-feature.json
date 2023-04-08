@@ -1,0 +1,20 @@
+{
+    "id": "bin",
+    "version": "1.0.0",
+    "name": "bin (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/bin",
+    "description": "bin is an effortless binary manager. It manages binary files downloaded from different sources.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}

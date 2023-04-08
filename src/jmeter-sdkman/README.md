@@ -6,7 +6,7 @@ application designed to load test functional behavior and measure performance.
 It was originally designed for testing Web Applications but has since expanded
 to other test functions.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -23,7 +23,3 @@ to other test functions.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/jmeter-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

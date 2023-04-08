@@ -3,7 +3,7 @@
 
 Pipenv automatically creates and manages a virtualenv for your projects.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Pipenv automatically creates and manages a virtualenv for your projects.
 | version | Select the version of Pipenv to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/pipenv/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

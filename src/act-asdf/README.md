@@ -3,7 +3,7 @@
 
 Act is an open source project that allows you to run your github flow locally.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Act is an open source project that allows you to run your github flow locally.
 | version | Select the version of act to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/act-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

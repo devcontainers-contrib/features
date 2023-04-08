@@ -1,0 +1,20 @@
+{
+    "id": "ripgrep",
+    "version": "1.0.0",
+    "name": "ripgrep (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ripgrep",
+    "description": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}

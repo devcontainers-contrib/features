@@ -3,7 +3,7 @@
 
 mitmproxy is an interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ mitmproxy is an interactive TLS-capable intercepting HTTP proxy for penetration 
 | version | Select the version of mitmproxy to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/mitmproxy/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

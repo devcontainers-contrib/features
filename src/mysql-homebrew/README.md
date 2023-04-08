@@ -3,7 +3,7 @@
 
 MySQL is an open-source relational database management system (RDBMS)
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ MySQL is an open-source relational database management system (RDBMS)
 | version | Select the version of MySQL to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/mysql-homebrew/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

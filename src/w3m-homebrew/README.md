@@ -3,7 +3,7 @@
 
 w3m is a free software/open source text-based web browser and terminal pager.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ w3m is a free software/open source text-based web browser and terminal pager.
 | version | Select the version of w3m to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/w3m-homebrew/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

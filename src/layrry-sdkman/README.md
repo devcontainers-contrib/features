@@ -8,7 +8,7 @@ module layers, allowing multiple versions of one module to be used within an
 application at the same time, as well as dynamically adding and removing modules
 at application runtime.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -25,7 +25,3 @@ at application runtime.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/layrry-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

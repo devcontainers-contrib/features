@@ -3,7 +3,7 @@
 
 cURL is a computer software project providing a library and command-line tool for transferring data using various network protocols.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -11,14 +11,5 @@ cURL is a computer software project providing a library and command-line tool fo
 }
 ```
 
-## Options
-
-| Options Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
 
 
-
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/curl-apt-get/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

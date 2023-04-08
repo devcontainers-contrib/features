@@ -3,7 +3,7 @@
 
 A preprocessor for anyone writing specifications that converts source files into actual specs.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ A preprocessor for anyone writing specifications that converts source files into
 | version | Select the version of Bikeshed to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/bikeshed/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

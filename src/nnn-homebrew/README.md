@@ -3,7 +3,7 @@
 
 nnn is a free and open-source file manager which provides a text-based user interface to provide file managing functionalities for Unix-like systems.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ nnn is a free and open-source file manager which provides a text-based user inte
 | version | Select the version of nnn (n³) to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/nnn-homebrew/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

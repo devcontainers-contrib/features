@@ -3,7 +3,7 @@
 
 Ninja is a small build system with a focus on speed.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Ninja is a small build system with a focus on speed.
 | version | Select the version of Ninja to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/ninja-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

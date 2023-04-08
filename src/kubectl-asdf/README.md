@@ -3,7 +3,7 @@
 
 Installs Kubectl
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Installs Kubectl
 | version | Select the version of Kubectl to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/kubectl-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

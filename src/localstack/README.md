@@ -3,7 +3,7 @@
 
 Localstack is a fully functional local AWS cloud stack.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Localstack is a fully functional local AWS cloud stack.
 | version | Select the version of Localstack to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/localstack/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

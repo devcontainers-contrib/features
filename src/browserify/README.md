@@ -3,7 +3,7 @@
 
 Browserify lets you require('modules') in the browser by bundling up all of your dependencies.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Browserify lets you require('modules') in the browser by bundling up all of your
 | version | Select the version of Browserify to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/browserify/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

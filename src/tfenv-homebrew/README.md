@@ -3,7 +3,7 @@
 
 tfenv is an open-source Terraform version manager tool.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ tfenv is an open-source Terraform version manager tool.
 | version | Select the version of tfenv to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/tfenv-homebrew/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

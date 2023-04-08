@@ -3,7 +3,7 @@
 
 Gaiden is a tool that makes it easy to create documentation with Markdown.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -20,7 +20,3 @@ Gaiden is a tool that makes it easy to create documentation with Markdown.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/gaiden-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

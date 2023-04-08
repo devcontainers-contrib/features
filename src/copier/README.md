@@ -3,7 +3,7 @@
 
 copier creates projects from project templates.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ copier creates projects from project templates.
 | version | Select the version of copier to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/copier/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

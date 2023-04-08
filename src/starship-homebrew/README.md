@@ -3,7 +3,7 @@
 
 Starship is fast and highly customizable cross-shell prompt that can display contextual information.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Starship is fast and highly customizable cross-shell prompt that can display con
 | version | Select the version of Starship to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/starship-homebrew/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

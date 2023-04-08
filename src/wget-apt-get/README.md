@@ -3,7 +3,7 @@
 
 Wget is a free software package for retrieving files using HTTP, HTTPS, FTP and FTPS, the most widely used Internet protocols.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -11,14 +11,5 @@ Wget is a free software package for retrieving files using HTTP, HTTPS, FTP and 
 }
 ```
 
-## Options
-
-| Options Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
 
 
-
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/wget-apt-get/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

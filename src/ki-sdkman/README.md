@@ -5,7 +5,7 @@ An extensible implementation of the Kotlin REPL with a rich set of features
 including autocomplete, syntax highlighting, type inference and maven
 dependencies.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -22,7 +22,3 @@ dependencies.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/ki-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

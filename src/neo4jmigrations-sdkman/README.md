@@ -5,7 +5,7 @@ Neo4j-Migrations is a database migration and refactoring tool that allows
 running Cypher scripts and programmatic refactorings in a controlled and
 repeatable fashion against one or more Neo4j database.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -22,7 +22,3 @@ repeatable fashion against one or more Neo4j database.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/neo4jmigrations-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

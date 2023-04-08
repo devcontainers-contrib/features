@@ -3,7 +3,7 @@
 
 Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Nim is a statically typed compiled systems programming language. It combines suc
 | version | Select the version of Nim to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/nim-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

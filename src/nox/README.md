@@ -3,7 +3,7 @@
 
 nox is a command-line tool that automates testing in multiple Python environments.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ nox is a command-line tool that automates testing in multiple Python environment
 | version | Select the version of nox to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/nox/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

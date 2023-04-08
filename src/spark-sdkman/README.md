@@ -5,7 +5,7 @@ Apache Spark is an open-source cluster-computing framework. Spark provides an
 interface for programming entire clusters with implicit data parallelism and
 fault-tolerance.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -22,7 +22,3 @@ fault-tolerance.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/spark-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

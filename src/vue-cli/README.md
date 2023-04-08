@@ -3,7 +3,7 @@
 
 Vue CLI is a full system for rapid Vue.js development.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Vue CLI is a full system for rapid Vue.js development.
 | version | Select the version of Vue CLI to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/vue-cli/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

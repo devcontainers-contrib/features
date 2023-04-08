@@ -3,7 +3,7 @@
 
 Prisma is a next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Prisma is a next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, Ma
 | version | Select the version of Prisma CLI to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/prisma/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

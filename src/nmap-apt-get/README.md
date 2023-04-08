@@ -3,7 +3,7 @@
 
 Nmap (Network Mapper) is a free and open source utility for network discovery and security auditing.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -11,14 +11,5 @@ Nmap (Network Mapper) is a free and open source utility for network discovery an
 }
 ```
 
-## Options
-
-| Options Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
 
 
-
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/nmap-apt-get/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

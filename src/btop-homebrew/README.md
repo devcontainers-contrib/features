@@ -3,7 +3,7 @@
 
 btop is a resource monitor that shows usage and stats for processor, memory, disks, network and processes.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ btop is a resource monitor that shows usage and stats for processor, memory, dis
 | version | Select the version of btop to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/btop-homebrew/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

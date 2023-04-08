@@ -3,7 +3,7 @@
 
 yapf is a formatter for Python files.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ yapf is a formatter for Python files.
 | version | Select the version of yapf to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/yapf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -3,7 +3,7 @@
 
 Vulture finds unused code in Python programs.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Vulture finds unused code in Python programs.
 | version | Select the version of Vulture to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/vulture/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

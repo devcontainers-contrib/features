@@ -3,7 +3,7 @@
 
 GraalVM is a high-performance JDK designed to accelerate Java application performance while consuming fewer resources.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ GraalVM is a high-performance JDK designed to accelerate Java application perfor
 | version | Select the version of GraalVM to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/graalvm-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

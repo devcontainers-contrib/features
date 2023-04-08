@@ -3,7 +3,7 @@
 
 protoc is the protocol buffer compiler
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ protoc is the protocol buffer compiler
 | version | Select the version of protoc to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/protoc-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

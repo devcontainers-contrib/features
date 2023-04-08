@@ -3,7 +3,7 @@
 
 Elixir is a functional, concurrent, general-purpose programming language that runs on the BEAM virtual machine which is also used to implement the Erlang programming language.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -19,7 +19,3 @@ Elixir is a functional, concurrent, general-purpose programming language that ru
 | erlangVersion | Select the version of Erlang to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/elixir-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

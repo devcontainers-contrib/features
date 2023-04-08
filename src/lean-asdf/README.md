@@ -3,7 +3,7 @@
 
 Lean is a functional programming language that makes it easy to write correct and maintainable code.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Lean is a functional programming language that makes it easy to write correct an
 | version | Select the version of Lean to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/lean-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

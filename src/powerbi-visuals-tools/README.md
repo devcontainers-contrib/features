@@ -3,7 +3,7 @@
 
 PowerBI Visual Tools Contains tools for building/packaging Power BI visuals
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ PowerBI Visual Tools Contains tools for building/packaging Power BI visuals
 | version | Select the version of PowerBI Visual Tools (pbiviz) to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/powerbi-visuals-tools/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -3,7 +3,7 @@
 
 TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ TypeScript is a strongly typed programming language that builds on JavaScript, g
 | version | Select the version of TypeScript to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/typescript/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -3,7 +3,7 @@
 
 Angular CLI is a command-line interface tool that you use to initialize, develop, scaffold, and maintain Angular applications directly from a command shell.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Angular CLI is a command-line interface tool that you use to initialize, develop
 | version | Select the version of Angular CLI to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/angular-cli/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

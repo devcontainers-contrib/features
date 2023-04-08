@@ -3,7 +3,7 @@
 
 Elasticsearch is a search engine based on the Lucene library.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -18,7 +18,3 @@ Elasticsearch is a search engine based on the Lucene library.
 | version | Select the version of Elasticsearch to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/elasticsearch-asdf/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

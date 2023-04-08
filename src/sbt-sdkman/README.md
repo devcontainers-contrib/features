@@ -9,7 +9,7 @@ repositories); continuous compilation, testing, and deployment; integration with
 the Scala interpreter for rapid iteration and debugging; support for mixed
 Java/Scala projects
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -26,7 +26,3 @@ Java/Scala projects
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/sbt-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

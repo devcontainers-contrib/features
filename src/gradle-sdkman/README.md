@@ -7,7 +7,7 @@ instead of the more traditional XML form of declaring the project configuration.
 Gradle uses a directed acyclic graph (DAG) to determine the order in which tasks
 can be run.
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -24,7 +24,3 @@ can be run.
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/gradle-sdkman/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
