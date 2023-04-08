@@ -3,7 +3,7 @@
 
 Github Release feature will download, extract and add to path a release binary from a given repo
 
-## Example Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
@@ -20,7 +20,3 @@ Github Release feature will download, extract and add to path a release binary f
 | version | Select the version of the github release binary to install. | string | latest |
 
 
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/gh-release/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

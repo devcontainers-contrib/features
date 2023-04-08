@@ -18,5 +18,15 @@
                 "target": "gh"
             }
         }
+    },
+    "test_act": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "gh-release": {
+                "version": "latest",
+                "repo": "nektos/act",
+                "target": "act"
+            }
+        }
     }
 }
