@@ -7,6 +7,11 @@ on:
         description: 'run tests on changes from main branch only'
         default: false
 
+      enabled:
+        type: boolean
+        description: 'run tests on changes from main branch only'
+        default: true
+
   workflow_call:
     inputs:
       on_changes_only:
@@ -17,7 +22,7 @@ on:
       enabled:
         type: boolean
         description: 'run tests on changes from main branch only'
-        default: false
+        default: true
 
 
   pull_request:
@@ -29,14 +34,18 @@ on:
 jobs:
 
   find-features:
-    if: ${{ ( github.event_name != 'workflow_call' ) || ( inputs.enabled  == 'true' ) }}
+    if: ${{ ( ( github.event_name != 'workflow_call' ) && ( github.event_name != 'workflow_dispatch' ) ) || inputs.enabled  }}
     runs-on: ubuntu-latest
     name: Find feature
     outputs:
       all-features: ${{ steps.list-features.outputs.all_features }}
       changed-features: ${{ steps.list-features.outputs.changed_features }}
     steps:
-      - uses: actions/checkout@v3    
+      - uses: actions/checkout@v3   
+      - run: |
+          echo ${{ inputs.enabled  }}
+          echo ${{ github.event_name  }} 
+
       - id: list-features
         uses: ./.github/actions/list-changed-features-action
         with:
