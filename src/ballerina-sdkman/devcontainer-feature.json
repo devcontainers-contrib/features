@@ -1,6 +1,6 @@
 {
     "id": "ballerina-sdkman",
-    "version": "2.0.10",
+    "version": "2.0.11",
     "name": "Ballerina (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ballerina-sdkman",
     "description": "Open source programming language and platform for cloud-era application\nprogrammers to easily write software that just works.",

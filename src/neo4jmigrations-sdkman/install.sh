@@ -9,7 +9,7 @@ source ./library_scripts.sh
 # `ensure_nanolayer` is a bash function that will find any existing nanolayer installations, 
 # and if missing - will download a temporary copy that automatically get deleted at the end 
 # of the script
-ensure_nanolayer nanolayer_location
+ensure_nanolayer nanolayer_location "v0.4.10"
 
 
 $nanolayer_location \
@@ -22,7 +22,21 @@ $nanolayer_location \
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers/features/java:1.1.1" \
+    "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0" \
+    --option candidate="none" --option version="none"
+
+
+$nanolayer_location \
+    install \
+    devcontainer-feature \
+    "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0" \
+    --option command="echo sdkman_auto_answer=true > ${SDKMAN_DIR}/etc/config"
+
+
+$nanolayer_location \
+    install \
+    devcontainer-feature \
+    "ghcr.io/devcontainers/features/java:1.2.1" \
     --option jdkDistro="$JDKDISTRO" --option version="$JDKVERSION"
 
 

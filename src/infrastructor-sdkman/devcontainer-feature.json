@@ -1,6 +1,6 @@
 {
     "id": "infrastructor-sdkman",
-    "version": "2.0.10",
+    "version": "2.0.11",
     "name": "Infrastructor (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/infrastructor-sdkman",
     "description": "Infrastructor is an open source server provisioning tool written in Groovy",
