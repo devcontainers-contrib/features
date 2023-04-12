@@ -5,7 +5,7 @@
             "gh-release": {
                 "version": "latest",
                 "repo": "cli/cli",
-                "target": "gh"
+                "binaryName": "gh"
             }
         }
     },
@@ -15,7 +15,7 @@
             "gh-release": {
                 "version": "latest",
                 "repo": "cli/cli",
-                "target": "gh"
+                "binaryName": "gh"
             }
         }
     },
@@ -25,7 +25,7 @@
             "gh-release": {
                 "version": "latest",
                 "repo": "nektos/act",
-                "target": "act"
+                "binaryName": "act"
             }
         }
     },
@@ -35,7 +35,7 @@
             "gh-release": {
                 "version": "latest",
                 "repo": "PowerShell/PowerShell",
-                "target": "pwsh",
+                "binaryName": "pwsh",
                 "assetRegex": "^(?!.*(fxdependent))"
             }
         }
