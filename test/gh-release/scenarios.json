@@ -28,5 +28,16 @@
                 "target": "act"
             }
         }
+    },
+    "test_powershell": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "gh-release": {
+                "version": "latest",
+                "repo": "PowerShell/PowerShell",
+                "target": "pwsh",
+                "assetRegex": "^(?!.*(fxdependent))"
+            }
+        }
     }
 }
