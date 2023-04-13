@@ -1,6 +1,6 @@
 {
     "id": "gh-release",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "name": "Github Release",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/gh-release",
     "description": "Github Release feature will download, extract and add to path a release binary from a given repo",
@@ -15,12 +15,13 @@
             ],
             "type": "string"
         },
-        "binaryName": {
+        "binaryNames": {
             "default": "",
-            "description": "The target binary name. For example, for Github CLI the binary name would be 'gh'. For DigitalOcean CLI: 'doctl', etc.",
+            "description": "The target binary name (Comma separated in case there are multiple binaries in the same asset). For example, for Github CLI the binary name would be simply 'gh'. For DigitalOcean CLI: 'doctl'. For etcd it would be two: 'etcd,etcdctl'",
             "proposals": [
                 "gh",
-                "doctl"
+                "doctl",
+                "etcd,etcdctl"
             ],
             "type": "string"
         },
@@ -32,6 +33,11 @@
             ],
             "type": "string"
         },
+        "assetRegex": {
+            "default": "",
+            "description": "An optional filtering regex to help point the correct release asset.",
+            "type": "string"
+        },
         "binLocation": {
             "default": "/usr/local/bin",
             "description": "Location to download the target binary to. Typically a location which exist under PATH variable",
@@ -40,22 +46,17 @@
             ],
             "type": "string"
         },
+        "libName": {
+            "default": "",
+            "description": "Name for the lib dir (if exists). Will default to binary name if not given",
+            "type": "string"
+        },
         "libLocation": {
             "default": "/usr/local/lib",
             "description": "Any lib files (if exists) will be downloaded into this location. The binary will then be soft linked from the lib location to the bin location",
             "proposals": [
                 "/usr/local/lib"
             ],
-            "type": "string"
-        },
-        "libName": {
-            "default": "",
-            "description": "Name for the lib dir (if exists). Will default to binary name if not given",
-            "type": "string"
-        },
-        "assetRegex": {
-            "default": "",
-            "description": "An optional filtering regex to help point the correct release asset.",
             "type": "string"
         }
     },

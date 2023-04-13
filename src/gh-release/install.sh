@@ -9,7 +9,7 @@ source ./library_scripts.sh
 # `ensure_nanolayer` is a bash function that will find any existing nanolayer installations, 
 # and if missing - will download a temporary copy that automatically get deleted at the end 
 # of the script
-ensure_nanolayer nanolayer_location "v0.4.16"
+ensure_nanolayer nanolayer_location "v0.4.17"
 
 
 
@@ -19,6 +19,6 @@ lib_name_cmd=$(if ! [[ -z $LIBNAME ]]; then echo --lib-name "${LIBNAME}" ; fi)
 $nanolayer_location \
    install gh-release \
    "$REPO" \
-   "$BINARYNAME" --force \
+   "$BINARYNAMES" --force \
    --version "$VERSION" --bin-location "$BINLOCATION"  --lib-location "$LIBLOCATION"  $asset_regex_cmd $lib_name_cmd 
 

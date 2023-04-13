@@ -5,7 +5,7 @@
             "gh-release": {
                 "version": "latest",
                 "repo": "cli/cli",
-                "binaryName": "gh"
+                "binaryNames": "gh"
             }
         }
     },
@@ -15,7 +15,7 @@
             "gh-release": {
                 "version": "latest",
                 "repo": "cli/cli",
-                "binaryName": "gh"
+                "binaryNames": "gh"
             }
         }
     },
@@ -25,7 +25,18 @@
             "gh-release": {
                 "version": "latest",
                 "repo": "nektos/act",
-                "binaryName": "act"
+                "binaryNames": "act"
+            }
+        }
+    },
+    "test_etcd": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "gh-release": {
+                "version": "latest",
+                "repo": "etcd-io/etcd",
+                "binaryNames": "etcd,etcdctl",
+                "libName": "etcd"
             }
         }
     },
@@ -35,7 +46,7 @@
             "gh-release": {
                 "version": "latest",
                 "repo": "PowerShell/PowerShell",
-                "binaryName": "pwsh",
+                "binaryNames": "pwsh",
                 "assetRegex": "^(?!.*(fxdependent))"
             }
         }
