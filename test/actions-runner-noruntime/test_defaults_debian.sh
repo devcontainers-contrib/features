@@ -4,6 +4,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "run.sh --version" run.sh --version
+check "$HOME/actions-runner/run.sh --version" $HOME/actions-runner/run.sh --version
 
 reportResults

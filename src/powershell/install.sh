@@ -9,14 +9,14 @@ source ./library_scripts.sh
 # `ensure_nanolayer` is a bash function that will find any existing nanolayer installations, 
 # and if missing - will download a temporary copy that automatically get deleted at the end 
 # of the script
-ensure_nanolayer nanolayer_location "v0.4.16"
+ensure_nanolayer nanolayer_location "v0.4.17"
 
 
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.8" \
-    --option repo='powershell/powershell' --option binaryName='pwsh' --option version="$VERSION" --option assetRegex='^(?!.*(fxdependent))'
+    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.9" \
+    --option repo='powershell/powershell' --option binaryNames='pwsh' --option version="$VERSION" --option assetRegex='^(?!.*(fxdependent))'
 
 
 echo 'Done!'

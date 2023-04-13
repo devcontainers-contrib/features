@@ -1,6 +1,6 @@
 {
     "id": "sv2v",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "sv2v (SystemVerilog to Verilog) (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/sv2v",
     "description": "sv2v converts SystemVerilog (IEEE 1800-2017) to Verilog (IEEE 1364-2005), with an emphasis on supporting synthesizable language constructs.",
