@@ -1,6 +1,6 @@
 {
     "id": "fd",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "fd (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/fd",
     "description": "fd is a simple, fast and user-friendly alternative to 'find'.",

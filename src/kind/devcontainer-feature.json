@@ -1,6 +1,6 @@
 {
     "id": "kind",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "kind (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/kind",
     "description": "kind is a tool for running local Kubernetes clusters using Docker container 'nodes'. kind was primarily designed for testing Kubernetes itself, but may be used for local development or CI.",

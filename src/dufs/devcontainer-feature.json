@@ -1,6 +1,6 @@
 {
     "id": "dufs",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Dufs (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/dufs",
     "description": "Dufs is a distinctive utility file server that supports static serving, uploading, searching, accessing control, webdav and more.",

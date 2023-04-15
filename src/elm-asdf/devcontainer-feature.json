@@ -1,6 +1,6 @@
 {
     "id": "elm-asdf",
-    "version": "2.0.10",
+    "version": "2.0.11",
     "name": "Elm (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/elm-asdf",
     "description": "Elm is a domain-specific programming language for declaratively creating web browser-based graphical user interfaces.",

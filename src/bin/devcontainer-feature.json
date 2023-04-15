@@ -1,6 +1,6 @@
 {
     "id": "bin",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "bin (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/bin",
     "description": "bin is an effortless binary manager. It manages binary files downloaded from different sources.",

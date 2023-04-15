@@ -1,6 +1,6 @@
 {
     "id": "asciidoctorj-sdkman",
-    "version": "2.0.11",
+    "version": "2.0.12",
     "name": "AsciidoctorJ (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/asciidoctorj-sdkman",
     "description": "AsciidoctorJ is the official library for running Asciidoctor on the JVM. Using\nAsciidoctorJ, you can convert AsciiDoc content or analyze the structure of a\nparsed AsciiDoc document from Java and other JVM languages.",

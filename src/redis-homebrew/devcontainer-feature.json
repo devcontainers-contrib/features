@@ -1,6 +1,6 @@
 {
     "id": "redis-homebrew",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "name": "Redis (via Homebrew)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/redis-homebrew",
     "description": "Redis is an in-memory data structure store, used as a distributed, in-memory key-value database, cache and message broker, with optional durability.",

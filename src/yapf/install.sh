@@ -9,14 +9,14 @@ source ./library_scripts.sh
 # `ensure_nanolayer` is a bash function that will find any existing nanolayer installations, 
 # and if missing - will download a temporary copy that automatically get deleted at the end 
 # of the script
-ensure_nanolayer nanolayer_location
+ensure_nanolayer nanolayer_location "v0.4.25"
 
 
 $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.3" \
-    --option package="yapf" --option version="$VERSION"
+    --option package='yapf' --option version="$VERSION"
 
 
 echo 'Done!'

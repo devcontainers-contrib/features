@@ -1,6 +1,6 @@
 {
     "id": "spark-sdkman",
-    "version": "2.0.12",
+    "version": "2.0.13",
     "name": "Spark (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/spark-sdkman",
     "description": "Apache Spark is an open-source cluster-computing framework. Spark provides an\ninterface for programming entire clusters with implicit data parallelism and\nfault-tolerance.",

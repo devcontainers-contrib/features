@@ -1,6 +1,6 @@
 {
     "id": "serverless",
-    "version": "2.0.10",
+    "version": "2.0.11",
     "name": "Serverless Framework (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/serverless",
     "description": "Serverless Framework is a widely used open-source IaC tool that allows you to build, and deploy serverless applications on multiple cloud providers.",

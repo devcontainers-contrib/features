@@ -1,6 +1,6 @@
 {
     "id": "exa",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "exa (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/exa",
     "description": "exa is a modern replacement for ls.",

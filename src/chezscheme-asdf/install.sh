@@ -9,21 +9,21 @@ source ./library_scripts.sh
 # `ensure_nanolayer` is a bash function that will find any existing nanolayer installations, 
 # and if missing - will download a temporary copy that automatically get deleted at the end 
 # of the script
-ensure_nanolayer nanolayer_location
+ensure_nanolayer nanolayer_location "v0.4.25"
 
 
 $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0" \
-    --option packages="build-essential uuid-dev libncurses5-dev libx11-dev"
+    --option packages='build-essential uuid-dev libncurses5-dev libx11-dev'
 
 
 $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.5" \
-    --option plugin="chezscheme" --option version="$VERSION"
+    --option plugin='chezscheme' --option version="$VERSION"
 
 
 echo 'Done!'

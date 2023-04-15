@@ -1,6 +1,6 @@
 {
     "id": "perl-asdf",
-    "version": "2.0.10",
+    "version": "2.0.11",
     "name": "Perl (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/perl-asdf",
     "description": "Perl is a general-purpose, interpreted, dynamic programming language.",

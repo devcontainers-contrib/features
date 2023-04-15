@@ -1,6 +1,6 @@
 {
     "id": "concurnas-sdkman",
-    "version": "2.0.11",
+    "version": "2.0.12",
     "name": "Concurnas (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/concurnas-sdkman",
     "description": "Concurnas is an open source JVM programming language designed for building\nreliable, scalable, high performance concurrent, distributed and parallel\nsystems.",

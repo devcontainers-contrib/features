@@ -1,6 +1,6 @@
 {
     "id": "gaiden-sdkman",
-    "version": "2.0.11",
+    "version": "2.0.12",
     "name": "Gaiden (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/gaiden-sdkman",
     "description": "Gaiden is a tool that makes it easy to create documentation with Markdown.",
