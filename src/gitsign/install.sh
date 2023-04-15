@@ -16,7 +16,7 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/gh-release:1.0.11" \
-    --option repo='ClementTsang/bottom' --option binaryNames='btm' --option version="$VERSION" --option assetRegex='^(?!.*(2-17))'
+    --option repo='sigstore/gitsign' --option binaryNames='gitsign' --option version="$VERSION" --option assetRegex='^(?!.*(credential-cache))'
 
 
 echo 'Done!'

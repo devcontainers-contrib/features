@@ -1,9 +1,9 @@
 {
-    "id": "btm",
-    "version": "1.0.6",
-    "name": "bottom (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/btm",
-    "description": "bottom is a customizable cross-platform graphical process/system monitor for the terminal.",
+    "id": "cyclonedx-cli",
+    "version": "1.0.0",
+    "name": "CycloneDX CLI (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/cyclonedx-cli",
+    "description": "CycloneDX CLI is a utility with many functions to view, convert, and perform operations on SBOMs.",
     "options": {
         "version": {
             "default": "latest",

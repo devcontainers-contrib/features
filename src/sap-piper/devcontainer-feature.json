@@ -1,9 +1,9 @@
 {
-    "id": "btm",
-    "version": "1.0.6",
-    "name": "bottom (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/btm",
-    "description": "bottom is a customizable cross-platform graphical process/system monitor for the terminal.",
+    "id": "sap-piper",
+    "version": "1.0.0",
+    "name": "Project Piper (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/sap-piper",
+    "description": "Piper offers default pipelines to easily implement CI/CD processes integrating SAP systems.",
     "options": {
         "version": {
             "default": "latest",

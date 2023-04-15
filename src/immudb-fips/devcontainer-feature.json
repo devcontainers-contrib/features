@@ -1,9 +1,9 @@
 {
-    "id": "btm",
-    "version": "1.0.6",
-    "name": "bottom (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/btm",
-    "description": "bottom is a customizable cross-platform graphical process/system monitor for the terminal.",
+    "id": "immudb-fips",
+    "version": "1.0.0",
+    "name": "immudb (FIPS) (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/immudb-fips",
+    "description": "immudb is an immutable database based on zero trust, SQL and Key-Value, tamperproof, data change history.",
     "options": {
         "version": {
             "default": "latest",

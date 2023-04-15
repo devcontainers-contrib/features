@@ -1,0 +1,21 @@
+{
+    "id": "auditjs",
+    "version": "1.0.0",
+    "name": "AuditJS (via npm)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/auditjs",
+    "description": "AuditJS audits an NPM package.json file to identify known vulnerabilities.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/node:latest",
+        "ghcr.io/devcontainers-conrib/features/npm-package:latest"
+    ]
+}

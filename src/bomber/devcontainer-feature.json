@@ -1,9 +1,9 @@
 {
-    "id": "btm",
-    "version": "1.0.6",
-    "name": "bottom (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/btm",
-    "description": "bottom is a customizable cross-platform graphical process/system monitor for the terminal.",
+    "id": "bomber",
+    "version": "1.0.0",
+    "name": "bomber (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/bomber",
+    "description": "bomber is an application that scans SBOMs for security vulnerabilities.",
     "options": {
         "version": {
             "default": "latest",

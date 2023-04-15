@@ -1,9 +1,9 @@
 {
-    "id": "btm",
-    "version": "1.0.6",
-    "name": "bottom (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/btm",
-    "description": "bottom is a customizable cross-platform graphical process/system monitor for the terminal.",
+    "id": "rekor-cli",
+    "version": "1.0.0",
+    "name": "Rekor CLI (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/rekor-cli",
+    "description": "Rekor provide an immutable, tamper-resistant ledger of metadata generated within a software project supply chain.",
     "options": {
         "version": {
             "default": "latest",

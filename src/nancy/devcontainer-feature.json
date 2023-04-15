@@ -1,9 +1,9 @@
 {
-    "id": "btm",
-    "version": "1.0.6",
-    "name": "bottom (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/btm",
-    "description": "bottom is a customizable cross-platform graphical process/system monitor for the terminal.",
+    "id": "nancy",
+    "version": "1.0.0",
+    "name": "Nancy (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/nancy",
+    "description": "Nancy is a tool to check for vulnerabilities in your Golang dependencies, powered by Sonatype OSS Index.",
     "options": {
         "version": {
             "default": "latest",

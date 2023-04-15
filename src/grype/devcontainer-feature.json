@@ -1,9 +1,9 @@
 {
-    "id": "btm",
-    "version": "1.0.6",
-    "name": "bottom (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/btm",
-    "description": "bottom is a customizable cross-platform graphical process/system monitor for the terminal.",
+    "id": "grype",
+    "version": "1.0.0",
+    "name": "Grype (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/grype",
+    "description": "Grype is a vulnerability scanner for container images and filesystems.",
     "options": {
         "version": {
             "default": "latest",

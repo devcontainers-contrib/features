@@ -15,9 +15,9 @@ ensure_nanolayer nanolayer_location "v0.4.25"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.11" \
-    --option repo='ClementTsang/bottom' --option binaryNames='btm' --option version="$VERSION" --option assetRegex='^(?!.*(2-17))'
+    "ghcr.io/devcontainers-contrib/features/pipx-package:latest" \
+    --option package='scancode-toolkit' --option version="$VERSION"
 
 
-echo 'Done!'
+echo 'Done'
 

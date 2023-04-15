@@ -1,9 +1,9 @@
 {
-    "id": "btm",
-    "version": "1.0.6",
-    "name": "bottom (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/btm",
-    "description": "bottom is a customizable cross-platform graphical process/system monitor for the terminal.",
+    "id": "cosign",
+    "version": "1.0.0",
+    "name": "Cosign (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/cosign",
+    "description": "Cosign is a command line utility that can sign and verify software artifact, such as container images and blobs.",
     "options": {
         "version": {
             "default": "latest",

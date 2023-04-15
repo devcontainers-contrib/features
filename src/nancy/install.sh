@@ -16,7 +16,7 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/gh-release:1.0.11" \
-    --option repo='ClementTsang/bottom' --option binaryNames='btm' --option version="$VERSION" --option assetRegex='^(?!.*(2-17))'
+    --option repo='sonatype-nexus-community/nancy' --option binaryNames='nancy' --option version="$VERSION" --option assetRegex='.*(.tar.gz)$'
 
 
 echo 'Done!'
