@@ -1,12 +1,12 @@
-<div align="center">
+# Devcontainer Features
 
- # [List of features](https://github.com/devcontainers-contrib/features/tree/main/src) 
+![Codespaces](https://img.shields.io/static/v1?style=for-the-badge&message=Codespaces&color=181717&logo=GitHub&logoColor=FFFFFF&label=)
+![Devcontainers](https://img.shields.io/static/v1?style=for-the-badge&message=Devcontainers&color=2496ED&logo=Docker&logoColor=FFFFFF&label=)
+![Python](https://img.shields.io/static/v1?style=for-the-badge&message=Python&color=3776AB&logo=Python&logoColor=FFFFFF&label=)
 
-👀 Don't see your feature here? 
-
- ## [🔥Suggest a new feature!🔥](https://github.com/devcontainers-contrib/features/issues/new?template=suggest-feature.yaml) 
-
-</div>
+🐳 Extra add-in features for
+[devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) and
+[GitHub Codespaces](https://github.com/features/codespaces)
 
 <div align="center">
 
@@ -14,11 +14,12 @@
 
 </div>
 
-## Usage
+💻 Works with devcontainers  \
+☁️ Works with GitHub Codespaces \
+👀 Don't see your feature here?   [🔥Suggest a new feature!🔥](https://github.com/devcontainers-contrib/features/issues/new?template=suggest-feature.yaml) 
 
-![VS Code](https://img.shields.io/static/v1?style=for-the-badge&message=VS+Code&color=007ACC&logo=Visual+Studio+Code&logoColor=FFFFFF&label=)
-![Codespaces](https://img.shields.io/static/v1?style=for-the-badge&message=Codespaces&color=181717&logo=GitHub&logoColor=FFFFFF&label=)
-![Devcontainers](https://img.shields.io/static/v1?style=for-the-badge&message=Devcontainers&color=2496ED&logo=Docker&logoColor=FFFFFF&label=)
+
+## Usage
 
 Just add a `.devcontainer/devcontainer.json` file with a `features` key. It's
 very similar to `package.json`'s `dependencies` object, just with the addition
