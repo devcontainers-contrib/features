@@ -1,6 +1,6 @@
 {
     "id": "dive",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "name": "Dive (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/dive",
     "description": "Dive is a tool for exploring a docker image, layer contents, and discovering ways to shrink the size of your Docker/OCI image.",

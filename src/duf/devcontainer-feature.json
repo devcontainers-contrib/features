@@ -1,6 +1,6 @@
 {
     "id": "duf",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "name": "duf (Disk Usage/Free Utility) (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/duf",
     "description": "duf is a better 'df' alternative.",

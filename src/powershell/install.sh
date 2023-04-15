@@ -15,7 +15,7 @@ ensure_nanolayer nanolayer_location "v0.4.25"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.9" \
+    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.11" \
     --option repo='powershell/powershell' --option binaryNames='pwsh' --option version="$VERSION" --option assetRegex='^(?!.*(fxdependent))'
 
 
