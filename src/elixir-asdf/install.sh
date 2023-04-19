@@ -23,14 +23,14 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.5" \
-    --option plugin='elixir' --option version="$ELIXIRVERSION"
+    --option plugin='erlang' --option version="$ERLANGVERSION"
 
 
 $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.5" \
-    --option plugin='erlang' --option version="$ERLANGVERSION"
+    --option plugin='elixir' --option version="$ELIXIRVERSION"
 
 
 echo 'Done!'
