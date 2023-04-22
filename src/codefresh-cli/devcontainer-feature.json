@@ -1,0 +1,20 @@
+{
+    "id": "codefresh-cli",
+    "version": "1.0.0",
+    "name": "Codefresh CLI (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/codefresh-cli",
+    "description": "Codefresh CLI provides a full and flexible interface to interact with Codefresh.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "id": "datadog-ci-cli",
+    "version": "1.0.0",
+    "name": "Datadog CI CLI (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/datadog-ci-cli",
+    "description": "Execute commands with Datadog from within your Continuous Integration/Continuous Deployment scripts to perform end-to-end tests of your application before applying your changes or deploying. datadog-ci allows you to run Continuous Testing tests and wait for the results.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}
