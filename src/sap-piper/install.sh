@@ -15,7 +15,7 @@ ensure_nanolayer nanolayer_location "v0.4.27"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.11" \
+    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.14" \
     --option repo='SAP/jenkins-library' --option binaryNames='piper' --option version="$VERSION" --option assetRegex='^(?!.*(master))'
 
 

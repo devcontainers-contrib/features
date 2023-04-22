@@ -15,8 +15,8 @@ ensure_nanolayer nanolayer_location "v0.4.27"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.11" \
-    --option repo='arl/gitmux' --option binaryNames='dnote' --option version="$VERSION"
+    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.14" \
+    --option repo='arl/gitmux' --option binaryNames='gitmux' --option version="$VERSION"
 
 
 echo 'Done!'

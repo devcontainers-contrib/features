@@ -15,7 +15,7 @@ ensure_nanolayer nanolayer_location "v0.4.27"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.11" \
+    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.14" \
     --option repo='etcd-io/etcd' --option binaryNames='etcd,etcdctl' --option version="$VERSION" --option libName='etcd'
 
 

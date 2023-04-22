@@ -1,6 +1,6 @@
 {
     "id": "tea",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "tea (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tea",
     "description": "tea is the next-generation, cross-platform package manager from the creator of brew.",
