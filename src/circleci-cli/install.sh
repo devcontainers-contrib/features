@@ -15,7 +15,7 @@ ensure_nanolayer nanolayer_location "v0.4.28"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.13" \
+    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.14" \
     --option repo='CircleCI-Public/circleci-cli' --option binaryNames='circleci' --option version="$VERSION"
 
 

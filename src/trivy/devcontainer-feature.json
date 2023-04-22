@@ -1,6 +1,6 @@
 {
     "id": "trivy",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "Trivy (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/trivy",
     "description": "Trivy is a comprehensive and versatile security scanner. It finds vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more.",

@@ -1,6 +1,6 @@
 {
     "id": "ko",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "ko (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ko",
     "description": "ko is a simple, fast container image builder for Go applications.",
