@@ -16,7 +16,7 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.3" \
-    --option packages="linux-headers-$(uname -r),build-essential,libssl-dev,libreadline-dev,zlib1g-dev,libcurl4-openssl-dev,uuid-dev,icu-devtools"
+    --option packages="build-essential,libssl-dev,libreadline-dev,zlib1g-dev,libcurl4-openssl-dev,uuid-dev,icu-devtools"
 
 
 $nanolayer_location \
