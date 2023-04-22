@@ -1,6 +1,6 @@
 {
     "id": "mysql-homebrew",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "name": "MySQL (via Homebrew)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mysql-homebrew",
     "description": "MySQL is an open-source relational database management system (RDBMS)",

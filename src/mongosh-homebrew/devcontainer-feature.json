@@ -1,6 +1,6 @@
 {
     "id": "mongosh-homebrew",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "name": "MongoDB Shell (via Homebrew)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mongosh-homebrew",
     "description": "MongoDB Shell to connect, configure, query, and work with your MongoDB database.",

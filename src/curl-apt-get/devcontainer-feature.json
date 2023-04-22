@@ -1,6 +1,6 @@
 {
     "id": "curl-apt-get",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "name": "cURL (via apt-get)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/curl-apt-get",
     "description": "cURL is a computer software project providing a library and command-line tool for transferring data using various network protocols.",

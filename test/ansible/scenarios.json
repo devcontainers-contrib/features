@@ -1,5 +1,11 @@
 {
-    "test": {
+    "test_ubuntu": {
+        "image": "ubuntu:22.04",
+        "features": {
+            "ansible": {}
+        }
+    },
+    "test_debian": {
         "image": "mcr.microsoft.com/devcontainers/base:debian",
         "features": {
             "ansible": {}

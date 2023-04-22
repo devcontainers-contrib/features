@@ -1,6 +1,6 @@
 {
     "id": "toolkit-sdkman",
-    "version": "2.0.13",
+    "version": "2.0.14",
     "name": "ToolKit (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/toolkit-sdkman",
     "description": "Toolkit is a client command line tool that supports multiple IoT protocols like\nMQTT and COAP. It provides a command line client tool for IoT development.",

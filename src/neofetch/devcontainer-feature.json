@@ -1,6 +1,6 @@
 {
     "id": "neofetch",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "Neofetch (via apt-get)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/neofetch",
     "description": "Neofetch displays information about your operating system, software and hardware in an aesthetic and visually pleasing way.",

@@ -1,6 +1,6 @@
 {
     "id": "tomcat-sdkman",
-    "version": "2.0.13",
+    "version": "2.0.14",
     "name": "Apache Tomcat (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tomcat-sdkman",
     "description": "The Apache Tomcat software is an open source implementation of the Java\nServlet, JavaServer Pages, Java Expression Language and Java WebSocket\ntechnologies.",

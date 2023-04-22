@@ -22,7 +22,7 @@ clean_download() {
         # copy current state of apt list - in order to revert back later (minimize contianer layer size) 
         cp -p -R /var/lib/apt/lists $tempdir 
         apt-get update -y
-        apt-get -y install --no-install-recommends wget
+        apt-get -y install --no-install-recommends wget ca-certificates
     }
 
     function _apt_get_cleanup() {
@@ -33,7 +33,7 @@ clean_download() {
 
         echo "revert back apt lists"
         rm -rf /var/lib/apt/lists/*
-        mv -v $tempdir/lists/* /var/lib/apt/lists  
+        rm -r /var/lib/apt/lists && mv $tempdir/lists /var/lib/apt/lists
     }
 
     function _apk_install() {

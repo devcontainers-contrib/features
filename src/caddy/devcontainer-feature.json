@@ -1,6 +1,6 @@
 {
     "id": "caddy",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "Caddy (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/caddy",
     "description": "Caddy is a powerful, enterprise-ready, open source web server with automatic HTTPS.",

@@ -1,6 +1,6 @@
 {
     "id": "localstack",
-    "version": "2.0.14",
+    "version": "2.0.15",
     "name": "Localstack (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/localstack",
     "description": "Localstack is a fully functional local AWS cloud stack.",

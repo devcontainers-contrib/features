@@ -1,6 +1,6 @@
 {
     "id": "neovim-homebrew",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "name": "Neovim (via Homebrew)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/neovim-homebrew",
     "description": "Neovim is a fork of Vim focused on modern code and features, rather than running in legacy environments.",

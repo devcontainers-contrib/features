@@ -1,6 +1,6 @@
 {
     "id": "less",
-    "version": "2.0.11",
+    "version": "2.0.12",
     "name": "Less (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/less",
     "description": "Less is a backwards-compatible language extension for CSS",

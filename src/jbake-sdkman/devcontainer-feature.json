@@ -1,6 +1,6 @@
 {
     "id": "jbake-sdkman",
-    "version": "2.0.12",
+    "version": "2.0.13",
     "name": "JBake (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jbake-sdkman",
     "description": "JBake is a Java based, open source, static site/blog generator for developers\nand designers.",

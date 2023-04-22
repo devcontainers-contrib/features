@@ -1,6 +1,6 @@
 {
     "id": "svu-asdf",
-    "version": "2.0.11",
+    "version": "2.0.12",
     "name": "svu (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/svu-asdf",
     "description": "svu is a tool to manage semantic versions at ease.",

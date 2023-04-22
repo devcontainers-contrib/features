@@ -1,0 +1,20 @@
+{
+    "id": "nushell",
+    "version": "1.0.1",
+    "name": "Nushell (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/nushell",
+    "description": "Nushell is a shell with a focus on operating on structured data in the command line.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}

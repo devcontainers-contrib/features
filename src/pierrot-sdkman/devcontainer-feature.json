@@ -1,6 +1,6 @@
 {
     "id": "pierrot-sdkman",
-    "version": "2.0.13",
+    "version": "2.0.14",
     "name": "Pierrot (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pierrot-sdkman",
     "description": "Pierrot helps you to manage many GitHub repositories with a single command.",

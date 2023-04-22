@@ -1,6 +1,6 @@
 {
     "id": "boundary-asdf",
-    "version": "2.0.11",
+    "version": "2.0.12",
     "name": "boundary (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/boundary-asdf",
     "description": "Installs boundary",

@@ -1,6 +1,6 @@
 {
     "id": "scalacli-sdkman",
-    "version": "2.0.12",
+    "version": "2.0.13",
     "name": "Scala CLI (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/scalacli-sdkman",
     "description": "Scala CLI is a command-line tool to interact with the Scala language. It lets\nyou compile, run, test, and package your Scala code (and more!)",

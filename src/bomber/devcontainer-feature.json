@@ -1,6 +1,6 @@
 {
     "id": "bomber",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "bomber (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/bomber",
     "description": "bomber is an application that scans SBOMs for security vulnerabilities.",
