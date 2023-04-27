@@ -17,7 +17,7 @@ discover and map data based on it's meaning, rather than the name of a field.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Taxi to install. | string | latest |
+| version | Select the version to install. | string | latest |
 | jdkVersion | Select or enter a JDK version to install. | string | latest |
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 

@@ -16,6 +16,6 @@ Caddy is a powerful, enterprise-ready, open source web server with automatic HTT
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select the version to install. | string | latest |
-| golangVersion | Select the version of go to install. | string | latest |
+| golangVersion | Select the version to install. | string | latest |
 
 

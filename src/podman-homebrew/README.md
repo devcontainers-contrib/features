@@ -15,6 +15,6 @@ Podman is a tool for managing containers and images, volumes mounted into those 
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Podman to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

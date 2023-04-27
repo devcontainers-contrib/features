@@ -1,13 +1,13 @@
 {
     "id": "pipenv",
-    "version": "2.0.14",
+    "version": "2.0.15",
     "name": "Pipenv (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pipenv",
     "description": "Pipenv automatically creates and manages a virtualenv for your projects.",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Pipenv to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest"
             ],

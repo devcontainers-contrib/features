@@ -16,7 +16,7 @@ MQTT and COAP. It provides a command line client tool for IoT development.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of ToolKit to install. | string | latest |
+| version | Select the version to install. | string | latest |
 | jdkVersion | Select or enter a JDK version to install. | string | latest |
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 

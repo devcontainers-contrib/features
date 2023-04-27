@@ -15,6 +15,6 @@ Scala combines object-oriented and functional programming in one concise, high-l
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of scala to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

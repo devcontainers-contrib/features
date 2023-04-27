@@ -1,6 +1,6 @@
 {
     "id": "eas-cli",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "name": "EAS CLI (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/eas-cli",
     "description": "EAS CLI is the command line app you will use to interact with EAS services from your terminal.",

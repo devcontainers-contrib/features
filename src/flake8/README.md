@@ -15,7 +15,7 @@ Flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and t
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Flake8 to install. | string | latest |
+| version | Select the version to install. | string | latest |
 | plugins | A space delimitered list of flake8 plugins (will be injected into the flake8 pipx env). see proposals for examples | string | - |
 
 

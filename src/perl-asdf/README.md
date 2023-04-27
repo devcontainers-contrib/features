@@ -15,6 +15,6 @@ Perl is a general-purpose, interpreted, dynamic programming language.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Perl to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

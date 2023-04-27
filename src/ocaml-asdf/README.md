@@ -15,6 +15,6 @@ OCaml is a general-purpose, industrial-strength programming language with an emp
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of OCaml to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

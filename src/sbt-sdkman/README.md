@@ -21,7 +21,7 @@ Java/Scala projects
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of sbt to install. | string | latest |
+| version | Select the version to install. | string | latest |
 | jdkVersion | Select or enter a JDK version to install. | string | latest |
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 

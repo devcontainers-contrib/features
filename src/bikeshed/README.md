@@ -15,6 +15,6 @@ A preprocessor for anyone writing specifications that converts source files into
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Bikeshed to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

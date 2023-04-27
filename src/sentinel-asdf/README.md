@@ -15,6 +15,6 @@ Sentinel is an embeddable policy as code framework to enable fine-grained, logic
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of sentinel to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

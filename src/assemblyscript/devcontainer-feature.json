@@ -1,13 +1,13 @@
 {
     "id": "assemblyscript",
-    "version": "2.0.12",
+    "version": "2.0.13",
     "name": "AssemblyScript (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/assemblyscript",
     "description": "AssemblyScript compiles a variant of TypeScript to WebAssembly using Binaryen.",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of AssemblyScript to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest"
             ],

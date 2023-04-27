@@ -1,13 +1,13 @@
 {
     "id": "ninja-asdf",
-    "version": "2.0.12",
+    "version": "2.0.13",
     "name": "Ninja (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ninja-asdf",
     "description": "Ninja is a small build system with a focus on speed.",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Ninja to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest"
             ],

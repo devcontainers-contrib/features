@@ -15,6 +15,6 @@ Less is a backwards-compatible language extension for CSS
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Less to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

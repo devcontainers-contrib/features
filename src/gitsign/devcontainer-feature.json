@@ -1,6 +1,6 @@
 {
     "id": "gitsign",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Gitsign (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/gitsign",
     "description": "Gitsign implements keyless Sigstore to sign Git commits with a valid OpenID Connect identity.",

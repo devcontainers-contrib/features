@@ -1,13 +1,13 @@
 {
     "id": "peco-asdf",
-    "version": "2.0.12",
+    "version": "2.0.13",
     "name": "peco (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/peco-asdf",
     "description": "peco is simplistic interactive filtering tool.",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of peco to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest"
             ],

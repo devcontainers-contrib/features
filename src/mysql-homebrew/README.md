@@ -15,6 +15,6 @@ MySQL is an open-source relational database management system (RDBMS)
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of MySQL to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

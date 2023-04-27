@@ -1,13 +1,13 @@
 {
     "id": "tfenv-homebrew",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "name": "tfenv (via Homebrew)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tfenv-homebrew",
     "description": "tfenv is an open-source Terraform version manager tool.",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of tfenv to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest"
             ],

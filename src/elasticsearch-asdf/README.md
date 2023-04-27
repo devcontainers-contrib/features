@@ -15,6 +15,6 @@ Elasticsearch is a search engine based on the Lucene library.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Elasticsearch to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

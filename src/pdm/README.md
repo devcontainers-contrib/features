@@ -15,6 +15,6 @@ PDM is a modern Python package and dependency manager supporting the latest PEP 
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of PDM to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

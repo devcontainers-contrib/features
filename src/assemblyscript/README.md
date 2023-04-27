@@ -15,6 +15,6 @@ AssemblyScript compiles a variant of TypeScript to WebAssembly using Binaryen.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of AssemblyScript to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

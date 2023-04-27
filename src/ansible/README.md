@@ -15,6 +15,6 @@ Ansible is a suite of software tools that enables infrastructure as code.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Ansible to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

@@ -1,13 +1,13 @@
 {
     "id": "jest",
-    "version": "2.0.12",
+    "version": "2.0.13",
     "name": "Jest (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jest",
     "description": "Jest is a delightful JavaScript Testing Framework with a focus on simplicity",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Jest to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest"
             ],

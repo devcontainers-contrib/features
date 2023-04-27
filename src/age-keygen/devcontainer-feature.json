@@ -1,6 +1,6 @@
 {
     "id": "age-keygen",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "name": "age-keygen (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/age-keygen",
     "description": "age-keygen generate a key pair for use with age.",

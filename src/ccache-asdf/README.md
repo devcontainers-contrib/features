@@ -15,6 +15,6 @@ Ccache is a compiler cache. It speeds up recompilation by caching previous compi
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Ccache to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

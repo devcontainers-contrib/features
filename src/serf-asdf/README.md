@@ -15,6 +15,6 @@ Serf is a decentralized solution for cluster membership, failure detection, and 
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Serf to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

@@ -1,13 +1,13 @@
 {
     "id": "jrnl",
-    "version": "2.0.14",
+    "version": "2.0.15",
     "name": "jrnl (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jrnl",
     "description": "jrnl is a simple journal application for the command line.",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of jrnl to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest"
             ],

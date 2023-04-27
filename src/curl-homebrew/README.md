@@ -15,6 +15,6 @@ cURL is a computer software project providing a library and command-line tool fo
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of cURL to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

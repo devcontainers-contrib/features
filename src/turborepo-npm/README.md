@@ -15,6 +15,6 @@ Turborepo is a high-performance build system for JavaScript and TypeScript codeb
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Turborepo to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

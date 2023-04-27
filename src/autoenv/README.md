@@ -15,6 +15,6 @@ Autoenv is a tool which automatically reads and setups configuration from a . en
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Angular CLI to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

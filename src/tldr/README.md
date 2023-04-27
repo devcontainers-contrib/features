@@ -15,6 +15,6 @@ The tldr pages are a community effort to simplify the beloved man pages with pra
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of tldr to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

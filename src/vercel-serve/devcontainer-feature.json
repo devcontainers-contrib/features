@@ -1,0 +1,20 @@
+{
+    "id": "vercel-serve",
+    "version": "1.0.1",
+    "name": "serve (by Vercel) (via npm)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/vercel-serve",
+    "description": "serve helps you serve a static site, single page application or just a static file (no matter if on your device or on the local network).",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package"
+    ]
+}

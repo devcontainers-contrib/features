@@ -15,6 +15,6 @@ Starship is fast and highly customizable cross-shell prompt that can display con
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Starship to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

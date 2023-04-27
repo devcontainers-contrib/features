@@ -15,6 +15,6 @@ TypeScript is a strongly typed programming language that builds on JavaScript, g
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of TypeScript to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

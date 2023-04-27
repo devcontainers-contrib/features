@@ -15,6 +15,6 @@ Fossil is a simple, high-reliability, distributed software configuration managem
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Fossil to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

@@ -15,6 +15,6 @@ Dasel (short for data-selector) allows you to query and modify data structures u
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Dasel to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

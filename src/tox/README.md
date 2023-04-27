@@ -15,6 +15,6 @@ tox is a generic virtual environment management and test command line tool.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of tox to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

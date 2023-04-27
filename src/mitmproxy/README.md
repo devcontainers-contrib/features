@@ -15,6 +15,6 @@ mitmproxy is an interactive TLS-capable intercepting HTTP proxy for penetration 
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of mitmproxy to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

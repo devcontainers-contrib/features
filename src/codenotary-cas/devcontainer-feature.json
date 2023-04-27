@@ -1,6 +1,6 @@
 {
     "id": "codenotary-cas",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Codenotary Community Attestation Service (CAS) (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/codenotary-cas",
     "description": "Community Attestation Service (CAS) can give any digital asset a meaningful, globally-unique, immutable identity that is authentic, verifiable, traceable from anywhere.",

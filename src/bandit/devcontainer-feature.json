@@ -1,13 +1,13 @@
 {
     "id": "bandit",
-    "version": "2.0.14",
+    "version": "2.0.15",
     "name": "Bandit (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/bandit",
     "description": "Bandit is a tool designed to find common security issues in Python code.",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Bandit to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest"
             ],

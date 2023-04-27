@@ -15,6 +15,6 @@ Lean is a functional programming language that makes it easy to write correct an
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Lean to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

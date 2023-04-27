@@ -15,6 +15,6 @@ Lerna is a fast modern build system for managing and publishing multiple JavaScr
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of lerna to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

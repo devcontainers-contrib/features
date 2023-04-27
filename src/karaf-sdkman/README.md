@@ -19,7 +19,7 @@ much more.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Karaf to install. | string | latest |
+| version | Select the version to install. | string | latest |
 | jdkVersion | Select or enter a JDK version to install. (see jdk version which karaf supports here https://karaf.apache.org/get-started) | string | 11 |
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 

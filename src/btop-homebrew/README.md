@@ -15,6 +15,6 @@ btop is a resource monitor that shows usage and stats for processor, memory, dis
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of btop to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

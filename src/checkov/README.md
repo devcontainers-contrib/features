@@ -15,6 +15,6 @@ Checkov is a static code analysis tool for infrastructure as code (IaC) and also
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of checkov to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

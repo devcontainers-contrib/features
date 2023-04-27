@@ -15,6 +15,6 @@ svu is a tool to manage semantic versions at ease.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of svu to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

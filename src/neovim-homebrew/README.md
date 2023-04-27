@@ -15,6 +15,6 @@ Neovim is a fork of Vim focused on modern code and features, rather than running
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Neovim to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

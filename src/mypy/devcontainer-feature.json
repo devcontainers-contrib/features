@@ -1,13 +1,13 @@
 {
     "id": "mypy",
-    "version": "2.0.14",
+    "version": "2.0.15",
     "name": "Mypy (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mypy",
     "description": "Mypy is a static type checker for Python.",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Mypy to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest"
             ],

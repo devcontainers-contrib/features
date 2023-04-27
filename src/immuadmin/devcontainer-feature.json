@@ -1,6 +1,6 @@
 {
     "id": "immuadmin",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "immuadmin (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/immuadmin",
     "description": "immuadmin is the admin CLI for immudb and immugw. You can install and manage the service installation for both components and get statistics as well as runtime information.",

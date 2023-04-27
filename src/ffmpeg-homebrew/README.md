@@ -15,6 +15,6 @@ FFmpeg is the leading multimedia framework, able to decode, encode, transcode, m
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of FFmpeg to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

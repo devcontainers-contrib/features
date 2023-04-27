@@ -15,6 +15,6 @@ Cookiecutter creates projects from project templates.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Cookiecutter to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

@@ -1,13 +1,13 @@
 {
     "id": "fossil-homebrew",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "name": "Fossil (via Homebrew)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/fossil-homebrew",
     "description": "Fossil is a simple, high-reliability, distributed software configuration management system. It is capable of performing distributed version control, bug tracking, wiki services, and blogging.",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Fossil to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest"
             ],

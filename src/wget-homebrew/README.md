@@ -15,6 +15,6 @@ Wget is a free software package for retrieving files using HTTP, HTTPS, FTP and 
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Wget to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

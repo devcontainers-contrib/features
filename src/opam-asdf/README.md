@@ -15,6 +15,6 @@ opam is a source-based package manager for OCaml.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Opam to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

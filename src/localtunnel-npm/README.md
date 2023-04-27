@@ -15,6 +15,6 @@ Localtunnel allows you to easily share a web service on your local development m
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Localtunnel to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

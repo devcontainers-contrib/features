@@ -15,6 +15,6 @@ dprint is a pluggable and configurable code formatting platform written in Rust.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of dprint to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

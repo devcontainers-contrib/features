@@ -1,13 +1,13 @@
 {
     "id": "opam-asdf",
-    "version": "2.0.12",
+    "version": "2.0.13",
     "name": "Opam (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/opam-asdf",
     "description": "opam is a source-based package manager for OCaml.",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Opam to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest"
             ],

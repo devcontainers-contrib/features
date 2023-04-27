@@ -15,6 +15,6 @@ Mosh is a remote terminal application that allows roaming, supports intermittent
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Mosh to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

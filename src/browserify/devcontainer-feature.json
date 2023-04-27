@@ -1,13 +1,13 @@
 {
     "id": "browserify",
-    "version": "2.0.12",
+    "version": "2.0.13",
     "name": "Browserify (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/browserify",
     "description": "Browserify lets you require('modules') in the browser by bundling up all of your dependencies.",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Browserify to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest"
             ],

@@ -15,6 +15,6 @@ Lektor is a static website generator.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Lektor to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

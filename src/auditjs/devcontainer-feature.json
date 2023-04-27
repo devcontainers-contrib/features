@@ -1,6 +1,6 @@
 {
     "id": "auditjs",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "AuditJS (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/auditjs",
     "description": "AuditJS audits an NPM package.json file to identify known vulnerabilities.",

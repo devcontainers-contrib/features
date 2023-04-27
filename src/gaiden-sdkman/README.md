@@ -15,7 +15,7 @@ Gaiden is a tool that makes it easy to create documentation with Markdown.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Gaiden to install. | string | latest |
+| version | Select the version to install. | string | latest |
 | jdkVersion | Select or enter a JDK version to install. | string | latest |
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 

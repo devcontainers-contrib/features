@@ -15,6 +15,6 @@ Bandit is a tool designed to find common security issues in Python code.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Bandit to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

@@ -1,13 +1,13 @@
 {
     "id": "mitmproxy",
-    "version": "2.0.14",
+    "version": "2.0.15",
     "name": "mitmproxy (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mitmproxy",
     "description": "mitmproxy is an interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of mitmproxy to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest"
             ],

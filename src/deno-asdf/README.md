@@ -15,6 +15,6 @@ Deno is a simple, modern runtime for JavaScript and TypeScript that uses V8 and 
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Deno to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

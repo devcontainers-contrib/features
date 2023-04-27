@@ -1,6 +1,6 @@
 {
     "id": "caddy",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Caddy (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/caddy",
     "description": "Caddy is a powerful, enterprise-ready, open source web server with automatic HTTPS.",
@@ -15,7 +15,7 @@
         },
         "golangVersion": {
             "default": "latest",
-            "description": "Select the version of go to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest",
                 "none",

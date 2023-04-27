@@ -15,7 +15,7 @@ MkDocs is a fast, simple and downright gorgeous static site generator that's gea
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of MkDocs to install. | string | latest |
+| version | Select the version to install. | string | latest |
 | plugins | A space delimitered list of mkdocs plugins (will be injected into the mkdocs pipx env). see proposals for example | string | mkdocs-material |
 
 

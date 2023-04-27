@@ -15,6 +15,6 @@ Waypoint is an open source solution that provides a modern workflow for build, d
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Waypoint to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

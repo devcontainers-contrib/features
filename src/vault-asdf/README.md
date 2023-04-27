@@ -15,6 +15,6 @@ Vault secures, stores, and tightly controls access to tokens, passwords, certifi
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Vault to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

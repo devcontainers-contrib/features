@@ -15,6 +15,6 @@ Jest is a delightful JavaScript Testing Framework with a focus on simplicity
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Jest to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

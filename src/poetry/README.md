@@ -15,6 +15,6 @@ Poetry is a tool for dependency management and packaging in Python.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Poetry to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

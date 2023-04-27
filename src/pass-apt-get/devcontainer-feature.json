@@ -1,6 +1,6 @@
 {
     "id": "pass-apt-get",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "pass (password-store) (via apt-get)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pass-apt-get",
     "description": "pass is a very simple password store that encrypts passwords using gpg and places the encrypted password in a directory.",

@@ -1,13 +1,13 @@
 {
     "id": "ansible",
-    "version": "2.0.14",
+    "version": "2.0.15",
     "name": "Ansible (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ansible",
     "description": "Ansible is a suite of software tools that enables infrastructure as code.",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Ansible to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest"
             ],

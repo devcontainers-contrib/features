@@ -15,6 +15,6 @@ Datasette is a tool for exploring and publishing data and is aimed at data journ
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Datasette to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

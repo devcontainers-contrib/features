@@ -1,0 +1,20 @@
+{
+    "id": "syntaqx-serve",
+    "version": "1.0.1",
+    "name": "serve (by syntaqx) (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/syntaqx-cli",
+    "description": "serve is a static http server anywhere you need one. It's basically python -m SimpleHTTPServer 8080 written in Go, because who can remember that many letters?",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}

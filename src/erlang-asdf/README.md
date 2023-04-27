@@ -15,6 +15,6 @@ Erlang is a general-purpose, concurrent, functional programming language, and a 
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Erlang to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

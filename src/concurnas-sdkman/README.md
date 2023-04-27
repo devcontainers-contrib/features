@@ -17,7 +17,7 @@ systems.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Concurnas to install. | string | latest |
+| version | Select the version to install. | string | latest |
 | jdkVersion | Select or enter a JDK version to install. (compatability chart for concurnas can be found here https://concurnas.com/download.html) | string | 11 |
 | jdkDistro | Select or enter a JDK distribution to install | string | ms |
 

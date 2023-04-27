@@ -1,6 +1,6 @@
 {
     "id": "nmap-apt-get",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "name": "Nmap (via apt-get)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/nmap-apt-get",
     "description": "Nmap (Network Mapper) is a free and open source utility for network discovery and security auditing.",

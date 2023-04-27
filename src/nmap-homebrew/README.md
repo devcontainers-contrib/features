@@ -15,6 +15,6 @@ Nmap (Network Mapper) is a free and open source utility for network discovery an
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Nmap to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

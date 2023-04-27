@@ -15,6 +15,6 @@ Angular CLI is a command-line interface tool that you use to initialize, develop
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Angular CLI to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

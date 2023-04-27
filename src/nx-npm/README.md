@@ -15,6 +15,6 @@ Nx is a smart, fast and extensible build system with first class monorepo suppor
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of nx to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

@@ -15,6 +15,6 @@ Levant is an open source templating and deployment tool for HashiCorp Nomad jobs
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of levant to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

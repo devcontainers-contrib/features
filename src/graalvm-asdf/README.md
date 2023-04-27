@@ -15,6 +15,6 @@ GraalVM is a high-performance JDK designed to accelerate Java application perfor
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of GraalVM to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

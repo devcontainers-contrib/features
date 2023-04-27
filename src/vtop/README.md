@@ -15,6 +15,6 @@ vtop is a graphical activity monitor for the command line.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of vtop to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

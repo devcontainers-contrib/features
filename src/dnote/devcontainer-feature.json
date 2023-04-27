@@ -1,6 +1,6 @@
 {
     "id": "dnote",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Dnote (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/dnote",
     "description": "Dnote is a simple command line notebook for programmers. It keeps you focused by providing a way of effortlessly capturing and retrieving information without leaving your terminal. It also offers a seamless multi-device sync.",

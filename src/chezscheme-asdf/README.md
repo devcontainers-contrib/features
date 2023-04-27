@@ -15,6 +15,6 @@ Chez Scheme is both a programming language and an implementation of that languag
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of chezscheme to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

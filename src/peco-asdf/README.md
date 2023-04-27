@@ -15,6 +15,6 @@ peco is simplistic interactive filtering tool.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of peco to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

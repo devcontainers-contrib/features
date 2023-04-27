@@ -15,6 +15,6 @@ Nim is a statically typed compiled systems programming language. It combines suc
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Nim to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

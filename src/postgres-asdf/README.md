@@ -15,6 +15,6 @@ PostgreSQL is a powerful, open source object-relational database system with ove
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of PostgreSQL to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

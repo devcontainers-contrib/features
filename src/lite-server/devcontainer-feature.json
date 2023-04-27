@@ -1,0 +1,20 @@
+{
+    "id": "lite-server",
+    "version": "1.0.1",
+    "name": "lite-server (via npm)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/lite-server",
+    "description": "lite-server is a lightweight development only node server that serves a web app, opens it in the browser, refreshes when html or javascript change, injects CSS changes using sockets, and has a fallback page when a route is not found.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package"
+    ]
+}

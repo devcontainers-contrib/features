@@ -1,13 +1,13 @@
 {
     "id": "kubectl-asdf",
-    "version": "2.0.12",
+    "version": "2.0.13",
     "name": "Kubectl (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/kubectl-asdf",
     "description": "Installs Kubectl",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Kubectl to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest"
             ],

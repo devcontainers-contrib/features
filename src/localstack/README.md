@@ -15,6 +15,6 @@ Localstack is a fully functional local AWS cloud stack.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Localstack to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

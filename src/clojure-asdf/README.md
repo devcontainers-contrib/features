@@ -15,6 +15,6 @@ Clojure is a dialect of Lisp, and shares with Lisp the code-as-data philosophy a
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Clojure to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 

@@ -1,13 +1,13 @@
 {
     "id": "nomad-asdf",
-    "version": "2.0.12",
+    "version": "2.0.13",
     "name": "Nomad (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/nomad-asdf",
     "description": "Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications.",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Nomad to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest"
             ],

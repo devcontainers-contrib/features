@@ -15,7 +15,7 @@ Elixir is a functional, concurrent, general-purpose programming language that ru
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| elixirVersion | Select the version of Elixir to install. | string | latest |
-| erlangVersion | Select the version of Erlang to install. | string | latest |
+| elixirVersion | Select the version to install. | string | latest |
+| erlangVersion | Select the version to install. | string | latest |
 
 

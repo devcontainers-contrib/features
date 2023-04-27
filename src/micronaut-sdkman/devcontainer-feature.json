@@ -1,13 +1,13 @@
 {
     "id": "micronaut-sdkman",
-    "version": "2.0.14",
+    "version": "2.0.15",
     "name": "Micronaut (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/micronaut-sdkman",
     "description": "Micronaut is an open source microservice framework for the JVM",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Micronaut to install.",
+            "description": "Select the version to install.",
             "proposals": [
                 "latest"
             ],

@@ -15,6 +15,6 @@ Keeper Commander is a command-line and SDK interface to Keeper® Password Manage
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of Flit to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 
