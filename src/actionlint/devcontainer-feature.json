@@ -1,0 +1,20 @@
+{
+    "id": "actionlint",
+    "version": "1.0.0",
+    "name": "act (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/actionlint",
+    "description": "Static checker for GitHub Actions workflow files.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}
