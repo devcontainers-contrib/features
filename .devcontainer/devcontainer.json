@@ -1,22 +1,23 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:linux",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
   "customizations": {
     "vscode": {
       "extensions": [
 		"mads-hartmann.bash-ide-vscode",
-		"samuelcolvin.jinjahtml",
 		"ms-python.python",
 		"ms-python.vscode-pylance",
-		"DavidAnson.vscode-markdownlint",
-		"ms-python.black-formatter"
-	]
+		"DavidAnson.vscode-markdownlint"	
+  ]
     }
   },
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-    "ghcr.io/devcontainers-contrib/features/cookiecutter:1": {},
-    "ghcr.io/devcontainers/features/common-utils:1": {},
-    "ghcr.io/lukewiwa/features/shellcheck:0": {}
+    "ghcr.io/devcontainers/features/python:1.0.22": {},
+    "ghcr.io/devcontainers/features/node:1.2.0": {},
+    "ghcr.io/devcontainers/features/github-cli:1.0.10": {},	    
+    "ghcr.io/devcontainers/features/docker-in-docker:2.1.0": {},
+    "ghcr.io/devcontainers/features/common-utils:2.0.8": {},
+    "ghcr.io/lukewiwa/features/shellcheck:0.2.3": {}
+
   },
   "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh > postCreateCommand.log"
 }
