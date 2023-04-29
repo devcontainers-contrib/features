@@ -15,7 +15,7 @@ ensure_nanolayer nanolayer_location "v0.4.29"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.4" \
+    "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.5" \
     --option package='mysql' --option version="$VERSION"
 
 
