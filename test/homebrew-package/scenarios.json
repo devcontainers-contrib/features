@@ -1,4 +1,13 @@
 {
+    "test_file_limit": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "homebrew-package": {
+                "version": "latest",
+                "package": "mysql"
+            }
+        }
+    },
     "test_latest": {
         "image": "mcr.microsoft.com/devcontainers/base:debian",
         "features": {
