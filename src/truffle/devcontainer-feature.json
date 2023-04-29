@@ -1,0 +1,20 @@
+{
+    "id": "truffle",
+    "version": "1.0.0",
+    "name": "Truffle (via npm)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/truffle",
+    "description": "Truffle is a development environment, testing framework, and asset pipeline for Ethereum, aiming to make life as an Ethereum developer easier.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package"
+    ]
+}

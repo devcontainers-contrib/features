@@ -16,8 +16,15 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/npm-package:1.0.2" \
-    --option package='@hyperupcall/autoenv' --option version="$VERSION"
+    --option package='@shopify/cli' --option version="$VERSION"
 
 
-echo 'In order to enable autoenv , execute `source $(npm root -g)/@hyperupcall/autoenv/activate.sh` in your shell'
+$nanolayer_location \
+    install \
+    devcontainer-feature \
+    "ghcr.io/devcontainers-contrib/features/npm-package:1.0.2" \
+    --option package='@shopify/theme' --option version="$VERSION"
+
+
+echo 'Done!'
 

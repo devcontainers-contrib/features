@@ -16,8 +16,8 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/npm-package:1.0.2" \
-    --option package='@hyperupcall/autoenv' --option version="$VERSION"
+    --option package='@squarespace/server' --option version="$VERSION"
 
 
-echo 'In order to enable autoenv , execute `source $(npm root -g)/@hyperupcall/autoenv/activate.sh` in your shell'
+echo 'Done!'
 

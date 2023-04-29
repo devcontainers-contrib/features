@@ -1,0 +1,20 @@
+{
+    "id": "bower",
+    "version": "1.0.0",
+    "name": "Bower (via npm)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/bower",
+    "description": "Bower offers a generic, unopinionated solution to the problem of front-end package management, while exposing the package dependency model via an API that can be consumed by a more opinionated build stack.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package"
+    ]
+}

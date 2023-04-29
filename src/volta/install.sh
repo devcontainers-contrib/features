@@ -15,9 +15,9 @@ ensure_nanolayer nanolayer_location "v0.4.29"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/npm-package:1.0.2" \
-    --option package='@hyperupcall/autoenv' --option version="$VERSION"
+    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.14" \
+    --option repo='volta-cli/volta' --option binaryNames='volta' --option version="$VERSION"
 
 
-echo 'In order to enable autoenv , execute `source $(npm root -g)/@hyperupcall/autoenv/activate.sh` in your shell'
+echo 'Done!'
 

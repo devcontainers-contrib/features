@@ -1,9 +1,9 @@
 {
-    "id": "autoenv",
-    "version": "1.0.3",
-    "name": "Autoenv (via npm)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/autoenv",
-    "description": "Autoenv is a tool which automatically reads and setups configuration from a . env file when you cd to a directory.",
+    "id": "n8n",
+    "version": "1.0.0",
+    "name": "n8n (via npm)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/n8n",
+    "description": "n8n is a free and source-available fair-code licensed workflow automation tool.",
     "options": {
         "version": {
             "default": "latest",

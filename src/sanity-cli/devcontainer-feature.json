@@ -1,0 +1,20 @@
+{
+    "id": "sanity-cli",
+    "version": "1.0.0",
+    "name": "Sanity.io CLI (via npm)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/sanity-cli",
+    "description": "The sanity Command Line Interface (CLI) is a collection of tools for managing, developing, debugging, and deploying your Sanity Studio projects.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package"
+    ]
+}
