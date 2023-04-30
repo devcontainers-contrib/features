@@ -4,6 +4,7 @@ set -e
 PACKAGE=${PACKAGE:-""}
 VERSION=${VERSION:-"latest"}
 INJECTIONS=${INJECTIONS:-""}
+INCLUDEDEPS=${INCLUDEDEPS:-"false"}
 
 # Clean up
 rm -rf /var/lib/apt/lists/*
@@ -35,9 +36,10 @@ updaterc() {
 }
 
 install_via_pipx() {
-	PACKAGE=$1
-	VERSION=$2
-	INJECTIONS=$3
+	local PACKAGE=$1
+	local VERSION=$2
+	local INJECTIONS=$3
+	local INCLUDEDEPS=$4
 
 	# if no python - install it
 	if ! type python3 >/dev/null 2>&1; then
@@ -102,8 +104,10 @@ install_via_pipx() {
 		else
 			pipx_installation="$PACKAGE==$VERSION"
 		fi
+
+		include_deps_cmd=$(if [[ $INCLUDEDEPS == "true" ]]; then echo --include-deps; fi)
 		# install main package
-		${pipx_bin} install --pip-args '--no-cache-dir --force-reinstall' -f "$pipx_installation"
+		${pipx_bin} install --pip-args '--no-cache-dir --force-reinstall' -f "$pipx_installation" $include_deps_cmd
 
 		# install injections (if provided)
 		injections_array=($INJECTIONS)
@@ -118,4 +122,4 @@ install_via_pipx() {
 	fi
 }
 
-install_via_pipx "$PACKAGE" "$VERSION" "$INJECTIONS"
+install_via_pipx "$PACKAGE" "$VERSION" "$INJECTIONS" "$INCLUDEDEPS"
