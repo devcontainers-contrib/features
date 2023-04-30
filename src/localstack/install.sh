@@ -16,14 +16,21 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.4" \
-    --option packages='libsasl2-dev,g++'
+    --option packages='build-essential,libsasl2-dev,g++'
 
 
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.3" \
-    --option package='localstack[full]' --option version="$VERSION"
+    "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.4" \
+    --option package='localstack[runtime]' --option version="$VERSION" --option includeDeps='true'
+
+
+$nanolayer_location \
+    install \
+    devcontainer-feature \
+    "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0" \
+    --option command='mkdir /var/lib/localstack && chown $_REMOTE_USER /var/lib/localstack && chgrp $_REMOTE_USER /var/lib/localstack'
 
 
 echo 'Done!'
