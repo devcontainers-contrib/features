@@ -1,0 +1,20 @@
+{
+    "id": "jsii-rosetta",
+    "version": "1.0.0",
+    "name": "jsii-rosetta (via npm)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jsii-rosetta",
+    "description": "jsii-rosetta is a utility to transcribe example code snippets from TypeScript to other jsii languages.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package"
+    ]
+}

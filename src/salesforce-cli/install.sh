@@ -15,8 +15,8 @@ ensure_nanolayer nanolayer_location "v0.4.29"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.4" \
-    --option packages='neovim' --option ppas='ppa:neovim-ppa/stable' --option force_ppas_on_non_ubuntu='true'
+    "ghcr.io/devcontainers-contrib/features/npm-package:1.0.2" \
+    --option package='@salesforce/cli' --option version="$VERSION"
 
 
 echo 'Done!'

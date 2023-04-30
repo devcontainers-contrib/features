@@ -1,0 +1,20 @@
+{
+    "id": "airplane-cli",
+    "version": "1.0.0",
+    "name": "Airplane CLI (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/airplane-cli",
+    "description": "The Airplane CLI, airplane, is the primary way you'll create and deploy new tasks and runbooks. The CLI also provides utility methods for managing API keys, getting/setting configs, and executing tasks/runbooks.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}

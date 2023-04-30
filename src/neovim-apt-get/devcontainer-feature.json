@@ -1,6 +1,6 @@
 {
     "id": "neovim-apt-get",
-    "version": "1.0.16",
+    "version": "1.0.17",
     "name": "Neovim (via apt-get)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/neovim-apt-get",
     "description": "Neovim is a fork of Vim focused on modern code and features, rather than running in legacy environments.",

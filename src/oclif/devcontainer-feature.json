@@ -1,0 +1,20 @@
+{
+    "id": "oclif",
+    "version": "1.0.0",
+    "name": "oclif generator (via npm)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/oclif",
+    "description": "The oclif generator creates a CLI project in TypeScript to get you started quickly. It requires very few runtime dependencies and has extremely minimal overhead.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package"
+    ]
+}

@@ -16,7 +16,7 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers/features/python:1.0.18" \
-    --option installTools='False' --option version='os-provided'
+    --option installTools='false' --option version='os-provided'
 
 
 $nanolayer_location \
