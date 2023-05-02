@@ -1,0 +1,20 @@
+{
+    "id": "driftctl",
+    "version": "1.0.0",
+    "name": "driftctl (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/driftctl",
+    "description": "driftctl detect, track and alert on infrastructure drift.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}

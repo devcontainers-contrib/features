@@ -1,0 +1,20 @@
+{
+    "id": "spicedb",
+    "version": "1.0.0",
+    "name": "SpiceDB (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/spicedb",
+    "description": "SpiceDB is an open source, Google Zanzibar-inspired, database system for creating and managing security-critical application permissions.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}

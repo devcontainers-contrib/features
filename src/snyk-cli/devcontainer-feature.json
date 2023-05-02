@@ -1,0 +1,20 @@
+{
+    "id": "snyk-cli",
+    "version": "1.0.0",
+    "name": "Snyk CLI (via npm)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/snyk-cli",
+    "description": "Snyk CLI scans and monitors your projects for security vulnerabilities.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package"
+    ]
+}
