@@ -9,13 +9,13 @@ source ./library_scripts.sh
 # `ensure_nanolayer` is a bash function that will find any existing nanolayer installations, 
 # and if missing - will download a temporary copy that automatically get deleted at the end 
 # of the script
-ensure_nanolayer nanolayer_location "v0.4.29"
+ensure_nanolayer nanolayer_location "v0.4.38"
 
 
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.14" \
+    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.16" \
     --option repo='santinic/how2' --option binaryNames='how2' --option version="$VERSION"
 
 
