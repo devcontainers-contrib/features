@@ -1,6 +1,6 @@
 {
     "id": "fzf",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "name": "fzf (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/fzf",
     "description": "fzf is a general-purpose command-line fuzzy finder.",

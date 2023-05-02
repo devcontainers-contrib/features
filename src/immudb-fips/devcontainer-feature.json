@@ -1,6 +1,6 @@
 {
     "id": "immudb-fips",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "name": "immudb (FIPS) (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/immudb-fips",
     "description": "immudb is an immutable database based on zero trust, SQL and Key-Value, tamperproof, data change history.",

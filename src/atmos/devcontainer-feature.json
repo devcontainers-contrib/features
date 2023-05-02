@@ -1,6 +1,6 @@
 {
     "id": "atmos",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "Atmos (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/atmos",
     "description": "Atmos is a workflow automation tool. Atmos is lets you take a complex workflow and turn it into a parameterized CLI. You can then run the CLI anywhere, such as locally or in CI/CD.",

@@ -1,6 +1,6 @@
 {
     "id": "gitmux",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "name": "Gitmux (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/gitmux",
     "description": "Gitmux shows git status in your tmux status bar.",

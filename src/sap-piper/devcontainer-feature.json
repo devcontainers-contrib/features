@@ -1,6 +1,6 @@
 {
     "id": "sap-piper",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "name": "Project Piper (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/sap-piper",
     "description": "Piper offers default pipelines to easily implement CI/CD processes integrating SAP systems.",

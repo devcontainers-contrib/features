@@ -1,6 +1,6 @@
 {
     "id": "croc",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "croc (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/croc",
     "description": "croc is a tool that allows any two computers to simply and securely transfer files and folders.",

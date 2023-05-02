@@ -1,6 +1,6 @@
 {
     "id": "grype",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "name": "Grype (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/grype",
     "description": "Grype is a vulnerability scanner for container images and filesystems.",

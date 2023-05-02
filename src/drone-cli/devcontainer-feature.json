@@ -1,6 +1,6 @@
 {
     "id": "drone-cli",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Drone CLI (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/drone-cli",
     "description": "Drone CLI is a command line client for the Drone continuous integration server.",

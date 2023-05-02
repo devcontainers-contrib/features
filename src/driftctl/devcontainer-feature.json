@@ -1,6 +1,6 @@
 {
     "id": "driftctl",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "driftctl (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/driftctl",
     "description": "driftctl detect, track and alert on infrastructure drift.",

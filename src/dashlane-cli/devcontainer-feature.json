@@ -1,6 +1,6 @@
 {
     "id": "dashlane-cli",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "name": "Dashlane CLI (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/dashlane-cli",
     "description": "Dashlane Command Line Interface allows you to get your passwords, otp and secure notes right from your terminal.",
