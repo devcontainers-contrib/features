@@ -22,7 +22,7 @@ IFS=' ' read -ra plugins <<< "${OMZSH_PLUGINS}"
 
 for plugin in "${plugins[@]}"
 do
-  git clone $plugin
+  git clone --depth 1 $plugin
 done
 
 cd "$currdir" || exit
