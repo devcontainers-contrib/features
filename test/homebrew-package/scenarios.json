@@ -34,5 +34,14 @@
                 "package": "curl"
             }
         }
+    },
+    "test_universal": {
+        "image": "mcr.microsoft.com/devcontainers/universal:2",
+        "features": {
+            "homebrew-package": {
+                "version": "latest",
+                "package": "grpcurl"
+            }
+        }
     }
 }

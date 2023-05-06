@@ -57,7 +57,7 @@ install_via_homebrew() {
 			devcontainer-feature \
 			"ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2.0.3" \
 			--option shallow_clone='true' --option update="true"
-		source /etc/profile
+		source /etc/profile.d/nanolayer-homebrew.sh
 	fi
 	
 
