@@ -1,11 +1,11 @@
 {
     "name": "Homebrew Package",
     "id": "homebrew-package",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Installs a Homebrew package.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/homebrew-package",
     "installsAfter": [
-        "ghcr.io/devcontainers/features/homebrew:latest"
+        "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2"
     ],
     "options": {
         "package": {
