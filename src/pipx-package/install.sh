@@ -5,6 +5,7 @@ PACKAGE=${PACKAGE:-""}
 VERSION=${VERSION:-"latest"}
 INJECTIONS=${INJECTIONS:-""}
 INCLUDEDEPS=${INCLUDEDEPS:-"false"}
+INTERPRETER=${INTERPRETER:-"python3"}
 
 # Clean up
 rm -rf /var/lib/apt/lists/*
@@ -36,29 +37,37 @@ updaterc() {
 }
 
 install_via_pipx() {
-	local PACKAGE=$1
-	local VERSION=$2
-	local INJECTIONS=$3
-	local INCLUDEDEPS=$4
+	local INTERPRETER=$1
+	local PACKAGE=$2
+	local VERSION=$3
+	local INJECTIONS=$4
+	local INCLUDEDEPS=$5
+	if [ "$INTERPRETER" = "python3" ]; then
 
-	# if no python - install it
-	if ! type python3 >/dev/null 2>&1; then
-		echo "installing python3-minimal libffi-dev"
-		apt-get update -y
-		apt-get -y install python3-minimal
+		# if no python - install it
+		if ! type python3 >/dev/null 2>&1; then
+			echo "installing python3-minimal libffi-dev"
+			apt-get update -y
+			apt-get -y install python3-minimal
+		fi
+
+		# if no pip - install it
+		if ! type pip3 >/dev/null 2>&1; then
+			echo "installing python3-pip"
+			apt-get update -y
+			apt-get -y install libffi-dev python3-pip
+		fi
+
+		if ! python3 -Im ensurepip --version >/dev/null 2>&1; then
+			echo "installing python3-venv"
+			apt-get update -y
+			apt-get -y install python3-venv
+		fi
 	fi
 
-	# if no pip - install it
-	if ! type pip3 >/dev/null 2>&1; then
-		echo "installing python3-pip"
-		apt-get update -y
-		apt-get -y install libffi-dev python3-pip
-	fi
-
-	if ! python3 -Im ensurepip --version >/dev/null 2>&1; then
-		echo "installing python3-venv"
-		apt-get update -y
-		apt-get -y install python3-venv
+	if ! type "$INTERPRETER"; then
+		echo "interpreter given is invalid: $INTERPRETER"
+		exit 1
 	fi
 
 	export PYTHONUSERBASE=/tmp/pip-tmp
@@ -69,7 +78,7 @@ install_via_pipx() {
 	mkdir -p "${PIPX_HOME}"
 
 	# if pipx not exists - install it
-	if ! type pipx >/dev/null 2>&1; then
+	if ! $INTERPRETER -m pip list | grep pipx >/dev/null 2>&1; then
 
 		PATH="${PATH}:${PIPX_BIN_DIR}"
 
@@ -84,7 +93,7 @@ install_via_pipx() {
 		chmod -R g+r+w "${PIPX_HOME}"
 		find "${PIPX_HOME}" -type d -print0 | xargs -0 -n 1 chmod g+s
 
-		pip3 install --disable-pip-version-check --no-cache-dir --user pipx 2>&1
+		$INTERPRETER -m pip install --disable-pip-version-check --no-cache-dir --user pipx 2>&1
 		/tmp/pip-tmp/bin/pipx install --pip-args=--no-cache-dir pipx
 		pipx_bin=/tmp/pip-tmp/bin/pipx
 
@@ -93,7 +102,7 @@ install_via_pipx() {
 		updaterc "if [[ \"\${PATH}\" != *\"\${PIPX_BIN_DIR}\"* ]]; then export PATH=\"\${PATH}:\${PIPX_BIN_DIR}\"; fi"
 
 	else
-		pipx_bin=pipx
+		pipx_bin="$INTERPRETER -m pipx"
 	fi
 
 	if [ "$(${pipx_bin} list --short | grep "$PACKAGE")" != "" ]; then
@@ -122,4 +131,4 @@ install_via_pipx() {
 	fi
 }
 
-install_via_pipx "$PACKAGE" "$VERSION" "$INJECTIONS" "$INCLUDEDEPS"
+install_via_pipx "$INTERPRETER" "$PACKAGE" "$VERSION" "$INJECTIONS" "$INCLUDEDEPS"

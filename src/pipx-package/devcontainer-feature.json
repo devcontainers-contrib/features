@@ -1,11 +1,11 @@
 {
     "name": "Pipx package",
     "id": "pipx-package",
-    "version": "1.1.4",
+    "version": "1.1.5",
     "description": "Installs a pipx package.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pipx-package",
     "installsAfter": [
-        "ghcr.io/devcontainers/features/python:latest"
+        "ghcr.io/devcontainers/features/python"
     ],
     "options": {
         "package": {
@@ -36,6 +36,14 @@
             "default": false,
             "description": "Include apps of dependent packages",
             "type": "boolean"
+        },
+        "interpreter": {
+            "type": "string",
+            "proposals": [
+                "python3"
+            ],
+            "default": "python3",
+            "description": "Select the python interpreter to use"
         }
     }
 }
