@@ -4,5 +4,12 @@
         "features": {
             "localstack": {}
         }
+    },
+    "test_with_python_feature": {
+        "image": "mcr.microsoft.com/devcontainers/base:jammy",
+        "features": {
+            "localstack": {},
+            "ghcr.io/devcontainers/features/python:1.1.0": {}
+        }
     }
 }
