@@ -16,7 +16,7 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/npm-package:1.0.2" \
-    --option package='projen' --option version="$VERSION"
+    --option package='pnpm' --option version="$VERSION"
 
 
 echo 'Done!'
