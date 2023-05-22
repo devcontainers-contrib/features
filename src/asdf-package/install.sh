@@ -1,11 +1,12 @@
 #!/bin/bash -i
 # This is part of devcontainers-contrib script library
 # source: https://github.com/devcontainers-contrib/features
-set -e
+set -ex
 
 PLUGIN=${PLUGIN:-""}
 VERSION=${VERSION:-"latest"}
 PLUGINREPO=${PLUGINREPO:-""}
+LATESTVERSIONPATTERN=${LATESTVERSIONPATTERN:-""}
 
 # Clean up
 rm -rf /var/lib/apt/lists/*
@@ -61,6 +62,7 @@ install_via_asdf() {
 	elif cat /etc/os-release | grep  "ID_LIKE=.*debian.*\|ID=.*debian.*"; then
 		check_packages curl git ca-certificates
 	fi
+	
 
 	# asdf may be installed somewhere on the machine, but we need it to be accessible to the remote user
 	# the code bellow will return 2 only when asdf is available, and 1 otherwise
@@ -73,7 +75,7 @@ install_via_asdf() {
 EOF
 	exit_code=$?
 	set -e
-
+	
 	if [ "${exit_code}" -eq 2 ]; then
 		# asdf already available to remote user, use it
 		su - "$_REMOTE_USER" <<EOF
@@ -83,29 +85,56 @@ EOF
 				exit 0
 			fi
 			asdf plugin add "$PLUGIN" "$REPO"
-			asdf install "$PLUGIN" "$VERSION"
-			asdf global "$PLUGIN" "$VERSION"
+			echo hiii
+			if [ "${VERSION}" = "latest" ] ; then
+				resolved_version=$(asdf latest "$PLUGIN" "$LATESTVERSIONPATTERN")
+			else
+				resolved_version=$VERSION
+			fi
+
+			asdf install "$PLUGIN" "$resolved_version"
+			asdf global "$PLUGIN" "$resolved_version"
 EOF
 	else
 		# asdf is not available to remote user, install it, then update rc files
 
-		su - "$_REMOTE_USER" <<EOF
+		# I do this in two parts because resolving subshell take prevedent to su, 
+		# so I must resolve variables pre using them in final su clause. 
+		# I hate bash.
+
+		resolved_version=$(su - "$_REMOTE_USER" <<EOF
+
 			git clone --depth=1 \
-				-c core.eol=lf \
-				-c core.autocrlf=false \
-				-c fsck.zeroPaddedFilemode=ignore \
-				-c fetch.fsck.zeroPaddedFilemode=ignore \
-				-c receive.fsck.zeroPaddedFilemode=ignore \
-				"https://github.com/asdf-vm/asdf.git" $_REMOTE_USER_HOME/.asdf 2>&1
-			
+					-c core.eol=lf \
+					-c core.autocrlf=false \
+					-c fsck.zeroPaddedFilemode=ignore \
+					-c fetch.fsck.zeroPaddedFilemode=ignore \
+					-c receive.fsck.zeroPaddedFilemode=ignore \
+					"https://github.com/asdf-vm/asdf.git" $_REMOTE_USER_HOME/.asdf 2>&1
+
 			. $_REMOTE_USER_HOME/.asdf/asdf.sh
+			asdf plugin add "$PLUGIN" "$REPO"
+			if [ "${VERSION}" = "latest" ] ; then
+				asdf latest "$PLUGIN" "$LATESTVERSIONPATTERN"
+			else
+				echo $VERSION
+			fi
+EOF
+)		
+
+		su - "$_REMOTE_USER" <<EOF
+
+			. $_REMOTE_USER_HOME/.asdf/asdf.sh
+
 			if asdf list "$PLUGIN" >/dev/null 2>&1; then
 				echo "$PLUGIN  already exists - skipping installation"
 				exit 0
 			fi
 			asdf plugin add "$PLUGIN" "$REPO"
-			asdf install "$PLUGIN" "$VERSION"
-			asdf global "$PLUGIN" "$VERSION"
+	
+			asdf install "$PLUGIN" "$resolved_version"
+			asdf global "$PLUGIN" "$resolved_version"
+
 EOF
 		updaterc ". $_REMOTE_USER_HOME/.asdf/asdf.sh"
 	fi 

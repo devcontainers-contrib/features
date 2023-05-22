@@ -1,4 +1,14 @@
 {
+    "install_rabbitmq": {
+        "image": "debian:bullseye",
+        "features": {
+            "asdf-package": {
+                "version": "latest",
+                "plugin": "rabbitmq",
+                "latestVersionPattern": "v"
+            }
+        }
+    },
     "install_act": {
         "image": "debian:bullseye",
         "features": {

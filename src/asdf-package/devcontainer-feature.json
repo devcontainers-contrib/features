@@ -1,7 +1,7 @@
 {
     "name": "asdf package",
     "id": "asdf-package",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Installs an asdf package.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/asdf-package",
     "installsAfter": [],
@@ -31,6 +31,14 @@
             ],
             "default": "",
             "description": "Select the asdf plugin repo to install (can remain empty in order to use the plugin short-name index https://github.com/asdf-vm/asdf-plugins)"
+        },
+        "latestVersionPattern": {
+            "type": "string",
+            "proposals": [
+                "[0-9]"
+            ],
+            "default": "",
+            "description": "this will be used as argument for 'asdf latest <plugin> <latestVersionPattern>' command. If none given the default asdf of '[0-9]' will be used."
         }
     }
 }
