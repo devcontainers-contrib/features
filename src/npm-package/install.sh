@@ -45,16 +45,18 @@ install_via_npm() {
 		[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
 	fi
 
-	if [ "$(npm list --global --parseable --depth 0 --omit dev | grep "$PACKAGE")" != "" ]; then
-		echo "$PACKAGE  already exists - skipping installation"
-		exit 0
-	fi
-
 	if [ "$VERSION" = "latest" ]; then
 		npm_installation="$PACKAGE"
 	else
 		npm_installation="${PACKAGE}@${VERSION}"
 	fi
+
+	if [ "$(npm list --global --depth 0 --omit dev | grep "$npm_installation")" != "" ]; then
+		echo "$PACKAGE  already exists - skipping installation"
+		exit 0
+	fi
+
+
 
 	npm install -g --omit=dev "$npm_installation"
 }
