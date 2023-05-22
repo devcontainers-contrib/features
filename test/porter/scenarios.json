@@ -15,6 +15,7 @@
                 "kubernetesPluginVersion": "latest"
             }
         },
-        "remoteUser": "vscode"
+        // This will fail if you use `vscode`
+        "remoteUser": 1000
     }
 }
