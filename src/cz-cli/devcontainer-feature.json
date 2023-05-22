@@ -1,0 +1,20 @@
+{
+    "id": "cz-cli",
+    "version": "1.0.0",
+    "name": "Commitizen CLI (via npm)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/cz-cli",
+    "description": "Commitizen is release management tool designed for teams. Commitizen assumes your team uses a standard way of commiting rules and from that foundation, it can bump your project's version, create the changelog, and update files.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package"
+    ]
+}
