@@ -1,6 +1,6 @@
 {
     "id": "hotel",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "hotel (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/hotel",
     "description": "hotel is a simple process manager for developers. Start apps from your browser and access them using local domains.",

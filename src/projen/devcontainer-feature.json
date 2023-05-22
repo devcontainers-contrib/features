@@ -1,6 +1,6 @@
 {
     "id": "projen",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "projen (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/projen",
     "description": "projen synthesizes project configuration files such as package.json, tsconfig.json, .gitignore, GitHub Workflows, eslint, jest, etc from a well-typed definition written in JavaScript.",

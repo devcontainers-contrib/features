@@ -1,6 +1,6 @@
 {
     "id": "json-server",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "JSON Server (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/json-server",
     "description": "Get a full fake REST API with zero coding in less than 30 seconds.",
