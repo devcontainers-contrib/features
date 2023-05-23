@@ -81,12 +81,12 @@ EOF
 		su - "$_REMOTE_USER" <<EOF
 
 			if asdf list "$PLUGIN" >/dev/null 2>&1; then
-				echo "$PLUGIN  already exists - skipping installation"
-				exit 0
+				echo "$PLUGIN  already exists - skipping adding it"
+			else
+				asdf plugin add "$PLUGIN" "$REPO" 
 			fi
-			asdf plugin add "$PLUGIN" "$REPO"
-			echo hiii
-			if [ "${VERSION}" = "latest" ] ; then
+
+ 			if [ "${VERSION}" = "latest" ] ; then
 				resolved_version=$(asdf latest "$PLUGIN" "$LATESTVERSIONPATTERN")
 			else
 				resolved_version=$VERSION
@@ -98,12 +98,8 @@ EOF
 	else
 		# asdf is not available to remote user, install it, then update rc files
 
-		# I do this in two parts because resolving subshell take prevedent to su, 
-		# so I must resolve variables pre using them in final su clause. 
-		# I hate bash.
 
-		resolved_version=$(su - "$_REMOTE_USER" <<EOF
-
+		su - "$_REMOTE_USER" <<EOF
 			git clone --depth=1 \
 					-c core.eol=lf \
 					-c core.autocrlf=false \
@@ -113,7 +109,22 @@ EOF
 					"https://github.com/asdf-vm/asdf.git" $_REMOTE_USER_HOME/.asdf 2>&1
 
 			. $_REMOTE_USER_HOME/.asdf/asdf.sh
-			asdf plugin add "$PLUGIN" "$REPO"
+			if asdf list "$PLUGIN" >/dev/null 2>&1; then
+				echo "$PLUGIN  already exists - skipping adding it"
+			else
+				asdf plugin add "$PLUGIN" "$REPO" 
+			fi
+			
+EOF
+
+
+		# I resolve the version like this because in bash resolving 
+		# a subshell take prevedent to su, so we must resolve variables
+		# pre using them in final su clause. 
+		# I hate bash.
+		resolved_version=$(su - "$_REMOTE_USER" <<EOF
+			. $_REMOTE_USER_HOME/.asdf/asdf.sh > /dev/null 2>&1
+
 			if [ "${VERSION}" = "latest" ] ; then
 				asdf latest "$PLUGIN" "$LATESTVERSIONPATTERN"
 			else
@@ -121,17 +132,8 @@ EOF
 			fi
 EOF
 )		
-
 		su - "$_REMOTE_USER" <<EOF
-
 			. $_REMOTE_USER_HOME/.asdf/asdf.sh
-
-			if asdf list "$PLUGIN" >/dev/null 2>&1; then
-				echo "$PLUGIN  already exists - skipping installation"
-				exit 0
-			fi
-			asdf plugin add "$PLUGIN" "$REPO"
-	
 			asdf install "$PLUGIN" "$resolved_version"
 			asdf global "$PLUGIN" "$resolved_version"
 
