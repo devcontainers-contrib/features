@@ -1,20 +1,20 @@
 {
     "id": "porter",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "name": "Porter (via porter.sh)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/porter",
     "description": "Porter enables you to package your application artifact, client tools, configuration and deployment logic together as an installer that you can distribute, and install with a single command.",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version to install.",
+            "description": "Select the version to install. Empty string installs the latest version.",
             "proposals": [
                 "latest"
             ],
             "type": "string"
         },
         "terraformMixinVersion": {
-            "default": "latest",
+            "default": "",
             "description": "Select the terraform mixin version to install.",
             "proposals": [
                 "latest"
@@ -22,7 +22,7 @@
             "type": "string"
         },
         "azMixinVersion": {
-            "default": "latest",
+            "default": "",
             "description": "Select the az mixin version to install.",
             "proposals": [
                 "latest"
@@ -30,7 +30,7 @@
             "type": "string"
         },
         "awsMixinVersion": {
-            "default": "latest",
+            "default": "",
             "description": "Select the aws mixin version to install.",
             "proposals": [
                 "latest"
@@ -38,7 +38,7 @@
             "type": "string"
         },
         "dockerMixinVersion": {
-            "default": "latest",
+            "default": "",
             "description": "Select the docker mixin version to install.",
             "proposals": [
                 "latest"
@@ -46,7 +46,7 @@
             "type": "string"
         },
         "dockerComposeMixinVersion": {
-            "default": "latest",
+            "default": "",
             "description": "Select the docker-compose mixin version to install.",
             "proposals": [
                 "latest"
@@ -54,7 +54,7 @@
             "type": "string"
         },
         "gcloudMixinVersion": {
-            "default": "latest",
+            "default": "",
             "description": "Select the gcloud mixin version to install.",
             "proposals": [
                 "latest"
@@ -62,7 +62,7 @@
             "type": "string"
         },
         "helmMixinVersion": {
-            "default": "latest",
+            "default": "",
             "description": "Select the helm mixin version to install.",
             "proposals": [
                 "latest"
@@ -70,7 +70,7 @@
             "type": "string"
         },
         "armMixinVersion": {
-            "default": "latest",
+            "default": "",
             "description": "Select the arm mixin version to install.",
             "proposals": [
                 "latest"
@@ -78,7 +78,7 @@
             "type": "string"
         },
         "azurePluginVersion": {
-            "default": "latest",
+            "default": "",
             "description": "Select the azure plugin version to install.",
             "proposals": [
                 "latest"
@@ -86,7 +86,7 @@
             "type": "string"
         },
         "kubernetesPluginVersion": {
-            "default": "latest",
+            "default": "",
             "description": "Select the kubernetes plugin version to install.",
             "proposals": [
                 "latest"

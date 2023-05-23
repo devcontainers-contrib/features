@@ -1,8 +1,21 @@
 {
-    "test": {
+    "install_mixins": {
         "image": "mcr.microsoft.com/devcontainers/base:debian",
         "features": {
-            "porter": {}
-        }
+            "porter": {
+                "terraformMixinVersion": "latest",
+                "azMixinVersion": "latest",
+                "awsMixinVersion": "latest",
+                "dockerMixinVersion": "latest",
+                "dockerComposeMixinVersion": "latest",
+                "gcloudMixinVersion": "latest",
+                "helmMixinVersion": "latest",
+                "armMixinVersion": "latest",
+                "azurePluginVersion": "latest",
+                "kubernetesPluginVersion": "latest"
+            }
+        },
+        // This will fail if you use `vscode`
+        "remoteUser": 1000
     }
 }
