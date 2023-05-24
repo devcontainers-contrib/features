@@ -3,7 +3,7 @@
   "version": "1.0.6",
   "name": "Direnv (via Github Releases)",
   "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/direnv",
-  "description": "Starship is an extension for your shell.",
+  "description": "direnv is an extension for your shell. It augments existing shells with a new feature that can load and unload environment variables depending on the current directory.",
   "options": {
     "version": {
       "default": "latest",
