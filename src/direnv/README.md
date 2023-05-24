@@ -1,4 +1,3 @@
-
 # Direnv (via Github Releases) (direnv)
 
 direnv is an extension for your shell. It augments existing shells with a new
