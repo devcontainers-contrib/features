@@ -1,0 +1,20 @@
+{
+    "id": "youtubeuploader",
+    "version": "1.0.0",
+    "name": "Youtube Uploader (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/youtubeuploader",
+    "description": "Scripted uploads to Youtube.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}
