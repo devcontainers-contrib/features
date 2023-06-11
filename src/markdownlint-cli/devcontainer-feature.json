@@ -1,20 +1,20 @@
 {
-  "id": "markdownlint-cli",
-  "version": "1.0.0",
-  "name": "markdownlint-cli (via npm)",
-  "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/markdownlint-cli",
-  "description": "Command Line interface for MarkdownLint",
-  "options": {
-      "version": {
-          "default": "latest",
-          "description": "Select the version of markdownlint-cli to install.",
-          "proposals": [
-              "latest"
-          ],
-          "type": "string"
-      }
-  },
-  "installsAfter": [
-      "ghcr.io/devcontainers-contrib/features/npm-package"
-  ]
+    "id": "markdownlint-cli",
+    "version": "1.0.0",
+    "name": "markdownlint-cli (via npm)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/markdownlint-cli",
+    "description": "Command Line interface for MarkdownLint",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package"
+    ]
 }

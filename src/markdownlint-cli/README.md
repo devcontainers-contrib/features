@@ -15,5 +15,6 @@ Command Line interface for MarkdownLint
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of markdownlint-cli to install. | string | latest |
+| version | Select the version to install. | string | latest |
+
 

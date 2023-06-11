@@ -1,5 +1,5 @@
 
-# prettier (via npm) (prettier)
+# Prettier (via npm) (prettier)
 
 Prettier is an opinionated code formatter.
 
@@ -15,5 +15,6 @@ Prettier is an opinionated code formatter.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of prettier to install. | string | latest |
+| version | Select the version to install. | string | latest |
+
 

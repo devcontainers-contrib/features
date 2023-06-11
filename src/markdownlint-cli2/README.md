@@ -1,7 +1,7 @@
 
 # markdownlint-cli2 (via npm) (markdownlint-cli2)
 
-markdownlint-cli2 is a fast, flexible, configuration-based command-line interface for linting Markdown/CommonMark files with the `markdownlint` library
+A fast, flexible, configuration-based command-line interface for linting Markdown/CommonMark files with the markdownlint library.
 
 ## Example DevContainer Usage
 
@@ -15,6 +15,6 @@ markdownlint-cli2 is a fast, flexible, configuration-based command-line interfac
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version of markdownlint-cli2 to install. | string | latest |
+| version | Select the version to install. | string | latest |
 
 
