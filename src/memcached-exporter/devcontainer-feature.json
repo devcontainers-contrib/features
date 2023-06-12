@@ -1,0 +1,20 @@
+{
+    "id": "memcached-exporter",
+    "version": "1.0.0",
+    "name": "Prometheus Memcached Exporter (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/memcached-exporter",
+    "description": "The memcached exporter exports metrics from a memcached server for consumption by Prometheus.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}

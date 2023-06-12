@@ -1,0 +1,20 @@
+{
+    "id": "syncthing",
+    "version": "1.0.0",
+    "name": "Syncthing (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/syncthing",
+    "description": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}
