@@ -116,7 +116,7 @@ ensure_nanolayer() {
             fi
         elif [ -f "${NANOLAYER_CLI_LOCATION}" ] && [ -x "${NANOLAYER_CLI_LOCATION}" ] ; then
             nanolayer_location=${NANOLAYER_CLI_LOCATION}
-            echo "Found a pre-existing nanolayer which were given in env varialbe: $nanolayer_location"
+            echo "Found a pre-existing nanolayer which were given in env variable: $nanolayer_location"
         fi
 
         # make sure its of the required version
