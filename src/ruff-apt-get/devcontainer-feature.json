@@ -1,0 +1,11 @@
+{
+    "id": "ruff-apt-get",
+    "version": "0.0.272",
+    "name": "Ruff (via apt-get)",
+    "documentationURL": "http://github.com/dbrtly/features/tree/main/src/ruff-apt-get",
+    "description": "Ruff is an extremely fast Python linter, written in Rust.",
+    "options": {},
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+    ]
+}
