@@ -1,0 +1,21 @@
+{
+    "id": "dbt-coverage",
+    "version": "1.0.0",
+    "name": "dbt-coverage (via pipx)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/dbt-coverage",
+    "description": "dbt-coverage is a one-stop-shop for docs and test coverage of dbt projects.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/pipx-package",
+        "ghcr.io/devcontainers/features/python"
+    ]
+}
