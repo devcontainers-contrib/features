@@ -7,7 +7,7 @@ sqlfmt formats your dbt SQL files so you don't have to.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/shandy-sqlfmt:2.1.1": {}
+    "ghcr.io/devcontainers-contrib/features/shandy-sqlfmt:1.0.0": {}
 }
 ```
 
