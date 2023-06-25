@@ -1,4 +1,14 @@
 {
+    "install_black_debian_bookworm": {
+        "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+        "features": {
+            "pipx-package": {
+                "version": "latest",
+                "package": "black",
+                "injections": "tqdm pylint"
+            }
+        }
+    },
     "install_black": {
         "image": "debian:bullseye",
         "features": {
