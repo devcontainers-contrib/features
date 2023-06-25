@@ -4,6 +4,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "lefthook-asdf --help" lefthook-asdf --help
+check "lefthook --help" lefthook --help
 
 reportResults
