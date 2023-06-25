@@ -17,6 +17,7 @@ $nanolayer_location \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.6" \
     --option package='shandy-sqlfmt[jinjafmt]' --option version="$VERSION"
+    
 
 
 echo 'Done!'

@@ -1,5 +1,5 @@
 
-# sqlfluff (via pipx) (sqlfluff)
+# SqlFluff (via pipx) (sqlfluff)
 
 Fluff is an extensible and modular linter designed to help you write good SQL and catch errors and bad SQL before it hits your database.
 
@@ -7,7 +7,7 @@ Fluff is an extensible and modular linter designed to help you write good SQL an
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/sqlfluff:1.0.0": {}
+    "ghcr.io/devcontainers-contrib/features/sqlfluff:1": {}
 }
 ```
 

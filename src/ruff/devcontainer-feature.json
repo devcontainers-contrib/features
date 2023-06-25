@@ -1,9 +1,9 @@
 {
-    "id": "sqlfmt",
+    "id": "ruff",
     "version": "1.0.0",
-    "name": "sqlfmt (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/sqlfmt",
-    "description": "sqlfmt formats your dbt SQL files so you don't have to.",
+    "name": "Ruff (via pipx)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ruff",
+    "description": "Ruff is an extremely fast Python linter, written in Rust.",
     "options": {
         "version": {
             "default": "latest",

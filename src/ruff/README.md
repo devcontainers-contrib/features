@@ -1,13 +1,13 @@
 
-# sqlfmt (via pipx) (sqlfmt)
+# Ruff (via pipx) (ruff)
 
-sqlfmt formats your dbt SQL files so you don't have to.
+Ruff is an extremely fast Python linter, written in Rust.
 
 ## Example DevContainer Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/sqlfmt:1": {}
+    "ghcr.io/devcontainers-contrib/features/ruff:1": {}
 }
 ```
 

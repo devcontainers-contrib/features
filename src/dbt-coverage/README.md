@@ -7,7 +7,7 @@ dbt-coverage is a one-stop-shop for docs and test coverage of dbt projects.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/dbt-coverage:1.0.0": {}
+    "ghcr.io/devcontainers-contrib/features/dbt-coverage:1": {}
 }
 ```
 

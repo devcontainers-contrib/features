@@ -7,7 +7,7 @@ Lefthook is the fastest polyglot Git hooks manager out there.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/lefthook-asdf:1.0.0": {}
+    "ghcr.io/devcontainers-contrib/features/lefthook-asdf:1": {}
 }
 ```
 
