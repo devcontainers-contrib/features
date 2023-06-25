@@ -9,7 +9,7 @@ source ./library_scripts.sh
 # `ensure_nanolayer` is a bash function that will find any existing nanolayer installations, 
 # and if missing - will download a temporary copy that automatically get deleted at the end 
 # of the script
-ensure_nanolayer nanolayer_location "v0.4.29"
+ensure_nanolayer nanolayer_location "v0.4.45"
 
 
 $nanolayer_location \
@@ -17,6 +17,7 @@ $nanolayer_location \
     devcontainer-feature \
     "ghcr.io/devcontainers/features/python:1.0.18" \
     --option installTools='false' --option version='os-provided'
+    
 
 
 $nanolayer_location \
@@ -24,13 +25,15 @@ $nanolayer_location \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0" \
     --option command='pip3 install packaging==21.3'
+    
 
 
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.3" \
+    "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.6" \
     --option package='eth-brownie' --option version="$VERSION"
+    
 
 
 echo 'Done!'

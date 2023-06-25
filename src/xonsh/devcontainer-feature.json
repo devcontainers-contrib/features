@@ -1,6 +1,6 @@
 {
     "id": "xonsh",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "Xonsh (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/xonsh",
     "description": "Xonsh is a Python-powered, cross-platform, Unix-gazing shell language and command prompt.",

@@ -1,6 +1,6 @@
 {
     "id": "pyscaffold",
-    "version": "2.0.15",
+    "version": "2.0.16",
     "name": "PyScaffold (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pyscaffold",
     "description": "PyScaffold is a python project template generator with batteries included.",

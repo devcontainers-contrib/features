@@ -1,6 +1,6 @@
 {
     "id": "pdm",
-    "version": "2.0.15",
+    "version": "2.0.16",
     "name": "PDM (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pdm",
     "description": "PDM is a modern Python package and dependency manager supporting the latest PEP standards.",

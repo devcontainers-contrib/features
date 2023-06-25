@@ -1,6 +1,6 @@
 {
     "id": "pyoxidizer",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "PyOxidizer (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pyoxidizer",
     "description": "PyOxidizer is a modern Python application packaging and distribution tool.",

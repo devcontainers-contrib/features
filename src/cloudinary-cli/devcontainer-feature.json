@@ -1,6 +1,6 @@
 {
     "id": "cloudinary-cli",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "name": "cloudinary-cli (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/cloudinary-cli",
     "description": "Cloudinary CLI.",

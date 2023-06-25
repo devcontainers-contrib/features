@@ -1,6 +1,6 @@
 {
     "id": "mackup",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "Mackup (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mackup",
     "description": "Mackup keeps your application settings in sync (OS X/Linux).",

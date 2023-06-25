@@ -1,6 +1,6 @@
 {
     "id": "scancode-toolkit",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "Scan (SAST) (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/scancode-toolkit",
     "description": "ScanCode scan code to detect packages and dependencies, licenses, copyrights and more.",

@@ -11,6 +11,12 @@
             "ansible": {}
         }
     },
+    "test_debian_bookworm": {
+        "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+        "features": {
+            "ansible": {}
+        }
+    },
     "test_version_selection": {
         "image": "mcr.microsoft.com/devcontainers/base:debian",
         "features": {

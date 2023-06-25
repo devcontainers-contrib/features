@@ -1,6 +1,6 @@
 {
     "id": "black",
-    "version": "2.0.15",
+    "version": "2.0.16",
     "name": "Black (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/black",
     "description": "Black is an uncompromising Python code formatter.",
