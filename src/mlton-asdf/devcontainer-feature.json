@@ -1,6 +1,6 @@
 {
     "id": "mlton-asdf",
-    "version": "2.0.13",
+    "version": "2.0.14",
     "name": "mlton (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mlton-asdf",
     "description": "MLton is a whole-program optimizing compiler for the Standard ML programming language.",

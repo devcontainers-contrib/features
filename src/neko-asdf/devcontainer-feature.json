@@ -1,6 +1,6 @@
 {
     "id": "neko-asdf",
-    "version": "2.0.13",
+    "version": "2.0.14",
     "name": "Neko Virtual Machine (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/neko-asdf",
     "description": "Installs Neko Virtual Machine",

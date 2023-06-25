@@ -1,6 +1,6 @@
 {
     "id": "act-asdf",
-    "version": "2.0.12",
+    "version": "2.0.13",
     "name": "act (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/act-asdf",
     "description": "Act is an open source project that allows you to run your github flow locally.",

@@ -1,6 +1,6 @@
 {
     "id": "ccache-asdf",
-    "version": "2.0.15",
+    "version": "2.0.16",
     "name": "Ccache (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ccache-asdf",
     "description": "Ccache is a compiler cache. It speeds up recompilation by caching previous compilations and detecting when the same compilation is being done again.",

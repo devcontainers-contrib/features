@@ -1,6 +1,6 @@
 {
     "id": "raku-asdf",
-    "version": "1.0.15",
+    "version": "1.0.16",
     "name": "Raku (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/raku-asdf",
     "description": "Raku is a general-purpose, interpreted, dynamic programming language.",

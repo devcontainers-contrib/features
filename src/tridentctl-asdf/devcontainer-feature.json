@@ -1,6 +1,6 @@
 {
     "id": "tridentctl-asdf",
-    "version": "2.0.13",
+    "version": "2.0.14",
     "name": "tridentctl (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tridentctl-asdf",
     "description": "Installs tridentctl",

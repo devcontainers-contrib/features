@@ -1,6 +1,6 @@
 {
     "id": "cue-asdf",
-    "version": "2.0.13",
+    "version": "2.0.14",
     "name": "CUE (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/cue-asdf",
     "description": "CUE is an open source data constraint language which aims to simplify tasks involving defining and using data.",
