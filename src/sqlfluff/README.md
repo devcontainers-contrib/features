@@ -7,7 +7,7 @@ Fluff is an extensible and modular linter designed to help you write good SQL an
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/sqlfluff:2.1.1": {}
+    "ghcr.io/devcontainers-contrib/features/sqlfluff:1.0.0": {}
 }
 ```
 
