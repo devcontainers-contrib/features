@@ -7,6 +7,9 @@ INJECTIONS=${INJECTIONS:-""}
 INCLUDEDEPS=${INCLUDEDEPS:-"false"}
 INTERPRETER=${INTERPRETER:-"python3"}
 
+#  PEP 668  compatibility 
+export PIP_BREAK_SYSTEM_PACKAGES=1
+
 # Clean up
 rm -rf /var/lib/apt/lists/*
 
