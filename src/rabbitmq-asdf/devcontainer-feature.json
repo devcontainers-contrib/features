@@ -1,12 +1,12 @@
 {
     "id": "rabbitmq-asdf",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "Rabbitmq (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/kubectl-asdf",
     "description": "RabbitMQ is a feature rich, multi-protocol messaging and streaming broker.",
     "options": {
         "version": {
-            "default": "latest",
+            "default": "v3.12.0",
             "description": "Select the version to install.",
             "proposals": [
                 "latest"

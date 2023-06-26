@@ -15,7 +15,7 @@ RabbitMQ is a feature rich, multi-protocol messaging and streaming broker.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version to install. | string | latest |
+| version | Select the version to install. | string | v3.12.0 |
 | erlangVersion | Select the version to install. | string | latest |
 
 
