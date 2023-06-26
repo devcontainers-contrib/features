@@ -4,24 +4,24 @@ on:
     inputs:
       on_changes_only:
         type: boolean
-        description: 'run tests on changes from main branch only'
+        description: 'on_changes_only'
         default: false
 
       enabled:
         type: boolean
-        description: 'run tests on changes from main branch only'
+        description: 'enabled'
         default: true
 
   workflow_call:
     inputs:
       on_changes_only:
         type: boolean
-        description: 'run tests on changes from main branch only'
+        description: 'on_changes_only'
         default: false
 
       enabled:
         type: boolean
-        description: 'run tests on changes from main branch only'
+        description: 'enabled'
         default: true
 
 
