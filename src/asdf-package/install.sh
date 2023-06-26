@@ -106,7 +106,7 @@ EOF
 					-c fsck.zeroPaddedFilemode=ignore \
 					-c fetch.fsck.zeroPaddedFilemode=ignore \
 					-c receive.fsck.zeroPaddedFilemode=ignore \
-					"https://github.com/asdf-vm/asdf.git" $_REMOTE_USER_HOME/.asdf 2>&1
+					"https://github.com/asdf-vm/asdf.git" --branch v0.12.0 $_REMOTE_USER_HOME/.asdf 2>&1
 
 			. $_REMOTE_USER_HOME/.asdf/asdf.sh
 			if asdf list "$PLUGIN" >/dev/null 2>&1; then

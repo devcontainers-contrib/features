@@ -1,7 +1,7 @@
 {
     "name": "asdf package",
     "id": "asdf-package",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Installs an asdf package.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/asdf-package",
     "installsAfter": [
