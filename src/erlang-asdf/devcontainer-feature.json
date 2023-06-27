@@ -1,6 +1,6 @@
 {
     "id": "erlang-asdf",
-    "version": "2.0.16",
+    "version": "2.0.17",
     "name": "Erlang (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/erlang-asdf",
     "description": "Erlang is a general-purpose, concurrent, functional programming language, and a garbage-collected runtime system.",

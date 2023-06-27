@@ -1,6 +1,6 @@
 {
     "test": {
-        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "image": "debian:bullseye",
         "features": {
             "rabbitmq-asdf": {}
         }
