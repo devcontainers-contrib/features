@@ -1,0 +1,20 @@
+{
+    "id": "tsx",
+    "version": "1.0.0",
+    "name": "tsx (via npm)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/tsx",
+    "description": "tsx is a CLI command (alternative to node) for seamlessly running TypeScript & ESM, in both commonjs & module package types.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/npm-package"
+    ]
+}
