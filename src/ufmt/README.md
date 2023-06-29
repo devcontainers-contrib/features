@@ -7,7 +7,7 @@
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/ufmt:2.1.0": {}
+    "ghcr.io/devcontainers-contrib/features/ufmt:1.0.0": {}
 }
 ```
 
