@@ -4,5 +4,11 @@
         "features": {
             "tfcdk-cli": {}
         }
+    },
+    "test_specific_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+        "features": {
+            "tfcdk-cli": {"version": "0.17.0"}
+        }
     }
 }
