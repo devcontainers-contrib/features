@@ -7,7 +7,7 @@ Shfmt is a shell parser, formatter, and interpreter.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/shfmt:3.7.0": {}
+    "ghcr.io/devcontainers-contrib/features/shfmt:1.0.0": {}
 }
 ```
 
