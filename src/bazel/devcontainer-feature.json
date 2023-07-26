@@ -1,0 +1,34 @@
+{
+  "name": "Bazel",
+  "id": "bazel",
+  "version": "1.0.0",
+  "description": "Bazel feature",
+  "options": {
+      "bazelisk_version": {
+        "type": "string",
+        "proposals": [
+            "1.17.0",
+            "latest"
+        ],
+        "default": "latest",
+        "description": "Version of Bazelisk to manage Bazel versions"
+      },
+      "buildifier_version": {
+          "type": "string",
+          "proposals": [
+              "5.1.0",
+              "6.1.2",
+              "latest"
+          ],
+          "default": "latest",
+          "description": "Version of Buildifier to lint BUILD files"
+      }
+  },
+  "customizations": {
+      "vscode": {
+          "extensions": [
+            "bazelbuild.vscode-bazel"
+          ]
+      }
+  }
+}
