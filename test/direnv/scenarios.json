@@ -1,5 +1,5 @@
 {
-    "test": {
+    "test_defaults_debian": {
         "image": "mcr.microsoft.com/devcontainers/base:debian",
         "features": {
             "direnv": {}

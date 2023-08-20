@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-KUBECTX_KUBENS_VERSION="${VERSION:-"latest"}"
+#!/bin/bash -i
 
 set -e
 
@@ -11,23 +9,24 @@ source ./library_scripts.sh
 # `ensure_nanolayer` is a bash function that will find any existing nanolayer installations, 
 # and if missing - will download a temporary copy that automatically get deleted at the end 
 # of the script
-ensure_nanolayer nanolayer_location "v0.4.45"
+ensure_nanolayer nanolayer_location "v0.4.46"
 
-if [ "$(id -u)" -ne 0 ]; then
-	echo -e 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
-	exit 1
-fi
 
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/gh-release:1" \
-    --option repo='ahmetb/kubectx' --option binaryNames='kubectx' --option version="$KUBECTX_KUBENS_VERSION" --option assetRegex="kubectx.*"
+    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.18" \
+    --option repo='ahmetb/kubectx' --option binaryNames='kubectx' --option assetRegex='kubectx.*' --option version="$VERSION"
+    
+
 
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-contrib/features/gh-release:1" \
-    --option repo='ahmetb/kubectx' --option binaryNames='kubens' --option version="$KUBECTX_KUBENS_VERSION" --option assetRegex="kubens.*"
+    "ghcr.io/devcontainers-contrib/features/gh-release:1.0.18" \
+    --option repo='ahmetb/kubectx' --option binaryNames='kubens' --option assetRegex='kubens.*' --option version="$VERSION"
+    
 
-echo "Done!"
+
+echo 'Done!'
+

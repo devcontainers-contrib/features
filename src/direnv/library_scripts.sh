@@ -2,7 +2,7 @@
 
 
 clean_download() {
-    # The purpose of this function is to download a file with minimal impact on contaier layer size
+    # The purpose of this function is to download a file with minimal impact on container layer size
     # this means if no valid downloader is found (curl or wget) then we install a downloader (currently wget) in a 
     # temporary manner, and making sure to 
     # 1. uninstall the downloader at the return of the function
@@ -116,7 +116,7 @@ ensure_nanolayer() {
             fi
         elif [ -f "${NANOLAYER_CLI_LOCATION}" ] && [ -x "${NANOLAYER_CLI_LOCATION}" ] ; then
             nanolayer_location=${NANOLAYER_CLI_LOCATION}
-            echo "Found a pre-existing nanolayer which were given in env varialbe: $nanolayer_location"
+            echo "Found a pre-existing nanolayer which were given in env variable: $nanolayer_location"
         fi
 
         # make sure its of the required version
