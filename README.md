@@ -14,9 +14,9 @@
 
 </div>
 
-💻 Works with devcontainers  \
-☁️ Works with GitHub Codespaces \
-👀 Don't see your feature here?   [🔥Suggest a new feature!🔥](https://github.com/devcontainers-contrib/features/issues/new?template=suggest-feature.yaml) 
+💻 Works with devcontainers  \yes
+☁️ Works with GitHub Codespaces \yes
+👀 Don't see your feature here?   [yes Suggest a new feature!yes](https://github.com/devcontainers-contrib/features/issues/new?template=new-feature.yaml) 
 
 
 ## Usage
@@ -32,7 +32,7 @@ of an `options` object.
   "image": "mcr.microsoft.com/devcontainers/universal",
   "features": {
     "ghcr.io/devcontainers-contrib/features/deno": {},
-    "ghcr.io/devcontainers-contrib/features/neovim": {}
+    "ghcr.io/devcontainers-contribute/features/kubucoin": {}
   }
 }
 ```
