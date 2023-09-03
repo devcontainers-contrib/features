@@ -19,6 +19,15 @@
             }
         }
     },
+    "install_precommit": {
+        "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bullseye",
+        "features": {
+            "pipx-package": {
+                "version": "latest",
+                "package": "pre-commit"
+            }
+        }
+    },
     "install_black_custom_interpreter": {
         "image": "debian:bullseye",
         "features": {

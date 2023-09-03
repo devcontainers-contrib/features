@@ -16,7 +16,7 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.6" \
-    --option package='pre-commit' --option version="$VERSION"
+    --option package='pre-commit' --option version="$VERSION" --verbose
     
 
 

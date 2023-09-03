@@ -1,7 +1,7 @@
 {
     "name": "Pipx package",
     "id": "pipx-package",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "Installs a pipx package.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/pipx-package",
     "installsAfter": [
@@ -42,8 +42,8 @@
             "proposals": [
                 "python3"
             ],
-            "default": "python3",
-            "description": "Select the python interpreter to use"
+            "default": "",
+            "description": "Force python interpreter to be use (must already exists on the container). If none selected (the default) then python3 will be used (and will be installed in case it does not exists)"
         }
     }
 }

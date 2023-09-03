@@ -5,7 +5,7 @@ PACKAGE=${PACKAGE:-""}
 VERSION=${VERSION:-"latest"}
 INJECTIONS=${INJECTIONS:-""}
 INCLUDEDEPS=${INCLUDEDEPS:-"false"}
-INTERPRETER=${INTERPRETER:-"python3"}
+INTERPRETER=${INTERPRETER:-""}
 
 #  PEP 668  compatibility 
 export PIP_BREAK_SYSTEM_PACKAGES=1
@@ -45,32 +45,41 @@ install_via_pipx() {
 	local VERSION=$3
 	local INJECTIONS=$4
 	local INCLUDEDEPS=$5
-	if [ "$INTERPRETER" = "python3" ]; then
 
-		# if no python - install it
-		if ! type python3 >/dev/null 2>&1; then
-			echo "installing python3-minimal libffi-dev"
-			apt-get update -y
-			apt-get -y install python3-minimal
+	if [ -n "$INTERPRETER" ]; then
+		if ! type $INTERPRETER >/dev/null 2>&1; then
+			echo "interpreter given is invalid: $INTERPRETER"
+			exit 1
 		fi
-
-		# if no pip - install it
-		if ! type pip3 >/dev/null 2>&1; then
-			echo "installing python3-pip"
-			apt-get update -y
-			apt-get -y install libffi-dev python3-pip
-		fi
-
-		if ! python3 -Im ensurepip --version >/dev/null 2>&1; then
-			echo "installing python3-venv"
-			apt-get update -y
-			apt-get -y install python3-venv
-		fi
+		local _interpreter=$INTERPRETER
+	else
+		local _interpreter="python3"
 	fi
+	
+	if [ -z "$INTERPRETER" ]; then # if interpreter selected manually - it should exists (validated above)
 
-	if ! type "$INTERPRETER"; then
-		echo "interpreter given is invalid: $INTERPRETER"
-		exit 1
+		if [ "$_interpreter" = "python3" ]; then
+
+			# if no python - install it
+			if ! type python3 >/dev/null 2>&1; then
+				echo "installing python3-minimal libffi-dev"
+				apt-get update -y
+				apt-get -y install python3-minimal
+			fi
+
+			# if no pip - install it
+			if ! type pip3 >/dev/null 2>&1; then
+				echo "installing python3-pip"
+				apt-get update -y
+				apt-get -y install libffi-dev python3-pip
+			fi
+
+			if ! python3 -Im ensurepip --version >/dev/null 2>&1; then
+				echo "installing python3-venv"
+				apt-get update -y
+				apt-get -y install python3-venv
+			fi
+		fi
 	fi
 
 	export PYTHONUSERBASE=/tmp/pip-tmp
@@ -80,9 +89,7 @@ install_via_pipx() {
 	export PIPX_BIN_DIR="${PIPX_HOME}/bin"
 	mkdir -p "${PIPX_HOME}"
 
-	# if pipx not exists - install it
-	if ! $INTERPRETER -m pip list | grep pipx >/dev/null 2>&1; then
-
+	_install_pipx() {
 		PATH="${PATH}:${PIPX_BIN_DIR}"
 
 		# Create pipx group, dir, and set sticky bit
@@ -96,17 +103,33 @@ install_via_pipx() {
 		chmod -R g+r+w "${PIPX_HOME}"
 		find "${PIPX_HOME}" -type d -print0 | xargs -0 -n 1 chmod g+s
 
-		$INTERPRETER -m pip install --disable-pip-version-check --no-cache-dir --user pipx 2>&1
-		/tmp/pip-tmp/bin/pipx install --pip-args=--no-cache-dir pipx
-		pipx_bin=/tmp/pip-tmp/bin/pipx
+		$_interpreter -m pip install --disable-pip-version-check --no-cache-dir --user pipx 2>&1
+		$PYTHONUSERBASE/bin/pipx install --pip-args=--no-cache-dir --force pipx
+		pipx_bin=$PYTHONUSERBASE/bin/pipx
 
 		updaterc "export PIPX_HOME=\"${PIPX_HOME}\""
 		updaterc "export PIPX_BIN_DIR=\"${PIPX_BIN_DIR}\""
 		updaterc "if [[ \"\${PATH}\" != *\"\${PIPX_BIN_DIR}\"* ]]; then export PATH=\"\${PATH}:\${PIPX_BIN_DIR}\"; fi"
+	}
 
+	
+	if  $_interpreter -m pip list | grep pipx >/dev/null 2>&1; then
+		# if pipx exists in the selected interpreter - use it
+		pipx_bin="$_interpreter -m pipx"
+	elif [ -n "$INTERPRETER" ]; then
+		# if interpreter was *explicitely* selected, 
+		# and pipx is not installed with it - install it
+		_install_pipx
+		pipx_bin="$_interpreter -m pipx"
+	elif type pipx >/dev/null 2>&1; then
+		# if a global pipx is install - use it
+		pipx_bin="pipx"
 	else
-		pipx_bin="$INTERPRETER -m pipx"
+		# if no pipx installed what so ever - install it
+		_install_pipx
+		pipx_bin=$PYTHONUSERBASE/bin/pipx
 	fi
+
 
 	if [ "$(${pipx_bin} list --short | grep "$PACKAGE")" != "" ]; then
 		echo "$PACKAGE  already exists - skipping installation"
@@ -130,7 +153,7 @@ install_via_pipx() {
 		done
 
 		# cleaning pipx to save disk space
-		rm -rf /tmp/pip-tmp
+		rm -rf $PYTHONUSERBASE
 	fi
 }
 
