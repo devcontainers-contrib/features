@@ -1,6 +1,6 @@
 {
     "id": "sqlfluff",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "SqlFluff (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/sqlfluff",
     "description": "Fluff is an extensible and modular linter designed to help you write good SQL and catch errors and bad SQL before it hits your database.",

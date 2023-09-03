@@ -1,6 +1,6 @@
 {
     "id": "ruff",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "Ruff (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ruff",
     "description": "Ruff is an extremely fast Python linter, written in Rust.",
