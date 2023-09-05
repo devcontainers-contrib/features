@@ -1,6 +1,6 @@
 {
     "id": "terramate",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Terramate (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/terramate",
     "description": "Terramate adds powerful capabilities such as code generation, stacks, orchestration, change detection, data sharing and more to Terraform.",

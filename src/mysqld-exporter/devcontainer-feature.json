@@ -1,6 +1,6 @@
 {
     "id": "mysqld-exporter",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "Prometheus MySQL Exporter (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mysqld-exporter",
     "description": "Prometheus exporter for MySQL server metrics.",

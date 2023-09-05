@@ -1,6 +1,6 @@
 {
     "id": "chisel",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "Chisel (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/chisel",
     "description": "Chisel is a fast TCP/UDP tunnel, transported over HTTP, secured via SSH.",

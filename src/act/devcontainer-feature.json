@@ -1,6 +1,6 @@
 {
     "id": "act",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "name": "act (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/act",
     "description": "Act is an open source project that allows you to run your github flow locally.",

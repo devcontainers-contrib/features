@@ -1,6 +1,6 @@
 {
     "id": "apko",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "name": "apko (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/apko",
     "description": "apko is an apk-based OCI image builder",

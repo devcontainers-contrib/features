@@ -1,6 +1,6 @@
 {
     "id": "immuclient",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "name": "immuclient (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/immuclient",
     "description": "immuclient is a CLI client for immudb - the lightweight, high-speed immutable database for systems and applications.",

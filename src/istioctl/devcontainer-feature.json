@@ -1,6 +1,6 @@
 {
     "id": "istioctl",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Istio CLI (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/istioctl",
     "description": "The istioctl tool is a configuration command line utility that allows service operators to debug and diagnose their Istio service mesh deployments.",

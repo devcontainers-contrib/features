@@ -1,6 +1,6 @@
 {
     "id": "stew",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "name": "stew (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/stew",
     "description": "stew is an independent package manager for compiled binaries.",

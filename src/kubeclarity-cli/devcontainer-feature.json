@@ -1,6 +1,6 @@
 {
     "id": "kubeclarity-cli",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "name": "KubeClarity CLI (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/kubeclarity-cli",
     "description": "KubeClarity is a tool for detection and management of Software Bill Of Materials (SBOM) and vulnerabilities of container images and filesystems. KubeClarity CLI can be run locally and especially useful for CI/CD pipelines. It allows to analyze images and directories to generate SBOM, and scan it for vulnerabilities.",

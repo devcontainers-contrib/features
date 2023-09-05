@@ -1,6 +1,6 @@
 {
     "id": "supabase-cli",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "name": "Supabase CLI (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/supabase-cli",
     "description": "The Supabase CLI provides tools to develop your project locally and deploy to the Supabase Platform. You can also use the CLI to manage your Supabase projects, handle database migrations and CI/CD workflows, and generate types directly from your database schema.",

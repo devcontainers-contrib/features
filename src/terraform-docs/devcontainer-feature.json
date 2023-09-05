@@ -1,6 +1,6 @@
 {
     "id": "terraform-docs",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "terraform-docs (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/terraform-docs",
     "description": "terraform-docs is a utility to generate documentation from Terraform modules in various output formats.",

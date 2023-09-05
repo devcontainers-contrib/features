@@ -1,6 +1,6 @@
 {
     "id": "volta",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Volta (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/volta",
     "description": "Volta is a hassle-free way to manage your JavaScript command-line tools.",

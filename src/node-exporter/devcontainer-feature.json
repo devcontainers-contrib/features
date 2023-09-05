@@ -1,6 +1,6 @@
 {
     "id": "node-exporter",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "Prometheus Node Exporter (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/node-exporter",
     "description": "Prometheus exporter for hardware and OS metrics exposed by *NIX kernels, written in Go with pluggable metric collectors.",

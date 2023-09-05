@@ -1,6 +1,6 @@
 {
     "id": "ory-hydra",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Ory Hydra (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ory-hydra",
     "description": "Ory Hydra is a hardened, OpenID Certified OAuth 2.0 Server and OpenID Connect Provider optimized for low-latency, high throughput, and low resource consumption.",

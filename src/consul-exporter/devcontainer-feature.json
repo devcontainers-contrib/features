@@ -1,6 +1,6 @@
 {
     "id": "consul-exporter",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "Prometheus Consul Exporter (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/consul-exporter",
     "description": "Prometheus exporter for Consul metrics.",
