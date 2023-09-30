@@ -1,6 +1,6 @@
 {
     "id": "gh-release",
-    "version": "1.0.22",
+    "version": "1.0.23",
     "name": "Github Release",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/gh-release",
     "description": "Github Release feature will download, extract and add to path a release binary from a given repo",
@@ -61,6 +61,17 @@
             "description": "Any lib files (if exists) will be downloaded into this location. The binary will then be soft linked from the lib location to the bin location",
             "proposals": [
                 "/usr/local/lib"
+            ],
+            "type": "string"
+        },
+        "additionalFlags": {
+            "default": "",
+            "description": "(Optional) Any additional flags for the 'nanolayer install gh-release' command ",
+            "proposals": [
+                "--no-filter-assets-by-platform",
+                "--no-filter-assets-by-architecture",
+                "--no-filter-assets-by-distro",
+                "--no-filter-assets-by-misc"
             ],
             "type": "string"
         }

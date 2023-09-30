@@ -50,5 +50,17 @@
                 "assetRegex": "^(?!.*(fxdependent))"
             }
         }
+    },
+    "test_apiops": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "gh-release": {
+                "version": "latest",
+                "repo": "Azure/apiops",
+                "binaryNames": "extractor",
+                "assetRegex": "^extractor\\.linux-.+\\.exe$",
+                "additionalFlags": "--no-filter-assets-by-platform"
+            }
+        }
     }
 }

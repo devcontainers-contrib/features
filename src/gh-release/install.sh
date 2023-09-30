@@ -20,5 +20,5 @@ $nanolayer_location \
    install gh-release \
    "$REPO" \
    "$BINARYNAMES" --force \
-   --version "$VERSION" --bin-location "$BINLOCATION"  --lib-location "$LIBLOCATION"  $asset_regex_cmd $lib_name_cmd $release_tag_regex
+   --version "$VERSION" --bin-location "$BINLOCATION"  --lib-location "$LIBLOCATION"  $asset_regex_cmd $lib_name_cmd $release_tag_regex $ADDITIONALFLAGS
 
