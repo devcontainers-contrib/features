@@ -1,0 +1,20 @@
+{
+    "id": "gleam",
+    "version": "1.0.0",
+    "name": "Gleam (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/gleam",
+    "description": "Gleam is a friendly language for building type-safe, scalable systems. (Gleam compiles to Erlang code, so Erlang needs to be installed to run Gleam code.)",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}
