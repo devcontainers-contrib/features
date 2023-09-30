@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "name": "Node.js (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/node-asdf",
-    "description": "Installs Node.js via asdf",
+    "description": "Installs Node.js via asdf.",
     "options": {
         "version": {
             "default": "latest",

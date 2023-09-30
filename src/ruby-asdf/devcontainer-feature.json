@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "name": "Ruby (via asdf)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ruby-asdf",
-    "description": "Installs Ruby via asdf",
+    "description": "Installs Ruby via asdf.",
     "options": {
         "version": {
             "default": "latest",
@@ -15,7 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/asdf-package",
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+        "ghcr.io/devcontainers-contrib/features/asdf-package"
     ]
 }
