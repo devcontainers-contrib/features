@@ -1,6 +1,6 @@
 {
     "id": "statsd-exporter",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "Prometheus StatsD Exporter (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/statsd-exporter",
     "description": "The StatsD exporter is a drop-in replacement for StatsD. This exporter translates StatsD metrics to Prometheus metrics via configured mapping rules.",

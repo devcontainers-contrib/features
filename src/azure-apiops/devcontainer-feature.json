@@ -1,6 +1,6 @@
 {
     "id": "azure-apiops",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "Azure Apiops (Extractor and Publisher) (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/azure-apiops",
     "description": "APIOps applies the concepts of GitOps and DevOps to API deployment. By using practices from these two methodologies, APIOps can enable everyone involved in the lifecycle of API design, development, and deployment with self-service and automated tools to ensure the quality of the specifications and APIs that theyre building.",
