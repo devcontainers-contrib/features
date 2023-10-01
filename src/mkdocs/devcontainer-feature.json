@@ -1,6 +1,6 @@
 {
     "id": "mkdocs",
-    "version": "2.0.17",
+    "version": "2.0.18",
     "name": "MkDocs (via pipx)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/mkdocs",
     "description": "MkDocs is a fast, simple and downright gorgeous static site generator that's geared towards building project documentation.",
@@ -25,5 +25,6 @@
     "installsAfter": [
         "ghcr.io/devcontainers-contrib/features/pipx-package",
         "ghcr.io/devcontainers/features/python"
-    ]
+    ],
+    "containerEnv" : {"TZ": "UTC"}
 }

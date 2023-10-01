@@ -4,5 +4,11 @@
         "features": {
             "mkdocs": {}
         }
+    },
+    "test_ubuntu": {
+        "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
+        "features": {
+            "mkdocs": {}
+        }
     }
 }
