@@ -1,6 +1,24 @@
 {
-    "test": {
-        "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "test_debian_11": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian-11",
+        "features": {
+            "elixir-asdf": {}
+        }
+    },
+    "test_debian_12": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian-12",
+        "features": {
+            "elixir-asdf": {}
+        }
+    },
+    "test_ubuntu_2004": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-20.04",
+        "features": {
+            "elixir-asdf": {}
+        }
+    },
+    "test_ubuntu_2204": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
         "features": {
             "elixir-asdf": {}
         }
