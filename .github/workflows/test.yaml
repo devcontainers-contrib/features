@@ -24,6 +24,9 @@ on:
         description: 'enabled'
         default: true
 
+  schedule:
+    # every day at 01:00
+    - cron:  '0 1 * * *'
 
   pull_request:
   
