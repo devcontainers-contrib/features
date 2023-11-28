@@ -85,3 +85,21 @@ rm argocd-linux
 rm -rf /var/lib/apt/lists/*
 
 echo "Done!"
+{
+    "name": "ArgoCD CLI (via Github Releases)",
+    "id": "argo-cd",
+    "version": "1.0.2",
+    "description": "Declarative GitOps CD for Kubernetes",
+    "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/argo-cd",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "2.5.0"
+            ],
+            "default": "latest",
+            "description": "Select the Argo CD CLI version you would like to install"
+        }
+    }
+}
