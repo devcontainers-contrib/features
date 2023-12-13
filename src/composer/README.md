@@ -1,4 +1,5 @@
-# Composer (via Github Releases)
+
+# Composer (via Github Releases) (composer)
 
 Composer is an open source dependency management tool for PHP.
 
@@ -15,3 +16,5 @@ Composer is an open source dependency management tool for PHP.
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select the version to install. | string | latest |
+
+
