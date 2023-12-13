@@ -19,7 +19,7 @@ clean_download() {
     function _apt_get_install() {
         tempdir=$1
 
-        # copy current state of apt list - in order to revert back later (minimize contianer layer size) 
+        # copy current state of apt list - in order to revert back later (minimize container layer size) 
         cp -p -R /var/lib/apt/lists $tempdir 
         apt-get update -y
         apt-get -y install --no-install-recommends wget ca-certificates
