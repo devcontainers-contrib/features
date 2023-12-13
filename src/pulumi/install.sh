@@ -32,6 +32,8 @@ check_packages ca-certificates curl
 # substituted inside the $_REMOTE_USER shell. Particularily $HOME which needs to
 # be from the $_REMOTE_USER, and $VERSION which needs to come from this script.
 sudo -iu "$_REMOTE_USER" <<EOF
+    set -eo pipefail
+
     # making sure shell configs are there, as pulumi installation script rely on
     # their existance in order to add its binary to the user's PATH
     if [ ! -f "\${HOME}/.bashrc" ] || [ ! -s "\${HOME}/.bashrc" ] ; then
