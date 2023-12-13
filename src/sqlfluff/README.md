@@ -16,5 +16,5 @@ Fluff is an extensible and modular linter designed to help you write good SQL an
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select the version to install. | string | latest |
-
+| plugins | A space delimitered list of sqlfluff plugins (will be injected into the sqlfluff pipx env). See proposals for examples. | string | - |
 

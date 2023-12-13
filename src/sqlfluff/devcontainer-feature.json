@@ -12,6 +12,15 @@
                 "latest"
             ],
             "type": "string"
+        },
+        "plugins": {
+            "default": "",
+            "description": "A space delimitered list of sqlfluff plugins (will be injected into the sqlfluff pipx env). See proposals for examples.",
+            "proposals": [
+                "sqlfluff-templater-dbt==2.3.5",
+                "sqlfluff-templater-dbt sqlfluff-plugin-sparksql-upgrade"
+            ],
+            "type": "string"
         }
     },
     "installsAfter": [
