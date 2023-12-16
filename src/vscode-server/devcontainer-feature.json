@@ -1,0 +1,17 @@
+{
+    "name": "Visual Studio Code Server",
+    "id": "vscode-server",
+    "version": "1.0.0",
+    "description": "Visual Studio Code Server (official Microsoft build), which hosts Visual Studio Code via HTTP",
+    "documentationURL": "https://github.com/devcontainers-contrib/features/tree/main/src/vscode-server",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Specify the Visual Studio Code Server version to install; or \"latest\"; or \"commit:<hash>\""
+        }
+    }
+}
