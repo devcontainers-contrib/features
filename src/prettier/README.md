@@ -16,5 +16,6 @@ Prettier is an opinionated code formatter.
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select the version to install. | string | latest |
+| plugins | Comma-separated list of prettier plugins to install. | string | |
 
 

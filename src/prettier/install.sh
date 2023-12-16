@@ -19,6 +19,36 @@ $nanolayer_location \
     --option package='prettier' --option version="$VERSION"
     
 
+PRETTIER_PLUGINS=${PLUGINS:-""}
+
+setup_npm() {
+    export NVM_DIR=/usr/local/share/nvm
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+}
+
+install_prettier_plugin() {
+    echo "Installing prettier plugin - $1"
+    if ! npm list $1 >/dev/null; then
+        npm install --save-dev prettier $1
+    fi
+}
+
+# Prettier plugins are expected to be installed locally, not globally
+# In particular, VSCode + extensions tend to have issues with this
+if [ -n "${PRETTIER_PLUGINS}" ]; then
+    if ! type npm >/dev/null 2>&1; then
+        setup_npm
+    fi
+
+    OIFS=$IFS
+    IFS=','
+    for plugin in $PRETTIER_PLUGINS; do
+        install_prettier_plugin $plugin
+    done
+    IFS=$OIFS
+fi
+
+
 
 echo 'Done!'
 
