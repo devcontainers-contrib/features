@@ -1,13 +1,12 @@
 
-# devcontainers CLI (devcontainers-cli)
+# devcontainers CLI (via npm) (devcontainers-cli)
 
-The [devcontainers CLI](https://github.com/devcontainers/cli), which configures devcontainers from `devcontainer.json`. Requires the Docker client and access to a container engine daemon socket (e.g. by mounting the host's Docker socket into the container)
+The devcontainers CLI, which configures devcontainers from devcontainer.json. Requires the Docker client and access to a Docker engine socket (e.g. by mounting the host's Docker socket into the container)
 
-## Example devcontainers CLI Usage
+## Example DevContainer Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
     "ghcr.io/devcontainers-contrib/features/devcontainers-cli:1": {}
 }
 ```
@@ -16,4 +15,6 @@ The [devcontainers CLI](https://github.com/devcontainers/cli), which configures 
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Specify the version to install | string | latest |
+| version | Select the version to install. | string | latest |
+
+
