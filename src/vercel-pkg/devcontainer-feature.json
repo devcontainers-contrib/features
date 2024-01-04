@@ -1,6 +1,6 @@
 {
     "id": "vercel-pkg",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "pkg (by Vercel) (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/vercel-pkg",
     "description": "This command line interface enables you to package your Node.js project into an executable that can be run even on devices without Node.js installed.",
@@ -15,6 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package"
+        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers/features/node"
     ]
 }

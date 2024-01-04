@@ -1,6 +1,6 @@
 {
     "id": "autoenv",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "name": "Autoenv (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/autoenv",
     "description": "Autoenv is a tool which automatically reads and setups configuration from a . env file when you cd to a directory.",
@@ -15,6 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package"
+        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers/features/node"
     ]
 }

@@ -1,6 +1,6 @@
 {
     "id": "netlify-cli",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "Netlify CLI (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/netlify-cli",
     "description": "Netlify CLI lets you configure continuous deployment straight from the command line. You can use Netlify CLI to run a local development server that you can share with others, run a local build and plugins, and deploy your site.",
@@ -15,6 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package"
+        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers/features/node"
     ]
 }

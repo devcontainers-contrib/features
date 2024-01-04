@@ -1,4 +1,3 @@
-#!/bin/bash -i
 
 
 clean_download() {
@@ -10,22 +9,22 @@ clean_download() {
     # The above steps will minimize the leftovers being created while installing the downloader 
     # Supported distros:
     #  debian/ubuntu/alpine
-    
+
     url=$1
     output_location=$2
     tempdir=$(mktemp -d)
     downloader_installed=""
 
-    function _apt_get_install() {
+    _apt_get_install() {
         tempdir=$1
 
-        # copy current state of apt list - in order to revert back later (minimize container layer size) 
+        # copy current state of apt list - in order to revert back later (minimize contianer layer size) 
         cp -p -R /var/lib/apt/lists $tempdir 
         apt-get update -y
         apt-get -y install --no-install-recommends wget ca-certificates
     }
 
-    function _apt_get_cleanup() {
+    _apt_get_cleanup() {
         tempdir=$1
 
         echo "removing wget"
@@ -36,7 +35,7 @@ clean_download() {
         rm -r /var/lib/apt/lists && mv $tempdir/lists /var/lib/apt/lists
     }
 
-    function _apk_install() {
+    _apk_install() {
         tempdir=$1
         # copy current state of apk cache - in order to revert back later (minimize contianer layer size) 
         cp -p -R /var/cache/apk $tempdir 
@@ -44,7 +43,7 @@ clean_download() {
         apk add --no-cache  wget
     }
 
-    function _apk_cleanup() {
+    _apk_cleanup() {
         tempdir=$1
 
         echo "removing wget"
@@ -100,45 +99,39 @@ ensure_nanolayer() {
     local variable_name=$1
 
     local required_version=$2
-    # normalize version
-    if ! [[ $required_version == v* ]]; then
-        required_version=v$required_version
-    fi
 
-    local nanolayer_location=""
+    local __nanolayer_location=""
 
     # If possible - try to use an already installed nanolayer
-    if [[ -z "${NANOLAYER_FORCE_CLI_INSTALLATION}" ]]; then
-        if [[ -z "${NANOLAYER_CLI_LOCATION}" ]]; then
+    if [ -z "${NANOLAYER_FORCE_CLI_INSTALLATION}" ]; then
+        if [ -z "${NANOLAYER_CLI_LOCATION}" ]; then
             if type nanolayer >/dev/null 2>&1; then
                 echo "Found a pre-existing nanolayer in PATH"
-                nanolayer_location=nanolayer
+                __nanolayer_location=nanolayer
             fi
         elif [ -f "${NANOLAYER_CLI_LOCATION}" ] && [ -x "${NANOLAYER_CLI_LOCATION}" ] ; then
-            nanolayer_location=${NANOLAYER_CLI_LOCATION}
-            echo "Found a pre-existing nanolayer which were given in env variable: $nanolayer_location"
+            __nanolayer_location=${NANOLAYER_CLI_LOCATION}
+            echo "Found a pre-existing nanolayer which were given in env variable: $__nanolayer_location"
         fi
 
         # make sure its of the required version
-        if ! [[ -z "${nanolayer_location}" ]]; then
+        if ! [ -z "${__nanolayer_location}" ]; then
             local current_version
-            current_version=$($nanolayer_location --version)
-            if ! [[ $current_version == v* ]]; then
-                current_version=v$current_version
-            fi
+            current_version=$($__nanolayer_location --version)
+
 
             if ! [ $current_version == $required_version ]; then
                 echo "skipping usage of pre-existing nanolayer. (required version $required_version does not match existing version $current_version)"
-                nanolayer_location=""
+                __nanolayer_location=""
             fi
         fi
 
     fi
 
     # If not previuse installation found, download it temporarly and delete at the end of the script 
-    if [[ -z "${nanolayer_location}" ]]; then
+    if [ -z "${__nanolayer_location}" ]; then
 
-        if [ "$(uname -sm)" == "Linux x86_64" ] || [ "$(uname -sm)" == "Linux aarch64" ]; then
+        if [ "$(uname -sm)" = 'Linux x86_64' ] || [ "$(uname -sm)" = "Linux aarch64" ]; then
             tmp_dir=$(mktemp -d -t nanolayer-XXXXXXXXXX)
 
             clean_up () {
@@ -162,7 +155,7 @@ ensure_nanolayer() {
             
             tar xfzv $tmp_dir/$tar_filename -C "$tmp_dir"
             chmod a+x $tmp_dir/nanolayer
-            nanolayer_location=$tmp_dir/nanolayer
+            __nanolayer_location=$tmp_dir/nanolayer
       
 
         else
@@ -172,7 +165,7 @@ ensure_nanolayer() {
     fi
 
     # Expose outside the resolved location
-    declare -g ${variable_name}=$nanolayer_location
+    export ${variable_name}=$__nanolayer_location
 
 }
 

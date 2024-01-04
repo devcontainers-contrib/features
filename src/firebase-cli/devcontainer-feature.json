@@ -1,6 +1,6 @@
 {
     "id": "firebase-cli",
-    "version": "2.0.14",
+    "version": "2.0.15",
     "name": "Firebase CLI (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/firebase-cli",
     "description": "The Firebase CLI (GitHub) provides a variety of tools for managing, viewing, and deploying to Firebase projects.",
@@ -15,6 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package"
+        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers/features/node"
     ]
 }
