@@ -1,6 +1,6 @@
 {
     "id": "markdownlint-cli2",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "markdownlint-cli2 (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/markdownlint-cli2",
     "description": "A fast, flexible, configuration-based command-line interface for linting Markdown/CommonMark files with the markdownlint library.",
@@ -15,6 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package"
+        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers/features/node"
     ]
 }

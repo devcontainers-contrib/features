@@ -1,6 +1,6 @@
 {
     "id": "jest",
-    "version": "2.0.14",
+    "version": "2.0.15",
     "name": "Jest (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jest",
     "description": "Jest is a delightful JavaScript Testing Framework with a focus on simplicity",
@@ -15,6 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package"
+        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers/features/node"
     ]
 }

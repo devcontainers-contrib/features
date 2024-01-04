@@ -1,6 +1,6 @@
 {
     "id": "expo-cli",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "name": "Expo CLI (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/expo-cli",
     "description": "The Expo CLI is a command-line tool that is the primary interface between a developer and other Expo tools.",
@@ -15,6 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package"
+        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers/features/node"
     ]
 }

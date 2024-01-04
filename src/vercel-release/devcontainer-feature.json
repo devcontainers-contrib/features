@@ -1,6 +1,6 @@
 {
     "id": "vercel-release",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "Release (by Vercel) (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/vercel-release",
     "description": "Release is a command line tool to automatically generate a new GitHub Release and populates it with the changes (commits) made since the last release.",
@@ -15,6 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package"
+        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers/features/node"
     ]
 }

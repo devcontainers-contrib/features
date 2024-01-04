@@ -1,6 +1,6 @@
 {
     "id": "jsii",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "jsii compiler (via npm)",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/jsii",
     "description": "jsii allows code in any language to naturally interact with JavaScript classes. It is the technology that enables the AWS Cloud Development Kit to deliver polyglot libraries from a single codebase!",
@@ -15,6 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/npm-package"
+        "ghcr.io/devcontainers-contrib/features/npm-package",
+        "ghcr.io/devcontainers/features/node"
     ]
 }
