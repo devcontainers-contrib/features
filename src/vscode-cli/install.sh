@@ -18,7 +18,7 @@ if [ "${ARCH}" == "x86_64" ] ; then
 	else
 		ARCH="linux-x64"
 	fi
-elif [ "${ARCH}" == "aarch64" ] || [ "${ARCH}" == "arm64" ];; then
+elif [ "${ARCH}" == "aarch64" ] || [ "${ARCH}" == "arm64" ] ; then
 	if [ -f "/lib/ld-musl-aarch64.so.1" ] ; then
 		ARCH="alpine-arm64"
 	else
