@@ -4,8 +4,6 @@
 set -ex
 
 PLUGIN=${PLUGIN:-""}
-VERSION=${VERSION:-"latest"}
-PLUGINREPO=${PLUGINREPO:-""}
 LATESTVERSIONPATTERN=${LATESTVERSIONPATTERN:-""}
 
 # Clean up
@@ -142,4 +140,33 @@ EOF
 	fi 
 }
 
-install_via_asdf "$PLUGIN" "$VERSION" "$PLUGINREPO"
+set -- $PLUGIN
+while [ -n "$1" ]; do
+	if [[ "$1" == *":"* ]] && [[ "$1" == *"@"* ]]; then
+		# Name, Version, and Repo
+		PLUGINNAME=$(echo $1 | awk -F ':' '{print $1}')
+		VERSION="latest:$(echo $1 | awk -F ':' '{print $2}' | awk -F '@' '{print $1}')"
+		PLUGINREPO=$(echo $1 | awk -F '@' '{print $2}')
+	elif [[ "$1" == *":"* ]]; then
+		# Name and Version
+		PLUGINNAME=$(echo $1 | awk -F ':' '{print $1}')
+		VERSION="latest:$(echo $1 | awk -F ':' '{print $2}')"
+		PLUGINREPO=""
+	elif [[ "$1" == *"@"* ]]; then
+		# Name and Repo
+		PLUGINNAME=$(echo $1 | awk -F '@' '{print $1}')
+		VERSION="latest"
+		PLUGINREPO=$(echo $1 | awk -F '@' '{print $2}')
+	else
+		# Name Only
+		PLUGINNAME="$1"
+		VERSION="latest"
+		PLUGINREPO=""
+	fi
+	if [ "$VERSION" = "latest:latest" ]; then
+		# This catches an edge case where users specifically put in 'name:latest'
+		VERSION="latest"
+	fi
+	install_via_asdf "$PLUGINNAME" "$VERSION" "$PLUGINREPO"
+	shift
+done

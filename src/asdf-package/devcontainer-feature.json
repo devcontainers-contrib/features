@@ -1,7 +1,7 @@
 {
     "name": "asdf package",
     "id": "asdf-package",
-    "version": "1.0.8",
+    "version": "2.0.0",
     "description": "Installs an asdf package.",
     "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/asdf-package",
     "installsAfter": [
@@ -15,24 +15,7 @@
                 "nomad"
             ],
             "default": "",
-            "description": "Select the asdf plugin to install."
-        },
-        "version": {
-            "type": "string",
-            "proposals": [
-                "latest"
-            ],
-            "default": "latest",
-            "description": "Select the version of the asdf plugin to install."
-        },
-        "pluginRepo": {
-            "type": "string",
-            "proposals": [
-                "https://github.com/grimoh/asdf-act.git",
-                "https://github.com/asdf-community/asdf-hashicorp.git"
-            ],
-            "default": "",
-            "description": "Select the asdf plugin repo to install (can remain empty in order to use the plugin short-name index https://github.com/asdf-vm/asdf-plugins)"
+            "description": "A space-separated list of one or more asdf plugins to install. Additionally, version and/or repository can be specified in the format 'name:version@repo'. "
         },
         "latestVersionPattern": {
             "type": "string",
