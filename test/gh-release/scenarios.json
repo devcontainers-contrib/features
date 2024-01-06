@@ -62,5 +62,15 @@
                 "additionalFlags": "--no-filter-assets-by-platform"
             }
         }
+    },
+    "test_no_git": {
+        "image": "ubuntu",
+        "features": {
+            "gh-release": {
+                "version": "latest",
+                "repo": "Azure/aztfexport",
+                "binaryNames": "aztfexport"
+            }
+        }
     }
 }
