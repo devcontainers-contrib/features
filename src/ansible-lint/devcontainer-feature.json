@@ -1,0 +1,21 @@
+{
+    "name": "Ansible-lint (via pipx)",
+    "id": "ansible-lint",
+    "version": "6.22.2",
+    "description": "Checks playbooks for practices and behavior that could potentially be improved",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/ansible",
+        "ghcr.io/devcontainers-contrib/features/pipx-package",
+        "ghcr.io/devcontainers/features/python"
+    ]
+}
