@@ -1,0 +1,11 @@
+{
+    "id": "emacs-nox-apt-get",
+    "version": "1.0.0",
+    "name": "Emacs no X (via apt-get)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/emacs-nox-apt-get",
+    "description": "GNU Emacs is the extensible self-documenting text editor.",
+    "options": {},
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+    ]
+}

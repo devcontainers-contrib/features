@@ -1,0 +1,14 @@
+{
+    "test_ubuntu": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "emacs-nox-apt-get": {}
+        }
+    },
+    "test_debian": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "emacs-nox-apt-get": {}
+        }
+    }
+}
