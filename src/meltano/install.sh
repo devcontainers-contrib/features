@@ -11,12 +11,36 @@ set -e
 ensure_nanolayer nanolayer_location "v0.5.0"
 
 
+# Add extras to the requested package
+PACKAGE="meltano"
+if [ -n "$EXTRAS" ]; then
+    PACKAGE="$PACKAGE[$EXTRAS]"
+fi
+
+# Use the python3.x interpreter if a version starting with 3 is given
+# Otherwise, use the default python3 interpreter
+if [[ "$PYTHONVERSION" == 3.* ]]; then
+    INTERPRETER="python$PYTHONVERSION"
+else
+    INTERPRETER="python3"
+fi
+
+
+
+$nanolayer_location \
+    install \
+    devcontainer-feature \
+    "ghcr.io/devcontainers/features/python:1.4.2" \
+    --option installTools='false' --option version='$PYTHONVERSION'
+
+
+
 $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/pipx-package:1.1.7" \
-    --option package='meltano' --option version="$VERSION"
-    
+    --option package='$PACKAGE' --option version="$VERSION" --option interpreter='$INTERPRETER'
+
 
 
 echo 'Done!'
