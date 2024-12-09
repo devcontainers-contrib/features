@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 install_webi() {
   local USERNAME="$1"
@@ -26,7 +26,8 @@ determine_user() {
   if [ "${USERNAME}" = "auto" ] || [ "${USERNAME}" = "automatic" ]; then
     USERNAME=""
     check_command awk >/dev/null 2>&1
-    POSSIBLE_USERS=("vscode" "node" "codespace" "$(awk -v val=1000 -F ":" '$3==val{print $1}' /etc/passwd)")
+    USERNAME_UID_1000="$(awk -v val=1000 -F ":" '$3==val{print $1}' /etc/passwd)"
+    POSSIBLE_USERS=("vscode" "node" "codespace" "${USERNAME_UID_1000}")
     for CURRENT_USER in "${POSSIBLE_USERS[@]}"; do
       if id -u "${CURRENT_USER}" >/dev/null 2>&1; then
         USERNAME=${CURRENT_USER}
