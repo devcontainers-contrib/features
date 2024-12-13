@@ -1,6 +1,6 @@
 {
     "id": "copier",
-    "version": "7.0.13",
+    "version": "7.0.14",
     "name": "copier (via pipx)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/copier",
     "description": "copier creates projects from project templates.",
