@@ -10,14 +10,13 @@ set -e
 # of the script
 ensure_nanolayer nanolayer_location "v0.5.0"
 
-
 $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-extra/features/pipx-package:1.1.8" \
-    --option package='copier' --option version="$VERSION"
-
-
+    --option package='copier' \
+    --option version="$VERSION" \
+    --option injections="$INJECTIONS"
 
 echo 'Done!'
 

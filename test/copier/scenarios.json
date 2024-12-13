@@ -4,5 +4,13 @@
         "features": {
             "copier": {}
         }
+    },
+    "injections": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "copier": {
+                "injections": "jinja2-strcase"
+            }
+        }
     }
 }

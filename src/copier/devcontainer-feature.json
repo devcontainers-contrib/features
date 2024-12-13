@@ -12,6 +12,11 @@
                 "latest"
             ],
             "type": "string"
+        },
+        "injections": {
+            "default": "",
+            "description": "Space delimitered list of python packages to inject into the main package env.",
+            "type": "string"
         }
     },
     "installsAfter": [
