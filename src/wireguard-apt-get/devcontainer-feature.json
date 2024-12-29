@@ -1,6 +1,6 @@
 {
     "id": "wireguard-apt-get",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "name": "WireGuard (via apt-get)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/wireguard-apt-get",
     "description": "WireGuard is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.",

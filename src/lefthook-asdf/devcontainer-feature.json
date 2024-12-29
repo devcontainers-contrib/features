@@ -1,6 +1,6 @@
 {
     "id": "lefthook-asdf",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "Lefthook (via asdf)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/lefthook-asdf",
     "description": "Lefthook is the fastest polyglot Git hooks manager out there.",

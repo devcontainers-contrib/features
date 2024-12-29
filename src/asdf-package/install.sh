@@ -1,4 +1,4 @@
-#!/bin/bash -i
+#!/usr/bin/env bash
 # This is part of devcontainers-extra script library
 # source: https://github.com/devcontainers-extra/features
 set -ex
