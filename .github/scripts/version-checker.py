@@ -42,20 +42,25 @@ def get_version_from_branch(directory, branch):
         return None
 
 
-def check_version_bump(directory, base_branch):
+def is_version_bump_required(directory, base_branch):
     """Check if the version in the current branch is greater than the version in the base branch."""
     current_version = get_version_from_branch(directory, 'HEAD')
     base_version = get_version_from_branch(directory, base_branch)
+
+    bump_required = False
 
     if current_version and base_version:
         if current_version > base_version:
             print(
                 f"✅ Version bump detected for {directory}. Current version: {current_version}, Base version: {base_version}")
         else:
+            bump_required = True
             print(
                 f"❗ Version bump required for {directory}. Current version: {current_version}, Base version: {base_version}")
     else:
         print(f"Error: Could not determine versions for {directory}")
+
+    return bump_required
 
 
 def main():
@@ -72,8 +77,14 @@ def main():
     changed_dirs = {os.path.dirname(
         file) for file in changed_files if file.startswith('src/')}
 
+    bump_required = False
     for directory in changed_dirs:
-        check_version_bump(directory, base_branch)
+        check_result = is_version_bump_required(directory, base_branch)
+        if check_result:
+            bump_required = True
+
+    if bump_required:
+        exit(1)
 
 
 if __name__ == "__main__":
