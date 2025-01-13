@@ -19,7 +19,7 @@ def get_changed_files(base_branch):
         return changed_files
     except subprocess.CalledProcessError as e:
         print(f"Error: {e.stderr.decode('utf-8')}")
-        return []
+        exit(1)
 
 
 def get_version_from_branch(directory, branch):
@@ -35,11 +35,11 @@ def get_version_from_branch(directory, branch):
         return data.get('version')
     except subprocess.CalledProcessError as e:
         print(f"Error: {e.stderr.decode('utf-8')}")
-        return None
+        exit(1)
     except json.JSONDecodeError as e:
         print(
             f"Error decoding JSON from {directory}/devcontainer-feature.json in {branch}: {e}")
-        return None
+        exit(1)
 
 
 def is_version_bump_required(directory, base_branch):
