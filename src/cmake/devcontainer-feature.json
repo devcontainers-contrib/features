@@ -1,0 +1,21 @@
+{
+    "id": "cmake",
+    "version": "1.0.0",
+    "name": "cmake (via GitHub Releases)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/cmake",
+    "description": "CMake is a cross-platform, open-source build system generator.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest",
+                "3.31.4"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/gh-release"
+    ]
+}
