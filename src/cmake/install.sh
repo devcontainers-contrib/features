@@ -17,7 +17,7 @@ if [ "${VERSION}" != "latest" ]; then
     VERSION="v${VERSION}"
 fi
 
-# Example nanolayer installation via devcontainer-feature
+# Install cmake via GitHub Release feature
 $nanolayer_location \
     install \
     devcontainer-feature \
