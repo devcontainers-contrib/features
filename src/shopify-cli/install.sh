@@ -15,11 +15,6 @@ if [ -x "/usr/bin/apt-get" ] ; then
         install \
         apt-get \
         "xdg-utils"
-elif [ -x "/sbin/apk" ] ; then
-    $nanolayer_location \
-        install \
-        apk \
-        "xdg-utils"
 else
     echo "Distro not supported"
     exit 1
