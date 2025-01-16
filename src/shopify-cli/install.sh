@@ -10,6 +10,20 @@ set -e
 # of the script
 ensure_nanolayer nanolayer_location "v0.5.5"
 
+if [ -x "/usr/bin/apt-get" ] ; then
+    $nanolayer_location \
+        install \
+        apt-get \
+        "xdg-utils"
+elif [ -x "/sbin/apk" ] ; then
+    $nanolayer_location \
+        install \
+        apk \
+        "xdg-utils"
+else
+    echo "Distro not supported"
+    exit 1
+fi
 
 $nanolayer_location \
     install \
