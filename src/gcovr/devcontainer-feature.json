@@ -1,0 +1,20 @@
+{
+    "id": "gcovr",
+    "version": "1.0.0",
+    "name": "gcovr (via pipx)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/gcovr",
+    "description": "Generate code coverage reports with gcc/gcov",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/pipx-package"
+    ]
+}
