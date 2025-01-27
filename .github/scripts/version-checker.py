@@ -10,7 +10,7 @@ def get_changed_files(base_branch):
     """Get a list of changed files between the current branch and the base branch."""
     try:
         result = subprocess.run(
-            ['git', 'diff', '--name-only', base_branch],
+            ['git', 'diff', '--name-only', f'origin/{base_branch}'],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             check=True
@@ -25,8 +25,10 @@ def get_changed_files(base_branch):
 def get_version_from_branch(directory, branch):
     """Get the version from the devcontainer-feature.json file in the specified branch."""
     try:
+        branch_ref = 'HEAD' if branch == 'HEAD' else f'origin/{branch}'
         result = subprocess.run(
-            ['git', 'show', f'{branch}:{directory}/devcontainer-feature.json'],
+            ['git', 'show',
+                f'{branch_ref}:{directory}/devcontainer-feature.json'],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             check=True
@@ -66,7 +68,8 @@ def is_version_bump_required(directory, base_branch):
 def main():
     parser = argparse.ArgumentParser(
         description="Check for version bumps in changed directories.")
-    parser.add_argument('--base-branch', type=str, default='main',
+    parser.add_argument('--base-branch', type=str,
+                        default=os.environ.get('GITHUB_BASE_REF', 'main'),
                         help='Base branch to compare changes against')
     args = parser.parse_args()
 
