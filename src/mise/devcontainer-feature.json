@@ -1,0 +1,20 @@
+{
+    "name": "Mise",
+    "id": "mise",
+    "version": "1.0.0",
+    "description": "A devcontainer feature to install mise",
+    "documentationURL": "https://github.com/devcontainers-extra/features/tree/main/src/mise",
+    "options": {
+      "version": {
+        "default": "latest",
+        "description": "Select the version to install.",
+        "proposals": [
+          "latest"
+        ],
+        "type": "string"
+      }
+    },
+    "installsAfter": [
+      "ghcr.io/devcontainers-extra/features/gh-release"
+    ]
+  }
