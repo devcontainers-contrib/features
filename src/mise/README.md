@@ -7,7 +7,7 @@ A devcontainer feature to install [mise](https://mise.jdx.dev/)
 
 ```json
 "features": {
-    "ghcr.io/jdx/mise/mise:1": {}
+    "ghcr.io/devcontainers-extra/features/mise:1": {}
 }
 ```
 
