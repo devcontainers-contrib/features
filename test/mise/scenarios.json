@@ -1,5 +1,5 @@
 {
-    "default_debian": {
+    "test": {
       "image": "mcr.microsoft.com/devcontainers/base:debian",
       "features": {
         "mise": {}
