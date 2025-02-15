@@ -1,4 +1,4 @@
-
+#!/usr/bin/env bash
 
 clean_download() {
     # The purpose of this function is to download a file with minimal impact on container layer size
