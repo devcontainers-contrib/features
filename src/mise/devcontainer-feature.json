@@ -2,7 +2,7 @@
     "name": "Mise",
     "id": "mise",
     "version": "1.0.0",
-    "description": "A devcontainer feature to install mise",
+    "description": "The front-end to your dev env",
     "documentationURL": "https://github.com/devcontainers-extra/features/tree/main/src/mise",
     "options": {
       "version": {
