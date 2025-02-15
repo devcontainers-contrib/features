@@ -1,7 +1,7 @@
 
 # Mise (mise)
 
-A devcontainer feature to install [mise](https://mise.jdx.dev/)
+[Mise](https://mise.jdx.dev/) is a dev tools, env vars, task runner.
 
 ## Example Usage
 
