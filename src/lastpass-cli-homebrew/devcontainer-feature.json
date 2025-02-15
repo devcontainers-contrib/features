@@ -1,6 +1,6 @@
 {
     "id": "lastpass-cli-homebrew",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "name": "LastPass CLI (via Homebrew)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/lastpass-cli-homebrew",
     "description": "The LastPass command line application is an open source project that allows you to create, edit, and retrieve passwords in your online LastPass vault.",
