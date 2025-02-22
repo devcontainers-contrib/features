@@ -36,7 +36,13 @@ def get_version_from_branch(directory, branch):
         data = json.loads(result.stdout.decode('utf-8'))
         return data.get('version')
     except subprocess.CalledProcessError as e:
-        print(f"Error: {e.stderr.decode('utf-8')}")
+        error_msg = e.stderr.decode('utf-8')
+
+        # Check if the file does not exist in the branch
+        if "fatal: path" in error_msg and "exists on disk, but not in" in error_msg:
+            return None
+
+        print(f"Error: {error_msg}")
         exit(1)
     except json.JSONDecodeError as e:
         print(
@@ -48,6 +54,10 @@ def is_version_bump_required(directory, base_branch):
     """Check if the version in the current branch is greater than the version in the base branch."""
     current_version = get_version_from_branch(directory, 'HEAD')
     base_version = get_version_from_branch(directory, base_branch)
+
+    if base_version is None:
+        print(f"ℹ️ {directory} is a new feature, skipping version bump check")
+        return False
 
     bump_required = False
 
