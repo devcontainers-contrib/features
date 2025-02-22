@@ -1,0 +1,18 @@
+{
+    "id": "npm-packages",
+    "version": "1.0.0",
+    "name": "npm-packages",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/npm-packages",
+    "description": "",
+    "options": {
+        "packages": {
+            "default": "",
+            "description": "Comma separated list of packages with optional version (<package>@<version>).",
+            "proposals": [
+                "eslint@9.20.1,nodemon,prettier@3.5.2"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": []
+}
