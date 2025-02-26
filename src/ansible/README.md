@@ -16,6 +16,7 @@ Ansible is a suite of software tools that enables infrastructure as code.
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select the version to install. | string | latest |
+| injections | Space delimitered list of python packages to inject into the main package env | string | - |
 
 
 

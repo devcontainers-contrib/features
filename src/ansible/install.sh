@@ -13,6 +13,6 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-extra/features/pipx-package:1.1.9" \
-    --option package='ansible-core' --option injections='ansible' --option version="$VERSION"
+    --option package='ansible' --option injections="$INJECTIONS" --option version="$VERSION" --option includeDeps="true"
 
 echo 'Done!'

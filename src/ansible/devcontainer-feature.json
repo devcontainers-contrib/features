@@ -1,6 +1,6 @@
 {
     "id": "ansible",
-    "version": "2.0.17",
+    "version": "2.1.0",
     "name": "Ansible (via pipx)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ansible",
     "description": "Ansible is a suite of software tools that enables infrastructure as code.",
@@ -10,6 +10,15 @@
             "description": "Select the version to install.",
             "proposals": [
                 "latest"
+            ],
+            "type": "string"
+        },
+        "injections": {
+            "default": "",
+            "description": "Space delimitered list of python packages to inject into the ansible package env",
+            "proposals": [
+                "hcloud",
+                "hcloud requests"
             ],
             "type": "string"
         }
