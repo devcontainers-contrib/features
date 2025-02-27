@@ -24,5 +24,13 @@
                 "version": "2.13.0"
             }
         }
+    },
+    "test_injections": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "ansible": {
+                "injections": "hcloud"
+            }
+        }
     }
 }
