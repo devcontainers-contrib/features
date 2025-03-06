@@ -20,13 +20,16 @@ $nanolayer_location \
 
 
 # Initialise opam
-if [ "$VERSION" = "latest" ]; then
-    su "$_REMOTE_USER" -c "opam init --disable-sandboxing --shell-setup -y"
-else
-    su "$_REMOTE_USER" -c "opam init --disable-sandboxing --shell-setup -y --compiler=\"$VERSION\""
+flags=()
+if [ "$VERSION" != "latest" ]; then
+    flags+=(--compiler="$VERSION")
 fi
+su "$_REMOTE_USER" -c "opam init --disable-sandboxing --shell-setup -y ${flags[*]}"
+
 # Install Platform Tools
-su "$_REMOTE_USER" -c "opam install ocaml-lsp-server odoc ocamlformat utop -y"
+if [ "$INSTALLPLATFORMTOOLS" = "true" ]; then
+    su "$_REMOTE_USER" -c "opam install ocaml-lsp-server odoc ocamlformat utop -y"
+fi
 
 
 echo 'Done!'
