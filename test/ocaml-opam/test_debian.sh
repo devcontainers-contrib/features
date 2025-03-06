@@ -7,6 +7,6 @@ source dev-container-features-test-lib
 check "opam is installed" opam --version
 check "OCaml is installed" ocamlc --version
 
-# TODO: check "[WARNING] The environment is not in sync with the current switch." not present
+check "no opam warning" sh -c "test $(opam switch 2>&1 | grep --count 'WARNING') -eq 0"
 
 reportResults

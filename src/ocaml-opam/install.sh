@@ -16,7 +16,7 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-extra/features/gh-release:1" \
-    --option repo='ocaml/opam' --option binaryNames='opam' --option version="latest"
+    --option repo='ocaml/opam' --option binaryNames='opam' --option version="latest" --option releaseTagRegex='^(?!.*(alpha|beta|rc)).*$'
 
 
 # Initialise opam
