@@ -1,28 +1,4 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/python:3.11",
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "mads-hartmann.bash-ide-vscode",
-        "ms-python.python",
-        "ms-python.vscode-pylance",
-        "DavidAnson.vscode-markdownlint",
-        "nefrob.vscode-just-syntax",
-        "timonwong.shellcheck",
-        "ms-vscode-remote.remote-containers",
-        "github.vscode-github-actions"
-      ]
-    }
-  },
-  "features": {
-    "ghcr.io/devcontainers/features/node:1.6.1": {},
-    "ghcr.io/devcontainers/features/github-cli:1.0.13": {},
-    "ghcr.io/devcontainers/features/docker-in-docker:2.12.0": {},
-    "ghcr.io/lukewiwa/features/shellcheck:0.2.3": {},
-    "ghcr.io/guiyomh/features/just:0": {},
-    "ghcr.io/devcontainers-extra/features/pre-commit:2": {},
-    "ghcr.io/devcontainers-extra/features/tmux-homebrew:1": {},
-    "ghcr.io/devcontainers-extra/features/act:1": {}
-  },
+  "image": "ghcr.io/devcontainers-extra/features/prebuilt-devcontainer:latest",
   "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh > postCreateCommand.log"
 }
