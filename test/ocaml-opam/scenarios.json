@@ -20,5 +20,13 @@
                 "installPlatformTools": false
             }
         }
+    },
+    "test_additional_packages": {
+        "image": "mcr.microsoft.com/devcontainers/base:debian",
+        "features": {
+            "ocaml-opam": {
+                "additionalPackages": "ounit2 qcheck-core"
+            }
+        }
     }
 }
