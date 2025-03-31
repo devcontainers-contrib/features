@@ -3,7 +3,7 @@
         "image": "mcr.microsoft.com/devcontainers/base:debian",
         "features": {
             "npm-packages": {
-                "packages": "eslint@9.20.1,nodemon,prettier@3.5.2"
+                "packages": "eslint@9.20.1,nodemon,prettier@3.5.2,@moonrepo/cli@1.34.0,@biomejs/biome"
             }
         }
     }

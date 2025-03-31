@@ -16,13 +16,16 @@ IFS=',' read -ra PACKAGE_ARRAY <<<"$PACKAGES"
 
 # Iterate through each package
 for package in "${PACKAGE_ARRAY[@]}"; do
-    # Check if package contains version
-    if [[ $package == *@* ]]; then
-        # Split package into name and version
-        name=${package%@*}
-        version=${package#*@}
+    # Use regex to match valid npm package identifier
+    # unscoped, unscoped@version, @scoped, @scoped@version
+    if [[ $package =~ ^(@?[^@]+?)(@(.+?))?$ ]]; then
+        name="${BASH_REMATCH[1]}"
+        version="${BASH_REMATCH[3]}"
+        # Bash doesn't have non-capturing groups so @version portion can
+        # only be made optional inside a group, then a nested group captures
+        # the version number itself.
     else
-        # Package without version
+        # Fallback for any invalid package identifiers
         name=$package
         version=""
     fi
