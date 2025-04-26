@@ -1,6 +1,6 @@
 {
     "id": "ocaml-opam",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "OCaml (via opam)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ocaml-opam",
     "description": "Installation of OCaml that includes a package manager and the compiler itself. Also install some platform tools like a build system, support for your editor, and a few other important ones.",
@@ -19,6 +19,14 @@
             "default": true,
             "description": "Install some of the OCaml Platform tools? (UTop, Dune, OCaml-LSP, odoc, OCamlFormat)",
             "type": "boolean"
+        },
+        "additionalPackages": {
+            "default": "",
+            "description": "Enter additional package, separated by spaces.",
+            "proposals": [
+                "base core_kernel ounit qcheck"
+            ],
+            "type": "string"
         }
     },
     "customizations": {

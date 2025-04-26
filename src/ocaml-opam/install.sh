@@ -26,9 +26,15 @@ if [ "$VERSION" != "latest" ]; then
 fi
 su "$_REMOTE_USER" -c "opam init --disable-sandboxing --shell-setup -y ${flags[*]}"
 
-# Install Platform Tools
+# Install packages
+packages=()
 if [ "$INSTALLPLATFORMTOOLS" = "true" ]; then
-    su "$_REMOTE_USER" -c "opam install ocaml-lsp-server odoc ocamlformat utop -y"
+    packages+=(ocaml-lsp-server odoc ocamlformat utop)
+fi
+IFS=" " read -r -a additionalPackages <<<"$ADDITIONALPACKAGES"
+packages+=("${additionalPackages[@]}")
+if [ ${#packages[@]} -ne 0 ]; then
+    su "$_REMOTE_USER" -c "opam install ${packages[*]} -y"
 fi
 
 
