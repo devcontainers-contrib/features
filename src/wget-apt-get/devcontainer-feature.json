@@ -1,6 +1,6 @@
 {
     "id": "wget-apt-get",
-    "version": "1.0.16",
+    "version": "1.0.17",
     "name": "Wget (via apt-get)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/wget-apt-get",
     "description": "Wget is a free software package for retrieving files using HTTP, HTTPS, FTP and FTPS, the most widely used Internet protocols.",

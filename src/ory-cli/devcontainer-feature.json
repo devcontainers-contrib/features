@@ -1,6 +1,6 @@
 {
     "id": "ory-cli",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "name": "Ory CLI (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ory-cli",
     "description": "Ory CLI is a convenient and easy-to-use tool that helps you manage and configure The Ory Network.",

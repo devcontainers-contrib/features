@@ -1,6 +1,6 @@
 {
     "id": "mkcert",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "name": "mkcert (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/mkcert",
     "description": "mkcert is a simple tool for making locally-trusted development certificates.",

@@ -1,6 +1,6 @@
 {
     "id": "ripgrep",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "name": "ripgrep (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ripgrep",
     "description": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore.",

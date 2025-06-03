@@ -1,7 +1,7 @@
 {
     "name": "Argo Workflows CLI (via Github Releases)",
     "id": "argo-workflows",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes",
     "documentationURL": "https://github.com/devcontainers-extra/features/tree/main/src/argo-workflows",
     "options": {

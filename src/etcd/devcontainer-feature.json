@@ -1,6 +1,6 @@
 {
     "id": "etcd",
-    "version": "1.0.11",
+    "version": "1.0.12",
     "name": "etcd (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/etcd",
     "description": "etcd is a distributed reliable key-value store for the most critical data of a distributed system.",

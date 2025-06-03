@@ -1,6 +1,6 @@
 {
     "id": "terracognita",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "name": "TerraCognita (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/terracognita",
     "description": "TerraCognita is open-source software that quickly and automatically creates Terraform from all of your manually-provisioned resources.",

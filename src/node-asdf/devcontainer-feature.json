@@ -1,6 +1,6 @@
 {
     "id": "node-asdf",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name": "Node.js (via asdf)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/node-asdf",
     "description": "Installs Node.js via asdf.",

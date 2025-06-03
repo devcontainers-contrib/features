@@ -1,6 +1,6 @@
 {
     "id": "hyperfine",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "name": "hyperfine (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/hyperfine",
     "description": "hyperfine is a command-line benchmarking tool.",

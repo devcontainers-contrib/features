@@ -1,6 +1,6 @@
 {
     "id": "spicedb",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "name": "SpiceDB (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/spicedb",
     "description": "SpiceDB is an open source, Google Zanzibar-inspired, database system for creating and managing security-critical application permissions.",
