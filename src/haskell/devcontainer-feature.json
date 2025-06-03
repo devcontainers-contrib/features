@@ -1,7 +1,7 @@
 {
     "name": "Haskell (via ghcup)",
     "id": "haskell",
-    "version": "2.2.2",
+    "version": "2.2.3",
     "description": "Installs Haskell. An advanced, purely functional programming language",
     "documentationURL": "https://github.com/devcontainers-extra/features/tree/main/src/haskell",
     "options": {

@@ -1,9 +1,9 @@
 {
     "id": "groovyserv-sdkman",
-    "version": "2.0.15",
+    "version": "2.0.16",
     "name": "GroovyServ (via SDKMAN)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/groovyserv-sdkman",
-    "description": "GroovyServ reduces startup time of the JVM for runnning Groovy significantly. It\ndepends on your environments, but in most cases, it\u2019s 10 to 20 times faster than\nregular Groovy.",
+    "description": "GroovyServ reduces startup time of the JVM for runnning Groovy significantly. It\ndepends on your environments, but in most cases, it’s 10 to 20 times faster than\nregular Groovy.",
     "options": {
         "version": {
             "default": "latest",

@@ -1,6 +1,6 @@
 {
     "id": "ruby-asdf",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name": "Ruby (via asdf)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/ruby-asdf",
     "description": "Installs Ruby via asdf.",

@@ -1,6 +1,6 @@
 {
     "id": "sqlfmt",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "sqlfmt (via pipx)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/sqlfmt",
     "description": "sqlfmt formats your dbt SQL files so you don't have to.",

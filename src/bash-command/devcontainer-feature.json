@@ -1,7 +1,7 @@
 {
     "name": "Bash Command",
     "id": "bash-command",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Executes a bash command",
     "documentationURL": "https://github.com/devcontainers-extra/features/tree/main/src/bash-command",
     "options": {

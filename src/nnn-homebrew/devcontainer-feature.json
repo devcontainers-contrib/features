@@ -1,13 +1,13 @@
 {
     "id": "nnn-homebrew",
-    "version": "1.0.20",
-    "name": "nnn (n\u00b3) (via Homebrew)",
+    "version": "1.0.21",
+    "name": "nnn (n³) (via Homebrew)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/nnn-homebrew",
     "description": "nnn is a free and open-source file manager which provides a text-based user interface to provide file managing functionalities for Unix-like systems.",
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of nnn (n\u00b3) to install.",
+            "description": "Select the version of nnn (n³) to install.",
             "proposals": [
                 "latest"
             ],

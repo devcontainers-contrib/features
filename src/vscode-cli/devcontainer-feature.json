@@ -1,7 +1,7 @@
 {
     "name": "Visual Studio Code CLI",
     "id": "vscode-cli",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Visual Studio Code CLI (official Microsoft build), which manages the Visual Studio Code Server and vscode.dev tunnels.",
     "documentationURL": "https://github.com/devcontainers-extra/features/tree/main/src/vscode-cli",
     "options": {

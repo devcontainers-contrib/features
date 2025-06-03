@@ -1,6 +1,6 @@
 {
     "id": "kops",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "kOps (via Github Releases)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/kops",
     "description": "Kubernetes Operations (kOps) - Production Grade k8s Installation, Upgrades and Management.",

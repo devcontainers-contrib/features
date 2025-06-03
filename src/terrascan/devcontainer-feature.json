@@ -1,7 +1,7 @@
 {
     "name": "terrascan (via Github Releases)",
     "id": "terrascan",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Terrascan is a static code analyzer for Infrastructure as Code.",
     "documentationURL": "https://github.com/devcontainers-extra/features/tree/main/src/terrascan",
     "options": {

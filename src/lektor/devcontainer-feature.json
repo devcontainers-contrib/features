@@ -1,6 +1,6 @@
 {
     "id": "lektor",
-    "version": "2.0.17",
+    "version": "2.0.18",
     "name": "Lektor (via npm)",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/lektor",
     "description": "Lektor is a static website generator.",
