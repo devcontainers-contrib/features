@@ -1,0 +1,28 @@
+{
+    "id": "graphite-cli",
+    "version": "1.0.0",
+    "name": "Graphite.dev CLI (via npm)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/graphite-cli",
+    "description": "The Graphite.dev command-line interface (CLI) is the CLI utility for working with stacked branches in graphite.",
+    "options": {
+        "version": {
+            "default": "stable",
+            "description": "Select the version to install.",
+            "proposals": [
+                "stable"
+            ],
+            "type": "string"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "graphite.gti-vscode"
+            ]
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/npm-package",
+        "ghcr.io/devcontainers/features/node"
+    ]
+}
