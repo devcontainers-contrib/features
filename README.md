@@ -1,5 +1,8 @@
 # Extra Dev Container Features
 
+> [!CAUTION]
+> This fork was created because the previous owner of devcontainers-contrib deleted the account. This accountonce hosted the [original features repository.](https://web.archive.org/web/20230321202408/https://github.com/devcontainers-contrib/features) Many devcontainers include a vulnerable path to a devcontainers-contrib feature container. This account presents a [supply chain risk](https://www.microsoft.com/en-us/securityengineering/opensource/ossthreats) and will be squatted to prevent malicious actors from claiming it and publishing substituted containers. If you are associated with Microsoft, devcontainers, or devcontainers-extra please contact the finder of this issue [@NathanCYee](https://github.com/NathanCYee) to resolve this safely. 
+
 🐳 Extra add-in features for
 [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) and
 [GitHub Codespaces](https://github.com/features/codespaces)
