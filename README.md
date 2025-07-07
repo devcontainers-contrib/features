@@ -1,7 +1,13 @@
 # Extra Dev Container Features
 
-> [!CAUTION]
-> This fork was created because the previous owner of devcontainers-contrib deleted the account. This accountonce hosted the [original features repository.](https://web.archive.org/web/20230321202408/https://github.com/devcontainers-contrib/features) Many devcontainers include a vulnerable path to a devcontainers-contrib feature container. This account presents a [supply chain risk](https://www.microsoft.com/en-us/securityengineering/opensource/ossthreats) and will be squatted to prevent malicious actors from claiming it and publishing substituted containers. If you are associated with Microsoft, devcontainers, or devcontainers-extra please contact the finder of this issue [@NathanCYee](https://github.com/NathanCYee) to resolve this safely. 
+> [!IMPORTANT]
+> This fork was created because the original `devcontainers-contrib` creator deleted the account. This repo was generously created and hosted by [@NathanCYee](https://github.com/NathanCYee) in the dev container community to avoid any accidental or malicious rehosting of these Features, and [`devcontainers-extra`](https://github.com/devcontainers-extra/features) was also generously created and continues to be hosted by the community to continue publishing these Features as well.
+>
+> As maintainers of the official Dev Containers Spec became aware of [this issue](https://github.com/microsoft/vscode-remote-release/issues/11046), additional steps have now been taken:
+> * [Update the dev container CLI](https://github.com/devcontainers/cli/pull/1044) to automatically redirect from `devcontainers-contrib` to `devcontainers-extra`
+> * Show a warning in VS Code and GitHub Codespaces about the state of `devcontainers-contrib` and redirection to `devcontainers-extra` (to ensure users are aware and `devcontainers-extra` gets proper credit)
+>
+> If you experience any additional issues, please notify the Dev Containers Spec maintainers via an issue in the [dev container CLI repo](https://github.com/devcontainers/cli).
 
 🐳 Extra add-in features for
 [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) and
